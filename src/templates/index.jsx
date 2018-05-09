@@ -62,14 +62,14 @@ class IndexTemplate extends React.Component {
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
               <MainNav overlay={config.siteCover}>
-                <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
+                {/*<BlogLogo logo={config.siteLogo} title={config.siteTitle} />*/}
                 <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
                   <PageTitle logo={config.siteLogoName} title={config.siteTitle} />
                   <PageDescription text={config.siteDescription} />
-                  <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
+                  {/*<SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />*/}
                 </div>
               </div>
               <Link className="scroll-down icon-arrow-left" to="content" data-offset="-45" spy smooth duration={500}>

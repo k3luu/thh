@@ -1,28 +1,28 @@
-import React from "react";
-import Helmet from "react-helmet";
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import BlogLogo from "../components/BlogLogo/BlogLogo";
-import MenuButton from "../components/MenuButton/MenuButton";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainContent from "../layouts/MainContent/MainContent";
-import PostHeader from "../layouts/PostHeader/PostHeader";
-import PostFormatting from "../layouts/PostFormatting/PostFormatting";
-import PostDate from "../components/PostDate/PostDate";
-import PostFooter from "../layouts/PostFooter/PostFooter";
-import AuthorImage from "../components/AuthorImage/AuthorImage";
-import AuthorInfo from "../components/AuthorInfo/AuthorInfo";
-import PostShare from "../components/PostShare/PostShare";
-import GhostSubscribe from "../components/GhostSubscribe/GhostSubscribe";
-import ReadNext from "../components/ReadNext/ReadNext";
-import PostTags from "../components/PostTags/PostTags";
-import Footer from "../components/Footer/Footer";
-import AuthorModel from "../models/author-model";
-import Disqus from "../components/Disqus/Disqus";
+import React from 'react';
+import Helmet from 'react-helmet';
+import SEO from '../components/SEO/SEO';
+import config from '../../data/SiteConfig';
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import BlogLogo from '../components/BlogLogo/BlogLogo';
+import MenuButton from '../components/MenuButton/MenuButton';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainContent from '../layouts/MainContent/MainContent';
+import PostHeader from '../layouts/PostHeader/PostHeader';
+import PostFormatting from '../layouts/PostFormatting/PostFormatting';
+import PostDate from '../components/PostDate/PostDate';
+import PostFooter from '../layouts/PostFooter/PostFooter';
+import AuthorImage from '../components/AuthorImage/AuthorImage';
+import AuthorInfo from '../components/AuthorInfo/AuthorInfo';
+import PostShare from '../components/PostShare/PostShare';
+import GhostSubscribe from '../components/GhostSubscribe/GhostSubscribe';
+import ReadNext from '../components/ReadNext/ReadNext';
+import PostTags from '../components/PostTags/PostTags';
+import Footer from '../components/Footer/Footer';
+import AuthorModel from '../models/author-model';
+import Disqus from '../components/Disqus/Disqus';
 
 function parsePost(post, slug) {
   const result = post;
@@ -75,12 +75,8 @@ class PostTemplate extends React.Component {
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
     const { cover, title, date, author, tags } = post;
-    const className = post.post_class ? post.post_class : "post";
-    const authorData = AuthorModel.getAuthor(
-      this.props.data.authors.edges,
-      author,
-      config.blogAuthorId
-    );
+    const className = post.post_class ? post.post_class : 'post';
+    const authorData = AuthorModel.getAuthor(this.props.data.authors.edges, author, config.blogAuthorId);
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
@@ -98,10 +94,7 @@ class PostTemplate extends React.Component {
           <MainHeader className="post-head" cover={cover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton
-                navigation={config.siteNavigation}
-                onClick={this.handleOnClick}
-              />
+              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
             </MainNav>
           </MainHeader>
           <MainContent>
@@ -114,19 +107,12 @@ class PostTemplate extends React.Component {
                 </section>
               </PostHeader>
 
-              <section
-                className="post-content"
-                dangerouslySetInnerHTML={{ __html: postNode.html }}
-              />
+              <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
               <PostFooter>
                 <AuthorImage author={authorData} />
                 <AuthorInfo prefix="/author" author={authorData} />
-                <PostShare
-                  postNode={postNode}
-                  postPath={location.pathname}
-                  config={config}
-                />
+                <PostShare postNode={postNode} postPath={location.pathname} config={config} />
                 <GhostSubscribe />
                 <Disqus postNode={postNode} />
               </PostFooter>
@@ -135,10 +121,7 @@ class PostTemplate extends React.Component {
           <ReadNext next={getNextData()} prev={getPrevData()} />
 
           {/* The tiny footer at the very bottom */}
-          <Footer
-            copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
-          />
+          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
         </SiteWrapper>
       </Drawer>
     );

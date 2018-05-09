@@ -2,6 +2,7 @@ import React, { Component, createElement, isValidElement } from 'react';
 import GetNavList from './GetNavList';
 import './Navigation.css';
 import SubscribeButton from '../SubscribeButton/SubscribeButton';
+import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 
 const Divider = () => null;
 
@@ -52,11 +53,12 @@ class Navigation extends Component {
       <div>
         <div className="nav">
           <h3 className="nav-title">Menu</h3>
-          <a href="#close" className="nav-close" onClick={onClose}>
+          <a className="nav-close" onClick={onClose}>
             <span className="hidden">Close</span>
           </a>
           <ul>{navItems.map(mapToListParts)}</ul>
-          <SubscribeButton url={config.siteRss} />
+          <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
+          {/*<SubscribeButton url={config.siteRss} />*/}
         </div>
         <span className="nav-cover" />
       </div>

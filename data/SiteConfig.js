@@ -9,7 +9,7 @@ module.exports = {
   siteUrl: "https://haysclark.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
-    "No Matter the Mountain.", // Website description used for RSS feeds/meta description tag.
+    "No Matter the Mountain", // Website description used for RSS feeds/meta description tag.
   siteCover:
     "/images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
