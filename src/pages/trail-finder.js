@@ -8,8 +8,9 @@ import BlogLogo from '../components/BlogLogo/BlogLogo';
 import MenuButton from '../components/MenuButton/MenuButton';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
+import TrailFinder from '../components/Trails/TrailFinder';
 
-class BlogPage extends React.Component {
+class TrailsPage extends React.Component {
   constructor() {
     super();
 
@@ -58,10 +59,12 @@ class BlogPage extends React.Component {
               <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
             </MainNav>
           </MainHeader>
+
+          <TrailFinder />
         </SiteWrapper>
       </Drawer>
     );
   }
 }
 
-export default BlogPage;
+export default TrailsPage;

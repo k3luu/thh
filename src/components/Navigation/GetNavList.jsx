@@ -22,10 +22,10 @@ function GetNavList(config) {
       divider: true
     },
     {
-      primaryText: 'Blog',
+      primaryText: 'Trail Guides',
       // LeftIcon: <p>home</p>,
       component: Link,
-      to: '/blog'
+      to: '/trail-guides'
     },
     {
       divider: true
@@ -34,13 +34,23 @@ function GetNavList(config) {
       primaryText: 'Trail Finder',
       // LeftIcon: <p>home</p>,
       component: Link,
-      to: '/trails'
+      to: '/trail-finder'
     },
     {
       divider: true
     },
     {
-      primaryText: 'Fundamentals',
+      primaryText: 'Events',
+      // LeftIcon: <p>home</p>,
+      component: Link,
+      to: '/events'
+    },
+
+    {
+      divider: true
+    },
+    {
+      primaryText: 'Hiking Fundamentals',
       // LeftIcon: <p>home</p>,
       component: Link,
       to: '/hiking'
