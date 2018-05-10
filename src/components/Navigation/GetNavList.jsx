@@ -13,6 +13,15 @@ function GetNavList(config) {
       divider: true
     },
     {
+      primaryText: 'Campaign',
+      // LeftIcon: <p>home</p>,
+      component: Link,
+      to: '/no-matter-the-mountain'
+    },
+    {
+      divider: true
+    },
+    {
       primaryText: 'Blog',
       // LeftIcon: <p>home</p>,
       component: Link,
