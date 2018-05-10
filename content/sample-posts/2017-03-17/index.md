@@ -15,7 +15,7 @@ tags:
 
 ## Cognoscenti audeat ulterius sublimia terga potiorque saxo
 
-HELLLOOOOOO  Lorem markdownum, quid fuerat Procne saxo asperitas variarum Iuno humili
+Lorem markdownum, quid fuerat Procne saxo asperitas variarum Iuno humili
 sermone! Tibi Oileos [unda](http://nuncet.org/hic-gens.php), lux celeberrima
 heros inlustre Copia, *humo*: huius.
 
