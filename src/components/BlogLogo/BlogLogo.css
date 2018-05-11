@@ -1,6 +1,6 @@
 /* Appears in the top left corner of your home page */
 .blog-logo {
-    display: block;
+    display: flex;
     float: left;
     background: none !important; /* Makes sure there is never a background */
     border: none !important; /* Makes sure there is never a border */
@@ -14,6 +14,20 @@
     height: 40px;
     padding: 1px 0 5px;
     width: auto;
+}
+
+.blog-logo span {
+    color: white;
+    opacity: 0.9;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    /*text-shadow: 1px 2px 20px black;*/
+    /*font-family: 'Chivo', sans-serif;*/
 }
 
 /* ==========================================================================
