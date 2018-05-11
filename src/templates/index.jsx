@@ -48,7 +48,7 @@ class IndexTemplate extends React.Component {
     const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
     const authorsEdges = this.props.data.authors.edges;
 
-    console.log('index', this.props.pathContext);
+    console.log('index', this.props);
 
     return (
       <Drawer className="home-template" isOpen={this.state.menuOpen}>

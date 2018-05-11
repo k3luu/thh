@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './About.css';
+import franz from './franz.jpeg';
+import robert from './robert.jpeg';
+import colt from './colt.jpeg';
 
 class About extends Component {
   // Edit About component or pages/about.jsx to include your information.
@@ -16,6 +19,8 @@ class About extends Component {
           Get to know the team behind Two Half-Hitches. After all, we're just outdoor enthusiasts who share the same
           passion as you!
         </p>
+
+        <img src={franz} className="about-img" alt="Franz Stanley Anunciacion" />
         <h3>Franz Stanley Anunciacion</h3>
         <h5>Founder/Editor-in-Chief</h5>
         <p>
@@ -28,6 +33,8 @@ class About extends Component {
           share a wealth of knowledge on various expeditions, teach the fundamentals of surviving in the outdoors, and
           help viewers find fulfillment in nature.
         </p>
+
+        <img src={robert} className="about-img" alt="Robert Aaron Hebron" />
         <h3>Robert Aaron Hebron</h3>
         <h5>Photographer/Multi-Media Manager</h5>
         <p>
@@ -39,6 +46,8 @@ class About extends Component {
           document their stories and relive their experiences for all time. By combining two of his passions, Robert
           produces breathtaking images that he shares and inspires viewers to explore the world around them.
         </p>
+
+        <img src={colt} className="about-img" alt="Colt Thomas Deck" />
         <h3>Colt Thomas Deck</h3>
         <h5>Senior Editor</h5>
         <p>

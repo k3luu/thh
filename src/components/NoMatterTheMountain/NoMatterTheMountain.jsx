@@ -7,11 +7,19 @@ class NoMatterTheMountain extends Component {
     return (
       <div className="about">
         <h1>No Matter The Mountain</h1>
-        <h5>
+        <p>
           Life throws so many obstacles at us every day, creating a harsh ascent, similar to climbing a mountain. How we
           overcome these "mountains" is what makes us who we are.
-        </h5>
+        </p>
         <h2>How Do You Conquer Your Mountain?</h2>
+        <iframe
+          width="650"
+          height="450"
+          src="https://www.youtube.com/embed/05ifiSTb6Fc"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
         <p>
           Share your story with us on Instagram! Nominate your friends, and tag @twohalfhitches and #NoMattertheMountain
         </p>

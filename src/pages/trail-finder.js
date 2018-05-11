@@ -9,6 +9,7 @@ import MenuButton from '../components/MenuButton/MenuButton';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import TrailFinder from '../components/Trails/TrailFinder';
+import Footer from '../components/Footer/Footer';
 
 class TrailsPage extends React.Component {
   constructor() {
@@ -53,7 +54,7 @@ class TrailsPage extends React.Component {
         <Navigation config={config} onClose={this.handleOnClose} />
 
         <SiteWrapper>
-          <MainHeader className="post-head" cover={config.siteCover}>
+          <MainHeader className="post-head" cover={config.finderCover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
               <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
@@ -61,6 +62,7 @@ class TrailsPage extends React.Component {
           </MainHeader>
 
           <TrailFinder />
+          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
         </SiteWrapper>
       </Drawer>
     );
