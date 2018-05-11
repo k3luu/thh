@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './NoMatterTheMountain.css';
-import ambassadors from './ambassadors';
+import 'font-awesome/css/font-awesome.min.css';
+import ambassadors from './ambassadors/ambassadors';
 
 class NoMatterTheMountain extends Component {
   handleAmbassadorTitle(list) {
@@ -16,13 +17,18 @@ class NoMatterTheMountain extends Component {
 
   handleAmbassadorsDisplay() {
     return ambassadors.map(p => (
-      <div key={p.id}>
-        <h2>{p.name}</h2>
-        <h5>{this.handleAmbassadorTitle(p.title)}</h5>
-        <p>{p.bio}</p>
-        <p>
-          <i className="fa fa-instagram" /> {p.instagram}
-        </p>
+      <div key={p.id} className="ambassador-container">
+        <div className="ambassador-image">
+          <img src={p.photo_src} alt={p.name} />
+        </div>
+        <div>
+          <h2>{p.name}</h2>
+          <h5>{this.handleAmbassadorTitle(p.title)}</h5>
+          <p>{p.bio}</p>
+          <p>
+            <i className="fa fa-instagram" /> {p.instagram}
+          </p>
+        </div>
       </div>
     ));
   }

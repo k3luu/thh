@@ -3,7 +3,6 @@
 /* eslint global-require:"off" */
 import React from 'react';
 import favicon from './favicon.png';
-import 'font-awesome/css/font-awesome.min.css';
 
 let inlinedStyles = '';
 if (process.env.NODE_ENV === 'production') {
