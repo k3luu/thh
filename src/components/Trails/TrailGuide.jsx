@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import './Trails.css';
+import PaginatedContent from '../../layouts/PaginatedContent/PaginatedContent';
+import PostListing from '../PostListing/PostListing';
 
 class TrailGuide extends Component {
   // Edit About component or pages/about.jsx to include your information.
   render() {
+    // const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
+
+    console.log('trail guide', this.props);
     return (
       <div className="about">
         <h1>Trail Guides</h1>
@@ -14,6 +19,11 @@ class TrailGuide extends Component {
           daunting, but hopefully by sharing our experiences you can benefit by having a clear view of what to expect
           going into your adventure.
         </p>
+
+        {/*<PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>*/}
+        {/*/!* PostListing component renders all the posts *!/*/}
+        {/*<PostListing postEdges={nodes} postAuthors={authorsEdges} />*/}
+        {/*</PaginatedContent>*/}
       </div>
     );
   }

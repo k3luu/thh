@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-authors/authors/thh.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-03-17/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sample-posts/2017-03-17/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-03-23/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/sample-posts/2017-03-23/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2018-05-10/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/trail-posts/2018-05-10/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MenuButton/MenuButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuButton/MenuButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/trail-guides.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/trail-guides.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/post.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,14 +20,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54272366">
+    <splitter split-orientation="horizontal" split-proportion="0.45264986">
       <split-first>
         <leaf>
           <file leaf-file-name="SiteConfig.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="casper.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/casper.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TrailGuide.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="trail-guides.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/trail-guides.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="365">
+                  <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -33,34 +68,20 @@
           <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/index.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+                <state relative-caret-position="397">
+                  <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="casper.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/casper.json">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="guinevere.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/guinevere.json">
+          <file leaf-file-name="PostShare.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/PostShare/PostShare.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/content/sample-posts/2018-01-03-Big_Sample_Post/index.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="469">
-                    <caret line="194" selection-start-line="194" selection-end-line="195" />
-                  </first_editor>
-                  <second_editor />
+                <state relative-caret-position="75">
+                  <caret line="5" column="4" selection-start-line="5" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -69,26 +90,61 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="TrailGuide.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx">
+          <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="510">
+                    <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PostListing.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+                <state relative-caret-position="433">
+                  <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
                   <folding>
-                    <element signature="e#0#41#0" expanded="true" />
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="835">
-                    <caret line="126" column="138" selection-start-line="126" selection-start-column="138" selection-end-line="126" selection-end-column="138" />
-                  </first_editor>
-                  <second_editor />
+          <file leaf-file-name="post.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="478">
+                  <caret line="114" column="34" lean-forward="true" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PaginatedContent.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/layouts/PaginatedContent/PaginatedContent.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tag.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="580">
+                  <caret line="84" column="24" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -107,16 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;MainHeader</find>
-      <find>about.</find>
-      <find>AboutPage</find>
-      <find>AuthorTemplate</find>
-      <find>about.jsx</find>
-      <find>'</find>
-      <find>#menu</find>
-      <find>#close</find>
-      <find>a</find>
-      <find>/about</find>
       <find>about-container</find>
       <find>home-template</find>
       <find>inner</find>
@@ -131,12 +177,22 @@
       <find>Merriweather</find>
       <find>birch in the</find>
       <find>/birch-in-the-roses</find>
-      <find>PostListing</find>
-      <find>pathContext</find>
       <find>birch in the roses</find>
       <find>blogPostDir</find>
       <find>sample-posts</find>
       <find>frontmatter</find>
+      <find>Hello, Sturtevant Falls via Chantry Flats</find>
+      <find>PostListing</find>
+      <find>TagTemplate</find>
+      <find>pathContext</find>
+      <find>TrailGuide</find>
+      <find>pathcontext</find>
+      <find>pageQuery</find>
+      <find>menu-button</find>
+      <find>.icon-arrow-left::before</find>
+      <find>nav-close</find>
+      <find>PostFooter</find>
+      <find>post-footer</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -152,10 +208,8 @@
         <option value="$PROJECT_DIR$/src/templates/author.jsx" />
         <option value="$PROJECT_DIR$/src/components/PageTitle/PageTitle.jsx" />
         <option value="$PROJECT_DIR$/src/components/SocialMediaIcons/SocialMediaIcons.css" />
-        <option value="$PROJECT_DIR$/src/templates/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/About/About.css" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
-        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
         <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.jsx" />
         <option value="$PROJECT_DIR$/src/components/MenuButton/MenuButton.jsx" />
         <option value="$PROJECT_DIR$/src/pages/about.jsx" />
@@ -167,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/MainNav/MainNav.css" />
         <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.jsx" />
-        <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" />
         <option value="$PROJECT_DIR$/src/components/SocialMediaIcons/SocialMediaIcons.jsx" />
         <option value="$PROJECT_DIR$/src/components/Trails/Trails.css" />
         <option value="$PROJECT_DIR$/src/pages/hiking.js" />
@@ -178,9 +231,7 @@
         <option value="$PROJECT_DIR$/src/components/Trails/Trails.jsx" />
         <option value="$PROJECT_DIR$/src/pages/trails.js" />
         <option value="$PROJECT_DIR$/src/components/Navigation/GetNavList.jsx" />
-        <option value="$PROJECT_DIR$/src/pages/trail-guides.js" />
         <option value="$PROJECT_DIR$/src/components/About/About.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/AuthorMeta/AuthorMeta.css" />
         <option value="$PROJECT_DIR$/src/components/PageDescription/PageDescription.css" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
@@ -190,8 +241,17 @@
         <option value="$PROJECT_DIR$/content/trails/2018-05-10/index.md" />
         <option value="$PROJECT_DIR$/.cache/cache/db.json" />
         <option value="$PROJECT_DIR$/content/trail-posts/2018-05-10/index.md" />
-        <option value="$PROJECT_DIR$/data/SiteConfig.js" />
         <option value="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" />
+        <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/index.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" />
+        <option value="$PROJECT_DIR$/src/pages/trail-guides.js" />
+        <option value="$PROJECT_DIR$/data/SiteConfig.js" />
+        <option value="$PROJECT_DIR$/src/components/MenuButton/MenuButton.css" />
+        <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.css" />
+        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
+        <option value="$PROJECT_DIR$/src/components/PostShare/PostShare.css" />
       </list>
     </option>
   </component>
@@ -215,9 +275,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-4480" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -355,7 +414,35 @@
               <item name="thh" type="b2602c69:ProjectViewProjectNode" />
               <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Trails" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PaginatedContent" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PostFooter" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PostFormatting" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="thh" type="b2602c69:ProjectViewProjectNode" />
@@ -432,10 +519,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30951000" />
+    <option name="totallyTimeSpent" value="33364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4480" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -446,7 +533,7 @@
       <window_info id="npm" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20234291" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17668097" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -495,52 +582,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.cache/redux-state.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="4717" column="60" selection-start-line="4717" selection-start-column="60" selection-end-line="4717" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MenuButton/MenuButton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="80" column="60" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MenuButton/MenuButton.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.cache/pages.json" />
-    <entry file="file://$PROJECT_DIR$/src/templates/author.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="69" selection-start-line="69" selection-end-line="70" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -562,13 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="96" column="19" lean-forward="true" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -616,6 +650,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -623,6 +660,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -640,6 +680,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -678,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Navigation/GetNavList.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
@@ -696,23 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="10" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -734,16 +753,6 @@
             <caret line="18" selection-start-line="18" selection-end-line="18" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/trail-guides.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,23 +780,6 @@
             <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -853,23 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/casper.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/guinevere.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/sample-posts/2018-01-03-Big_Sample_Post/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -880,13 +855,160 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/casper.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="84" column="24" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/trail-guides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="47" column="48" selection-start-line="47" selection-start-column="48" selection-end-line="47" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="e#111#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/PaginatedContent/PaginatedContent.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/sample-authors/authors/guinevere.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="835">
-            <caret line="126" column="138" selection-start-line="126" selection-start-column="138" selection-end-line="126" selection-end-column="138" />
+          <first_editor relative-caret-position="510">
+            <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="202" column="16" lean-forward="true" selection-start-line="202" selection-start-column="16" selection-end-line="202" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="123" column="23" lean-forward="true" selection-start-line="123" selection-start-column="23" selection-end-line="123" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MenuButton/MenuButton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/PostFooter/PostFooter.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="114" column="34" lean-forward="true" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostShare/PostShare.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>

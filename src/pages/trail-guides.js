@@ -45,6 +45,7 @@ class GuidesPage extends React.Component {
   }
 
   render() {
+    console.log('trail guide page', this.props);
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
         <Helmet title={`About | ${config.siteTitle}`} />

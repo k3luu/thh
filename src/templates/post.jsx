@@ -110,8 +110,8 @@ class PostTemplate extends React.Component {
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
               <PostFooter>
-                <AuthorImage author={authorData} />
-                <AuthorInfo prefix="/author" author={authorData} />
+                {/*<AuthorImage author={authorData} />*/}
+                {/*<AuthorInfo prefix="/author" author={authorData} />*/}
                 <PostShare postNode={postNode} postPath={location.pathname} config={config} />
                 <GhostSubscribe />
                 <Disqus postNode={postNode} />
