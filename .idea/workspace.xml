@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -167,18 +167,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="html.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/html.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
-                  <folding>
-                    <element signature="e#111#137#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="events.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/events.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -224,11 +212,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BlogLogo.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BlogLogo.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="225">
                   <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="About.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="169">
+                  <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -324,7 +324,6 @@
         <option value="$PROJECT_DIR$/src/templates/index.jsx" />
         <option value="$PROJECT_DIR$/data/SiteConfig.js" />
         <option value="$PROJECT_DIR$/src/components/About/About.css" />
-        <option value="$PROJECT_DIR$/src/components/About/About.jsx" />
         <option value="$PROJECT_DIR$/src/pages/about.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors.json" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.jsx" />
@@ -339,6 +338,7 @@
         <option value="$PROJECT_DIR$/src/pages/hiking.js" />
         <option value="$PROJECT_DIR$/src/pages/events.js" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
+        <option value="$PROJECT_DIR$/src/components/About/About.jsx" />
       </list>
     </option>
   </component>
@@ -434,6 +434,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="About" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Author" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="thh" type="b2602c69:ProjectViewProjectNode" />
@@ -606,7 +613,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44128000" />
+    <option name="totallyTimeSpent" value="44245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -918,16 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Navigation/GetNavList.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1106,6 +1103,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
