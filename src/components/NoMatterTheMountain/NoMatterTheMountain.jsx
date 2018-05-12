@@ -26,7 +26,10 @@ class NoMatterTheMountain extends Component {
           <h5>{this.handleAmbassadorTitle(p.title)}</h5>
           <p>{p.bio}</p>
           <p>
-            <i className="fa fa-instagram" /> {p.instagram}
+            <i className="fa fa-instagram" />{' '}
+            <a href={`https://www.instagram.com/${p.instagram}`} target="_blank">
+              {p.instagram}
+            </a>
           </p>
         </div>
       </div>
