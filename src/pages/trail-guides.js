@@ -49,7 +49,7 @@ class GuidesPage extends React.Component {
     console.log('trail guide page', this.props);
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
-        <Helmet title={`About | ${config.siteTitle}`} />
+        <Helmet title={`Trail Guides | ${config.siteTitle}`} />
 
         {/* The blog navigation links */}
         <Navigation config={config} onClose={this.handleOnClose} />

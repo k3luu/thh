@@ -48,7 +48,7 @@ class TrailsPage extends React.Component {
   render() {
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
-        <Helmet title={`About | ${config.siteTitle}`} />
+        <Helmet title={`Trail Finder | ${config.siteTitle}`} />
 
         {/* The blog navigation links */}
         <Navigation config={config} onClose={this.handleOnClose} />

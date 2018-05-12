@@ -48,7 +48,7 @@ class HikingPage extends React.Component {
   render() {
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
-        <Helmet title={`About | ${config.siteTitle}`} />
+        <Helmet title={`Hiking Fundamentals | ${config.siteTitle}`} />
 
         {/* The blog navigation links */}
         <Navigation config={config} onClose={this.handleOnClose} />
