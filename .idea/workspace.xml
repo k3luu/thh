@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/hiking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/hiking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/no-matter-the-mountain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/no-matter-the-mountain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/trail-finder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/trail-finder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/trail-guides.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/trail-guides.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -171,27 +167,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PostShare.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/PostShare/PostShare.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PostShare.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/PostShare/PostShare.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="html.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/html.jsx">
               <provider selected="true" editor-type-id="text-editor">
@@ -204,7 +179,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="events.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="events.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pages/events.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="373">
@@ -233,6 +208,27 @@
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="about.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="523">
+                  <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BlogLogo.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -333,7 +329,6 @@
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors.json" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors.js" />
-        <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/ambassadors.js" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" />
@@ -343,6 +338,7 @@
         <option value="$PROJECT_DIR$/src/pages/trail-guides.js" />
         <option value="$PROJECT_DIR$/src/pages/hiking.js" />
         <option value="$PROJECT_DIR$/src/pages/events.js" />
+        <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
       </list>
     </option>
   </component>
@@ -610,7 +606,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43976000" />
+    <option name="totallyTimeSpent" value="44128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -922,16 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="65" selection-start-line="65" selection-end-line="66" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1032,13 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AuthorImage/AuthorImage.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1110,6 +1089,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/about.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
