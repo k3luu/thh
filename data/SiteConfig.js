@@ -6,8 +6,8 @@ module.exports = {
   siteTitleAlt: 'Two Half Hitches', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteLogoName: '/logos/logo.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
-  siteUrl: 'https://haysclark.github.io', // Domain of your website without pathPrefix.
-  pathPrefix: '/gatsby-starter-casper', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
+  siteUrl: 'http://www.twohalfhitches.com/', // Domain of your website without pathPrefix.
+  pathPrefix: '/thh', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'No Matter the Mountain', // Website description used for RSS feeds/meta description tag.
   siteCover: '/images/blog-cover.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
@@ -23,7 +23,7 @@ module.exports = {
     'https://www.instagram.com/twohalfhitches/',
     'https://twitter.com/twohalfhitches'
   ],
-  postDefaultCategoryID: 'Tech', // Default category for posts.
+  postDefaultCategoryID: 'Trails', // Default category for posts.
   // Links to social profiles/projects you want to display in the navigation bar.
   userLinks: [
     {

@@ -25,7 +25,7 @@ function GetNavList(config) {
       primaryText: 'Trail Guides',
       // LeftIcon: <p>home</p>,
       component: Link,
-      to: '/trail-guides'
+      to: '/guides'
     },
     {
       divider: true

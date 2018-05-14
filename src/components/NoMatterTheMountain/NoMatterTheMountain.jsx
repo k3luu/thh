@@ -47,11 +47,11 @@ class NoMatterTheMountain extends Component {
         </p>
         <h2>How Do You Conquer Your Mountain?</h2>
         <iframe
+          title="thh-campaign"
           width="650"
           height="450"
           src="https://www.youtube.com/embed/05ifiSTb6Fc"
           frameBorder="0"
-          allow="autoplay; encrypted-media"
           allowFullScreen
         />
         <p>

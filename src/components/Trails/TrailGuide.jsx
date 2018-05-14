@@ -8,7 +8,7 @@ class TrailGuide extends Component {
   render() {
     // const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
 
-    console.log('trail guide', this.props);
+    // console.log('trail guide', this.props);
     return (
       <div className="about">
         <h1>Trail Guides</h1>
