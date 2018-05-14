@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     // console.log('trail guide', this.props);
     return (
-      <div className="about">
+      <div className="main-content">
         <h1>Terms and Conditions</h1>
         <h4>Terms of Use</h4>
         <p>
