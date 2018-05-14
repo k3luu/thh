@@ -57,3 +57,7 @@ public/
 
 # Bundle stats
 bundle-stats.json
+
+# Configs
+.idea/
+.DS_Store

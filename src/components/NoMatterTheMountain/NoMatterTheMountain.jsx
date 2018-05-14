@@ -55,7 +55,14 @@ class NoMatterTheMountain extends Component {
           allowFullScreen
         />
         <p>
-          Share your story with us on Instagram! Nominate your friends, and tag @twohalfhitches and #NoMattertheMountain
+          Share your story with us on Instagram! Nominate your friends, and tag{' '}
+          <a href="https://www.instagram.com/twohalfhitches" target="_blank">
+            @twohalfhitches
+          </a>{' '}
+          and{' '}
+          <a href="https://www.instagram.com/explore/tags/nomatterthemountain/" target="_blank">
+            #NoMattertheMountain
+          </a>.
         </p>
 
         <h2>Meet Our Campaign Ambassadors</h2>
