@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import "./Footer.css";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import './Footer.css';
 
 class Footer extends Component {
   render() {
@@ -20,8 +21,8 @@ class Footer extends Component {
     return (
       <footer className="site-footer clearfix">
         <section className="copyright">
-          <a href={url || "/"}>{label}</a> &copy;{" "}
-          {year || new Date().getFullYear()}
+          <a href={url || '/'}>{label}</a> &copy; {year || new Date().getFullYear()} |{' '}
+          <Link to="/terms-and-conditions">Terms and Conditions</Link>
         </section>
         <PoweredBy show={promoteGatsby} />
       </footer>

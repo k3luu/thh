@@ -1,0 +1,14 @@
+.home {
+    margin: 4rem auto;
+    max-width: 710px;
+}
+
+.home h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home iframe {
+    width: 100%;
+    height: 400px;
+}

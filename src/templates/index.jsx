@@ -16,6 +16,7 @@ import PageTitle from '../components/PageTitle/PageTitle';
 import PageDescription from '../components/PageDescription/PageDescription';
 import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
 import SocialMediaIcons from '../components/SocialMediaIcons/SocialMediaIcons';
+import Home from '../components/Home/Home';
 
 class IndexTemplate extends React.Component {
   state = {
@@ -74,15 +75,16 @@ class IndexTemplate extends React.Component {
                   {/*<SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />*/}
                 </div>
               </div>
-              <Link className="scroll-down icon-arrow-left" to="content" data-offset="-45" spy smooth duration={500}>
+              <Link className="scroll-down icon-arrow-left" to="home" data-offset="-45" spy smooth duration={500}>
                 <span className="hidden">Scroll Down</span>
               </Link>
             </MainHeader>
 
-            <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
-              {/* PostListing component renders all the posts */}
-              <PostListing postEdges={nodes} postAuthors={authorsEdges} />
-            </PaginatedContent>
+            {/*<PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>*/}
+            {/*/!* PostListing component renders all the posts *!/*/}
+            {/*<PostListing postEdges={nodes} postAuthors={authorsEdges} />*/}
+            {/*</PaginatedContent>*/}
+            <Home />
           </div>
 
           {/* The tiny footer at the very bottom */}
