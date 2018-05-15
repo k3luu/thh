@@ -96,10 +96,35 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
               }
             }
+            fundamentalPosts: allMarkdownRemark(
+              limit: 1000
+              filter: { fileAbsolutePath: { regex: "/(\\/content\\/sample-posts)/.*\\\\.md$/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              totalCount
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    tags
+                    cover
+                    date
+                    category
+                    author
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt
+                  timeToRead
+                }
+              }
+            }
           }
         `
       ).then(result => {
         console.log('RESULTS', result);
+
         if (result.errors) {
           /* eslint no-console: "off" */
           console.log(result.errors);
@@ -111,7 +136,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.allMarkdownRemark.edges,
           component: indexPage,
-          limit: siteConfig.sitePaginationLimit
+          limit: 4
         });
 
         // Creates Guides page
@@ -127,9 +152,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Creates Hiking Fundamentals page
         createPaginationPages({
           createPage,
-          edges: result.data.allMarkdownRemark.edges,
+          edges: result.data.fundamentalPosts.edges,
           component: hikingPage,
-          limit: siteConfig.sitePaginationLimit,
+          // limit: siteConfig.sitePaginationLimit,
+          limit: 5,
           pathFormatter: prefixPathFormatter('/hiking')
         });
 
