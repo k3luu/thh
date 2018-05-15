@@ -29,9 +29,11 @@
     "gatsby-source-filesystem": "^1.5.10",
     "gatsby-transformer-json": "^1.0.14",
     "gatsby-transformer-remark": "^1.7.24",
+    "gestalt": "^0.69.0",
     "lodash": "^4.17.4",
     "lodash-webpack-plugin": "^0.11.4",
     "moment": "^2.20.1",
+    "postcss-less": "^1.1.5",
     "react": "^15.6.1",
     "react-calendar": "^2.14.0",
     "react-disqus-comments": "^1.0.3",
@@ -41,7 +43,8 @@
     "react-scroll": "^1.7.3",
     "react-share": "^1.15.1",
     "react-social-icons": "^2.7.0",
-    "react-twitter-widgets": "^1.4.0"
+    "react-twitter-widgets": "^1.4.0",
+    "sugarss": "^1.0.1"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",

@@ -50,7 +50,7 @@ function GetNavList(config) {
       divider: true
     },
     {
-      primaryText: 'Hiking Fundamentals',
+      primaryText: 'Fundamentals',
       // LeftIcon: <p>home</p>,
       component: Link,
       to: '/hiking'

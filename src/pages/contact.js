@@ -61,6 +61,11 @@ class ContactPage extends React.Component {
             </MainNav>
           </MainHeader>
 
+          <div className="main-content">
+            <h1>Contact Us</h1>
+            <p>Got a question? Hit us up!</p>
+          </div>
+
           <Contact />
           <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
         </SiteWrapper>

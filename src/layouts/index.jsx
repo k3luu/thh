@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import 'gestalt/dist/gestalt.css';
+import 'font-awesome/css/font-awesome.min.css';
 import config from '../../data/SiteConfig';
 import './index.css';
 import './main.css';

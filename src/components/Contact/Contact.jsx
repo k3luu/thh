@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Box, TextField, TextArea, Button } from 'gestalt';
 import './Contact.css';
 
 class Events extends Component {
@@ -6,15 +7,21 @@ class Events extends Component {
   render() {
     return (
       <div className="main-content">
-        <h1>Contact Us</h1>
-        <p>Got a question? Hit us up!</p>
-
         <form className="contact-form">
-          <div className="contact-fields">
-            <input className="contact-field" type="text" name="name" id="name" placeholder="Name" />
-            <input className="contact-field" type="email" name="email" id="email" placeholder="Email" />
-          </div>
-          <textarea name="message" id="message" className="contact-message" placeholder="Message" rows="4" />
+          <Box display="flex" className="contact-fields">
+            <Box column={6} marginRight={2}>
+              <TextField className="contact-field" type="text" name="name" id="name" placeholder="Name" />
+            </Box>
+            <Box column={6} marginLeft={2}>
+              <TextField className="contact-field" type="email" name="email" id="email" placeholder="Email" />
+            </Box>
+          </Box>
+          <Box marginTop={3}>
+            <TextArea name="message" id="message" className="contact-message" placeholder="Message" rows="4" />
+          </Box>
+          <Box marginTop={1}>
+            <Button text="Send" />
+          </Box>
         </form>
       </div>
     );

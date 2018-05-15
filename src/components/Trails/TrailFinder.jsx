@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Contact from '../Contact/Contact';
 import './Trails.css';
 
 class TrailFinder extends Component {
@@ -64,18 +65,12 @@ class TrailFinder extends Component {
         <iframe
           title="thh-map"
           src="https://www.google.com/maps/d/embed?mid=1sCNANxiTadBW6BQmQ-lF71kYEm4"
-          width="640"
+          width="710"
           height="480"
         />
         <p>If you have a particular trail you recommend, let us know by filling out the form below!</p>
 
-        <form className="contact-form">
-          <div className="contact-fields">
-            <input className="contact-field" type="text" name="name" id="name" placeholder="Name" />
-            <input className="contact-field" type="email" name="email" id="email" placeholder="Email" />
-          </div>
-          <textarea name="message" id="message" className="contact-message" placeholder="Message" rows="4" />
-        </form>
+        <Contact />
       </div>
     );
   }
