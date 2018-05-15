@@ -42,6 +42,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const categoryPage = path.resolve('src/templates/category.jsx');
     const authorPage = path.resolve('src/templates/author.jsx');
     const guidesPage = path.resolve('src/templates/guides.js');
+    const hikingPage = path.resolve('src/templates/hiking.js');
 
     if (!fs.existsSync(path.resolve(`content/${siteConfig.blogAuthorDir}/authors/`))) {
       reject("The 'authors' folder is missing within the 'blogAuthorDir' folder.");
@@ -96,6 +97,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/guides')
           // pathFormatter: path => `/guides/${path}`
+        });
+
+        // Creates Hiking Fundamentals page
+        createPaginationPages({
+          createPage,
+          edges: result.data.allMarkdownRemark.edges,
+          component: hikingPage,
+          limit: siteConfig.sitePaginationLimit,
+          pathFormatter: prefixPathFormatter('/hiking')
         });
 
         // Creates Posts

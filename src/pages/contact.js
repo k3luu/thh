@@ -54,7 +54,7 @@ class ContactPage extends React.Component {
         <Navigation config={config} onClose={this.handleOnClose} />
 
         <SiteWrapper>
-          <MainHeader className="author-head">
+          <MainHeader className="author-head" cover={config.siteCover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
               <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />

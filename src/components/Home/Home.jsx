@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div className="home" id="home">
         <h2>Here to guide you through the outdoors</h2>
-        <h5>How Do You Conquer Your Mountain?</h5>
+        <h4>How Do You Conquer Your Mountain?</h4>
         <iframe title="thh-campaign" src="https://www.youtube.com/embed/05ifiSTb6Fc" frameBorder="0" allowFullScreen />
         <p>
           Share your story with us on Instagram! Nominate your friends, and tag{' '}
@@ -21,19 +21,19 @@ class Home extends Component {
           </a>.
         </p>
 
-        <h4>Featured Content</h4>
+        <h5>Featured Content</h5>
 
         {/* PostListing component renders all the posts */}
         <PostListing postEdges={this.props.nodes} postAuthors={this.props.authorsEdges} />
 
-        <h4>Trail Guides</h4>
+        <h5>Trail Guides</h5>
         <p>
           Follow us on our most recent expeditions! The blog is our way of sharing our personal experiences to show
           readers how engaging and inspiring the outdoors can be. We provide reviews of trails, photos from our trip,
           and tips if you're planning on trekking the same trail.
         </p>
 
-        <h4>Trail Finder</h4>
+        <h5>Trail Finder</h5>
         <p>
           Find a trail that best suits you based on your personal interest and level of experience! The map has over 100
           California trails plotted, and is designed to provide you with the basic information you will need to decide
@@ -48,7 +48,7 @@ class Home extends Component {
           bring you.
         </p>
 
-        <h4>Events</h4>
+        <h5>Events</h5>
         <p>
           Be a part of Two Half-Hitches and join us as we hit the trails! Check out our monthly calendar of events for
           more details.

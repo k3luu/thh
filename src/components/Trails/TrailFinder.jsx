@@ -67,7 +67,15 @@ class TrailFinder extends Component {
           width="640"
           height="480"
         />
-        <p>If you have a particular trail you recommend, please contact us and we will mark it on the map!</p>
+        <p>If you have a particular trail you recommend, let us know by filling out the form below!</p>
+
+        <form className="contact-form">
+          <div className="contact-fields">
+            <input className="contact-field" type="text" name="name" id="name" placeholder="Name" />
+            <input className="contact-field" type="email" name="email" id="email" placeholder="Email" />
+          </div>
+          <textarea name="message" id="message" className="contact-message" placeholder="Message" rows="4" />
+        </form>
       </div>
     );
   }

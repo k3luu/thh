@@ -9,6 +9,10 @@
     /*width: 140px;*/
 }
 
+.post-footer .share > div > div {
+    outline: none;
+}
+
 .post-footer .share a {
     font-size: 1.8rem;
     display: inline-block;

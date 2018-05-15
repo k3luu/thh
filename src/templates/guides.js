@@ -50,7 +50,7 @@ class GuidesPage extends React.Component {
 
   render() {
     const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
-    console.log('trail guide page', this.props);
+    // console.log('trail guide page', this.props);
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
         <Helmet title={`Trail Guides | ${config.siteTitle}`} />
