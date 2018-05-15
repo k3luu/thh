@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { Box, Image } from 'gestalt';
 import AuthorThumbnail from '../AuthorThumbnail/AuthorThumbnail';
 import PostTags from '../PostTags/PostTags';
 import SiteConfig from '../../../data/SiteConfig';
@@ -30,15 +31,32 @@ class PostListing extends React.Component {
       <div>
         {/* This is the post loop - each post will be output using this markup */}
         {postList.map(post => {
-          const { title, path, excerpt, author, tags, date } = post;
+          console.log('post listing', post);
+          const { title, path, excerpt, author, tags, date, cover } = post;
           const className = post.post_class ? post.post_class : 'post';
 
           return (
             <PostFormatting className={className} key={title}>
               <PostHeader>
-                <h2 className="post-title">
-                  <Link to={path}>{title}</Link>
-                </h2>
+                <Box display="flex">
+                  {cover && (
+                    <Box color="darkGray" height={100} width={100} minWidth={100} marginRight={4}>
+                      <Image
+                        alt={title}
+                        color="rgb(111, 91, 77)"
+                        naturalHeight={1}
+                        naturalWidth={1}
+                        fit="cover"
+                        src={cover}
+                      />
+                    </Box>
+                  )}
+                  <Box display="flex" alignItems="center">
+                    <h2 className="post-title">
+                      <Link to={path}>{title}</Link>
+                    </h2>
+                  </Box>
+                </Box>
               </PostHeader>
               <section className="post-excerpt">
                 {/* TODO limit excerpt to 26 words */}
