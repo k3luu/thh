@@ -53,8 +53,8 @@ module.exports = {
     // year: "2018" // optional, set specific copyright year or range of years, defaults to current year
     // url: "https://www.gatsbyjs.org/" // optional, set link address of copyright, defaults to site root
   },
-  aboutCover: '/images/people.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  campaignCover: '/images/nature.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  aboutCover: '/images/nature.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  campaignCover: '/images/people.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   hikingCover: '/images/water-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   guideCover: '/images/liftoff.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   finderCover: '/images/people-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",

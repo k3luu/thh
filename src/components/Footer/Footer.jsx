@@ -16,6 +16,18 @@ class Footer extends Component {
       return null;
     };
 
+    const Contact = props => {
+      const { show } = props;
+      if (show) {
+        return (
+          <section className="poweredby">
+            <Link to="/contact">Contact Us</Link>
+          </section>
+        );
+      }
+      return null;
+    };
+
     const { promoteGatsby } = this.props;
     const { label, url, year } = this.props.copyright;
     return (
@@ -25,6 +37,7 @@ class Footer extends Component {
           <Link to="/terms-and-conditions">Terms and Conditions</Link>
         </section>
         <PoweredBy show={promoteGatsby} />
+        <Contact show />
       </footer>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
+import PostListing from '../PostListing/PostListing';
 
 class Home extends Component {
   render() {
@@ -21,6 +22,9 @@ class Home extends Component {
         </p>
 
         <h4>Featured Content</h4>
+
+        {/* PostListing component renders all the posts */}
+        <PostListing postEdges={this.props.nodes} postAuthors={this.props.authorsEdges} />
 
         <h4>Trail Guides</h4>
         <p>

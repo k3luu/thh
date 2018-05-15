@@ -517,25 +517,31 @@ margin on the iframe, cause it breaks stuff. */
 textarea,
 select,
 input:not([type="radio"]):not([type="checkbox"]) {
-    width: 260px;
+    /*width: 260px;*/
     padding: 6px 9px;
-    margin: 0 0 5px;
+    /*margin: 0 0 5px;*/
     outline: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 100;
     line-height: 1.4em;
-    background: #fff;
-    border: #e7eef2 1px solid;
+    background: #f5f5f5;
+    border: none;
     border-radius: 4px;
     box-shadow: none;
     -webkit-appearance: none;
 }
 
+textarea,
+select,
+input::placeholder {
+    font-style: italic;
+}
+
 textarea {
     width: 100%;
-    max-width: 340px;
-    min-width: 250px;
+    /*max-width: 340px;*/
+    /*min-width: 250px;*/
     height: auto;
     min-height: 80px;
 }
@@ -554,8 +560,8 @@ input[type="time"]:focus,
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 textarea:focus {
-    border: #bbc7cc 1px solid;
-    background: #fff;
+    /*border: #bbc7cc 1px solid;*/
+    /*background: #fff;*/
     outline: none;
     outline-width: 0;
 }
