@@ -72,9 +72,34 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
               }
             }
+            trailPosts: allMarkdownRemark(
+              limit: 1000
+              filter: { fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              totalCount
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    tags
+                    cover
+                    date
+                    category
+                    author
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt
+                  timeToRead
+                }
+              }
+            }
           }
         `
       ).then(result => {
+        console.log('RESULTS', result);
         if (result.errors) {
           /* eslint no-console: "off" */
           console.log(result.errors);
@@ -92,7 +117,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Creates Guides page
         createPaginationPages({
           createPage,
-          edges: result.data.allMarkdownRemark.edges,
+          edges: result.data.trailPosts.edges,
           component: guidesPage,
           limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/guides')

@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div className="home" id="home">
         <h2>Here to guide you through the outdoors</h2>
-        <h4>How Do You Conquer Your Mountain?</h4>
+        {/*<h4>How Do You Conquer Your Mountain?</h4>*/}
         <iframe title="thh-campaign" src="https://www.youtube.com/embed/05ifiSTb6Fc" frameBorder="0" allowFullScreen />
         <p>
           Share your story with us on Instagram! Nominate your friends, and tag{' '}

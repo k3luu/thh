@@ -50,6 +50,8 @@ class HikingPage extends React.Component {
   render() {
     const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
 
+    console.log('hiking page', this.props);
+
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
         <Helmet title={`Hiking Fundamentals | ${config.siteTitle}`} />
@@ -82,6 +84,25 @@ class HikingPage extends React.Component {
 // /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query HikingQuery {
+    allMarkdownRemark(limit: 1000, sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          fields {
+            slug
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover
+            date
+            author
+          }
+        }
+      }
+    }
     # posts data comes from the context
     # authors
     authors: allAuthorsJson {
