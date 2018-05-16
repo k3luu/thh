@@ -1,5 +1,6 @@
 ---
 title: "Big Test"
+cover: "https://unsplash.it/1280/500/?random?BoldMage"
 category: "moar"
 date: "2018-01-03"
 slug: "Big-Sample_Test"

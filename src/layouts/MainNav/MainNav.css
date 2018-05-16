@@ -9,12 +9,12 @@
 .main-nav a,
 div {
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Special styles when overlaid on an image */
 .main-nav.overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;

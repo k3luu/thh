@@ -7,25 +7,37 @@ class Home extends Component {
   render() {
     // console.log('trail guide', this.props);
     return (
-      <div className="home" id="home">
-        <h2>Here to guide you through the outdoors</h2>
-        {/*<h4>How Do You Conquer Your Mountain?</h4>*/}
-        <iframe title="thh-campaign" src="https://www.youtube.com/embed/05ifiSTb6Fc" frameBorder="0" allowFullScreen />
-        <p>
-          Share your story with us on Instagram! Nominate your friends, and tag{' '}
-          <a href="https://www.instagram.com/twohalfhitches" target="_blank">
-            @twohalfhitches
-          </a>{' '}
-          and{' '}
-          <a href="https://www.instagram.com/explore/tags/nomatterthemountain/" target="_blank">
-            #NoMattertheMountain
-          </a>.
-        </p>
+      <div id="home">
+        <div className="main-content">
+          <h1 className="home-title">Here to guide you through the outdoors</h1>
+        </div>
+        <div className="home-content">
+          <iframe
+            title="thh-campaign"
+            src="https://www.youtube.com/embed/05ifiSTb6Fc"
+            frameBorder="0"
+            allowFullScreen
+          />
+          <p className="home-title">
+            Share your story with us on Instagram! Nominate your friends, and tag{' '}
+            <a href="https://www.instagram.com/twohalfhitches" target="_blank" rel="noopener noreferrer">
+              @twohalfhitches
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://www.instagram.com/explore/tags/nomatterthemountain/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              #NoMattertheMountain
+            </a>.
+          </p>
 
-        <h5>Featured Content</h5>
+          <h5>Featured Content</h5>
 
-        {/* PostListing component renders all the posts */}
-        <PostListing postEdges={this.props.nodes} postAuthors={this.props.authorsEdges} />
+          {/* PostListing component renders all the posts */}
+          <PostListing postEdges={this.props.nodes} postAuthors={this.props.authorsEdges} />
+        </div>
 
         <Link to="/guides">
           <h5>Trail Guides</h5>

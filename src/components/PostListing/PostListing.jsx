@@ -31,7 +31,7 @@ class PostListing extends React.Component {
       <div>
         {/* This is the post loop - each post will be output using this markup */}
         {postList.map(post => {
-          console.log('post listing', post);
+          // console.log('post listing', post);
           const { title, path, excerpt, author, tags, date, cover } = post;
           const className = post.post_class ? post.post_class : 'post';
 
@@ -40,33 +40,44 @@ class PostListing extends React.Component {
               <PostHeader>
                 <Box display="flex">
                   {cover && (
-                    <Box color="darkGray" height={100} width={100} minWidth={100} marginRight={4}>
-                      <Image
-                        alt={title}
-                        color="rgb(111, 91, 77)"
-                        naturalHeight={1}
-                        naturalWidth={1}
-                        fit="cover"
-                        src={cover}
-                      />
-                    </Box>
+                    <div className="post-image">
+                      <Box
+                        shape="rounded"
+                        color="darkGray"
+                        height={130}
+                        minHeight={130}
+                        width={130}
+                        minWidth={130}
+                        marginRight={4}
+                      >
+                        <Image
+                          alt={title}
+                          color="rgb(111, 91, 77)"
+                          naturalHeight={1}
+                          naturalWidth={1}
+                          fit="cover"
+                          src={cover}
+                        />
+                      </Box>
+                    </div>
                   )}
-                  <Box display="flex" alignItems="center">
-                    <h2 className="post-title">
+                  <Box alignItems="center">
+                    <h3 className="post-title">
                       <Link to={path}>{title}</Link>
-                    </h2>
+                    </h3>
+                    <section className="post-excerpt">
+                      <Box display="flex" marginTop={2}>
+                        <p>
+                          {excerpt}{' '}
+                          <Link className="read-more" to={path}>
+                            &raquo;
+                          </Link>
+                        </p>
+                      </Box>
+                    </section>
                   </Box>
                 </Box>
               </PostHeader>
-              <section className="post-excerpt">
-                {/* TODO limit excerpt to 26 words */}
-                <p>
-                  {excerpt}{' '}
-                  <Link className="read-more" to={path}>
-                    &raquo;
-                  </Link>
-                </p>
-              </section>
               <footer className="post-meta">
                 {/*<AuthorThumbnail avatar={author.image} name={author.name} />*/}
                 {/*/!*<AuthorLink url={`/author/${author.id}`} name={author.name} />*!/*/}

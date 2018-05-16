@@ -181,7 +181,7 @@
     color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
     text-align: center;
     font-size: 12px;
-    font-family: "Lato", sans-serif;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 35px;

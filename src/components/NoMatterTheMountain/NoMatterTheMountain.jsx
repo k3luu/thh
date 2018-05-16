@@ -1,9 +1,49 @@
 import React, { Component } from 'react';
-import { Mask, Letterbox, Avatar } from 'gestalt';
+import { Avatar, Video } from 'gestalt';
 import './NoMatterTheMountain.css';
 import ambassadors from './ambassadors/ambassadors';
 
 class NoMatterTheMountain extends Component {
+  constructor(props) {
+    super(props);
+    this.handleChangeInput = this._handleChangeInput.bind(this);
+    this.handlePause = this._handlePause.bind(this);
+    this.handlePlay = this._handlePlay.bind(this);
+    this.handleSubmitInput = this._handleSubmitInput.bind(this);
+    this.handleToggleMute = this._handleToggleMute.bind(this);
+    this.handleVolumeChange = this._handleVolumeChange.bind(this);
+    this.state = {
+      input: 'http://media.w3.org/2010/05/bunny/movie.mp4',
+      playing: false,
+      src: 'http://media.w3.org/2010/05/bunny/movie.mp4',
+      volume: 1
+    };
+  }
+
+  _handleChangeInput({ value }) {
+    this.setState({ input: value });
+  }
+
+  _handleToggleMute() {
+    this.setState({ volume: this.state.volume === 0 ? 1 : 0 });
+  }
+
+  _handleVolumeChange({ volume }) {
+    this.setState({ volume });
+  }
+
+  _handleSubmitInput() {
+    this.setState({ src: this.state.input });
+  }
+
+  _handlePlay() {
+    this.setState({ playing: true });
+  }
+
+  _handlePause() {
+    this.setState({ playing: false });
+  }
+
   handleAmbassadorTitle(list) {
     let titles = '';
 
@@ -40,22 +80,16 @@ class NoMatterTheMountain extends Component {
 
   // Edit About component or pages/about.jsx to include your information.
   render() {
+    const { input, playing, src, volume } = this.state;
     return (
-      <div className="about">
+      <div className="main-content">
         <h1>No Matter The Mountain</h1>
         <p>
           Life throws so many obstacles at us every day, creating a harsh ascent, similar to climbing a mountain. How we
           overcome these "mountains" is what makes us who we are.
         </p>
         <h2>How Do You Conquer Your Mountain?</h2>
-        <iframe
-          title="thh-campaign"
-          width="650"
-          height="450"
-          src="https://www.youtube.com/embed/05ifiSTb6Fc"
-          frameBorder="0"
-          allowFullScreen
-        />
+        <iframe title="thh-campaign" src="https://www.youtube.com/embed/05ifiSTb6Fc" frameBorder="0" allowFullScreen />
         <p>
           Share your story with us on Instagram! Nominate your friends, and tag{' '}
           <a href="https://www.instagram.com/twohalfhitches" target="_blank">

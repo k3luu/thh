@@ -171,7 +171,7 @@ th { padding: 0; }
 /* Apply these base styles to all icons */
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-    font-family: "casper-icons", "Lato", sans-serif;
+    font-family: "casper-icons", Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -270,25 +270,28 @@ h6 {
     color: #2e2e2e;
     line-height: 1.15em;
     margin: 0 0 0.4em;
-    font-family: "Lato", sans-serif;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-rendering: geometricPrecision;
-    text-transform: uppercase;
+    color: rgb(72, 72, 72);
 }
 
 h1 {
     font-size: 5rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-indent: -3px;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 3.6rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 3rem;
     letter-spacing: 0.6px;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -655,7 +658,7 @@ button {
 
 /* Pinterest - Gestalt */
 ._s8 {
-    font-family: "Lato", sans-serif !important;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 ._s9 {
