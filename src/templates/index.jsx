@@ -84,7 +84,7 @@ class IndexTemplate extends React.Component {
             {/*/!* PostListing component renders all the posts *!/*/}
             {/*<PostListing postEdges={nodes} postAuthors={authorsEdges} />*/}
             {/*</PaginatedContent>*/}
-            <Home nodes={nodes} authorsEdges={authorsEdges} />
+            <Home config={config} nodes={nodes} authorsEdges={authorsEdges} />
           </div>
 
           {/* The tiny footer at the very bottom */}

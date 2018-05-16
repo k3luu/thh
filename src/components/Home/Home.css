@@ -12,3 +12,11 @@
     width: 100%;
     height: 500px;
 }
+
+.home-banner {
+    margin-bottom: 20px;
+}
+
+.home-banner > div > div {
+    border-radius: 3px;
+}

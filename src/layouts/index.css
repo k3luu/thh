@@ -267,12 +267,11 @@ h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #2e2e2e;
     line-height: 1.15em;
     margin: 0 0 0.4em;
-    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Varela Round', sans-serif;
     text-rendering: geometricPrecision;
-    color: rgb(72, 72, 72);
+    /*text-transform: uppercase;*/
 }
 
 h1 {
@@ -307,12 +306,13 @@ h6 {
 }
 
 a {
-    color: #4a4a4a;
-    transition: color 0.3s ease;
+    color: #032b2f;
+    transition: 0.3s ease;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #111;
+    opacity: 0.8;
 }
 
 p,

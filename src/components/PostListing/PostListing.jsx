@@ -52,7 +52,7 @@ class PostListing extends React.Component {
                       >
                         <Image
                           alt={title}
-                          color="rgb(111, 91, 77)"
+                          color="rgb(231, 186, 176)"
                           naturalHeight={1}
                           naturalWidth={1}
                           fit="cover"
