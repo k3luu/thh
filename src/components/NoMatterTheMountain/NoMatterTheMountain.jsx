@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Avatar } from 'gestalt';
+import { Box, Avatar } from 'gestalt';
 import './NoMatterTheMountain.css';
 import ambassadors from './ambassadors/ambassadors';
 
@@ -58,22 +58,25 @@ class NoMatterTheMountain extends Component {
   handleAmbassadorsDisplay() {
     return ambassadors.map(p => (
       <div key={p.id} className="ambassador-container">
-        {/*<div className="ambassador-image">*/}
-        {/*<img src={p.photo_src} alt={p.name} />*/}
-        {/*</div>*/}
+        <Box marginBottom={5}>
+          <Box display="flex" marginBottom={4}>
+            <Box column={2}>
+              <Avatar src={p.photo_src} name={p.name} />
+            </Box>
+            <Box display="flex" justifyContent="start" alignItems="center" marginLeft={4}>
+              <div>
+                <h3>{p.name}</h3>
+                <h5>{this.handleAmbassadorTitle(p.title)}</h5>
+                <a className="ambassador-social" href={`https://www.instagram.com/${p.instagram}`} target="_blank">
+                  <i className="fa fa-instagram" /> {p.instagram}
+                </a>
+              </div>
+            </Box>
+          </Box>
 
-        <div>
-          <Avatar src={p.photo_src} name={p.name} size="lg" />
-          <h2>{p.name}</h2>
-          <h5>{this.handleAmbassadorTitle(p.title)}</h5>
           <p>{p.bio}</p>
-          <p>
-            <i className="fa fa-instagram" />{' '}
-            <a href={`https://www.instagram.com/${p.instagram}`} target="_blank">
-              {p.instagram}
-            </a>
-          </p>
-        </div>
+          <p />
+        </Box>
       </div>
     ));
   }

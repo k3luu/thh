@@ -1,9 +1,9 @@
 /** empty css file for component consistency **/
 .about {
     margin: 4rem auto;
-    max-width: 710px;
+    max-width: 900px;
 }
 
 .about-img {
-    width: 700px
+    width: 900px;
 }

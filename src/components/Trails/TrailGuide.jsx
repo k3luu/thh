@@ -5,7 +5,7 @@ class TrailGuide extends Component {
   render() {
     // console.log('trail guide', this.props);
     return (
-      <div className="about">
+      <div className="main-content">
         <h1>Trail Guides</h1>
         <p>
           Follow us on our most recent expeditions! The blog is our way of sharing our personal experiences to show

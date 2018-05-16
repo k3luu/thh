@@ -6,7 +6,7 @@ class TrailFinder extends Component {
   // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
-      <div className="about">
+      <div className="main-content">
         <h1>Trail Finder</h1>
         <p>
           Find a trail that best suits you based on your personal interest and level of experience! The map has over 100

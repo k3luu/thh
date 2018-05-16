@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/About/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/html.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +24,8 @@
           <file leaf-file-name="Home.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/Home/Home.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="378">
-                  <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+                <state relative-caret-position="36">
+                  <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -33,13 +33,25 @@
           <file leaf-file-name="About.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
-                  <caret line="2" selection-start-line="2" selection-end-line="3" />
+                <state relative-caret-position="198">
+                  <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="html.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="About.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="html.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/html.jsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="666">
@@ -78,38 +90,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Navigation.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="882">
-                  <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#72#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MainNav.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/layouts/MainNav/MainNav.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/index.jsx">
               <provider selected="true" editor-type-id="text-editor">
@@ -122,33 +102,33 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NoMatterTheMountain.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="522">
+                  <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="NoMatterTheMountain.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="NoMatterTheMountain.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="824">
-                  <caret line="293" column="1" lean-forward="true" selection-start-line="293" selection-start-column="1" selection-end-line="293" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1988">
-                  <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+                <state relative-caret-position="252">
+                  <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -156,13 +136,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PostListing.jsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="371">
-                  <caret line="57" selection-start-line="57" selection-end-line="58" />
+                <state relative-caret-position="428">
+                  <caret line="271" selection-start-line="271" selection-end-line="272" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
                   <folding>
-                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#0#41#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -246,7 +235,6 @@
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors.js" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/ambassadors.js" />
-        <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" />
         <option value="$PROJECT_DIR$/src/pages/no-matter-the-mountain.js" />
         <option value="$PROJECT_DIR$/src/pages/trail-finder.js" />
         <option value="$PROJECT_DIR$/src/pages/hiking.js" />
@@ -256,7 +244,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/pages/trail-guides.js" />
         <option value="$PROJECT_DIR$/src/pages/guides.js" />
-        <option value="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" />
         <option value="$PROJECT_DIR$/src/components/Terms.js" />
         <option value="$PROJECT_DIR$/src/components/Terms/Terms.js" />
         <option value="$PROJECT_DIR$/src/pages/terms-and-conditions.js" />
@@ -274,26 +261,28 @@
         <option value="$PROJECT_DIR$/src/components/Navigation/GetNavList.jsx" />
         <option value="$PROJECT_DIR$/src/components/Contact/Contact.jsx" />
         <option value="$PROJECT_DIR$/src/pages/contact.js" />
-        <option value="$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/MenuButton/MenuButton.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/PostHeader/PostHeader.css" />
         <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
         <option value="$PROJECT_DIR$/content/sample-posts/2018-01-03-Big_Sample_Post/index.md" />
-        <option value="$PROJECT_DIR$/src/components/About/About.css" />
-        <option value="$PROJECT_DIR$/src/layouts/main.css" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.css" />
         <option value="$PROJECT_DIR$/src/layouts/MainNav/MainNav.css" />
         <option value="$PROJECT_DIR$/src/components/GhostSubscribe/GhostSubscribe.css" />
         <option value="$PROJECT_DIR$/src/components/MenuButton/MenuButton.css" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
-        <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.css" />
         <option value="$PROJECT_DIR$/src/templates/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/index.css" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.css" />
+        <option value="$PROJECT_DIR$/src/components/About/About.css" />
+        <option value="$PROJECT_DIR$/src/layouts/main.css" />
+        <option value="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx" />
+        <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" />
+        <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" />
       </list>
     </option>
   </component>
@@ -412,6 +401,144 @@
               <item name="thh" type="b2602c69:ProjectViewProjectNode" />
               <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="About" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BlogLogo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Contact" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Events" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Footer" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Hiking" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Home" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MenuButton" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Navigation" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="NoMatterTheMountain" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Pagination" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PaginationLink" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PostListing" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SEO" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Trails" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MainNav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PaginatedContent" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="PostHeader" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -494,12 +621,12 @@
       <workItem from="1525886371561" duration="28806000" />
       <workItem from="1526317439222" duration="3873000" />
       <workItem from="1526330155454" duration="320000" />
-      <workItem from="1526330501786" duration="38993000" />
+      <workItem from="1526330501786" duration="40229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92439000" />
+    <option name="totallyTimeSpent" value="93675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4480" y="0" width="1920" height="1080" extended-state="0" />
@@ -563,23 +690,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/hiking.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="41" column="3" lean-forward="true" selection-end-line="72" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/PostFooter/PostFooter.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Hiking/Hiking.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -793,30 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Navigation/Navigation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15" />
@@ -848,13 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -902,41 +981,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="57" selection-start-line="57" selection-end-line="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -950,12 +998,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+    <entry file="file://$PROJECT_DIR$/src/html.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1988">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+        <state relative-caret-position="666">
+          <caret line="37" column="88" selection-start-line="37" selection-start-column="88" selection-end-line="37" selection-end-column="88" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#111#137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -967,20 +1015,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="88" selection-start-line="37" selection-start-column="88" selection-end-line="37" selection-end-column="88" />
+        <state relative-caret-position="414">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
-            <element signature="e#111#137#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="57" selection-start-line="57" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="293" column="1" lean-forward="true" selection-start-line="293" selection-start-column="1" selection-end-line="293" selection-end-column="1" />
+        <state relative-caret-position="428">
+          <caret line="271" selection-start-line="271" selection-end-line="272" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="69" column="40" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
