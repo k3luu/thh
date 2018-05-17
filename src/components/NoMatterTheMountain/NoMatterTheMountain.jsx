@@ -58,7 +58,7 @@ class NoMatterTheMountain extends Component {
   handleAmbassadorsDisplay() {
     return ambassadors.map(p => (
       <div key={p.id} className="ambassador-container">
-        <Box marginBottom={5}>
+        <Box marginBottom={8}>
           <Box display="flex" marginBottom={4}>
             <div className="post-image">
               <Box
@@ -92,8 +92,7 @@ class NoMatterTheMountain extends Component {
             </Box>
           </Box>
 
-          <p>{p.bio}</p>
-          <p />
+          <p className="ambassador-bio">"{p.bio}"</p>
         </Box>
       </div>
     ));

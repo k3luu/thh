@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Box, TextField, TextArea, Button } from 'gestalt';
+import config from '../../../data/SiteConfig';
+import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 import './Contact.css';
 
 class Events extends Component {
   // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
-      <div className="main-content">
+      <div className="main-content contact">
         <form className="contact-form">
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
@@ -23,6 +25,13 @@ class Events extends Component {
             <Button text="Send" />
           </Box>
         </form>
+
+        <Box display="flex" alignItems="center" marginTop={12}>
+          <Box marginRight={10}>
+            <h5>Connect With Us!</h5>
+          </Box>
+          <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
+        </Box>
       </div>
     );
   }

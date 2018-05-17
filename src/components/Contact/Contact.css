@@ -1,5 +1,5 @@
 .contact-form {
-    width: 100%
+    width: 100%;
 }
 
 .contact-fields {
@@ -20,4 +20,8 @@
     width: 100%;
     margin-top: 20px;
     box-sizing: border-box;
+}
+
+.contact h5 {
+    margin: 0
 }

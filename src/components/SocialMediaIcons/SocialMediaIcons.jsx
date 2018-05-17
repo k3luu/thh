@@ -18,16 +18,16 @@ class SocialMediaIcons extends React.Component {
           {/*/>*/}
           {/*))}*/}
           <a href={urls[0]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-youtube" />
+            <i className="fa fa-youtube-play" id="social-youtube" />
           </a>
           <a href={urls[1]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-facebook" />
+            <i className="fa fa-facebook-square" id="social-facebook" />
           </a>
           <a href={urls[2]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-instagram" />
+            <i className="fa fa-instagram" id="social-instagram" />
           </a>
           <a href={urls[3]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-twitter" />
+            <i className="fa fa-twitter" id="social-twitter" />
           </a>
         </div>
       );

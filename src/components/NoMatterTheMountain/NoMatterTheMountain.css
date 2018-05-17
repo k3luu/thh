@@ -29,3 +29,9 @@
 .ambassador-social {
     font-family: 'Varela Round', sans-serif;
 }
+
+.ambassador-bio {
+    font-style: italic;
+    border-left: 3px solid #979797;
+    padding-left: 20px;
+}
