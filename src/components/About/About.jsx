@@ -8,7 +8,7 @@ class About extends Component {
   // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
-      <div className="about">
+      <div className="main-content">
         <h1>Our Objective</h1>
         <p>
           Two Half-Hitches is designed to help guide you through the outdoors and share information on various hiking

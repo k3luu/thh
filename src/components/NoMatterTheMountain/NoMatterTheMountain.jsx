@@ -68,7 +68,7 @@ class NoMatterTheMountain extends Component {
                 minHeight={130}
                 width={130}
                 minWidth={130}
-                marginRight={4}
+                marginRight={2}
               >
                 {/*<Avatar src={p.photo_src} name={p.name} />*/}
                 <Image

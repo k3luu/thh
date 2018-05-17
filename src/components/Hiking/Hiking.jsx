@@ -4,7 +4,7 @@ class Hiking extends Component {
   // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
-      <div className="about">
+      <div className="main-content">
         <h1>Hiking Fundamentals</h1>
         <p>
           Are you new to hiking, or need to brush up on your outdoor skills? Fundamentals gives you a breakdown of all
