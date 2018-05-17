@@ -9,7 +9,7 @@
 }
 
 .page-title img {
-    width: 100%
+    max-height: 50%;
 }
 
 .no-cover .page-title {
@@ -32,6 +32,10 @@
     .page-title {
         font-size: 4rem;
         letter-spacing: -1px;
+    }
+
+    .page-title img {
+        width: 100%;
     }
 }
 

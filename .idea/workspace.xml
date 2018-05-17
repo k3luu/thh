@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Events/Events.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Events/Events.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hiking/Hiking.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hiking/Hiking.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,7 +92,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="18">
-                  <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+                  <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -109,11 +101,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PageTitle.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PageTitle.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/PageTitle/PageTitle.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+                <state relative-caret-position="666">
+                  <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -166,11 +158,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="About.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="About.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+                <state relative-caret-position="198">
+                  <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -280,7 +272,6 @@
         <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.css" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/ambassadors.js" />
-        <option value="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" />
         <option value="$PROJECT_DIR$/src/components/PageDescription/PageDescription.css" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
         <option value="$PROJECT_DIR$/src/layouts/index.css" />
@@ -293,6 +284,7 @@
         <option value="$PROJECT_DIR$/src/components/Hiking/Hiking.jsx" />
         <option value="$PROJECT_DIR$/src/components/About/About.jsx" />
         <option value="$PROJECT_DIR$/src/components/About/About.css" />
+        <option value="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" />
       </list>
     </option>
   </component>
@@ -646,12 +638,12 @@
       <workItem from="1525886371561" duration="28806000" />
       <workItem from="1526317439222" duration="3873000" />
       <workItem from="1526330155454" duration="320000" />
-      <workItem from="1526330501786" duration="44960000" />
+      <workItem from="1526330501786" duration="45309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98406000" />
+    <option name="totallyTimeSpent" value="98755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4480" y="0" width="1920" height="1080" extended-state="0" />
@@ -992,13 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PageTitle/PageTitle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
@@ -1077,7 +1062,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="908">
+        <state relative-caret-position="1465">
           <caret line="123" column="27" lean-forward="true" selection-start-line="123" selection-start-column="27" selection-end-line="123" selection-end-column="27" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1087,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="6" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1128,8 +1113,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/About/About.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="198">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1139,7 +1124,14 @@
     <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PageTitle/PageTitle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
