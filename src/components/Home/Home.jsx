@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import { Box, Image } from 'gestalt';
+import { Box, Image, TextField, Button } from 'gestalt';
 import PostListing from '../PostListing/PostListing';
 import './Home.css';
 
@@ -29,7 +29,7 @@ class Home extends Component {
           <Link to="/no-matter-the-mountain">
             <h4>Campaign</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={250}>
+              <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="No Matter the Mountain"
                   color="rgb(231, 186, 176)"
@@ -59,7 +59,7 @@ class Home extends Component {
           <Link to="/guides">
             <h4>Trail Guides</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={250}>
+              <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Trail Guides"
                   color="rgb(231, 186, 176)"
@@ -80,7 +80,7 @@ class Home extends Component {
           <Link to="/trail-finder">
             <h4>Trail Finder</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={250}>
+              <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Trail Finder"
                   color="rgb(231, 186, 176)"
@@ -101,7 +101,7 @@ class Home extends Component {
           <Link to="/hiking">
             <h4>Fundamentals</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={250}>
+              <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Fundamentals"
                   color="rgb(231, 186, 176)"
@@ -123,7 +123,7 @@ class Home extends Component {
           <Link to="/events">
             <h4>Events</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={250}>
+              <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Events"
                   color="rgb(231, 186, 176)"
@@ -139,6 +139,16 @@ class Home extends Component {
             Be a part of Two Half-Hitches and join us as we hit the trails! Check out our monthly calendar of events for
             more details.
           </p>
+
+          <div className="home-subscription">
+            <h6>Sign up with your email address to receive news and updates.</h6>
+            <Box display="flex" justifyContent="center" marginTop={4}>
+              <Box marginRight={2}>
+                <TextField type="email" name="email" id="email" placeholder="Email" />
+              </Box>
+              <Button text="Subscribe" inline />
+            </Box>
+          </div>
         </div>
       </div>
     );

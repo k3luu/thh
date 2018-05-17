@@ -1,6 +1,7 @@
 .main-content {
     margin: 4rem auto;
     max-width: 900px;
+    height: 100%;
 }
 
 .main-content iframe {

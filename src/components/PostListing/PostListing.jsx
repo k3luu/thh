@@ -40,7 +40,7 @@ class PostListing extends React.Component {
               <PostHeader>
                 <Box display="flex">
                   {cover && (
-                    <div className="post-image">
+                    <Link to={path} className="post-image">
                       <Box
                         shape="rounded"
                         color="darkGray"
@@ -59,7 +59,7 @@ class PostListing extends React.Component {
                           src={cover}
                         />
                       </Box>
-                    </div>
+                    </Link>
                   )}
                   <Box alignItems="center">
                     <h3 className="post-title">

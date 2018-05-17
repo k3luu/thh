@@ -77,8 +77,16 @@ function GetNavList(config) {
     primaryText: 'About',
     // LeftIcon: <FontIcon>person</FontIcon>,
     component: Link,
-    to: '/about/'
+    to: '/about'
   });
+
+  NavList.push({
+    primaryText: 'Contact',
+    // LeftIcon: <FontIcon>person</FontIcon>,
+    component: Link,
+    to: '/contact'
+  });
+
   return NavList;
 }
 export default GetNavList;
