@@ -157,7 +157,8 @@
 
 .nav a:link,
 .nav a:visited {
-    color: #b8b8b8;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .nav li.nav-current a,
@@ -165,35 +166,34 @@
 .nav a:active,
 .nav a:focus {
     color: #fff;
-    text-shadow: 0 0 2px #fff;
 }
 
-.subscribe-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    height: 38px;
-    padding: 0 20px;
-    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
-    text-align: center;
-    font-size: 12px;
-    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 35px;
+.nav li.nav-opened:hover {
+    /*opacity: 0.8;*/
+    background: #6b6b6b;
     border-radius: 3px;
-    background: #fff;
-    transition: all ease 0.3s;
+    transition: background 0.3s;
 }
 
-.subscribe-button::before {
-    font-size: 9px;
-    margin-right: 6px;
+.subheader {
+    color: #b8b8b8;
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 14px;
+    display: block;
+    padding: 0.6rem 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+}
+
+.subnav {
+    padding-left: 30px !important;
+}
+
+.subnav a {
+    text-transform: none !important;
 }
 
 /* ==========================================================================

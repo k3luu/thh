@@ -8,7 +8,20 @@ const Divider = () => null;
 
 const Subheader = props => {
   const { primaryText } = props;
-  return <h3>{primaryText}</h3>;
+  return (
+    <li className="subheader" role="presentation">
+      {primaryText}
+    </li>
+  );
+};
+
+const SubNav = props => {
+  const { primaryText, component, ...remainingProps } = props;
+  return (
+    <li className="nav-opened subnav" role="presentation">
+      {createElement(component, remainingProps, primaryText)}
+    </li>
+  );
 };
 
 const ListItem = props => {
@@ -27,12 +40,14 @@ const mapToListParts = (item, index) => {
     return item;
   }
 
-  const { divider, subheader, nestedItems, ...remainingProps } = item;
+  const { divider, subHeader, subNav, nestedItems, ...remainingProps } = item;
   let component;
   if (divider) {
     component = Divider;
-  } else if (subheader) {
+  } else if (subHeader) {
     component = Subheader;
+  } else if (subNav) {
+    component = SubNav;
   } else {
     component = ListItem;
   }

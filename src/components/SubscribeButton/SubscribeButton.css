@@ -1,1 +1,28 @@
 /** empty css file for component consistency **/
+.subscribe-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    /*position: absolute;*/
+    /*bottom: 30px;*/
+    /*left: 30px;*/
+    /*right: 30px;*/
+    height: 38px;
+    padding: 0 20px;
+    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
+    text-align: center;
+    font-size: 12px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 38px;
+    border-radius: 3px;
+    background: #efefef;
+    transition: all ease 0.3s;
+}
+
+.subscribe-button::before {
+    font-size: 9px;
+    margin-right: 6px;
+}

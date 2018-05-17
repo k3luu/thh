@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import { Box, Image, TextField, Button } from 'gestalt';
+import { Box, Image, TextField } from 'gestalt';
 import PostListing from '../PostListing/PostListing';
+import SubscribeButton from '../SubscribeButton/SubscribeButton';
 import './Home.css';
 
 class Home extends Component {
@@ -146,7 +147,9 @@ class Home extends Component {
               <Box marginRight={2}>
                 <TextField type="email" name="email" id="email" placeholder="Email" />
               </Box>
-              <Button text="Subscribe" inline />
+              <Box>
+                <SubscribeButton url={config.siteRss} />
+              </Box>
             </Box>
           </div>
         </div>
