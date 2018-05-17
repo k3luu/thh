@@ -10,10 +10,13 @@
 
 .ambassador-title {
     margin: 0;
+    font-size: 16px;
 }
 
 .ambassador-social {
-    font-family: 'Varela Round', sans-serif;
+    /*font-family: 'Varela Round', sans-serif;*/
+    font-size: 16px;
+    margin: 0;
 }
 
 .ambassador-bio {
