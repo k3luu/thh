@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MenuButton/MenuButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MenuButton/MenuButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/FA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/FK.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/LC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/SN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/TH.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageDescription/PageDescription.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageDescription/PageDescription.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,14 +116,32 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="NoMatterTheMountain.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="NoMatterTheMountain.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="736">
-                  <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+                <state relative-caret-position="250">
+                  <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PageTitle.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/PageTitle/PageTitle.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="684">
+                  <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PageDescription.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/PageDescription/PageDescription.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="476">
+                  <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -214,8 +223,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>placeholder</find>
-      <find>post-footer</find>
       <find>postshare</find>
       <find>createPages</find>
       <find>onCreateNode</find>
@@ -244,6 +251,8 @@
       <find>.post {</find>
       <find>.menu-button</find>
       <find>height={200}</find>
+      <find>.page-title</find>
+      <find>.page-descr</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -264,7 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/hiking.js" />
         <option value="$PROJECT_DIR$/src/pages/events.js" />
         <option value="$PROJECT_DIR$/src/components/About/About.jsx" />
         <option value="$PROJECT_DIR$/src/components/Trails/Trails.css" />
@@ -307,7 +315,6 @@
         <option value="$PROJECT_DIR$/src/components/Trails/TrailGuide.jsx" />
         <option value="$PROJECT_DIR$/src/components/Trails/TrailFinder.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" />
-        <option value="$PROJECT_DIR$/src/components/PageDescription/PageDescription.css" />
         <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
         <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" />
         <option value="$PROJECT_DIR$/src/components/Navigation/Navigation.jsx" />
@@ -315,6 +322,8 @@
         <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/ambassadors/ambassadors.js" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx" />
+        <option value="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" />
+        <option value="$PROJECT_DIR$/src/components/PageDescription/PageDescription.css" />
       </list>
     </option>
   </component>
@@ -668,12 +677,12 @@
       <workItem from="1525886371561" duration="28806000" />
       <workItem from="1526317439222" duration="3873000" />
       <workItem from="1526330155454" duration="320000" />
-      <workItem from="1526330501786" duration="42945000" />
+      <workItem from="1526330501786" duration="43354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96391000" />
+    <option name="totallyTimeSpent" value="96800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4480" y="0" width="1920" height="1080" extended-state="0" />
@@ -737,16 +746,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/author.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="117" column="13" lean-forward="true" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/sample-posts/2017-03-17/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1050,13 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PageDescription/PageDescription.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1159,11 +1151,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        <state relative-caret-position="250">
+          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PageTitle/PageTitle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PageDescription/PageDescription.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
         </state>
       </provider>
     </entry>

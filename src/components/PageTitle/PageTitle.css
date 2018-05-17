@@ -8,6 +8,10 @@
     color: #fff;
 }
 
+.page-title img {
+    width: 100%
+}
+
 .no-cover .page-title {
     color: rgba(0, 0, 0, 0.8);
 }
