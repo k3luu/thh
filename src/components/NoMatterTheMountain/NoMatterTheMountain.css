@@ -19,6 +19,10 @@
     margin: 0;
 }
 
+.ambassador-image > div > div {
+    border-radius: 50%;
+}
+
 .ambassador-bio {
     display: flex;
     font-style: italic;

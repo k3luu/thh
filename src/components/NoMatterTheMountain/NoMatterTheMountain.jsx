@@ -69,7 +69,7 @@ class NoMatterTheMountain extends Component {
               <i className="fa fa-instagram" /> {p.instagram}
             </a>
           </Box>
-          <div className="post-image">
+          <div className="ambassador-image">
             <Box shape="circle" color="darkGray" height={90} minHeight={90} width={90} minWidth={90} marginRight={2}>
               <Image
                 alt={p.name}
