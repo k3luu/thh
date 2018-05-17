@@ -58,41 +58,29 @@ class NoMatterTheMountain extends Component {
   handleAmbassadorsDisplay() {
     return ambassadors.map(p => (
       <div key={p.id} className="ambassador-container">
-        <Box marginBottom={8}>
-          <Box display="flex" marginBottom={4}>
-            <div className="post-image">
-              <Box
-                shape="rounded"
-                color="darkGray"
-                height={130}
-                minHeight={130}
-                width={130}
-                minWidth={130}
-                marginRight={2}
-              >
-                {/*<Avatar src={p.photo_src} name={p.name} />*/}
-                <Image
-                  alt={p.name}
-                  color="rgb(231, 186, 176)"
-                  naturalHeight={1}
-                  naturalWidth={1}
-                  fit="cover"
-                  src={p.photo_src}
-                />
-              </Box>
-            </div>
-            <Box display="flex" justifyContent="start" alignItems="center" marginLeft={4}>
-              <div>
-                <h3>{p.name}</h3>
-                <h5>{this.handleAmbassadorTitle(p.title)}</h5>
-                <a className="ambassador-social" href={`https://www.instagram.com/${p.instagram}`} target="_blank">
-                  <i className="fa fa-instagram" /> {p.instagram}
-                </a>
-              </div>
-            </Box>
-          </Box>
+        <p className="ambassador-bio">{p.bio}</p>
 
-          <p className="ambassador-bio">"{p.bio}"</p>
+        {/* Ambassador info: [name, title, IG] & [image]*/}
+        <Box display="flex" justifyContent="end" alignItems="end" marginTop={4} marginLeft={4}>
+          <Box display="flex" direction="column" justifyContent="end" alignItems="end" marginRight={4}>
+            <h6 className="ambassador-name">{p.name}</h6>
+            <p className="ambassador-title">{this.handleAmbassadorTitle(p.title)}</p>
+            <a className="ambassador-social" href={`https://www.instagram.com/${p.instagram}`} target="_blank">
+              <i className="fa fa-instagram" /> {p.instagram}
+            </a>
+          </Box>
+          <div className="post-image">
+            <Box shape="circle" color="darkGray" height={90} minHeight={90} width={90} minWidth={90} marginRight={2}>
+              <Image
+                alt={p.name}
+                color="rgb(231, 186, 176)"
+                naturalHeight={1}
+                naturalWidth={1}
+                fit="cover"
+                src={p.photo_src}
+              />
+            </Box>
+          </div>
         </Box>
       </div>
     ));

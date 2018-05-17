@@ -250,6 +250,12 @@ body {
     text-rendering: geometricPrecision;
 }
 
+div#___gatsby,
+div#___gatsby > div,
+div#___gatsby > div > div {
+    height: 100%;
+}
+
 ::-moz-selection {
     background: #d6edff;
 }
