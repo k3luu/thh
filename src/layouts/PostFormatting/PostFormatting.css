@@ -5,7 +5,7 @@
     max-width: 900px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #ebf2f6 1px solid;
+    border-bottom: #d8d8d8 1px solid;
     word-wrap: break-word;
 }
 
@@ -16,7 +16,7 @@
     content: "";
     width: 7px;
     height: 7px;
-    border: #e7eef2 1px solid;
+    border: #d8d8d8 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;

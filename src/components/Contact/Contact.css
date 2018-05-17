@@ -23,5 +23,9 @@
 }
 
 .contact h5 {
-    margin: 0
+    margin: 0;
+}
+
+.contact-button {
+    width: 100%;
 }

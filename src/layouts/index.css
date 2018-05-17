@@ -577,25 +577,28 @@ select {
 }
 
 button {
-    /*min-height: 35px;*/
-    /*width: auto;*/
-    /*display: inline-block;*/
-    /*padding: 0.1rem 1.5rem;*/
-    /*cursor: pointer;*/
-    /*outline: none;*/
-    /*text-decoration: none;*/
-    /*color: #fff;*/
-    /*font-family: 'Lato', sans-serif;*/
-    /*font-size: 11px; !* Hacks targeting Firefox. *!*/
-    /*line-height: 13px; !* Hacks targeting Firefox. *!*/
-    /*font-weight: 300;*/
-    /*text-align: center;*/
-    /*letter-spacing: 1px;*/
-    /*text-transform: uppercase;*/
-    /*text-shadow: none;*/
-    /*border-radius: 0.3rem;*/
+    min-height: 35px;
+    width: auto;
+    display: inline-block;
+    padding: 0.1rem 1.5rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px; /* Hacks targeting Firefox. */
+    line-height: 13px; /* Hacks targeting Firefox. */
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: none;
+    border-radius: 0.3rem;
     /*border: rgba(0, 0, 0, 0.05) 0.1em solid;*/
+    border: none;
     /*background: #5ba4e5;*/
+    background: #4c586f;
+    transition: all ease 0.3s;
 }
 
 /* ==========================================================================

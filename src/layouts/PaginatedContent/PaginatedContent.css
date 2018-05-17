@@ -1,6 +1,6 @@
 .extra-pagination {
     display: none;
-    border-bottom: #ebf2f6 1px solid;
+    border-bottom: #d8d8d8 1px solid;
 }
 
 .extra-pagination::after {
@@ -8,7 +8,7 @@
     content: "";
     width: 7px;
     height: 7px;
-    border: #e7eef2 1px solid;
+    border: #d8d8d8 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;

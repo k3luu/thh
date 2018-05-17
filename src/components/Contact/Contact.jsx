@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, TextField, TextArea, Button } from 'gestalt';
+import { Box, TextField, TextArea } from 'gestalt';
 import config from '../../../data/SiteConfig';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 import './Contact.css';
@@ -21,8 +21,10 @@ class Events extends Component {
           <Box marginTop={3}>
             <TextArea name="message" id="message" className="contact-message" placeholder="Message" rows="4" />
           </Box>
-          <Box marginTop={1}>
-            <Button text="Send" />
+          <Box display="flex" marginTop={1}>
+            <button type="submit" className="contact-button">
+              Send
+            </button>
           </Box>
         </form>
 
