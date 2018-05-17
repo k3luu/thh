@@ -7,6 +7,22 @@
     right: 0;
 }
 
+.social-media-icons i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 12px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.social-media-icons i:hover {
+    background: #6b6b6b;
+    transition: background 0.3s;
+}
+
 .social-media-icons .social-svg {
     text-align: center;
 }
