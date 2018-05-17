@@ -12,15 +12,15 @@ class Home extends Component {
     return (
       <div id="home">
         <div className="main-content">
-          <h1 className="home-title">Here to guide you through the outdoors</h1>
+          <h2 className="home-title">Here to guide you through the outdoors</h2>
         </div>
         <div className="home-content">
-          <iframe
-            title="thh-campaign"
-            src="https://www.youtube.com/embed/05ifiSTb6Fc"
-            frameBorder="0"
-            allowFullScreen
-          />
+          {/*<iframe*/}
+          {/*title="thh-campaign"*/}
+          {/*src="https://www.youtube.com/embed/05ifiSTb6Fc"*/}
+          {/*frameBorder="0"*/}
+          {/*allowFullScreen*/}
+          {/*/>*/}
 
           <h4>Featured Content</h4>
           {/* PostListing component renders all the posts */}
@@ -29,7 +29,7 @@ class Home extends Component {
           <Link to="/no-matter-the-mountain">
             <h4>Campaign</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={200}>
+              <Box shape="rounded" color="darkGray" height={250}>
                 <Image
                   alt="No Matter the Mountain"
                   color="rgb(231, 186, 176)"
@@ -59,7 +59,7 @@ class Home extends Component {
           <Link to="/guides">
             <h4>Trail Guides</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={200}>
+              <Box shape="rounded" color="darkGray" height={250}>
                 <Image
                   alt="Trail Guides"
                   color="rgb(231, 186, 176)"
@@ -80,7 +80,7 @@ class Home extends Component {
           <Link to="/trail-finder">
             <h4>Trail Finder</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={200}>
+              <Box shape="rounded" color="darkGray" height={250}>
                 <Image
                   alt="Trail Finder"
                   color="rgb(231, 186, 176)"
@@ -101,7 +101,7 @@ class Home extends Component {
           <Link to="/hiking">
             <h4>Fundamentals</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={200}>
+              <Box shape="rounded" color="darkGray" height={250}>
                 <Image
                   alt="Fundamentals"
                   color="rgb(231, 186, 176)"
@@ -123,7 +123,7 @@ class Home extends Component {
           <Link to="/events">
             <h4>Events</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="darkGray" height={200}>
+              <Box shape="rounded" color="darkGray" height={250}>
                 <Image
                   alt="Events"
                   color="rgb(231, 186, 176)"

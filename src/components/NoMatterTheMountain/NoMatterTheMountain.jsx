@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Avatar } from 'gestalt';
+import { Box, Avatar, Image } from 'gestalt';
 import './NoMatterTheMountain.css';
 import ambassadors from './ambassadors/ambassadors';
 
@@ -60,9 +60,27 @@ class NoMatterTheMountain extends Component {
       <div key={p.id} className="ambassador-container">
         <Box marginBottom={5}>
           <Box display="flex" marginBottom={4}>
-            <Box column={2}>
-              <Avatar src={p.photo_src} name={p.name} />
-            </Box>
+            <div className="post-image">
+              <Box
+                shape="rounded"
+                color="darkGray"
+                height={130}
+                minHeight={130}
+                width={130}
+                minWidth={130}
+                marginRight={4}
+              >
+                {/*<Avatar src={p.photo_src} name={p.name} />*/}
+                <Image
+                  alt={p.name}
+                  color="rgb(231, 186, 176)"
+                  naturalHeight={1}
+                  naturalWidth={1}
+                  fit="cover"
+                  src={p.photo_src}
+                />
+              </Box>
+            </div>
             <Box display="flex" justifyContent="start" alignItems="center" marginLeft={4}>
               <div>
                 <h3>{p.name}</h3>
