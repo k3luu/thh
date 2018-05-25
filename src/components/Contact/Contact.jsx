@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Box, TextField, TextArea } from 'gestalt';
+import TextField from '@material-ui/core/TextField';
+import { Box } from 'gestalt';
 import config from '../../../data/SiteConfig';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 import './Contact.css';
@@ -9,7 +10,15 @@ class Events extends Component {
   render() {
     return (
       <div className="main-content contact">
-        <form className="contact-form" name="contact" method="POST" data-netlify="true" action="/">
+        <form
+          className="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
               <TextField className="contact-field" type="text" name="name" placeholder="Name" />
@@ -19,36 +28,13 @@ class Events extends Component {
             </Box>
           </Box>
           <Box marginTop={3}>
-            <TextArea name="message" className="contact-message" placeholder="Message" rows="4" />
+            <TextField id="message" name="message" label="Message" multiline rows="4" fullWidth />
           </Box>
           <Box display="flex" marginTop={1}>
             <button type="submit" className="contact-button">
               Send
             </button>
           </Box>
-        </form>
-
-        <form name="testing" method="post" data-netlify="true">
-          <input type="hidden" name="form-name" value="testing" />
-
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
         </form>
 
         <Box display="flex" alignItems="center" marginTop={12}>

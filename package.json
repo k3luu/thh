@@ -4,6 +4,7 @@
   "version": "1.0.7",
   "author": "Hays Clark <hays.clark@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^1.0.0",
     "babel-eslint": "^8.1.2",
     "babel-plugin-lodash": "^3.2.11",
     "classnames": "^2.2.5",
