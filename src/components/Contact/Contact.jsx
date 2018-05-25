@@ -29,19 +29,20 @@ class Events extends Component {
         </form>
 
         <form name="testing" method="post" data-netlify="true">
-          <p>
-            <label>
-              Your Name: <input type="text" name="form-name" value="testing" />
+          <input type="hidden" name="form-name" value="testing" />
+
+          <label>
+              Your Name: <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Your Email: <input type="email" name="form-name" value="testing" />
+              Your Email: <input type="email" name="email" />
             </label>
           </p>
           <p>
             <label>
-              Message: <textarea name="form-name" value="testing" />
+              Message: <textarea name="message"/>
             </label>
           </p>
           <p>
