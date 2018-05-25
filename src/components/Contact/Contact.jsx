@@ -12,14 +12,14 @@ class Events extends Component {
         <form className="contact-form" name="contact" method="POST" data-netlify="true" action="/">
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
-              <TextField className="contact-field" type="text" name="name" id="name" placeholder="Name" />
+              <TextField className="contact-field" type="text" name="name" placeholder="Name" />
             </Box>
             <Box column={6} marginLeft={2}>
-              <TextField className="contact-field" type="email" name="email" id="email" placeholder="Email" />
+              <TextField className="contact-field" type="email" name="email" placeholder="Email" />
             </Box>
           </Box>
           <Box marginTop={3}>
-            <TextArea name="message" id="message" className="contact-message" placeholder="Message" rows="4" />
+            <TextArea name="message" className="contact-message" placeholder="Message" rows="4" />
           </Box>
           <Box display="flex" marginTop={1}>
             <button type="submit" className="contact-button">
