@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
+import MyTextField from '../MUI/MyTextField';
 import { Box } from 'gestalt';
 import config from '../../../data/SiteConfig';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
@@ -21,16 +21,24 @@ class Events extends Component {
 
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
-              <TextField className="contact-field" type="text" name="name" placeholder="Name" />
+              <MyTextField className="contact-field" type="text" name="name" label="Name" fullWidth />
             </Box>
             <Box column={6} marginLeft={2}>
-              <TextField className="contact-field" type="email" name="email" placeholder="Email" />
+              <MyTextField className="contact-field" type="email" name="email" label="Email" fullWidth />
             </Box>
           </Box>
           <Box marginTop={3}>
-            <TextField id="message" name="message" label="Message" multiline rows="4" fullWidth />
+            <MyTextField
+              type="text"
+              name="message"
+              label="Message"
+              multiline
+              rows="4"
+              fullWidth
+              style={{ fontSize: 18 }}
+            />
           </Box>
-          <Box display="flex" marginTop={1}>
+          <Box display="flex" marginTop={10}>
             <button type="submit" className="contact-button">
               Send
             </button>
