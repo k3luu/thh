@@ -9,7 +9,7 @@ class Events extends Component {
   render() {
     return (
       <div className="main-content contact">
-        <form className="contact-form">
+        <form className="contact-form" name="contact" method="POST" data-netlify="true">
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
               <TextField className="contact-field" type="text" name="name" id="name" placeholder="Name" />
