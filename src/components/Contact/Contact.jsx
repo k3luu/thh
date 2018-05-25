@@ -28,6 +28,27 @@ class Events extends Component {
           </Box>
         </form>
 
+        <form name="testing" method="POST" data-netlify="true" action="/">
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+
         <Box display="flex" alignItems="center" marginTop={12}>
           <Box marginRight={10}>
             <h5>Connect With Us!</h5>
