@@ -31,7 +31,8 @@ class Events extends Component {
         <form name="testing" method="post" data-netlify="true">
           <input type="hidden" name="form-name" value="testing" />
 
-          <label>
+          <p>
+            <label>
               Your Name: <input type="text" name="name" />
             </label>
           </p>
@@ -42,7 +43,7 @@ class Events extends Component {
           </p>
           <p>
             <label>
-              Message: <textarea name="message"/>
+              Message: <textarea name="message" />
             </label>
           </p>
           <p>
