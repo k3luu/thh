@@ -28,7 +28,7 @@ class Events extends Component {
           </Box>
         </form>
 
-        <form name="testing" method="POST" data-netlify="true" action="/">
+        <form name="testing" method="POST" data-netlify="true">
           <p>
             <label>
               Your Name: <input type="text" name="name" />
