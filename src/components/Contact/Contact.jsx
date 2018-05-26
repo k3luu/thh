@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MyTextField from '../MUI/MyTextField';
 import { Box } from 'gestalt';
 import config from '../../../data/SiteConfig';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
@@ -21,14 +20,14 @@ class Events extends Component {
 
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
-              <MyTextField className="contact-field" type="text" name="name" label="Name" fullWidth required />
+              <input className="contact-field" type="text" name="name" placeholder="Name" />
             </Box>
             <Box column={6} marginLeft={2}>
-              <MyTextField className="contact-field" type="email" name="email" label="Email" fullWidth required />
+              <input className="contact-field" type="email" name="email" placeholder="Email" />
             </Box>
           </Box>
           <Box marginTop={3}>
-            <MyTextField type="text" name="message" label="Message" multiline rows="4" fullWidth required />
+            <textarea name="message" rows="4" placeholder="Message" />
           </Box>
           <Box display="flex" marginTop={10}>
             <button type="submit" className="contact-button">

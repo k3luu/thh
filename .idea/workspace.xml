@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Contact/Contact.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MUI/MyTextField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MUI/MyTextField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46231157">
+    <splitter split-orientation="horizontal" split-proportion="0.45812395">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="NoMatterTheMountain.jsx" pinned="false" current-in-tab="false">
@@ -41,8 +42,8 @@
           <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+                <state relative-caret-position="108">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
                 </state>
               </provider>
             </entry>
@@ -59,8 +60,8 @@
           <file leaf-file-name="Contact.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="292">
-                  <caret line="30" column="106" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
+                <state relative-caret-position="491">
+                  <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -84,20 +85,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="206">
-                  <caret line="535" column="17" selection-start-line="535" selection-start-column="17" selection-end-line="535" selection-end-column="17" />
+                <state relative-caret-position="410">
+                  <caret line="550" column="17" selection-start-line="550" selection-start-column="17" selection-end-line="550" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MyTextField.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MyTextField.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/MUI/MyTextField.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+                <state relative-caret-position="252">
+                  <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -176,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Events/Event.css" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.jsx" />
         <option value="$PROJECT_DIR$/src/templates/guides.js" />
         <option value="$PROJECT_DIR$/data/SiteConfig.js" />
@@ -222,11 +222,12 @@
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" />
         <option value="$PROJECT_DIR$/src/components/PageTitle/PageTitle.css" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
-        <option value="$PROJECT_DIR$/src/layouts/index.css" />
         <option value="$PROJECT_DIR$/src/components/Contact/Contact.css" />
         <option value="$PROJECT_DIR$/src/components/MUI/TextField.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Contact/Contact.jsx" />
         <option value="$PROJECT_DIR$/src/components/MUI/MyTextField.jsx" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/components/Contact/Contact.jsx" />
+        <option value="$PROJECT_DIR$/src/layouts/index.css" />
       </list>
     </option>
   </component>
@@ -471,12 +472,12 @@
       <workItem from="1526317439222" duration="3873000" />
       <workItem from="1526330155454" duration="320000" />
       <workItem from="1526330501786" duration="56801000" />
-      <workItem from="1527101733553" duration="8745000" />
+      <workItem from="1527101733553" duration="9529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126308000" />
+    <option name="totallyTimeSpent" value="127092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -882,13 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -903,10 +897,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MUI/MyTextField.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="30" column="106" selection-start-line="30" selection-start-column="106" selection-end-line="30" selection-end-column="106" />
+        <state relative-caret-position="491">
+          <caret line="29" column="66" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -915,18 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="535" column="17" selection-start-line="535" selection-start-column="17" selection-end-line="535" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MUI/MyTextField.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="410">
+          <caret line="550" column="17" selection-start-line="550" selection-start-column="17" selection-end-line="550" selection-end-column="17" />
         </state>
       </provider>
     </entry>
