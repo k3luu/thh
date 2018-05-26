@@ -3,11 +3,20 @@ import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
 const styles = theme => ({
-  bootstrapFormLabel: {
-    fontSize: 18
-  }
+  root: {},
+  input: {}
 });
 
-const MyTextField = props => <TextField style={{ height: '100%' }} {...props} />;
+const MyTextField = props => (
+  <TextField
+    InputLabelProps={{
+      style: { fontSize: 18 }
+    }}
+    InputProps={{
+      style: { fontSize: 18 }
+    }}
+    {...props}
+  />
+);
 
 export default withStyles(styles)(MyTextField);

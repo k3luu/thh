@@ -21,22 +21,14 @@ class Events extends Component {
 
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
-              <MyTextField className="contact-field" type="text" name="name" label="Name" fullWidth />
+              <MyTextField className="contact-field" type="text" name="name" label="Name" fullWidth required />
             </Box>
             <Box column={6} marginLeft={2}>
-              <MyTextField className="contact-field" type="email" name="email" label="Email" fullWidth />
+              <MyTextField className="contact-field" type="email" name="email" label="Email" fullWidth required />
             </Box>
           </Box>
           <Box marginTop={3}>
-            <MyTextField
-              type="text"
-              name="message"
-              label="Message"
-              multiline
-              rows="4"
-              fullWidth
-              style={{ fontSize: 18 }}
-            />
+            <MyTextField type="text" name="message" label="Message" multiline rows="4" fullWidth required />
           </Box>
           <Box display="flex" marginTop={10}>
             <button type="submit" className="contact-button">
