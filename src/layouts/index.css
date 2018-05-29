@@ -530,7 +530,7 @@ input:not([type="radio"]):not([type="checkbox"]) {
     /*width: 260px;*/
     width: 100%;
     padding: 6px 9px;
-    margin: 0 0 5px;
+    /*margin: 0 0 5px;*/
     outline: none;
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
