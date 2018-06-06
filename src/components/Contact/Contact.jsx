@@ -20,14 +20,14 @@ class Events extends Component {
 
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
-              <input className="contact-field" type="text" name="name" placeholder="Name" />
+              <input className="contact-field" type="text" name="name" placeholder="Name" required />
             </Box>
             <Box column={6} marginLeft={2}>
-              <input className="contact-field" type="email" name="email" placeholder="Email" />
+              <input className="contact-field" type="email" name="email" placeholder="Email" required />
             </Box>
           </Box>
           <Box marginTop={3}>
-            <textarea name="message" rows="4" placeholder="Message" />
+            <textarea name="message" rows="4" placeholder="Message" required />
           </Box>
           <Box display="flex" marginTop={10}>
             <button type="submit" className="contact-button">

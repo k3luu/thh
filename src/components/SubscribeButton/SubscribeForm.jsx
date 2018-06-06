@@ -18,7 +18,7 @@ class SubscribeForm extends React.Component {
 
           <Box display="flex" justifyContent="center" alignItems="center" marginTop={4}>
             <Box marginRight={2}>
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <input type="email" name="email" id="email" placeholder="Email" required />
             </Box>
             <Box>
               <button type="submit" className="subscribe-button icon-feed">
