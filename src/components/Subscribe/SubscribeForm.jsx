@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from 'gestalt';
-import './SubscribeButton.css';
+import './subscribe.css';
 
 class SubscribeForm extends React.Component {
   render() {

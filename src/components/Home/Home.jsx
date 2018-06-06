@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import { Box, Image } from 'gestalt';
 import PostListing from '../PostListing/PostListing';
-import SubscribeForm from '../SubscribeButton/SubscribeForm';
+import SubscribeForm from '../Subscribe/SubscribeForm';
 import './Home.css';
 
 class Home extends Component {
   render() {
-    // console.log('trail guide', this.props);
     const { config } = this.props;
 
     return (
@@ -16,14 +15,8 @@ class Home extends Component {
           <h2 className="home-title">Here to guide you through the outdoors</h2>
         </div>
         <div className="home-content">
-          {/*<iframe*/}
-          {/*title="thh-campaign"*/}
-          {/*src="https://www.youtube.com/embed/05ifiSTb6Fc"*/}
-          {/*frameBorder="0"*/}
-          {/*allowFullScreen*/}
-          {/*/>*/}
-
           <h4>Featured Content</h4>
+
           {/* PostListing component renders all the posts */}
           <PostListing postEdges={this.props.nodes} postAuthors={this.props.authorsEdges} />
 

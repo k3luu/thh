@@ -1,16 +1,11 @@
-/** empty css file for component consistency **/
 .subscribe-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    /*position: absolute;*/
-    /*bottom: 30px;*/
-    /*left: 30px;*/
-    /*right: 30px;*/
     height: 38px;
     padding: 0 20px;
-    color: #111 !important; /* Overides `.nav a:link, .nav a:visited` colour */
+    color: #111;
     text-align: center;
     font-size: 12px;
     font-family: "Roboto", sans-serif;
