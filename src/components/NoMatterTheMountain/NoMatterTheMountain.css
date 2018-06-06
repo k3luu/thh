@@ -3,7 +3,7 @@
 }
 
 .ambassador-name {
-    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     margin: 0;
 }
@@ -14,7 +14,6 @@
 }
 
 .ambassador-social {
-    /*font-family: 'Varela Round', sans-serif;*/
     font-size: 16px;
     margin: 0;
 }

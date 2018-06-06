@@ -1,7 +1,7 @@
 import React, { Component, createElement, isValidElement } from 'react';
 import GetNavList from './GetNavList';
 import './Navigation.css';
-import SubscribeButton from '../SubscribeButton/SubscribeButton';
+import SubscribeButton from '../SubscribeButton/SubscribeForm';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 
 const Divider = () => null;

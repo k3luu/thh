@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import { Box, Image } from 'gestalt';
 import PostListing from '../PostListing/PostListing';
-import SubscribeButton from '../SubscribeButton/SubscribeButton';
+import SubscribeForm from '../SubscribeButton/SubscribeForm';
 import './Home.css';
 
 class Home extends Component {
@@ -142,15 +142,7 @@ class Home extends Component {
           </p>
 
           <div className="home-subscription">
-            <h6>Sign up with your email address to receive news and updates.</h6>
-            <Box display="flex" justifyContent="center" alignItems="center" marginTop={4}>
-              <Box marginRight={2}>
-                <input type="email" name="email" id="email" placeholder="Email" />
-              </Box>
-              <Box>
-                <SubscribeButton url={config.siteRss} />
-              </Box>
-            </Box>
+            <SubscribeForm />
           </div>
         </div>
       </div>
