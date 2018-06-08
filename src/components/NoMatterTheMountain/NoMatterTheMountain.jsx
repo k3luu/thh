@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Avatar, Image } from 'gestalt';
+import { Box, Image } from 'gestalt';
 import './NoMatterTheMountain.css';
 import ambassadors from './ambassadors/ambassadors';
 

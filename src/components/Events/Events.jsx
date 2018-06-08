@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Calendar from 'react-calendar';
+import Calendar from '../Calendar/Calendar';
 import './Event.css';
 
 class Events extends Component {
@@ -14,7 +14,7 @@ class Events extends Component {
           and connect with other outdoor enthusiasts. All are welcomed!
         </p>
 
-        <Calendar className="event-calendar" tileClassName="event-tile" />
+        <Calendar />
       </div>
     );
   }
