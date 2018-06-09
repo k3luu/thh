@@ -1,5 +1,5 @@
-import React from "react";
-import "./AuthorBio.css";
+import React from 'react';
+import './AuthorBio.css';
 
 class AuthorBio extends React.Component {
   render() {

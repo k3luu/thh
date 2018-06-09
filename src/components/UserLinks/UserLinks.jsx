@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./UserLinks.css";
+import React, { Component } from 'react';
+import './UserLinks.css';
 
 class UserLinks extends Component {
   getLinkElements() {
@@ -7,7 +7,7 @@ class UserLinks extends Component {
     const { labeled } = this.props;
     return userLinks.map(link => (
       <button key={link.label} href={link.url}>
-        {labeled ? link.label : ""}
+        {labeled ? link.label : ''}
       </button>
     ));
   }

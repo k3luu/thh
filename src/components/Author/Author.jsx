@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "gatsby-link";
-import "./Author.css";
+import React from 'react';
+import Link from 'gatsby-link';
+import './Author.css';
 
 const Bio = props => {
   const { text } = props;
@@ -19,10 +19,7 @@ const Location = props => {
   if (location) {
     return (
       <span>
-        <span
-          style={{ fontSize: "2rem", margin: 0, verticalAlign: "middle" }}
-          className="icon-location"
-        />
+        <span style={{ fontSize: '2rem', margin: 0, verticalAlign: 'middle' }} className="icon-location" />
         <span className="author-location">{location}</span>
       </span>
     );
@@ -35,10 +32,7 @@ const Website = props => {
   if (url) {
     return (
       <span>
-        <span
-          style={{ fontSize: "2rem", margin: 0, verticalAlign: "middle" }}
-          className="icon-link"
-        />
+        <span style={{ fontSize: '2rem', margin: 0, verticalAlign: 'middle' }} className="icon-link" />
         <span className="author-link">
           <Link to={url}>{url}</Link>
         </span>
@@ -57,11 +51,7 @@ class Author extends React.Component {
         return (
           <div>
             <figure className="author-image">
-              <Link
-                className="img"
-                to="/"
-                style={{ backgroundImage: `url( ${avatar} )` }}
-              >
+              <Link className="img" to="/" style={{ backgroundImage: `url( ${avatar} )` }}>
                 <span className="hidden">{`${name}'s Picture`}</span>
               </Link>
             </figure>

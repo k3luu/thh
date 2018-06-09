@@ -1,5 +1,5 @@
-import React from "react";
-import "./AuthorName.css";
+import React from 'react';
+import './AuthorName.css';
 
 class AuthorName extends React.Component {
   render() {

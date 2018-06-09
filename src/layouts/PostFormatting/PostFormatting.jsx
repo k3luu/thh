@@ -1,5 +1,5 @@
-import React from "react";
-import "./PostFormatting.css";
+import React from 'react';
+import './PostFormatting.css';
 
 class PostFormatting extends React.Component {
   render() {

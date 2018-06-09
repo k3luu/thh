@@ -1,11 +1,11 @@
-import React from "react";
-import Link from "gatsby-link";
-import "./PaginationLink.css";
+import React from 'react';
+import Link from 'gatsby-link';
+import './PaginationLink.css';
 
 class PaginationLink extends React.Component {
   render() {
     if (this.props.url) {
-      let className = "nav-link";
+      let className = 'nav-link';
       if (this.props.className) {
         className = `${className} ${this.props.className}`;
       }

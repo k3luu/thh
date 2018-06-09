@@ -1,12 +1,12 @@
-import React from "react";
-import MainContent from "../MainContent/MainContent";
-import Pagination from "../../components/Pagination/Pagination";
-import "./PaginatedContent.css";
+import React from 'react';
+import MainContent from '../MainContent/MainContent';
+import Pagination from '../../components/Pagination/Pagination';
+import './PaginatedContent.css';
 
 class PaginatedContent extends React.Component {
   render() {
     const { page, pages, prev, next, children } = this.props;
-    let className = "";
+    let className = '';
     if (page > 1) {
       className = `${className} paged`;
     }

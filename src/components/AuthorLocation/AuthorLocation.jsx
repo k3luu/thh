@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class AuthorLocation extends React.Component {
   render() {

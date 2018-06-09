@@ -1,5 +1,5 @@
-import React from "react";
-import "./GhostSubscribe.css";
+import React from 'react';
+import './GhostSubscribe.css';
 
 class GhostSubscribe extends React.Component {
   render() {
@@ -12,11 +12,7 @@ class GhostSubscribe extends React.Component {
           <h3 className="gh-subscribe-title">Subscribe to {blog.title}</h3>
           <p>Get the latest posts delivered right to your inbox.</p>
           <span className="gh-subscribe-rss">
-            or subscribe{" "}
-            <a href="http://cloud.feedly.com/#subscription/feed/{blog.url}/rss/">
-              via RSS
-            </a>{" "}
-            with Feedly!
+            or subscribe <a href="http://cloud.feedly.com/#subscription/feed/{blog.url}/rss/">via RSS</a> with Feedly!
           </span>
         </section>
       );

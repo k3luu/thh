@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import _ from "lodash";
-import Link from "gatsby-link";
-import "./PostTags.css";
+import React, { Component } from 'react';
+import _ from 'lodash';
+import Link from 'gatsby-link';
+import './PostTags.css';
 
 class PostTags extends Component {
   render() {
@@ -15,7 +15,7 @@ class PostTags extends Component {
               <Link key={tag} to={`/tags/${_.kebabCase(tag)}`}>
                 {tag}
               </Link>
-              {index !== arr.length - 1 ? ", " : ""}
+              {index !== arr.length - 1 ? ', ' : ''}
             </span>
           ))}
         </span>

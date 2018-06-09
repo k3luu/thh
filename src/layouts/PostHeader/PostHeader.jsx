@@ -1,5 +1,5 @@
-import React from "react";
-import "./PostHeader.css";
+import React from 'react';
+import './PostHeader.css';
 
 class PostHeader extends React.Component {
   render() {

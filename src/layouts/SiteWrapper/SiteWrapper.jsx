@@ -1,5 +1,5 @@
-import React from "react";
-import "./SiteWrapper.css";
+import React from 'react';
+import './SiteWrapper.css';
 
 class SiteWrapper extends React.Component {
   render() {

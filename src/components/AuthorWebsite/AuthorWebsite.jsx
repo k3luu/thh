@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class AuthorWebsite extends React.Component {
   render() {

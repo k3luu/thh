@@ -1,5 +1,5 @@
-import React from "react";
-import "./PostFooter.css";
+import React from 'react';
+import './PostFooter.css';
 
 class PostFooter extends React.Component {
   render() {
