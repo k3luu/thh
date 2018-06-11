@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import SwipeableViews from 'react-swipeable-views';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -41,6 +42,23 @@ const formatReadNext = value => ({
   cover: value.frontmatter.cover,
   excerpt: value.excerpt
 });
+
+const styles = {
+  slide: {
+    padding: 15,
+    minHeight: 100,
+    color: '#fff'
+  },
+  slide1: {
+    background: '#FEA900'
+  },
+  slide2: {
+    background: '#B3DC4A'
+  },
+  slide3: {
+    background: '#6AC0FF'
+  }
+};
 
 class PostTemplate extends React.Component {
   state = {
@@ -111,6 +129,14 @@ class PostTemplate extends React.Component {
 
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
+              {post.carousel && (
+                <SwipeableViews enableMouseEvents>
+                  <div style={Object.assign({}, styles.slide, styles.slide1)}>slide n°1</div>
+                  <div style={Object.assign({}, styles.slide, styles.slide2)}>slide n°2</div>
+                  <div style={Object.assign({}, styles.slide, styles.slide3)}>slide n°3</div>
+                </SwipeableViews>
+              )}
+
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}
                 {/*<AuthorInfo prefix="/author" author={authorData} />*/}
@@ -144,6 +170,7 @@ export const pageQuery = graphql`
         category
         tags
         author
+        carousel
       }
       fields {
         slug

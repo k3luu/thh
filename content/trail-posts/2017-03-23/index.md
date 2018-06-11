@@ -5,6 +5,8 @@ date: "2017-03-23"
 category: "trails"
 tags:
     - trails
+carousel:
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/sturtevant/_J8A4807.jpg
 ---
 
 ### Sturtevant Falls may be the epitome of Angeles hikers looking for simple, yet rewarding hikes.

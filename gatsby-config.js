@@ -161,6 +161,7 @@ module.exports = {
                       category
                       tags
                       author
+                      carousel
                     }
                   }
                 }
