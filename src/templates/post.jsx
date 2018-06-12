@@ -50,13 +50,7 @@ const styles = {
     color: '#fff'
   },
   slide1: {
-    background: '#FEA900'
-  },
-  slide2: {
-    background: '#B3DC4A'
-  },
-  slide3: {
-    background: '#6AC0FF'
+    background: '#000'
   }
 };
 
@@ -131,9 +125,11 @@ class PostTemplate extends React.Component {
 
               {post.carousel && (
                 <SwipeableViews enableMouseEvents>
-                  <div style={Object.assign({}, styles.slide, styles.slide1)}>slide n°1</div>
-                  <div style={Object.assign({}, styles.slide, styles.slide2)}>slide n°2</div>
-                  <div style={Object.assign({}, styles.slide, styles.slide3)}>slide n°3</div>
+                  {post.carousel.map(photo => (
+                    <div key={photo} style={Object.assign({}, styles.slide, styles.slide1)}>
+                      <img className="carousel-img" src={photo} alt={photo} />
+                    </div>
+                  ))}
                 </SwipeableViews>
               )}
 

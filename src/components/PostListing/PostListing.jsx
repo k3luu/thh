@@ -44,10 +44,10 @@ class PostListing extends React.Component {
                       <Box
                         shape="rounded"
                         color="darkGray"
-                        height={130}
-                        minHeight={130}
-                        width={130}
-                        minWidth={130}
+                        height={200}
+                        minHeight={200}
+                        width={250}
+                        minWidth={250}
                         marginRight={4}
                       >
                         <Image
