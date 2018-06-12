@@ -1,6 +1,6 @@
 module.exports = {
   blogPostDir: 'trail-posts', // The name of directory that contains your posts.
-  fundamentalsDir: 'sample-posts',
+  fundamentalsDir: 'fundamentals',
   blogAuthorDir: 'sample-authors', // The name of directory that contains your 'authors' folder.
   blogAuthorId: 'casper', // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: 'Two Half-Hitches', // Site title.

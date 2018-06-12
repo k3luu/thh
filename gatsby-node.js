@@ -98,7 +98,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
             fundamentalPosts: allMarkdownRemark(
               limit: 1000
-              filter: { fileAbsolutePath: { regex: "/(\\/content\\/sample-posts)/.*\\\\.md$/" } }
+              filter: { fileAbsolutePath: { regex: "/(\\/content\\/fundamentals)/.*\\\\.md$/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               totalCount
