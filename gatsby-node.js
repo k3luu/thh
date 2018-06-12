@@ -155,7 +155,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.fundamentalPosts.edges,
           component: hikingPage,
           // limit: siteConfig.sitePaginationLimit,
-          limit: 5,
+          limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/hiking')
         });
 
