@@ -38,6 +38,9 @@ class Calendar extends Component {
     return dateString.test(regEx) != null;
   }
 
+  /**
+   * function from user @sivafass, package: react-meeting-room
+   */
   getEvents() {
     let that = this;
     function start() {
