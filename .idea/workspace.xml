@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/post.jsx" afterDir="false" />
     </list>
@@ -116,11 +115,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="post.jsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="post.jsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+                <state relative-caret-position="598">
+                  <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -128,11 +127,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PostFormatting.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PostFormatting.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="586">
-                  <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
+                <state relative-caret-position="556">
+                  <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -276,8 +275,8 @@
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" />
         <option value="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" />
-        <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
         <option value="$PROJECT_DIR$/src/templates/post.jsx" />
+        <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
       </list>
     </option>
   </component>
@@ -530,7 +529,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154304000" />
+    <option name="totallyTimeSpent" value="155431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -963,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -979,11 +971,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="105" column="31" selection-start-line="105" selection-start-column="31" selection-end-line="105" selection-end-column="31" />
+        <state relative-caret-position="598">
+          <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
         </state>
       </provider>
     </entry>

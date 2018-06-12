@@ -149,25 +149,30 @@ class PostTemplate extends React.Component {
 
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
-              {carousel && (
-                <SwipeableViews index={this.state.activeStep} onChangeIndex={this.handleStepChange} enableMouseEvents>
-                  {carousel.map(photo => (
-                    <div key={photo} style={Object.assign({}, styles.slide)}>
-                      <img className="carousel-img" src={photo} alt={photo} />
-                    </div>
-                  ))}
-                </SwipeableViews>
-              )}
+              <Box position="relative">
+                {carousel && (
+                  <SwipeableViews index={this.state.activeStep} onChangeIndex={this.handleStepChange} enableMouseEvents>
+                    {carousel.map(photo => (
+                      <div key={photo} style={Object.assign({}, styles.slide)}>
+                        <img className="carousel-img" src={photo} alt={photo} />
+                      </div>
+                    ))}
+                  </SwipeableViews>
+                )}
 
-              <Box display="flex" justifyContent="between" marginTop={2}>
-                <IconButton
-                  accessibilityLabel="Back"
-                  bgColor="white"
-                  icon="arrow-back"
-                  iconColor="darkGray"
-                  onClick={this.handleBack}
-                />
-                <Box display="flex" minWidth={100} marginTop={1} overflow="scrollX">
+                <div className="carousel-arrow">
+                  <IconButton accessibilityLabel="Back" icon="arrow-back" iconColor="white" onClick={this.handleBack} />
+                </div>
+                <div className="carousel-arrow right">
+                  <IconButton
+                    accessibilityLabel="Forward"
+                    icon="arrow-forward"
+                    iconColor="white"
+                    onClick={this.handleForward}
+                  />
+                </div>
+
+                <Box display="flex" justifyContent="center" marginTop={2} minWidth={100} overflow="scrollX">
                   {carousel.map((p, i) => (
                     <Box key={p} display="inlineBlock" marginRight={1}>
                       <i
@@ -178,13 +183,6 @@ class PostTemplate extends React.Component {
                     </Box>
                   ))}
                 </Box>
-                <IconButton
-                  accessibilityLabel="Forward"
-                  bgColor="white"
-                  icon="arrow-forward"
-                  iconColor="darkGray"
-                  onClick={this.handleForward}
-                />
               </Box>
 
               <PostFooter>

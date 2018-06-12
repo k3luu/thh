@@ -111,6 +111,19 @@ div.page-template .post-title {
     font-size: 8px
 }
 
+.carousel-arrow {
+    position: absolute;
+    top: 45%;
+    padding: 4px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+}
+
+.carousel-arrow.right {
+    right: 0
+}
+
 /* ==========================================================================
        Media Queries - Smaller than 900px
    ========================================================================== */
