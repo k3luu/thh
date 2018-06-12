@@ -46,12 +46,8 @@ const formatReadNext = value => ({
 
 const styles = {
   slide: {
-    padding: 15,
-    minHeight: 100,
-    color: '#fff'
-  },
-  slide1: {
-    background: '#000'
+    color: '#fff',
+    overflow: 'hidden'
   }
 };
 
@@ -107,6 +103,10 @@ class PostTemplate extends React.Component {
     this.setState({ activeStep: step });
   };
 
+  handleStepChange = activeStep => {
+    this.setState({ activeStep });
+  };
+
   render() {
     const { location, data } = this.props;
     const { slug, next, prev } = this.props.pathContext;
@@ -150,14 +150,15 @@ class PostTemplate extends React.Component {
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
               {carousel && (
-                <SwipeableViews index={this.state.activeStep} enableMouseEvents>
+                <SwipeableViews index={this.state.activeStep} onChangeIndex={this.handleStepChange} enableMouseEvents>
                   {carousel.map(photo => (
-                    <div key={photo} style={Object.assign({}, styles.slide, styles.slide1)}>
+                    <div key={photo} style={Object.assign({}, styles.slide)}>
                       <img className="carousel-img" src={photo} alt={photo} />
                     </div>
                   ))}
                 </SwipeableViews>
               )}
+
               <Box display="flex" justifyContent="between" marginTop={2}>
                 <IconButton
                   accessibilityLabel="Back"
@@ -166,10 +167,14 @@ class PostTemplate extends React.Component {
                   iconColor="darkGray"
                   onClick={this.handleBack}
                 />
-                <Box display="flex">
+                <Box display="flex" minWidth={100} marginTop={1} overflow="scrollX">
                   {carousel.map((p, i) => (
-                    <Box key={p} display="inlineBlock" margin={1}>
-                      <i className={i === this.state.activeStep ? 'fa fa-dot-circle-o' : 'fa fa-circle'} />
+                    <Box key={p} display="inlineBlock" marginRight={1}>
+                      <i
+                        className={
+                          i === this.state.activeStep ? 'fa fa-circle carousel-step' : 'fa fa-circle-thin carousel-step'
+                        }
+                      />
                     </Box>
                   ))}
                 </Box>
