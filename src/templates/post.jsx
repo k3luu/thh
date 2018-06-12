@@ -1,7 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import SwipeableViews from 'react-swipeable-views';
-import { Box, IconButton } from 'gestalt';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/main.css';
+import 'react-responsive-carousel/lib/styles/carousel.css';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -149,48 +150,13 @@ class PostTemplate extends React.Component {
 
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
-              {carousel && (
-                <Box position="relative">
-                  <SwipeableViews index={this.state.activeStep} onChangeIndex={this.handleStepChange} enableMouseEvents>
-                    {carousel.map(photo => (
-                      <div key={photo} style={Object.assign({}, styles.slide)}>
-                        <img className="carousel-img" src={photo} alt={photo} />
-                      </div>
-                    ))}
-                  </SwipeableViews>
-
-                  <div className="carousel-arrow">
-                    <IconButton
-                      accessibilityLabel="Back"
-                      icon="arrow-back"
-                      iconColor="white"
-                      onClick={this.handleBack}
-                    />
+              {carousel && <Carousel emulateTouch useKeyboardArrows>
+                {carousel.map(photo => (
+                  <div key={photo} style={Object.assign({}, styles.slide)}>
+                    <img className="carousel-img" src={photo} alt={photo} />
                   </div>
-                  <div className="carousel-arrow right">
-                    <IconButton
-                      accessibilityLabel="Forward"
-                      icon="arrow-forward"
-                      iconColor="white"
-                      onClick={this.handleForward}
-                    />
-                  </div>
-                </Box>
-              )}
-
-              <Box display="flex" justifyContent="center" marginTop={2} minWidth={100} overflow="scrollX">
-                {carousel &&
-                  carousel.map((p, i) => (
-                    <Box key={p} display="inlineBlock" marginRight={1}>
-                      <i
-                        className={
-                          i === this.state.activeStep ? 'fa fa-circle carousel-step' : 'fa fa-circle-thin carousel-step'
-                        }
-                        onClick={() => this.handleStepChange(i)}
-                      />
-                    </Box>
-                  ))}
-              </Box>
+                ))}
+              </Carousel>}
 
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}

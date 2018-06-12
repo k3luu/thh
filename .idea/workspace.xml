@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74659b99-2c17-4a9f-9d05-7f6ae13c404f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/content/fundamentals/hiking-checklist/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/fundamentals/iodine-tablets/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/fundamentals/overnight-gear/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/fundamentals/poisonous-plants/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/fundamentals/tent/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/fundamentals/water-filters/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/fundamentals/water-filters/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/delete-me.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-01-01/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-01-02/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-01-03/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-02-03/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-02-04/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-03-17/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/sample-posts/2017-03-23/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/SiteConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/SiteConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/post.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -36,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46244568">
+    <splitter split-orientation="horizontal" split-proportion="0.39664805">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
@@ -44,9 +24,18 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="108">
-                    <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+                    <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
                   </first_editor>
                   <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="395">
+                  <caret line="280" column="14" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -56,7 +45,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="504">
-                    <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                    <caret line="28" selection-start-line="28" selection-end-line="28" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -68,7 +57,7 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="72">
-                    <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+                    <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -79,18 +68,41 @@
             <entry file="file://$PROJECT_DIR$/gatsby-node.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="366">
-                  <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+                  <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="SiteConfig.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="SiteConfig.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+                <state relative-caret-position="400">
+                  <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -150,21 +162,33 @@
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
                   <first_editor relative-caret-position="162">
-                    <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+                    <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
                   </first_editor>
                   <second_editor />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="540">
-                    <caret line="30" selection-start-line="30" selection-end-line="30" />
+                  <first_editor relative-caret-position="360">
+                    <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
                   </first_editor>
                   <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="post.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="431">
+                  <caret line="158" column="26" lean-forward="true" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -183,8 +207,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form-name</find>
-      <find>post-content</find>
       <find>react-calendar__navigation</find>
       <find>events: [],</find>
       <find>status</find>
@@ -213,6 +235,8 @@
       <find>authorpage</find>
       <find>AuthorTemplate</find>
       <find>console</find>
+      <find>googleAnalyticsID</find>
+      <find>border-top: 1px</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -270,20 +294,17 @@
         <option value="$PROJECT_DIR$/src/components/Events/Event.css" />
         <option value="$PROJECT_DIR$/src/html.jsx" />
         <option value="$PROJECT_DIR$/src/components/Calendar/Calendar.css" />
-        <option value="$PROJECT_DIR$/src/layouts/index.css" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/components/BlogLogo/BlogLogo.css" />
         <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" />
         <option value="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" />
         <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
         <option value="$PROJECT_DIR$/src/components/Calendar/Calendar.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/templates/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
         <option value="$PROJECT_DIR$/gatsby-node.js" />
         <option value="$PROJECT_DIR$/src/components/NoMatterTheMountain/NoMatterTheMountain.css" />
-        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
         <option value="$PROJECT_DIR$/content/fundamentals/hiking-checklist/index.md" />
         <option value="$PROJECT_DIR$/content/fundamentals/poisonous-plants/index.md" />
         <option value="$PROJECT_DIR$/content/fundamentals/water-filters/index.md" />
@@ -292,6 +313,9 @@
         <option value="$PROJECT_DIR$/content/fundamentals/tent/index.md" />
         <option value="$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md" />
         <option value="$PROJECT_DIR$/data/SiteConfig.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
+        <option value="$PROJECT_DIR$/src/layouts/index.css" />
       </list>
     </option>
   </component>
@@ -311,7 +335,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="-4480" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
@@ -605,10 +629,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166686000" />
+    <option name="totallyTimeSpent" value="169348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4480" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="-4480" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -680,17 +704,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/gestalt/dist/gestalt.es.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="863" column="23" lean-forward="true" selection-start-line="863" selection-start-column="23" selection-end-line="863" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MUI/MyTextField.jsx" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -734,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Subscribe/subscribe.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -779,13 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="252" column="14" selection-start-line="252" selection-start-column="14" selection-end-line="252" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -877,13 +880,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/About/About.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="60" column="11" lean-forward="true" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -964,16 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/html.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -998,7 +984,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="108">
-            <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>
@@ -1038,7 +1024,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="504">
-            <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <caret line="28" selection-start-line="28" selection-end-line="28" />
           </first_editor>
           <second_editor />
         </state>
@@ -1048,7 +1034,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="162">
-            <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
@@ -1058,17 +1044,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="72">
-            <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="540">
-            <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           </first_editor>
           <second_editor />
         </state>
@@ -1077,14 +1053,58 @@
     <entry file="file://$PROJECT_DIR$/gatsby-node.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
-          <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="360">
+            <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="400">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="158" column="26" lean-forward="true" selection-start-line="158" selection-start-column="26" selection-end-line="158" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="280" column="14" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
         </state>
       </provider>
     </entry>

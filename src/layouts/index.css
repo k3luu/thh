@@ -278,6 +278,7 @@ h6 {
     font-family: 'Lato', sans-serif;
     text-rendering: geometricPrecision;
     /*text-transform: uppercase;*/
+    border: 0l
 }
 
 h1 {
