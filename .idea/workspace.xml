@@ -63,7 +63,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.md" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/content/fundamentals/tent/index.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
@@ -78,8 +78,17 @@
           <file leaf-file-name="gatsby-node.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gatsby-node.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+                <state relative-caret-position="366">
+                  <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SiteConfig.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="324">
+                  <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -152,8 +161,8 @@
             <entry file="file://$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="558">
-                    <caret line="31" selection-start-line="31" selection-end-line="31" />
+                  <first_editor relative-caret-position="540">
+                    <caret line="30" selection-start-line="30" selection-end-line="30" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -269,7 +278,6 @@
         <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
         <option value="$PROJECT_DIR$/src/components/Calendar/Calendar.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/data/SiteConfig.js" />
         <option value="$PROJECT_DIR$/src/templates/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
@@ -283,6 +291,7 @@
         <option value="$PROJECT_DIR$/content/fundamentals/overnight-gear/index.md" />
         <option value="$PROJECT_DIR$/content/fundamentals/tent/index.md" />
         <option value="$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md" />
+        <option value="$PROJECT_DIR$/data/SiteConfig.js" />
       </list>
     </option>
   </component>
@@ -406,6 +415,11 @@
               <item name="content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="trail-posts" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="2017-03-23" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="thh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thh" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="thh" type="b2602c69:ProjectViewProjectNode" />
@@ -591,7 +605,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166227000" />
+    <option name="totallyTimeSpent" value="166686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4480" y="0" width="1920" height="1080" extended-state="0" />
@@ -940,13 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/PostListing/PostListing.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="611">
@@ -984,13 +991,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1067,10 +1067,24 @@
     <entry file="file://$PROJECT_DIR$/content/fundamentals/ten-essentials/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="558">
-            <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <first_editor relative-caret-position="540">
+            <caret line="30" selection-start-line="30" selection-end-line="30" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
