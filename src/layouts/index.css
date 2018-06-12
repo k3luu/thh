@@ -1,6 +1,9 @@
 /* ==========================================================================
       normalize.css v3.0.3 | MIT License | git.io/normalize | (minified)
    ========================================================================== */
+* {
+    box-sizing: unset !important;
+}
 
 html {
     font-family: sans-serif;
@@ -278,7 +281,7 @@ h6 {
     font-family: 'Lato', sans-serif;
     text-rendering: geometricPrecision;
     /*text-transform: uppercase;*/
-    border: 0l
+    border: 0 !important;
 }
 
 h1 {

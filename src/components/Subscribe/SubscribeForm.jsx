@@ -17,7 +17,7 @@ class SubscribeForm extends React.Component {
           <input type="hidden" name="form-name" value="subscribe" />
 
           <Box display="flex" justifyContent="center" alignItems="center" marginTop={4}>
-            <Box marginRight={2}>
+            <Box marginRight={8}>
               <input type="email" name="email" id="email" placeholder="Email" required />
             </Box>
             <Box>

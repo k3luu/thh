@@ -37,12 +37,14 @@
 .main-content .social-media-icons {
     position: unset;
     text-align: left;
+    box-sizing: unset;
 }
 
 .main-content .social-media-icons i {
     color: #bbc7cc;
     text-align: center;
     font-size: 28px;
+    box-sizing: unset;
 }
 
 .main-content .social-media-icons i:hover {

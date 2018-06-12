@@ -1,8 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/main.css';
-import 'react-responsive-carousel/lib/styles/carousel.css';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -26,6 +23,7 @@ import PostTags from '../components/PostTags/PostTags';
 import Footer from '../components/Footer/Footer';
 import AuthorModel from '../models/author-model';
 import Disqus from '../components/Disqus/Disqus';
+import MyCarousel from '../components/Carousel/MyCarousel';
 
 function parsePost(post, slug) {
   const result = post;
@@ -44,13 +42,6 @@ const formatReadNext = value => ({
   cover: value.frontmatter.cover,
   excerpt: value.excerpt
 });
-
-const styles = {
-  slide: {
-    color: '#fff',
-    overflow: 'hidden'
-  }
-};
 
 class PostTemplate extends React.Component {
   constructor(p) {
@@ -150,13 +141,7 @@ class PostTemplate extends React.Component {
 
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
-              {carousel && <Carousel emulateTouch useKeyboardArrows>
-                {carousel.map(photo => (
-                  <div key={photo} style={Object.assign({}, styles.slide)}>
-                    <img className="carousel-img" src={photo} alt={photo} />
-                  </div>
-                ))}
-              </Carousel>}
+              {carousel && <MyCarousel data={carousel} />}
 
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}
