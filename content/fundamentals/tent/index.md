@@ -1,6 +1,6 @@
 ---
 title: "How to Set Up a Tent"
-cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/sturtevant/_J8A4928.jpg"
+cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/tent-setup/Setting%2Bup%2Ba%2Btent%2BBanner.jpg"
 author: ""
 category: "fundamentals"
 tags:
@@ -8,6 +8,7 @@ tags:
     - tent
     - camping
     - overnight
+video: "https://www.youtube.com/embed/UCzegdTxbXU"
 ---
 
 Setting up a tent is straight forward, but it can be difficult and confusing your first time around. Before you head out, we recommend practicing at home!
@@ -25,5 +26,6 @@ Setting up a tent is straight forward, but it can be difficult and confusing you
 - Maintain a safe distance from water sources as flash floods may occur.
 - Stake your tent on silty-loamy soils.
 
-####DISCLAIMER:
-Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.
+![log](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/tent-setup/log.jpeg)
+
+![log-2](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/tent-setup/log-2.jpeg)

@@ -104,7 +104,7 @@ class PostTemplate extends React.Component {
     const { slug, next, prev } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
-    const { cover, title, date, author, tags, carousel } = post;
+    const { cover, title, date, author, tags, carousel, category, video } = post;
     const className = post.post_class ? post.post_class : 'post';
     const authorData = AuthorModel.getAuthor(this.props.data.authors.edges, author, config.blogAuthorId);
     const getNextData = () => (next ? formatReadNext(data.next) : null);
@@ -139,9 +139,18 @@ class PostTemplate extends React.Component {
                 </section>
               </PostHeader>
 
+              {video && <iframe className="post-video" title="video" src={video} frameBorder="0" allowFullScreen />}
+
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
               {carousel && <MyCarousel data={carousel} />}
+
+              {category === 'fundamentals' &&
+              <div>
+                <h3>Disclaimer</h3>
+                <p>Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.
+                </p>
+              </div>}
 
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}
@@ -177,6 +186,7 @@ export const pageQuery = graphql`
         tags
         author
         carousel
+        video
       }
       fields {
         slug
