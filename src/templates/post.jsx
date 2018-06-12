@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import SwipeableViews from 'react-swipeable-views';
+import { Box, IconButton } from 'gestalt';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -55,9 +56,20 @@ const styles = {
 };
 
 class PostTemplate extends React.Component {
-  state = {
-    menuOpen: false
-  };
+  constructor(p) {
+    super(p);
+
+    const { location, data } = this.props;
+    const { slug, next, prev } = this.props.pathContext;
+    const postNode = this.props.data.markdownRemark;
+    const post = parsePost(postNode.frontmatter, slug);
+
+    this.state = {
+      menuOpen: false,
+      activeStep: 0,
+      post: post
+    };
+  }
 
   handleOnClick = evt => {
     evt.stopPropagation();
@@ -81,12 +93,26 @@ class PostTemplate extends React.Component {
     this.setState({ menuOpen: false });
   };
 
+  handleBack = () => {
+    let step = this.state.activeStep - 1;
+    if (step < 0) step = 0;
+
+    this.setState({ activeStep: step });
+  };
+
+  handleForward = () => {
+    let step = this.state.activeStep + 1;
+    if (step >= this.state.post.carousel.length) step = this.state.post.carousel.length - 1;
+
+    this.setState({ activeStep: step });
+  };
+
   render() {
     const { location, data } = this.props;
     const { slug, next, prev } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
-    const { cover, title, date, author, tags } = post;
+    const { cover, title, date, author, tags, carousel } = post;
     const className = post.post_class ? post.post_class : 'post';
     const authorData = AuthorModel.getAuthor(this.props.data.authors.edges, author, config.blogAuthorId);
     const getNextData = () => (next ? formatReadNext(data.next) : null);
@@ -123,15 +149,38 @@ class PostTemplate extends React.Component {
 
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
-              {post.carousel && (
-                <SwipeableViews enableMouseEvents>
-                  {post.carousel.map(photo => (
+              {carousel && (
+                <SwipeableViews index={this.state.activeStep} enableMouseEvents>
+                  {carousel.map(photo => (
                     <div key={photo} style={Object.assign({}, styles.slide, styles.slide1)}>
                       <img className="carousel-img" src={photo} alt={photo} />
                     </div>
                   ))}
                 </SwipeableViews>
               )}
+              <Box display="flex" justifyContent="between" marginTop={2}>
+                <IconButton
+                  accessibilityLabel="Back"
+                  bgColor="white"
+                  icon="arrow-back"
+                  iconColor="darkGray"
+                  onClick={this.handleBack}
+                />
+                <Box display="flex">
+                  {carousel.map((p, i) => (
+                    <Box key={p} display="inlineBlock" margin={1}>
+                      <i className={i === this.state.activeStep ? 'fa fa-dot-circle-o' : 'fa fa-circle'} />
+                    </Box>
+                  ))}
+                </Box>
+                <IconButton
+                  accessibilityLabel="Forward"
+                  bgColor="white"
+                  icon="arrow-forward"
+                  iconColor="darkGray"
+                  onClick={this.handleForward}
+                />
+              </Box>
 
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}
