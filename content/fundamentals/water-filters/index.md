@@ -7,6 +7,7 @@ tags:
     - fundamentals
     - water
     - filter
+    - purification
 ---
 
 Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most
