@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36310026">
+    <splitter split-orientation="horizontal" split-proportion="0.3159225">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
@@ -115,11 +115,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="post.jsx" pinned="false" current-in-tab="false">
+          <file leaf-file-name="post.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="598">
-                  <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+                <state relative-caret-position="643">
+                  <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -127,11 +127,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PostFormatting.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PostFormatting.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+                <state relative-caret-position="466">
+                  <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -275,8 +275,8 @@
         <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/MainHeader/MainHeader.css" />
         <option value="$PROJECT_DIR$/content/trail-posts/2017-03-23/index.md" />
-        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
         <option value="$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css" />
+        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
       </list>
     </option>
   </component>
@@ -529,7 +529,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155431000" />
+    <option name="totallyTimeSpent" value="156178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -969,20 +969,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+    <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="176" column="25" lean-forward="true" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="466">
+          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/PostFormatting/PostFormatting.css">
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+        <state relative-caret-position="643">
+          <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

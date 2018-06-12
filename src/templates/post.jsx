@@ -149,8 +149,8 @@ class PostTemplate extends React.Component {
 
               <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
-              <Box position="relative">
-                {carousel && (
+              {carousel && (
+                <Box position="relative">
                   <SwipeableViews index={this.state.activeStep} onChangeIndex={this.handleStepChange} enableMouseEvents>
                     {carousel.map(photo => (
                       <div key={photo} style={Object.assign({}, styles.slide)}>
@@ -158,31 +158,38 @@ class PostTemplate extends React.Component {
                       </div>
                     ))}
                   </SwipeableViews>
-                )}
 
-                <div className="carousel-arrow">
-                  <IconButton accessibilityLabel="Back" icon="arrow-back" iconColor="white" onClick={this.handleBack} />
-                </div>
-                <div className="carousel-arrow right">
-                  <IconButton
-                    accessibilityLabel="Forward"
-                    icon="arrow-forward"
-                    iconColor="white"
-                    onClick={this.handleForward}
-                  />
-                </div>
+                  <div className="carousel-arrow">
+                    <IconButton
+                      accessibilityLabel="Back"
+                      icon="arrow-back"
+                      iconColor="white"
+                      onClick={this.handleBack}
+                    />
+                  </div>
+                  <div className="carousel-arrow right">
+                    <IconButton
+                      accessibilityLabel="Forward"
+                      icon="arrow-forward"
+                      iconColor="white"
+                      onClick={this.handleForward}
+                    />
+                  </div>
+                </Box>
+              )}
 
-                <Box display="flex" justifyContent="center" marginTop={2} minWidth={100} overflow="scrollX">
-                  {carousel.map((p, i) => (
+              <Box display="flex" justifyContent="center" marginTop={2} minWidth={100} overflow="scrollX">
+                {carousel &&
+                  carousel.map((p, i) => (
                     <Box key={p} display="inlineBlock" marginRight={1}>
                       <i
                         className={
                           i === this.state.activeStep ? 'fa fa-circle carousel-step' : 'fa fa-circle-thin carousel-step'
                         }
+                        onClick={() => this.handleStepChange(i)}
                       />
                     </Box>
                   ))}
-                </Box>
               </Box>
 
               <PostFooter>

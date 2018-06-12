@@ -108,7 +108,8 @@ div.page-template .post-title {
 }
 
 .carousel-step {
-    font-size: 8px
+    font-size: 8px;
+    cursor: pointer;
 }
 
 .carousel-arrow {
