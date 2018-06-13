@@ -6,7 +6,7 @@ class SubscribeForm extends React.Component {
   render() {
     return (
       <div>
-        <h6>Sign up with your email address to receive news and updates.</h6>
+        <h4>Sign up with your email address to receive news and updates</h4>
         <form
           className="subscribe-form"
           name="subscribe"
@@ -16,9 +16,20 @@ class SubscribeForm extends React.Component {
         >
           <input type="hidden" name="form-name" value="subscribe" />
 
-          <Box display="flex" justifyContent="center" alignItems="center" marginTop={4}>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            marginTop={4}
+          >
             <Box marginRight={1}>
-              <input type="email" name="email" id="email" placeholder="Email" required />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
             </Box>
             <Box>
               <button type="submit" className="subscribe-button icon-feed">
