@@ -1,6 +1,7 @@
 .main-nav {
     position: relative;
     z-index: 3;
+    padding: 0 40px;
 }
 
 .main-nav a,
@@ -11,22 +12,12 @@ div {
 
 /* Special styles when overlaid on an image */
 .main-nav.overlay {
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    right: 0;
     border: none;
     background: rgba(0, 0, 0, 0.8);
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
-}
-
-.main-nav.overlay.home {
-    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);*/
-    /*height: 100px;*/
 }
 
 .no-cover .main-nav.overlay {

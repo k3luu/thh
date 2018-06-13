@@ -1,16 +1,19 @@
 import React from 'react';
+import Headroom from 'react-headroom';
 import classNames from 'classnames';
 import './MainNav.css';
 
 class MainNav extends React.Component {
   render() {
     const { children, className, home } = this.props;
-    let formatting = ['overlay'];
-    if (home) formatting.push('home');
-
+    const formatting = ['overlay'];
     const classes = classNames('main-nav', formatting, className);
 
-    return <nav className={classes}>{children}</nav>;
+    return (
+      <Headroom style={{ zIndex: 3 }}>
+        <nav className={classes}>{children}</nav>
+      </Headroom>
+    );
   }
 }
 

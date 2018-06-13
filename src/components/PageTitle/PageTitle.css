@@ -6,10 +6,8 @@
     font-weight: 700;
     font-family: "Roboto", sans-serif;
     color: #fff;
-}
-
-.page-title img {
-    max-height: 500px;
+    height: 60vw;
+    max-height: 60vh;
 }
 
 .no-cover .page-title {

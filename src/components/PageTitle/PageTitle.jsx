@@ -1,4 +1,5 @@
 import React from 'react';
+import { Box, Image } from 'gestalt';
 import './PageTitle.css';
 
 class PageTitle extends React.Component {
@@ -6,9 +7,15 @@ class PageTitle extends React.Component {
     const { logo, title } = this.props;
     if (logo) {
       return (
-        <h1 className="page-title">
-          <img src={logo} alt={title} />
-        </h1>
+        <div className="page-title">
+          <Image
+            alt={title}
+            naturalHeight={512}
+            naturalWidth={546}
+            fit="contain"
+            src={logo}
+          />
+        </div>
       );
     }
     return null;

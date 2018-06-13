@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-scroll';
-import Headroom from 'react-headroom';
 import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -72,15 +71,13 @@ class IndexTemplate extends React.Component {
           <div className="home-template">
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
-              <Headroom style={{ zIndex: 3 }}>
-                <MainNav overlay={config.siteCover} home>
-                  <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-                  <MenuButton
-                    navigation={config.siteNavigation}
-                    onClick={this.handleOnClick}
-                  />
-                </MainNav>
-              </Headroom>
+              <MainNav overlay={config.siteCover}>
+                <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
+                <MenuButton
+                  navigation={config.siteNavigation}
+                  onClick={this.handleOnClick}
+                />
+              </MainNav>
 
               <div className="main-header-content inner">
                 <PageTitle
