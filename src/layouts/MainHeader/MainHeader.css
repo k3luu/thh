@@ -186,6 +186,10 @@
         height: 40vh;
     }
 
+    .main-header-content {
+        top: 40%;
+    }
+
     .no-cover.main-header {
         height: 30vh;
     }
