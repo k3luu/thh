@@ -73,7 +73,7 @@ class IndexTemplate extends React.Component {
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
               <MainNav overlay={config.siteCover}>
-                {/*<BlogLogo logo={config.siteLogo} title={config.siteTitle} />*/}
+                <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
                 <MenuButton
                   navigation={config.siteNavigation}
                   onClick={this.handleOnClick}
