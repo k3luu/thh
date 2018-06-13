@@ -108,8 +108,12 @@ div.page-template .post-title {
     width: 100%;
 }
 
+.post-content h3 {
+    margin-top: 50px;
+}
+
 .carousel-img {
-    width: 100%
+    width: 100%;
 }
 
 .carousel-step {
@@ -128,6 +132,17 @@ div.page-template .post-title {
 
 .carousel-arrow.right {
     right: 0
+}
+
+.post-disclaimer {
+    border-top: #ebf2f6 1px solid;
+    font-style: italic;
+    margin-top: 6rem;
+    padding-top: 3rem;
+}
+
+.post-disclaimer p {
+    margin-bottom: 10px
 }
 
 /* ==========================================================================

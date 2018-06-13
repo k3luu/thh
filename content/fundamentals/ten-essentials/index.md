@@ -9,6 +9,8 @@ tags:
     - camping
     - overnight
 date_added: "2018-06-01"
+disclaimer:
+    - Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.
 ---
 
 Before you set foot into the backcountry, it is vital to know the Ten Essentials by heart. Some may seem obvious to you, but you would be surprised how lost people get when gearing up. The following items are the core foundation to the outdoors:

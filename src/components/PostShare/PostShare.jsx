@@ -1,16 +1,40 @@
 import React from 'react';
-import { ShareButtons } from 'react-share';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  GooglePlusShareButton,
+  LinkedinShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  VKShareButton,
+  OKShareButton,
+  RedditShareButton,
+  TumblrShareButton,
+  PinterestShareButton,
+  LivejournalShareButton,
+  ViberShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  GooglePlusIcon,
+  LinkedinIcon,
+  PinterestIcon,
+  VKIcon,
+  OKIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  RedditIcon,
+  TumblrIcon,
+  MailruIcon,
+  EmailIcon,
+  LivejournalIcon,
+  ViberIcon
+} from 'react-share';
+import { Box } from 'gestalt';
 import './PostShare.css';
 
-const formatSiteUrl = (siteUrl, pathPrefix, path) => siteUrl + (pathPrefix === '/' ? '' : pathPrefix) + path;
-
-// const getCover = post => {
-//   const { cover } = post;
-//   if (cover && cover.childImageSharp && cover.childImageSharp.original) {
-//     return cover.childImageSharp.original.src;
-//   }
-//   return "";
-// };
+const formatSiteUrl = (siteUrl, pathPrefix, path) =>
+  siteUrl + (pathPrefix === '/' ? '' : pathPrefix) + path;
 
 class PostShare extends React.Component {
   render() {
@@ -18,46 +42,41 @@ class PostShare extends React.Component {
     const post = postNode.frontmatter;
     const url = formatSiteUrl(config.siteUrl, config.pathPrefix, postPath);
 
-    const {
-      FacebookShareButton,
-      GooglePlusShareButton,
-      // PinterestShareButton,
-      TwitterShareButton
-    } = ShareButtons;
-
     return (
       <section className="share">
         <h4>Share this post</h4>
-        <div style={{ display: 'flex' }}>
-          <TwitterShareButton url={url} title={post.title}>
-            <a className="icon-twitter" style={{ fontSize: '1.4em' }}>
-              <span className="hidden">Twitter</span>
-            </a>
-          </TwitterShareButton>
+        <Box
+          display="flex"
+          justifyContent="between"
+          wrap
+          maxWidth={500}
+          marginTop={4}
+        >
           <FacebookShareButton url={url} quote={post.title}>
-            <a className="icon-facebook" style={{ fontSize: '1.4em' }}>
-              <span className="hidden">Facebook</span>
-            </a>
+            <FacebookIcon size={32} round />
           </FacebookShareButton>
-          {/* <PinterestShareButton */}
-          {/* url={url} */}
-          {/* media={formatSiteUrl( */}
-          {/* config.siteUrl, */}
-          {/* config.pathPrefix, */}
-          {/* getCover(post) */}
-          {/* )} */}
-          {/* description={postNode.excerpt} */}
-          {/* > */}
-          {/* <a className="icon-pinterest" style={{ fontSize: "1.4em" }}> */}
-          {/* <span className="hidden">Pinterest</span> */}
-          {/* </a> */}
-          {/* </PinterestShareButton> */}
-          <GooglePlusShareButton url={url}>
-            <a className="icon-google-plus" style={{ fontSize: '1.4em' }}>
-              <span className="hidden">Google+</span>
-            </a>
+          <TwitterShareButton url={url} title={post.title}>
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <GooglePlusShareButton url={url} title={post.title}>
+            <GooglePlusIcon size={32} round />
           </GooglePlusShareButton>
-        </div>
+          <LinkedinShareButton url={url} title={post.title}>
+            <LinkedinIcon size={32} round />
+          </LinkedinShareButton>
+          <RedditShareButton url={url} title={post.title}>
+            <RedditIcon size={32} round />
+          </RedditShareButton>
+          <TumblrShareButton url={url} title={post.title}>
+            <TumblrIcon size={32} round />
+          </TumblrShareButton>
+          <PinterestShareButton url={url} title={post.title}>
+            <PinterestIcon size={32} round />
+          </PinterestShareButton>
+          <EmailShareButton url={url} title={post.title}>
+            <EmailIcon size={32} round />
+          </EmailShareButton>
+        </Box>
       </section>
     );
   }

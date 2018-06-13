@@ -9,6 +9,8 @@ tags:
     - purification
 video: "https://www.youtube.com/embed/FkvDrzPe_vk"
 date_added: "2018-06-04"
+disclaimer:
+    - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. 
 ---
 
 ##Water Purification via Iodine Tablets
@@ -35,7 +37,7 @@ Avoid getting water from stagnant sources if possible, such as lakes and ponds. 
 
 ![source](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-tablets/source.jpeg)
 
-###More water treatment tips:
+###More water treatment tips
 
 - Separate clean and dirty water containers to avoid cross-contamination.
 - Pay attention to manufacturer instructions. Treatment is less effective if tablets do not reside in the water for the specified period of time.

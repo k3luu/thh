@@ -10,6 +10,9 @@ tags:
     - purification
 video: "https://www.youtube.com/embed/C7a-QC3ypWE"
 date_added: "2018-06-07"
+disclaimer:
+    - The water filters shown in the video were provided entirely by HydroBlu. The opinions expressed herein are solely of Two Half-Hitches.
+    - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. Any action you take upon the information on this website is strictly at your own risk.
 ---
 
 Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most
@@ -53,11 +56,3 @@ Keep camp, toilet, and dishwashing areas of your camp at a minimum of 100-200 fe
 your water source.
 Untouched snow and ice are typically clean and ready to drink. Do not eat ice or snow as
 it will lower your body temperature.
-
-####DISCLAIMER:
-
-The water filters shown in the video were provided entirely by HydroBlu. The opinions
-expressed herein are solely of Two Half-Hitches.
-
-The contents provided herein regarding medical advice, such as text, graphics, images,
-and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. Any action you take upon the information on this website is strictly at your own risk.

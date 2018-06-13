@@ -112,7 +112,8 @@ class PostTemplate extends React.Component {
       tags,
       carousel,
       category,
-      video
+      video,
+      disclaimer
     } = post;
     const className = post.post_class ? post.post_class : 'post';
     const authorData = AuthorModel.getAuthor(
@@ -172,17 +173,10 @@ class PostTemplate extends React.Component {
 
               {carousel && <MyCarousel data={carousel} />}
 
-              {category === 'fundamentals' && (
-                <div>
-                  <h3>Disclaimer</h3>
-                  <p>
-                    Any reference in this website to any person, organization,
-                    activity, product, or service related to such person or
-                    organization, or any linkages from this web site to the web
-                    site of another party, do not constitute or imply the
-                    endorsement, recommendation, or favoring of Two
-                    Half-Hitches.
-                  </p>
+              {disclaimer && (
+                <div className="post-disclaimer">
+                  <h4>Disclaimer</h4>
+                  {disclaimer.map(text => <p key={text}>{text}</p>)}
                 </div>
               )}
 
@@ -228,6 +222,7 @@ export const pageQuery = graphql`
         author
         carousel
         video
+        disclaimer
       }
       fields {
         slug
