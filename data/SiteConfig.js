@@ -16,7 +16,7 @@ module.exports = {
   siteRssAuthor: 'Casper User', // The author name used in the RSS file
   // siteFBAppID: "1825356251115265", // optional, sets the FB Application ID for using app insights
   sitePaginationLimit: 10, // The max number of posts per page.
-  googleAnalyticsID: "UA-120716989-1", // GA tracking ID.
+  googleAnalyticsID: 'UA-120716989-1', // GA tracking ID.
   // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [
     'https://www.youtube.com/channel/UCDMdw-H9j9H5tlQy3jUv5rQ',
@@ -56,7 +56,7 @@ module.exports = {
   },
   aboutCover: '/images/nature.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   campaignCover: '/images/people.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  hikingCover: '/images/water-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  fundamentalsCover: '/images/water-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   guideCover: '/images/liftoff.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   finderCover: '/images/people-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   eventCover: '/images/cars.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",

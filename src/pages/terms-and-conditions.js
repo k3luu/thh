@@ -57,12 +57,18 @@ class TermsPage extends React.Component {
           <MainHeader className="post-head" cover={config.eventCover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
+              <MenuButton
+                navigation={config.siteNavigation}
+                onClick={this.handleOnClick}
+              />
             </MainNav>
           </MainHeader>
 
           <Terms />
-          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+          <Footer
+            copyright={config.copyright}
+            promoteGatsby={config.promoteGatsby}
+          />
         </SiteWrapper>
       </Drawer>
     );

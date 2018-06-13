@@ -57,7 +57,10 @@ class ContactPage extends React.Component {
           <MainHeader className="author-head" cover={config.siteCover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
+              <MenuButton
+                navigation={config.siteNavigation}
+                onClick={this.handleOnClick}
+              />
             </MainNav>
           </MainHeader>
 
@@ -67,7 +70,10 @@ class ContactPage extends React.Component {
           </div>
 
           <Contact />
-          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+          <Footer
+            copyright={config.copyright}
+            promoteGatsby={config.promoteGatsby}
+          />
         </SiteWrapper>
       </Drawer>
     );

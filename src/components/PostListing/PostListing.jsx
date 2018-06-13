@@ -32,60 +32,58 @@ class PostListing extends React.Component {
     const postList = getPostList(this.props.postEdges, this.props.postAuthors);
 
     return (
-      <div>
-        {/* This is the post loop - each post will be output using this markup */}
-        {postList.map(post => {
+      <div
+        className="main-content"
+        style={{ display: 'flex', flexWrap: 'wrap' }}
+      >
+        {postList.map((post, i) => {
           // console.log('post listing', post);
           const { title, path, excerpt, author, tags, date, cover } = post;
           const className = post.post_class ? post.post_class : 'post';
 
           return (
-            <PostFormatting className={className} key={title}>
+            <PostFormatting
+              className={className}
+              style={i % 2 === 0 ? { marginRight: 40 } : {}}
+              key={title}
+            >
               <PostHeader>
-                <Box display="flex">
-                  {cover && (
-                    <Link to={path} className="post-image">
-                      <Box
-                        shape="rounded"
-                        color="darkGray"
-                        height={200}
-                        minHeight={200}
-                        width={250}
-                        minWidth={250}
-                        marginRight={4}
-                      >
-                        <Image
-                          alt={title}
-                          color="rgb(231, 186, 176)"
-                          naturalHeight={1}
-                          naturalWidth={1}
-                          fit="cover"
-                          src={cover}
-                        />
-                      </Box>
-                    </Link>
-                  )}
-                  <Box alignItems="center">
-                    <h3 className="post-title">
-                      <Link to={path}>{title}</Link>
-                    </h3>
-                    <section className="post-excerpt">
-                      <Box display="flex" marginTop={2}>
-                        <p>
-                          {excerpt}{' '}
-                          <Link className="read-more" to={path}>
-                            &raquo;
-                          </Link>
-                        </p>
-                      </Box>
-                    </section>
-                  </Box>
+                {cover && (
+                  <Link to={path} className="post-image">
+                    <Box
+                      shape="rounded"
+                      color="darkGray"
+                      height={300}
+                      minHeight={300}
+                    >
+                      <Image
+                        alt={title}
+                        naturalHeight={1}
+                        naturalWidth={1}
+                        fit="cover"
+                        src={cover}
+                      />
+                    </Box>
+                  </Link>
+                )}
+                <Box alignItems="center">
+                  <h3 className="post-title">
+                    <Link to={path}>{title}</Link>
+                  </h3>
+                  <section className="post-excerpt">
+                    <Box display="flex" marginTop={2}>
+                      <p>
+                        {excerpt}{' '}
+                        <Link className="read-more" to={path}>
+                          &raquo;
+                        </Link>
+                      </p>
+                    </Box>
+                  </section>
                 </Box>
               </PostHeader>
               <footer className="post-meta">
-                {/*<AuthorThumbnail avatar={author.image} name={author.name} />*/}
-                {/*/!*<AuthorLink url={`/author/${author.id}`} name={author.name} />*!/*/}
-                {/*<PostTags prefix=" on " tags={tags} />*/}
+                <PostTags prefix="tags: " tags={tags} />
                 {/*<PostDate date={date} />*/}
               </footer>
             </PostFormatting>

@@ -49,7 +49,15 @@ class GuidesPage extends React.Component {
   }
 
   render() {
-    const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
+    const {
+      nodes,
+      page,
+      pages,
+      total,
+      limit,
+      prev,
+      next
+    } = this.props.pathContext;
     // console.log('trail guide page', this.props);
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
@@ -62,18 +70,34 @@ class GuidesPage extends React.Component {
           <MainHeader className="post-head" cover={config.guideCover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
+              <MenuButton
+                navigation={config.siteNavigation}
+                onClick={this.handleOnClick}
+              />
             </MainNav>
           </MainHeader>
 
           <TrailGuide />
 
-          <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
+          <PaginatedContent
+            page={page}
+            pages={pages}
+            total={total}
+            limit={limit}
+            prev={prev}
+            next={next}
+          >
             {/* PostListing component renders all the posts */}
-            <PostListing postEdges={nodes} postAuthors={this.props.data.authors.edges} />
+            <PostListing
+              postEdges={nodes}
+              postAuthors={this.props.data.authors.edges}
+            />
           </PaginatedContent>
 
-          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+          <Footer
+            copyright={config.copyright}
+            promoteGatsby={config.promoteGatsby}
+          />
         </SiteWrapper>
       </Drawer>
     );

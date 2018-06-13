@@ -1,4 +1,3 @@
-// import FontIcon from "react-md/lib/FontIcons";
 import Link from 'gatsby-link';
 
 function GetNavList(config) {
@@ -14,7 +13,6 @@ function GetNavList(config) {
     },
     {
       primaryText: 'Campaign',
-      // LeftIcon: <p>home</p>,
       component: Link,
       to: '/no-matter-the-mountain'
     },
@@ -24,13 +22,11 @@ function GetNavList(config) {
     {
       primaryText: 'Trails',
       subHeader: true,
-      // LeftIcon: <p>home</p>,
       component: Link,
       to: '/guides'
     },
     {
       primaryText: 'Guides',
-      // LeftIcon: <p>home</p>,
       component: Link,
       subNav: true,
       to: '/guides'
@@ -40,7 +36,6 @@ function GetNavList(config) {
     },
     {
       primaryText: 'Finder',
-      // LeftIcon: <p>home</p>,
       component: Link,
       subNav: true,
       to: '/trail-finder'
@@ -50,16 +45,14 @@ function GetNavList(config) {
     },
     {
       primaryText: 'Fundamentals',
-      // LeftIcon: <p>home</p>,
       component: Link,
-      to: '/hiking'
+      to: '/fundamentals'
     },
     {
       divider: true
     },
     {
       primaryText: 'Events',
-      // LeftIcon: <p>home</p>,
       component: Link,
       to: '/events'
     },
@@ -83,18 +76,17 @@ function GetNavList(config) {
 
   NavList.push({
     primaryText: 'About',
-    // LeftIcon: <FontIcon>person</FontIcon>,
     component: Link,
     to: '/about'
   });
 
   NavList.push({
     primaryText: 'Contact',
-    // LeftIcon: <FontIcon>person</FontIcon>,
     component: Link,
     to: '/contact'
   });
 
   return NavList;
 }
+
 export default GetNavList;

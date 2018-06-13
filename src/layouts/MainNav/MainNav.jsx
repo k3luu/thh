@@ -5,7 +5,7 @@ import './MainNav.css';
 
 class MainNav extends React.Component {
   render() {
-    const { children, className, home } = this.props;
+    const { children, className } = this.props;
     const formatting = ['overlay'];
     const classes = classNames('main-nav', formatting, className);
 

@@ -103,7 +103,7 @@ class Home extends Component {
             need to decide which is the right fit for you.
           </p>
 
-          <Link to="/hiking">
+          <Link to="/fundamentals">
             <h4>Fundamentals</h4>
             <div className="home-banner">
               <Box shape="rounded" color="white" height={250}>
@@ -113,7 +113,7 @@ class Home extends Component {
                   naturalHeight={1}
                   naturalWidth={1}
                   fit="cover"
-                  src={config.hikingCover}
+                  src={config.fundamentalsCover}
                 />
               </Box>
             </div>

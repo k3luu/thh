@@ -5,7 +5,6 @@ import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 import './Contact.css';
 
 class Events extends Component {
-  // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
       <div className="main-content contact">

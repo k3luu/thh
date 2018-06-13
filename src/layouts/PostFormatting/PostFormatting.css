@@ -1,9 +1,9 @@
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 90%;
+    width: 480px;
     max-width: 900px;
-    margin: 4rem auto;
+    margin: 4rem 0;
     padding-bottom: 4rem;
     border-bottom: #d8d8d8 1px solid;
     word-wrap: break-word;
@@ -146,11 +146,23 @@ div.page-template .post-title {
 }
 
 /* ==========================================================================
+       Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 1020px) {
+    .post {
+        width: auto;
+        margin-right: 0 !important;
+    }
+}
+
+/* ==========================================================================
        Media Queries - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
     .post {
+        width: auto;
         font-size: 0.95em;
     }
 
@@ -169,7 +181,6 @@ div.page-template .post-title {
 
 @media only screen and (max-width: 500px) {
     .post {
-        width: auto;
         margin: 2rem 16px;
         padding-bottom: 2rem;
         line-height: 1.65em;

@@ -1,7 +1,6 @@
 import React, { Component, createElement, isValidElement } from 'react';
 import GetNavList from './GetNavList';
 import './Navigation.css';
-import SubscribeButton from '../Subscribe/SubscribeForm';
 import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 
 const Divider = () => null;
@@ -73,7 +72,6 @@ class Navigation extends Component {
           </a>
           <ul>{navItems.map(mapToListParts)}</ul>
           <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
-          {/*<SubscribeButton url={config.siteRss} />*/}
         </div>
         <span className="nav-cover" />
       </div>

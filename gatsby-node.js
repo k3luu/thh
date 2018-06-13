@@ -42,7 +42,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const categoryPage = path.resolve('src/templates/category.jsx');
     const authorPage = path.resolve('src/templates/author.jsx');
     const guidesPage = path.resolve('src/templates/guides.js');
-    const hikingPage = path.resolve('src/templates/hiking.js');
+    const fundamentalsPage = path.resolve('src/templates/fundamentals.js');
 
     if (!fs.existsSync(path.resolve(`content/${siteConfig.blogAuthorDir}/authors/`))) {
       reject("The 'authors' folder is missing within the 'blogAuthorDir' folder.");
@@ -154,10 +154,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPaginationPages({
           createPage,
           edges: result.data.fundamentalPosts.edges,
-          component: hikingPage,
+          component: fundamentalsPage,
           // limit: siteConfig.sitePaginationLimit,
           limit: siteConfig.sitePaginationLimit,
-          pathFormatter: prefixPathFormatter('/hiking')
+          pathFormatter: prefixPathFormatter('/fundamentals')
         });
 
         // Creates Posts
