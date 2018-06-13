@@ -99,7 +99,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             fundamentalPosts: allMarkdownRemark(
               limit: 1000
               filter: { fileAbsolutePath: { regex: "/(\\/content\\/fundamentals)/.*\\\\.md$/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
+              sort: { fields: [frontmatter___date_added], order: DESC }
             ) {
               totalCount
               edges {
@@ -111,6 +111,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     date
                     category
                     author
+                    date_added
                   }
                   fields {
                     slug

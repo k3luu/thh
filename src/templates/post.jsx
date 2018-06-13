@@ -47,15 +47,14 @@ class PostTemplate extends React.Component {
   constructor(p) {
     super(p);
 
-    const { location, data } = this.props;
-    const { slug, next, prev } = this.props.pathContext;
+    const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
 
     this.state = {
       menuOpen: false,
       activeStep: 0,
-      post: post
+      post
     };
   }
 
@@ -90,7 +89,8 @@ class PostTemplate extends React.Component {
 
   handleForward = () => {
     let step = this.state.activeStep + 1;
-    if (step >= this.state.post.carousel.length) step = this.state.post.carousel.length - 1;
+    if (step >= this.state.post.carousel.length)
+      step = this.state.post.carousel.length - 1;
 
     this.setState({ activeStep: step });
   };
@@ -104,13 +104,26 @@ class PostTemplate extends React.Component {
     const { slug, next, prev } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
-    const { cover, title, date, author, tags, carousel, category, video } = post;
+    const {
+      cover,
+      title,
+      date,
+      author,
+      tags,
+      carousel,
+      category,
+      video
+    } = post;
     const className = post.post_class ? post.post_class : 'post';
-    const authorData = AuthorModel.getAuthor(this.props.data.authors.edges, author, config.blogAuthorId);
+    const authorData = AuthorModel.getAuthor(
+      this.props.data.authors.edges,
+      author,
+      config.blogAuthorId
+    );
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
-    console.log('BLOG POST', postNode, post);
+    console.log('BLOG POST', postNode, this.props.pathContext);
 
     return (
       <Drawer className="post-template" isOpen={this.state.menuOpen}>
@@ -126,7 +139,10 @@ class PostTemplate extends React.Component {
           <MainHeader className="post-head" cover={cover}>
             <MainNav>
               <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
+              <MenuButton
+                navigation={config.siteNavigation}
+                onClick={this.handleOnClick}
+              />
             </MainNav>
           </MainHeader>
           <MainContent>
@@ -134,28 +150,50 @@ class PostTemplate extends React.Component {
               <PostHeader>
                 <h1 className="post-title">{title}</h1>
                 <section className="post-meta">
-                  {date && <PostDate date={date} /> }
+                  {date && <PostDate date={date} />}
                   <PostTags prefix=" - " tags={tags} />
                 </section>
               </PostHeader>
 
-              {video && <iframe className="post-video" title="video" src={video} frameBorder="0" allowFullScreen />}
+              {video && (
+                <iframe
+                  className="post-video"
+                  title="video"
+                  src={video}
+                  frameBorder="0"
+                  allowFullScreen
+                />
+              )}
 
-              <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+              <section
+                className="post-content"
+                dangerouslySetInnerHTML={{ __html: postNode.html }}
+              />
 
               {carousel && <MyCarousel data={carousel} />}
 
-              {category === 'fundamentals' &&
-              <div>
-                <h3>Disclaimer</h3>
-                <p>Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.
-                </p>
-              </div>}
+              {category === 'fundamentals' && (
+                <div>
+                  <h3>Disclaimer</h3>
+                  <p>
+                    Any reference in this website to any person, organization,
+                    activity, product, or service related to such person or
+                    organization, or any linkages from this web site to the web
+                    site of another party, do not constitute or imply the
+                    endorsement, recommendation, or favoring of Two
+                    Half-Hitches.
+                  </p>
+                </div>
+              )}
 
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}
                 {/*<AuthorInfo prefix="/author" author={authorData} />*/}
-                <PostShare postNode={postNode} postPath={location.pathname} config={config} />
+                <PostShare
+                  postNode={postNode}
+                  postPath={location.pathname}
+                  config={config}
+                />
                 <GhostSubscribe />
                 <Disqus postNode={postNode} />
               </PostFooter>
@@ -164,7 +202,10 @@ class PostTemplate extends React.Component {
           <ReadNext next={getNextData()} prev={getPrevData()} />
 
           {/* The tiny footer at the very bottom */}
-          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+          <Footer
+            copyright={config.copyright}
+            promoteGatsby={config.promoteGatsby}
+          />
         </SiteWrapper>
       </Drawer>
     );

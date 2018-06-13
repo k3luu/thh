@@ -1,6 +1,6 @@
 ---
 title: "How To Purify Water With Water Filters"
-cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/sturtevant/_J8A4928.jpg"
+cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/water-filter.jpg"
 author: ""
 category: "fundamentals"
 tags:
@@ -8,6 +8,8 @@ tags:
     - water
     - filter
     - purification
+video: "https://www.youtube.com/embed/C7a-QC3ypWE"
+date_added: "2018-06-07"
 ---
 
 Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most
@@ -18,6 +20,8 @@ The filters shown in the video utilize hollow fiber membranes, also known as ult
 They are capable of removing particulates and molecules from contaminated water through holes the size of 0.1 microns. These holes prevent harmful bacteria and protozoans that are too large to pass through, such as Giardia, E. coli, protozoan cysts, Cryptosporidium and other waterborne viruses. Some of benefits of using hollow fiber include: no chemicals required, backflushing the fibers to remove particulate and increase life of the filter, hollow fiber exceeds regulatory standards of water quality, and no shelf life for the fiber.
 
 Check out more useful tips below!
+
+![drinking](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/drinking.jpg)
 
 ###Is Backountry water safe to drink?
 Water in the outdoors is exposed to both wildlife and humans. As the outdoors become more
@@ -31,9 +35,15 @@ destination and check for seasonal streams, access to water spigots, snow, etc.
 Most water filters are able to remove 99.9% of all bacteria and protozoans (including heavy
 metals and chemicals depending on the type of filter) that may be upstream from your collection point. Modern water filter technology have higher flow rates, which means less waiting period for consumption, but requires periodic cleaning. Contrary to iodine tablets, water filters do not change the taste or color of water, and is a great option for those who are allergic to iodine tablets or chlorine. If you are unable to collect from clear/flowing sources, filters can prevent high sedimentation in your drinking water.
 
+![hydroblu-1](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/hydroblu.jpg)
+
+![hydroblu-2](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/hydroblu-2.jpg)
+
 ###Where should I get my water from?
 Retrieve your water from clear and free flowing sources. Make sure to check upstream and
 avoid collecting downstream of camping areas, areas where mining has occurred, and agricultural areas.
+
+![filling up](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/filling-up.jpg)
 
 More water treatment tips:
 Separate clean and dirty water containers to avoid cross-contamination.

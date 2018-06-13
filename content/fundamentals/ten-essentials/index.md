@@ -8,6 +8,7 @@ tags:
     - tent
     - camping
     - overnight
+date_added: "2018-06-01"
 ---
 
 Before you set foot into the backcountry, it is vital to know the Ten Essentials by heart. Some may seem obvious to you, but you would be surprised how lost people get when gearing up. The following items are the core foundation to the outdoors:

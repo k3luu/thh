@@ -18,7 +18,11 @@ const getPostList = (postEdges, authorEdges) =>
     cover: postEdge.node.frontmatter.cover,
     title: postEdge.node.frontmatter.title,
     date: postEdge.node.frontmatter.date,
-    author: AuthorModel.getAuthor(authorEdges, postEdge.node.frontmatter.author, SiteConfig.blogAuthorId),
+    author: AuthorModel.getAuthor(
+      authorEdges,
+      postEdge.node.frontmatter.author,
+      SiteConfig.blogAuthorId
+    ),
     excerpt: postEdge.node.excerpt,
     timeToRead: postEdge.node.timeToRead
   }));

@@ -46,7 +46,15 @@ class IndexTemplate extends React.Component {
   };
 
   render() {
-    const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
+    const {
+      nodes,
+      page,
+      pages,
+      total,
+      limit,
+      prev,
+      next
+    } = this.props.pathContext;
     const authorsEdges = this.props.data.authors.edges;
 
     console.log('index', this.props);
@@ -66,16 +74,29 @@ class IndexTemplate extends React.Component {
             <MainHeader cover={config.siteCover}>
               <MainNav overlay={config.siteCover}>
                 {/*<BlogLogo logo={config.siteLogo} title={config.siteTitle} />*/}
-                <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
+                <MenuButton
+                  navigation={config.siteNavigation}
+                  onClick={this.handleOnClick}
+                />
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
-                  <PageTitle logo={config.siteLogoName} title={config.siteTitle} />
+                  <PageTitle
+                    logo={config.siteLogoName}
+                    title={config.siteTitle}
+                  />
                   <PageDescription text={config.siteDescription} />
                   {/*<SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />*/}
                 </div>
               </div>
-              <Link className="scroll-down icon-arrow-left" to="home" data-offset="-45" spy smooth duration={500}>
+              <Link
+                className="scroll-down icon-arrow-left"
+                to="home"
+                data-offset="-45"
+                spy
+                smooth
+                duration={500}
+              >
                 <span className="hidden">Scroll Down</span>
               </Link>
             </MainHeader>
@@ -88,7 +109,10 @@ class IndexTemplate extends React.Component {
           </div>
 
           {/* The tiny footer at the very bottom */}
-          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+          <Footer
+            copyright={config.copyright}
+            promoteGatsby={config.promoteGatsby}
+          />
         </SiteWrapper>
       </Drawer>
     );

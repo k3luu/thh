@@ -9,6 +9,7 @@ tags:
     - camping
     - overnight
 video: "https://www.youtube.com/embed/UCzegdTxbXU"
+date_added: "2018-06-02"
 ---
 
 Setting up a tent is straight forward, but it can be difficult and confusing your first time around. Before you head out, we recommend practicing at home!
