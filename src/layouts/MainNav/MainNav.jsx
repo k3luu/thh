@@ -4,8 +4,10 @@ import './MainNav.css';
 
 class MainNav extends React.Component {
   render() {
-    const { children, className } = this.props;
-    const formatting = ['overlay'];
+    const { children, className, home } = this.props;
+    let formatting = ['overlay'];
+    if (home) formatting.push('home');
+
     const classes = classNames('main-nav', formatting, className);
 
     return <nav className={classes}>{children}</nav>;

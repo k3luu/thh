@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-scroll';
+import Headroom from 'react-headroom';
 import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -15,7 +16,6 @@ import MenuButton from '../components/MenuButton/MenuButton';
 import PageTitle from '../components/PageTitle/PageTitle';
 import PageDescription from '../components/PageDescription/PageDescription';
 import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
-import SocialMediaIcons from '../components/SocialMediaIcons/SocialMediaIcons';
 import Home from '../components/Home/Home';
 
 class IndexTemplate extends React.Component {
@@ -72,23 +72,24 @@ class IndexTemplate extends React.Component {
           <div className="home-template">
             {/* The big featured header */}
             <MainHeader cover={config.siteCover}>
-              <MainNav overlay={config.siteCover}>
-                <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-                <MenuButton
-                  navigation={config.siteNavigation}
-                  onClick={this.handleOnClick}
-                />
-              </MainNav>
-              <div className="vertical">
-                <div className="main-header-content inner">
-                  <PageTitle
-                    logo={config.siteLogoName}
-                    title={config.siteTitle}
+              <Headroom style={{ zIndex: 3 }}>
+                <MainNav overlay={config.siteCover} home>
+                  <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
+                  <MenuButton
+                    navigation={config.siteNavigation}
+                    onClick={this.handleOnClick}
                   />
-                  <PageDescription text={config.siteDescription} />
-                  {/*<SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />*/}
-                </div>
+                </MainNav>
+              </Headroom>
+
+              <div className="main-header-content inner">
+                <PageTitle
+                  logo={config.siteLogoName}
+                  title={config.siteTitle}
+                />
+                <PageDescription text={config.siteDescription} />
               </div>
+
               <Link
                 className="scroll-down icon-arrow-left"
                 to="home"
