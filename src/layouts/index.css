@@ -281,35 +281,35 @@ h6 {
 }
 
 h1 {
-    /*font-size: 5rem !important;*/
+    font-size: 5rem;
     letter-spacing: 1px;
     text-indent: -3px;
     text-transform: uppercase;
 }
 
 h2 {
-    /*font-size: 3.6rem !important;*/
+    font-size: 3.6rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 0 !important;
 }
 
 h3 {
-    /*font-size: 3rem;*/
+    font-size: 3rem;
     letter-spacing: 0.6px;
     text-transform: uppercase;
 }
 
 h4 {
-    /*font-size: 2.5rem;*/
+    font-size: 2.5rem;
 }
 
 h5 {
-    /*font-size: 2.3rem;*/
+    font-size: 2.3rem;
 }
 
 h6 {
-    /*font-size: 2rem;*/
+    font-size: 2rem;
 }
 
 a {
@@ -331,6 +331,8 @@ dl {
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     margin: 0 0 1.75em;
     text-rendering: geometricPrecision;
+    letter-spacing: 0.2px;
+    line-height: 1.3em;
 }
 
 ol,

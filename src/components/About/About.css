@@ -1,3 +1,23 @@
 .about-img {
     width: 100%;
 }
+
+.about-leader {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.about-title {
+    font-style: italic;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: unset;
+}
+
+.about-section {
+    margin-bottom: 70px;
+}
+
+.about-section p {
+    margin: 15px 0;
+}
