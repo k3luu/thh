@@ -20,10 +20,22 @@ class Events extends Component {
 
           <Box display="flex" className="contact-fields">
             <Box column={6} marginRight={2}>
-              <input className="contact-field" type="text" name="name" placeholder="Name" required />
+              <input
+                className="contact-field"
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
             </Box>
             <Box column={6} marginLeft={2}>
-              <input className="contact-field" type="email" name="email" placeholder="Email" required />
+              <input
+                className="contact-field"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
             </Box>
           </Box>
           <Box marginTop={3}>
@@ -36,10 +48,7 @@ class Events extends Component {
           </Box>
         </form>
 
-        <Box display="flex" alignItems="center" marginTop={12}>
-          <Box marginRight={10}>
-            <h5>Connect With Us!</h5>
-          </Box>
+        <Box display="flex" justifyContent="center" marginTop={12}>
           <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
         </Box>
       </div>

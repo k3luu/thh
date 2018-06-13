@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-scroll';
-import PostListing from '../components/PostListing/PostListing';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import Drawer from '../layouts/Drawer/Drawer';
@@ -14,7 +13,6 @@ import BlogLogo from '../components/BlogLogo/BlogLogo';
 import MenuButton from '../components/MenuButton/MenuButton';
 import PageTitle from '../components/PageTitle/PageTitle';
 import PageDescription from '../components/PageDescription/PageDescription';
-import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
 import Home from '../components/Home/Home';
 
 class IndexTemplate extends React.Component {
@@ -45,18 +43,8 @@ class IndexTemplate extends React.Component {
   };
 
   render() {
-    const {
-      nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
-    } = this.props.pathContext;
+    const { nodes } = this.props.pathContext;
     const authorsEdges = this.props.data.authors.edges;
-
-    console.log('index', this.props);
 
     return (
       <Drawer className="home-template" isOpen={this.state.menuOpen}>
@@ -99,10 +87,6 @@ class IndexTemplate extends React.Component {
               </Link>
             </MainHeader>
 
-            {/*<PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>*/}
-            {/*/!* PostListing component renders all the posts *!/*/}
-            {/*<PostListing postEdges={nodes} postAuthors={authorsEdges} />*/}
-            {/*</PaginatedContent>*/}
             <Home config={config} nodes={nodes} authorsEdges={authorsEdges} />
           </div>
 

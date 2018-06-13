@@ -10,7 +10,7 @@ class BlogLogo extends Component {
         <Link className="blog-logo" to={url || '/'}>
           {/* style={{ boxShadow: "none" }}> */}
           <img src={logo} alt={title} />
-          <span>Home</span>
+          <div>Home</div>
         </Link>
       );
     }
