@@ -39,7 +39,9 @@ class PostListing extends React.Component {
         {postList.map((post, i) => {
           // console.log('post listing', post);
           const { title, path, excerpt, author, tags, date, cover } = post;
-          const className = post.post_class ? post.post_class : 'post';
+          const className = post.post_class
+            ? post.post_class
+            : 'post post-listing';
 
           return (
             <PostFormatting

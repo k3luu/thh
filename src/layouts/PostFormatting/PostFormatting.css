@@ -1,9 +1,9 @@
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 480px;
+    width: 90%;
     max-width: 900px;
-    margin: 4rem 0;
+    margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #d8d8d8 1px solid;
     word-wrap: break-word;
@@ -143,17 +143,6 @@ div.page-template .post-title {
 
 .post-disclaimer p {
     margin-bottom: 10px
-}
-
-/* ==========================================================================
-       Media Queries
-   ========================================================================== */
-
-@media only screen and (max-width: 1020px) {
-    .post {
-        width: auto;
-        margin-right: 0 !important;
-    }
 }
 
 /* ==========================================================================
