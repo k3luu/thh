@@ -160,7 +160,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           pathFormatter: prefixPathFormatter('/fundamentals')
         });
 
-        // Creates Posts
+        // Creates Posts - to edit the READ NEXT pages?
         createLinkedPages({
           createPage,
           edges: result.data.allMarkdownRemark.edges,

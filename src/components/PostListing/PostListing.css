@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 1020px) {
     .post-listing {
-        width: auto;
-        margin-right: 0 !important;
+        width: 100%;
+        margin: 4rem auto !important;
     }
 }

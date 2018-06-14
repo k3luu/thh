@@ -124,7 +124,7 @@ class PostTemplate extends React.Component {
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
-    console.log('BLOG POST', postNode, this.props.pathContext);
+    console.log('BLOG POST', postNode, this.props.data);
 
     return (
       <Drawer className="post-template" isOpen={this.state.menuOpen}>
