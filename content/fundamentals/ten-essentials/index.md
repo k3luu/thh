@@ -4,7 +4,6 @@ cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/ten-essen
 author: ""
 category: "fundamentals"
 tags:
-    - fundamentals
     - tent
     - camping
     - overnight

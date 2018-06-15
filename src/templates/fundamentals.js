@@ -57,8 +57,6 @@ class HikingPage extends React.Component {
       next
     } = this.props.pathContext;
 
-    console.log('hiking page', this.props);
-
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>
         <Helmet title={`Hiking Fundamentals | ${config.siteTitle}`} />

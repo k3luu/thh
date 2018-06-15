@@ -4,7 +4,6 @@ cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/overnight
 author: ""
 category: "fundamentals"
 tags:
-    - fundamentals
     - hiking
     - overnight
     - gear

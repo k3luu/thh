@@ -4,7 +4,6 @@ cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/day-hikin
 author: ""
 category: "fundamentals"
 tags:
-    - fundamentals
     - hiking
     - checklist
 video: "https://www.youtube.com/embed/O0iLR9yb-J8"

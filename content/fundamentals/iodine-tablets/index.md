@@ -4,7 +4,6 @@ cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-ta
 author: ""
 category: "fundamentals"
 tags:
-    - fundamentals
     - water
     - purification
 video: "https://www.youtube.com/embed/FkvDrzPe_vk"

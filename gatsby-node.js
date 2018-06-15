@@ -163,12 +163,27 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // Creates Posts - to edit the READ NEXT pages?
         createLinkedPages({
           createPage,
-          edges: result.data.allMarkdownRemark.edges,
+          edges: result.data.trailPosts.edges,
           component: postPage,
           edgeParser: edge => ({
             path: edge.node.fields.slug,
             context: {
               slug: edge.node.fields.slug
+            }
+          }),
+          circular: true
+        });
+
+        createLinkedPages({
+          createPage,
+          edges: result.data.fundamentalPosts.edges,
+          component: postPage,
+          edgeParser: edge => ({
+            path: edge.node.fields.slug,
+            context: {
+              slug: edge.node.fields.slug,
+              tags: edge.node.frontmatter.tags,
+              authie: "guinevere"
             }
           }),
           circular: true

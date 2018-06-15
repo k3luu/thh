@@ -4,7 +4,6 @@ cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/poisonous
 author: ""
 category: "fundamentals"
 tags:
-    - fundamentals
     - poisonous plants
 date_added: "2018-06-05"
 disclaimer:
