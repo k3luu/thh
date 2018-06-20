@@ -155,7 +155,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.fundamentalPosts.edges,
           component: fundamentalsPage,
-          // limit: siteConfig.sitePaginationLimit,
           limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/fundamentals')
         });

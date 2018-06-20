@@ -15,7 +15,7 @@ disclaimer:
     - Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.
 ---
 
-Setting up a tent is straight forward, but it can be difficult and confusing your first time around. Before you head out, we recommend practicing at home!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting up a tent is straight forward, but it can be difficult and confusing your first time around. Before you head out, we recommend practicing at home!
 
 ###Picking the Ideal Location
 

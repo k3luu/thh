@@ -12,7 +12,7 @@ disclaimer:
     - Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.
 ---
 
-Before you set foot into the backcountry, it is vital to know the Ten Essentials by heart. Some may seem obvious to you, but you would be surprised how lost people get when gearing up. The following items are the core foundation to the outdoors:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before you set foot into the backcountry, it is vital to know the Ten Essentials by heart. Some may seem obvious to you, but you would be surprised how lost people get when gearing up. The following items are the core foundation to the outdoors:
 
 ###1. REPAIR KIT AND TOOLS (POCKETKNIFE, MULTITOOL, ETC.)
 
@@ -48,6 +48,6 @@ Before you set foot into the backcountry, it is vital to know the Ten Essentials
 ###10. RAIN GEAR
 ![rain gear](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/ten-essentials/Rain%2BGear.jpeg)
 
-Knowledge is the key to using the Ten Essentials. Having items in your pack has no value unless you understand how to use them.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge is the key to using the Ten Essentials. Having items in your pack has no value unless you understand how to use them.
 
-It’s critical that you plan ahead, whether you go on day hike or a backpacking trip. Stay warm, hydrated, energized, and aware of your surroundings. You’ll never appreciate their true value until the situation arises where you really need one of them! The Great Outdoors has its obstacles and unforeseen conditions, whether you like it or not. Time and time again, they will become second nature to you. These are your Ten Essentials, your gear for life.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It’s critical that you plan ahead, whether you go on day hike or a backpacking trip. Stay warm, hydrated, energized, and aware of your surroundings. You’ll never appreciate their true value until the situation arises where you really need one of them! The Great Outdoors has its obstacles and unforeseen conditions, whether you like it or not. Time and time again, they will become second nature to you. These are your Ten Essentials, your gear for life.
