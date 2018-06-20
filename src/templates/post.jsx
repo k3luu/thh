@@ -124,7 +124,7 @@ class PostTemplate extends React.Component {
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
-    console.log('BLOG POST', postNode, this.props.data);
+    console.log('BLOG POST', this.props);
 
     return (
       <Drawer className="post-template" isOpen={this.state.menuOpen}>
@@ -208,7 +208,7 @@ class PostTemplate extends React.Component {
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!, $next: String, $prev: String) {
+  query BlogPostBySlug($slug: String!, $next: String, $tags: [String]) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       timeToRead
@@ -229,7 +229,10 @@ export const pageQuery = graphql`
       }
     }
     # prev post data
-    prev: markdownRemark(fields: { slug: { eq: $prev } }) {
+    prev: markdownRemark(
+      frontmatter: { tags: { in: $tags } }
+      fields: { slug: { ne: $slug } }
+    ) {
       excerpt(pruneLength: 112)
       frontmatter {
         title

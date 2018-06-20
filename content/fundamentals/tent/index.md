@@ -7,6 +7,8 @@ tags:
     - tent
     - camping
     - overnight
+    - hiking
+    - gear
 video: "https://www.youtube.com/embed/UCzegdTxbXU"
 date_added: "2018-06-02"
 disclaimer:

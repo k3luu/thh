@@ -182,6 +182,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: edge.node.fields.slug,
             context: {
               slug: edge.node.fields.slug,
+              tag: edge.node.frontmatter.tags[0],
               tags: edge.node.frontmatter.tags,
               authie: "guinevere"
             }

@@ -5,6 +5,8 @@ author: ""
 category: "fundamentals"
 tags:
     - poisonous plants
+    - health
+    - hiking
 date_added: "2018-06-05"
 disclaimer:
     - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. 
