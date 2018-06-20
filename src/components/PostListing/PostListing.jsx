@@ -85,7 +85,7 @@ class PostListing extends React.Component {
                 </Box>
               </PostHeader>
               <footer className="post-meta">
-                <PostTags prefix="tags: " tags={tags} />
+                {/*<PostTags prefix="tags: " tags={tags} />*/}
                 {/*<PostDate date={date} />*/}
               </footer>
             </PostFormatting>

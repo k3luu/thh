@@ -152,7 +152,7 @@ class PostTemplate extends React.Component {
                 <h1 className="post-title">{title}</h1>
                 <section className="post-meta">
                   {date && <PostDate date={date} />}
-                  <PostTags prefix=" - " tags={tags} />
+                  {/*<PostTags prefix="tags: " tags={tags} />*/}
                 </section>
               </PostHeader>
 
