@@ -56,6 +56,8 @@ class PostTemplate extends React.Component {
       activeStep: 0,
       post
     };
+
+    this.handleTrailData = this.handleTrailData.bind(this);
   }
 
   handleOnClick = evt => {
@@ -97,6 +99,22 @@ class PostTemplate extends React.Component {
 
   handleStepChange = activeStep => {
     this.setState({ activeStep });
+  };
+
+  handleTrailData = data => {
+    const { location, distance, difficulty, elevation, season, parking } = data;
+    return (
+      <div>
+        <ul>
+          {location && <li>Location: {location}</li>}
+          {distance && <li>Distance: {distance}</li>}
+          {difficulty && <li>Difficulty: {difficulty}</li>}
+          {elevation && <li>Elevation: {elevation}</li>}
+          {season && <li>Season: {season}</li>}
+          {parking && <li>Parking: {parking}</li>}
+        </ul>
+      </div>
+    );
   };
 
   render() {
@@ -155,6 +173,8 @@ class PostTemplate extends React.Component {
                   {/*<PostTags prefix="tags: " tags={tags} />*/}
                 </section>
               </PostHeader>
+
+              {this.handleTrailData(post)}
 
               {video && (
                 <iframe
@@ -223,6 +243,12 @@ export const pageQuery = graphql`
         carousel
         video
         disclaimer
+        location
+        distance
+        difficulty
+        elevation
+        season
+        parking
       }
       fields {
         slug

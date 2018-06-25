@@ -17,7 +17,7 @@ module.exports = {
   // siteFBAppID: "1825356251115265", // optional, sets the FB Application ID for using app insights
   sitePaginationLimit: 10, // The max number of posts per page.
   googleAnalyticsID: 'UA-120716989-1', // GA tracking ID.
-  // disqusShortname: "https-vagr9k-github-io-gatsby-advanced-starter", // enables Disqus comments, visually deviates from original Casper theme.
+  disqusShortname: 'twohalfhitches', // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [
     'https://www.youtube.com/channel/UCDMdw-H9j9H5tlQy3jUv5rQ',
     'https://www.facebook.com/twohalfhitches/?ref=bookmarks',

@@ -1,7 +1,13 @@
 ---
 title: "Sturtevant Falls via Chantry Flats"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/sturtevant/_J8A4928.jpg"
-date: "2017-03-23"
+date: "2018-01-31"
+location: "Angeles National Forest - Sierra Madre"
+distance: "3.1 miles"
+difficulty: "Easy"
+elevation: "629 ft"
+season: "All"
+parking: "Adventure Pass Required"
 category: "trails"
 tags:
     - trails
