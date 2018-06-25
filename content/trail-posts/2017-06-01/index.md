@@ -14,7 +14,45 @@ tags:
     - san gabriel
     - trails
 carousel:
-    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/blue+ridge/_J8A2074.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0885.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0890.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0893.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0894.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0895.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0896.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0897.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0900.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0901.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0911.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0917.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0922.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0924.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0928.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0929.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0936.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0938.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0942.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0947.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0950.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0954.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0955.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0959.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0960.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0962.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0966.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0980.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0982.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0991.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0999.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1007.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1008.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1011.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1012.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1014.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1017.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1018.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1019.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1026.jpg
 ---
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throop peak makes it on our top list for one of the best day hikes in Southern California!
