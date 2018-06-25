@@ -75,7 +75,7 @@ class PostListing extends React.Component {
                   <section className="post-excerpt">
                     <Box display="flex" marginTop={2}>
                       <p>
-                        {excerpt}{' '}
+                        {excerpt.replace(/\s\s+/g, ' ')}{' '}
                         <Link className="read-more" to={path}>
                           &raquo;
                         </Link>

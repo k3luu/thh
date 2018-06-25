@@ -105,7 +105,7 @@ class PostTemplate extends React.Component {
     const { location, distance, difficulty, elevation, season, parking } = data;
     return (
       <div>
-        <ul>
+        <ul className="trail-data">
           {location && <li>Location: {location}</li>}
           {distance && <li>Distance: {distance}</li>}
           {difficulty && <li>Difficulty: {difficulty}</li>}

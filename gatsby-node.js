@@ -167,7 +167,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edgeParser: edge => ({
             path: edge.node.fields.slug,
             context: {
-              slug: edge.node.fields.slug
+              slug: edge.node.fields.slug,
+              tag: edge.node.frontmatter.tags[0],
+              tags: edge.node.frontmatter.tags
             }
           }),
           circular: true
@@ -182,8 +184,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             context: {
               slug: edge.node.fields.slug,
               tag: edge.node.frontmatter.tags[0],
-              tags: edge.node.frontmatter.tags,
-              authie: "guinevere"
+              tags: edge.node.frontmatter.tags
             }
           }),
           circular: true

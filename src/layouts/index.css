@@ -365,10 +365,6 @@ dl dd {
     margin-bottom: 1em;
 }
 
-ul li {
-    list-style: disc;
-}
-
 ol li {
     list-style: decimal;
 }
