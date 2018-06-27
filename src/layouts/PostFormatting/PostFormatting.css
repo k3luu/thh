@@ -26,11 +26,6 @@
     box-shadow: #fff 0 0 0 5px;
 }
 
-.post iframe.post-video {
-    height: 400px;
-    width: 100%;
-}
-
 .post-title a {
     text-decoration: none;
 }
@@ -142,7 +137,11 @@ div.page-template .post-title {
 }
 
 .post-disclaimer p {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+}
+
+.post-disclaimer p::before {
+    content: '\00a0\00a0\00a0\00a0\00a0';
 }
 
 .trail-data li {

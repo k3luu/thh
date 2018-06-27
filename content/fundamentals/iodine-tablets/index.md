@@ -6,11 +6,14 @@ category: "fundamentals"
 tags:
     - water
     - purification
-video: "https://www.youtube.com/embed/FkvDrzPe_vk"
 date_added: "2018-06-04"
 disclaimer:
     - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. 
 ---
+
+<iframe title="video" src="https://www.youtube.com/embed/FkvDrzPe_vk" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
+
+<br>
 
 ##Water Purification via Iodine Tablets
 

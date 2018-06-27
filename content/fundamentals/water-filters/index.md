@@ -7,13 +7,15 @@ tags:
     - water
     - filter
     - purification
-video: "https://www.youtube.com/embed/C7a-QC3ypWE"
 date_added: "2018-06-07"
 disclaimer:
     - The water filters shown in the video were provided entirely by HydroBlu. The opinions expressed herein are solely of Two Half-Hitches.
     - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. Any action you take upon the information on this website is strictly at your own risk.
 ---
 
+<iframe title="video" src="https://www.youtube.com/embed/C7a-QC3ypWE" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
+
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most
 pristine water can be unsafe to drink, and will need proper treatment. In this video, we will
 demonstrate how to treat backcountry water with water filters and the advantages over iodine tablets.

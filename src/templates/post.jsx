@@ -130,7 +130,6 @@ class PostTemplate extends React.Component {
       tags,
       carousel,
       category,
-      video,
       disclaimer,
       references
     } = post;
@@ -176,16 +175,6 @@ class PostTemplate extends React.Component {
               </PostHeader>
 
               {this.handleTrailData(post)}
-
-              {video && (
-                <iframe
-                  className="post-video"
-                  title="video"
-                  src={video}
-                  frameBorder="0"
-                  allowFullScreen
-                />
-              )}
 
               <section
                 className="post-content"
@@ -249,7 +238,6 @@ export const pageQuery = graphql`
         tags
         author
         carousel
-        video
         disclaimer
         location
         distance

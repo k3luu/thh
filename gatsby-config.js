@@ -52,7 +52,10 @@ module.exports = {
             }
           },
           {
-            resolve: 'gatsby-remark-responsive-iframe'
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {
+              plugins: [`gatsby-remark-responsive-iframe`],
+            },
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -73,20 +76,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-sharp',
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 500,
-              linkImagesToOriginal: false
-            },
-          },
-        ],
-      },
-    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-twitter',
     'gatsby-plugin-sitemap',

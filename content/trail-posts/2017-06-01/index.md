@@ -8,7 +8,6 @@ difficulty: "Easy-Moderate"
 elevation: "1292 ft"
 season: "All"
 parking: "Adventure Pass Required"
-video: "https://www.youtube.com/embed/yBeyT24oWPI"
 category: "trails"
 tags:
     - san gabriel
@@ -55,6 +54,9 @@ carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A1026.jpg
 ---
 
+<iframe title="video" src="https://www.youtube.com/embed/yBeyT24oWPI" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
+
+<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throop peak makes it on our top list for one of the best day hikes in Southern California!
 This trail offers a 360 degree panoramic view of the San Gabriel mountains. The more notable
 features of the trail include being filled with conifers, vast clearings and wildflowers
@@ -64,9 +66,6 @@ Throop Peak is rated as an easy to moderate hike, with roughly 1,200 ft of eleva
 2 miles. For those conditioned for hiking, this trek may just be a walk in the park. Trail
 conditions are best from early March to late November, and may be possible during the winter.
 Dogs are welcome, but must be leashed.
-
-<iframe title="video" src="https://www.youtube.com/embed/yBeyT24oWPI" width="600" height="400" frameBorder="0"allowFullScreen></iframe>
-
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trail begins at Dawson Saddle (searchable on Google Maps), located near a very subtle
 trail marker (pictured below). There are 2 ways to get to the trailhead. From the 210, exit
