@@ -65,6 +65,9 @@ Throop Peak is rated as an easy to moderate hike, with roughly 1,200 ft of eleva
 conditions are best from early March to late November, and may be possible during the winter.
 Dogs are welcome, but must be leashed.
 
+<iframe title="video" src="https://www.youtube.com/embed/yBeyT24oWPI" width="600" height="400" frameBorder="0"allowFullScreen></iframe>
+
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trail begins at Dawson Saddle (searchable on Google Maps), located near a very subtle
 trail marker (pictured below). There are 2 ways to get to the trailhead. From the 210, exit
 La Canada Flintridge and take the Angeles Crest Highway northeast for about 45 miles. From

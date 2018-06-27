@@ -12,7 +12,7 @@ const styles = {
 
 class MyCarousel extends Component {
   render() {
-    const {data} = this.props;
+    const { data } = this.props;
     return (
       <Carousel emulateTouch useKeyboardArrows dynamicHeight>
         {data.map(photo => (
