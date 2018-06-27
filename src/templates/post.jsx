@@ -131,7 +131,8 @@ class PostTemplate extends React.Component {
       carousel,
       category,
       video,
-      disclaimer
+      disclaimer,
+      references
     } = post;
     const className = post.post_class ? post.post_class : 'post';
     const authorData = AuthorModel.getAuthor(
@@ -200,6 +201,13 @@ class PostTemplate extends React.Component {
                 </div>
               )}
 
+              {references && (
+                <div className="post-disclaimer">
+                  <h4>References</h4>
+                  {references.map(text => <p key={text}>{text}</p>)}
+                </div>
+              )}
+
               <PostFooter>
                 {/*<AuthorImage author={authorData} />*/}
                 {/*<AuthorInfo prefix="/author" author={authorData} />*/}
@@ -249,6 +257,7 @@ export const pageQuery = graphql`
         elevation
         season
         parking
+        references
       }
       fields {
         slug
