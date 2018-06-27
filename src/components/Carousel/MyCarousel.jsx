@@ -14,7 +14,7 @@ class MyCarousel extends Component {
   render() {
     const {data} = this.props;
     return (
-      <Carousel emulateTouch useKeyboardArrows>
+      <Carousel emulateTouch useKeyboardArrows dynamicHeight>
         {data.map(photo => (
           <div key={photo} style={Object.assign({}, styles.slide)}>
             <img className="carousel-img" src={photo} alt={photo} />

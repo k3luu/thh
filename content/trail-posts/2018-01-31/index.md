@@ -10,6 +10,7 @@ season: "All"
 parking: "Adventure Pass Required"
 category: "trails"
 tags:
+    - waterfalls
     - angeles national forest
     - trails
 carousel:
