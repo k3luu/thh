@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
+import { Box, Image } from 'gestalt';
 import './About.css';
-import franz from './franz.jpeg';
-import robert from './robert.jpeg';
-import colt from './colt.jpeg';
 
 class About extends Component {
   // Edit About component or pages/about.jsx to include your information.
@@ -20,11 +18,22 @@ class About extends Component {
           outdoor enthusiasts who share the same passion as you!
         </p>
 
-        <img
-          src={franz}
-          className="about-img"
-          alt="Franz Stanley Anunciacion"
-        />
+        <Box
+          shape="circle"
+          color="darkGray"
+          height="500px"
+          width="100%"
+          marginRight={2}
+        >
+          <Image
+            alt="Franz Stanley Anunciacion"
+            color="darkGray"
+            naturalHeight={1}
+            naturalWidth={1}
+            fit="cover"
+            src="https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/franz.jpeg"
+          />
+        </Box>
         <h3 className="about-leader">Franz Stanley Anunciacion</h3>
         <h5 className="about-title">Founder/Editor-in-Chief</h5>
         <div className="about-section">
@@ -49,7 +58,16 @@ class About extends Component {
           </p>
         </div>
 
-        <img src={robert} className="about-img" alt="Robert Aaron Hebron" />
+        <Box color="darkGray" height="500px" width="100%" marginRight={2}>
+          <Image
+            alt="Robert Aaron Hebron"
+            color="darkGray"
+            naturalHeight={1}
+            naturalWidth={1}
+            fit="cover"
+            src="https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/robert.jpeg"
+          />
+        </Box>
         <h3 className="about-leader">Robert Aaron Hebron</h3>
         <h5 className="about-title">Photographer/Multi-Media Manager</h5>
         <div className="about-section">
@@ -74,7 +92,16 @@ class About extends Component {
           </p>
         </div>
 
-        <img src={colt} className="about-img" alt="Colt Thomas Deck" />
+        <Box color="darkGray" height="500px" width="100%" marginRight={2}>
+          <Image
+            alt="Colt Thomas Deck"
+            color="darkGray"
+            naturalHeight={1}
+            naturalWidth={1}
+            fit="cover"
+            src="https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/colt.jpeg"
+          />
+        </Box>
         <h3 className="about-leader">Colt Thomas Deck</h3>
         <h5 className="about-title">Senior Editor</h5>
         <div className="about-section">
