@@ -45,18 +45,18 @@ carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/SS+Dominator+Shipwreck+Hike/_MG_2930.jpg
 ---
 
-Explore the ruins of the SS Dominator Shipwreck! Located in Palos Verdes Peninsula, this trail follows a rocky beach sandwiched between towering bluffs and the vast Pacific Ocean. A quick half-day hike at best, this spot is beautiful and secluded with an interesting reward. There are a couple of ways to get to the shipwreck, some more safe than others. Whichever route you decide to take, be sure to check the parking signs, as Palos Verdes can be notorious for strict parking. 
+Explore the ruins of the SS Dominator Shipwreck! Located in Palos Verdes Peninsula, this trail follows a rocky beach sandwiched between towering bluffs and the vast Pacific Ocean. A quick half-day hike at best, this spot is beautiful and secluded with an interesting reward. There are a couple of ways to get to the shipwreck, some more safe than others. Whichever route you decide to take, be sure to check the parking signs, as Palos Verdes can be notorious for strict parking.
 
-1. Intersection of Paseo Del Mar and Avenida Mirola
-2. Intersection of Paseo Del Mar and Oakley Road (This is the route we took)
-3. Intersection of Paseo Del Mar and Rocky Point Road
+1.  Intersection of Paseo Del Mar and Avenida Mirola
+2.  Intersection of Paseo Del Mar and Oakley Road (This is the route we took)
+3.  Intersection of Paseo Del Mar and Rocky Point Road
 
 Head south towards the bluffs and take a gander at the beautiful views that really encompass the peninsula. The Paseo Del Mar and Oakley Road intersection route may be the most dangerous route all of all 3. This requires using both your hands for balance against loose rocks and gravels that break to the touch. Take it slow and steady!
 
 !()[]
 !()[]
 
-After you survive the descent, just walk down hill until you hit the beachfront. The remainder of the trail follows a rocky path with loose boulders that may move as you step onto them. Be careful, and make sure you check each rock before you throw your full weight into your step. It's easy to lose your balance, and there isn't really a "soft spot" to land here. We've hiked this trail countless times since we leave nearby, but we recommend wearing hiking shoes if you're up for this ankle-breaking adventure. Trust us, Steph Curry has nothing on these rocks. Every single time we hike this trail, we find new and bizarre items washed up on the shoreline, but lobster traps (or pots) seem to be present no matter the season. While some of the debris and objects that have washed up can be interesting to look at (even we get distracted by their randomness), don't forget to look at the actual beach. One of our favorite things about coming to this spot is watching the waves lap up and shift the color of the rocks. Seeing the water put the rocks on this color grade of dark to light (as pictured below) is one of those little things that we just never get tired of seeing. We could sit here for a long while and watch the rocks play peek-a-boo with us as the waves roll in and out. You might also notice the beautiful contrast of the area. We're treated to the ocean waging a war of erosion on the coastline tans, browns and greens in the photo below, which is just a really powerful image when taking into account the geological instability of the area (as mentioned in our previous post on Portuguese Bend). 
+After you survive the descent, just walk down hill until you hit the beachfront. The remainder of the trail follows a rocky path with loose boulders that may move as you step onto them. Be careful, and make sure you check each rock before you throw your full weight into your step. It's easy to lose your balance, and there isn't really a "soft spot" to land here. We've hiked this trail countless times since we leave nearby, but we recommend wearing hiking shoes if you're up for this ankle-breaking adventure. Trust us, Steph Curry has nothing on these rocks. Every single time we hike this trail, we find new and bizarre items washed up on the shoreline, but lobster traps (or pots) seem to be present no matter the season. While some of the debris and objects that have washed up can be interesting to look at (even we get distracted by their randomness), don't forget to look at the actual beach. One of our favorite things about coming to this spot is watching the waves lap up and shift the color of the rocks. Seeing the water put the rocks on this color grade of dark to light (as pictured below) is one of those little things that we just never get tired of seeing. We could sit here for a long while and watch the rocks play peek-a-boo with us as the waves roll in and out. You might also notice the beautiful contrast of the area. We're treated to the ocean waging a war of erosion on the coastline tans, browns and greens in the photo below, which is just a really powerful image when taking into account the geological instability of the area (as mentioned in our previous post on Portuguese Bend).
 
 !()[]
 !()[]
@@ -66,7 +66,7 @@ This trail used to be one of our favorites, mostly because there used to be a re
 !()[]
 !()[]
 
-In 1961, the SS Dominator was en route from Vancouver until becoming trapped by the current and lodged into the shorelines of Lunada Bay. Efforts were made to move the ship deeper into the waters, but Mother Nature would not have it. While a shipwreck isn't necessarily something to celebrate, this instance does serve as a reminder as to how small we are compared to the vast entity of Mother Nature. Even a naval vessel couldn't combat the waves. 
+In 1961, the SS Dominator was en route from Vancouver until becoming trapped by the current and lodged into the shorelines of Lunada Bay. Efforts were made to move the ship deeper into the waters, but Mother Nature would not have it. While a shipwreck isn't necessarily something to celebrate, this instance does serve as a reminder as to how small we are compared to the vast entity of Mother Nature. Even a naval vessel couldn't combat the waves.
 
 !()[]
 !()[]
