@@ -20,7 +20,7 @@ function GetNavList(config) {
       divider: true
     },
     {
-      primaryText: 'Trails',
+      primaryText: 'Trail',
       subHeader: true,
       component: Link,
       to: '/guides'
