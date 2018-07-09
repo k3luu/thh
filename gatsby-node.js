@@ -3,7 +3,7 @@ const _ = require('lodash');
 const fs = require('fs');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 const siteConfig = require('./data/SiteConfig');
-const { createPaginationPages, createLinkedPages } = require('gatsby-pagination');
+const { createPaginationPages, createLinkedPages, prefixPathFormatter } = require('gatsby-pagination');
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
@@ -146,7 +146,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.trailPosts.edges,
           component: guidesPage,
           limit: siteConfig.sitePaginationLimit,
-          pathFormatter: post => `/guides/${post}`
+          pathFormatter: prefixPathFormatter('/guides')
         });
 
         // Creates Hiking Fundamentals page
@@ -155,7 +155,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.fundamentalPosts.edges,
           component: fundamentalsPage,
           limit: siteConfig.sitePaginationLimit,
-          pathFormatter: post => `/fundamentals/${post}`
+          pathFormatter: prefixPathFormatter('/fundamentals')
         });
 
         // Creates Posts - to edit the READ NEXT pages?
