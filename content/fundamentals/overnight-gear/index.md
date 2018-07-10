@@ -1,6 +1,7 @@
 ---
 title: "Overnight Backpacking Gear"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/overnight-gear/packing-gear.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/overnight-gear/packing-gear.jpg"
 author: ""
 category: "fundamentals"
 tags:

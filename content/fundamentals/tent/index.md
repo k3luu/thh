@@ -1,6 +1,7 @@
 ---
 title: "How to Set Up a Tent"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/tent-setup/Setting%2Bup%2Ba%2Btent%2BBanner.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/tent-setup/Setting%2Bup%2Ba%2Btent%2BBanner.jpg"
 author: ""
 category: "fundamentals"
 tags:

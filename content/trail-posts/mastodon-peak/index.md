@@ -1,6 +1,7 @@
 ---
 title: "Mastodon Peak via Cottonwood Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7731.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7731-thumbnail.jpg"
 date: "2016-03-19"
 location: "Joshua Tree National Park"
 distance: "2.6 miles"
@@ -44,7 +45,7 @@ carousel:
 <iframe title="video" src="https://www.youtube.com/embed/TKQPK8IboMY" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cottonwood Campground has all the basic, car camping amenities including water spigots, flushable toilets, fire pits, and wooden tables. The campsites are first come, first serve with a park entrance fee of $20 and an additional overnight camping fee of $20 per night. Each site also has designated parking spots, large enough to fit 2 cars. If you're looking to reserve a spot, be sure to come as early as possible! 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cottonwood Campground has all the basic, car camping amenities including water spigots, flushable toilets, fire pits, and wooden tables. The campsites are first come, first serve with a park entrance fee of $20 and an additional overnight camping fee of $20 per night. Each site also has designated parking spots, large enough to fit 2 cars. If you're looking to reserve a spot, be sure to come as early as possible!
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7737.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7755.jpg)

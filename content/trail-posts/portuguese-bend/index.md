@@ -1,6 +1,7 @@
 ---
 title: "Portuguese Bend Reserve Hike"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Portuguese+Bend/_J8A1847.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Portuguese+Bend/_J8A1847-thumbnail.jpg"
 date: "2017-07-13"
 location: "Palos Verdes Peninsula, CA"
 distance: "Varies"

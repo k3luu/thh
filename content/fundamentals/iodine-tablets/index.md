@@ -1,6 +1,7 @@
 ---
 title: "How to Purify Water with Iodine Tablets"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-tablets/iodine.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-tablets/iodine.jpg"
 author: ""
 category: "fundamentals"
 tags:

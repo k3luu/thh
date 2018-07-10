@@ -1,6 +1,7 @@
 ---
 title: "Blue Ridge via the Pacific Crest Trail"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/blue+ridge/_J8A2146.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/blue+ridge/_J8A2146-thumbnail.jpg"
 date: "2017-08-17"
 location: "Angeles National Forest"
 distance: "4.3 miles"

@@ -1,6 +1,7 @@
 ---
 title: "Eaton Canyon Falls"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Eaton+Canyon/_J8A1969.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Eaton+Canyon/_J8A1969-thumbnail.jpg"
 date: "2017-07-31"
 location: "Angeles National Forest"
 distance: "3.5 miles"

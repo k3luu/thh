@@ -16,6 +16,7 @@ const getPostList = (postEdges, authorEdges) =>
     path: postEdge.node.fields.slug,
     tags: postEdge.node.frontmatter.tags,
     cover: postEdge.node.frontmatter.cover,
+    thumbnail: postEdge.node.frontmatter.thumbnail,
     title: postEdge.node.frontmatter.title,
     date: postEdge.node.frontmatter.date,
     author: AuthorModel.getAuthor(
@@ -37,8 +38,17 @@ class PostListing extends React.Component {
         style={{ display: 'flex', flexWrap: 'wrap' }}
       >
         {postList.map((post, i) => {
-          // console.log('post listing', post);
-          const { title, path, excerpt, author, tags, date, cover } = post;
+          console.log('post listing', post);
+          const {
+            title,
+            path,
+            excerpt,
+            author,
+            tags,
+            date,
+            cover,
+            thumbnail
+          } = post;
           const className = post.post_class
             ? post.post_class
             : 'post post-listing';
@@ -55,15 +65,15 @@ class PostListing extends React.Component {
                     <Box
                       shape="rounded"
                       color="darkGray"
-                      height={300}
-                      minHeight={300}
+                      height={320}
+                      minHeight={320}
                     >
                       <Image
                         alt={title}
                         naturalHeight={1}
                         naturalWidth={1}
                         fit="cover"
-                        src={cover}
+                        src={thumbnail}
                       />
                     </Box>
                   </Link>

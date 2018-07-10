@@ -1,6 +1,7 @@
 ---
 title: "Big Horn mine via Vincent Gap"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4561.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4561-thumbnail.jpg"
 date: "2017-12-02"
 location: "San Gabriel Mountains"
 distance: "4 miles"
@@ -42,12 +43,12 @@ carousel:
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4450.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After a few yards, you will come across a large sign. Stray right for the mine, or hit the Mine Gulch for a more challenging hike. Last time we were here, the trail was washed over after a brutal rainy season. This time around, it seems the trail has been maintained. There's nothing quite like the feeling of heading into the woods. The approaching trees create a vacuum that pull you into their irresistible shadows, only to be broken apart and scattered by a warm sun dripping through the branches. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After a few yards, you will come across a large sign. Stray right for the mine, or hit the Mine Gulch for a more challenging hike. Last time we were here, the trail was washed over after a brutal rainy season. This time around, it seems the trail has been maintained. There's nothing quite like the feeling of heading into the woods. The approaching trees create a vacuum that pull you into their irresistible shadows, only to be broken apart and scattered by a warm sun dripping through the branches.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4456.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4471.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The views are captivating, and the early morning marine layer being lifted by the sun ties it all together. As the sun begins to interfere with the marine layer, the sight becomes less of a complete singular image to a vast, if not daunting, piece of multiple perspectives and layers. In the background, thousands of individual trees appear as a single blanket, and in the foreground there exists a sense of numerousness that is unrivaled by any other entity found in nature. The sense of multiplicity shows on the trail, as the terrain will certainly show. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The views are captivating, and the early morning marine layer being lifted by the sun ties it all together. As the sun begins to interfere with the marine layer, the sight becomes less of a complete singular image to a vast, if not daunting, piece of multiple perspectives and layers. In the background, thousands of individual trees appear as a single blanket, and in the foreground there exists a sense of numerousness that is unrivaled by any other entity found in nature. The sense of multiplicity shows on the trail, as the terrain will certainly show.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4475.jpg)
 
@@ -59,15 +60,15 @@ carousel:
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4509.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After you wrap around the eastern edge of the mountain, you will pass the fallen tree in the photo below and finally get a glimpse of the mine. It's sad to say, but we observed a ton of graffiti on this hike. Respect the land, no one wants to see your artwork out here. A giant deserves better than your graffiti. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After you wrap around the eastern edge of the mountain, you will pass the fallen tree in the photo below and finally get a glimpse of the mine. It's sad to say, but we observed a ton of graffiti on this hike. Respect the land, no one wants to see your artwork out here. A giant deserves better than your graffiti.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4515.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Big Horn Mine was discovered in the late 19th century by Charles Tom Vincent. The mine still stands today, just off the edge of this mountain. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Big Horn Mine was discovered in the late 19th century by Charles Tom Vincent. The mine still stands today, just off the edge of this mountain.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4523.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the mine has a time capsule effect on us. Most people think of Wild West movies, and Spaghetti Westerns starring America's favorite angry grandpa, but seeing Big Horn mine in person was almost dizzying at first. A remnant of different times that belonged to different people, all of whom nature has outlasted. It's humbling, and also sends you down a bit of a rabbit hole in terms of what it means to be present. Below are some shots we grabbed while looking over the mountain. The mine quite literally frames this gorgeous view. This framework is interesting for a few reasons. The first thing you might notice is that the framework breaks up the view into different stills, the view through every frame is different; making the complete view look more like the wall of an art gallery, rather than a mine. The second thing that sticks out to us is that the structure blends into the mountain side. Yes, the materials aren't rock, or dirt, or living tress, but the structure itself looks almost as if it belongs. An interesting attempt at matching the might of the very mountain that owns it. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the mine has a time capsule effect on us. Most people think of Wild West movies, and Spaghetti Westerns starring America's favorite angry grandpa, but seeing Big Horn mine in person was almost dizzying at first. A remnant of different times that belonged to different people, all of whom nature has outlasted. It's humbling, and also sends you down a bit of a rabbit hole in terms of what it means to be present. Below are some shots we grabbed while looking over the mountain. The mine quite literally frames this gorgeous view. This framework is interesting for a few reasons. The first thing you might notice is that the framework breaks up the view into different stills, the view through every frame is different; making the complete view look more like the wall of an art gallery, rather than a mine. The second thing that sticks out to us is that the structure blends into the mountain side. Yes, the materials aren't rock, or dirt, or living tress, but the structure itself looks almost as if it belongs. An interesting attempt at matching the might of the very mountain that owns it.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4536.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4555.jpg)

@@ -1,6 +1,7 @@
 ---
 title: "Day Hiking Checklist"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/day-hiking/day-hiking.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/day-hiking/day-hiking.jpg"
 author: ""
 category: "fundamentals"
 tags:

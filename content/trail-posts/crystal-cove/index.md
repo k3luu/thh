@@ -1,6 +1,7 @@
 ---
 title: "Crystal Cove State Park"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/_J8A3587.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/_J8A3587-thumbnail.jpg"
 date: "2017-10-10"
 location: "Newport Beach - Orange County"
 distance: "Varies"
@@ -58,7 +59,7 @@ carousel:
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/crystal-cove-map.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make your way past the Ridge Park entrance onto the dirt paved trail. Not only is this area highly trafficked with other hikers, but also bikers. Make sure to watch out for them. We hiked relativity early in the morning and found a fading marine layer residing in the canyon. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make your way past the Ridge Park entrance onto the dirt paved trail. Not only is this area highly trafficked with other hikers, but also bikers. Make sure to watch out for them. We hiked relativity early in the morning and found a fading marine layer residing in the canyon.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3574.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3585.jpg)
@@ -69,7 +70,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3602.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3612.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plant life sprouts out of rock faces quite frequently on this trail, which resembles something like a splinter that has nestled its way into your thumb. After 1.3 miles, you will come across a gate where the unnamed trail will join with No Name Ridge. Continue heading in the southwest direction, and eventually you will hit a glimpse of the vast ocean. More often than not, nature finds ways to surprise us. Below showcases just one of the beautiful features that this trail has to offer. Getting this glimpse of vastness as we rounded the corner was all too humbling, and is just one way in which we find ourselves constantly surprised. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plant life sprouts out of rock faces quite frequently on this trail, which resembles something like a splinter that has nestled its way into your thumb. After 1.3 miles, you will come across a gate where the unnamed trail will join with No Name Ridge. Continue heading in the southwest direction, and eventually you will hit a glimpse of the vast ocean. More often than not, nature finds ways to surprise us. Below showcases just one of the beautiful features that this trail has to offer. Getting this glimpse of vastness as we rounded the corner was all too humbling, and is just one way in which we find ourselves constantly surprised.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3617.jpg)
 
@@ -82,17 +83,14 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3628.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3629.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take sometime to enjoy the beach, dig your toes into the sand, and enjoy the tranquility of the ocean waves. We're not fans of the beach, but hey, we can come to appreciate it every once in a while. Sometimes just standing in the presence of such a beauty is enough to ground you in the experience. This is one of those times. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take sometime to enjoy the beach, dig your toes into the sand, and enjoy the tranquility of the ocean waves. We're not fans of the beach, but hey, we can come to appreciate it every once in a while. Sometimes just standing in the presence of such a beauty is enough to ground you in the experience. This is one of those times.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3643.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3645.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3647.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to hiking, Crystal Cove offers three campgrounds, one in a canyon and two at the higher elevations. The higher trails offer beautiful vistas of the mountainous backcountry, geological formations, and the blue Pacific Ocean.  Exploring the lower trails offers hiking through riparian woo dlands with oak and sycamore trees along the seasonal Moro Creek.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to hiking, Crystal Cove offers three campgrounds, one in a canyon and two at the higher elevations. The higher trails offer beautiful vistas of the mountainous backcountry, geological formations, and the blue Pacific Ocean. Exploring the lower trails offers hiking through riparian woo dlands with oak and sycamore trees along the seasonal Moro Creek.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Resized/_J8A3594.jpg)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The mission of the California State Parks is "to provide for the health, inspiration, and education of the people of California by helping to preserve the state’s extraordinary biological diversity, protecting its most valued natural and cultural resources, and creating opportunities for high-quality outdoor recreation." We have a great appreciation for designated open spaces. Preservation, education, and recreation is at the very heart of State Parks like Crystal Cove. Although these State Parks do a wonderful job, it is each of our responsibility to protect our natural environment and to ensure it will continue to be enjoyed by future generations. Keep the beauty thriving.
-
-
-

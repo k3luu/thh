@@ -1,6 +1,7 @@
 ---
 title: "What are the Ten Essentials?"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/ten-essentials/water.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/ten-essentials/water.jpg"
 author: ""
 category: "fundamentals"
 tags:

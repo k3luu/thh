@@ -1,6 +1,7 @@
 ---
 title: "Throop Peak via Dawson Saddle"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0995.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0995-thumbnail.jpg"
 date: "2017-06-01"
 location: "San Gabriel Mountains"
 distance: "4 miles"

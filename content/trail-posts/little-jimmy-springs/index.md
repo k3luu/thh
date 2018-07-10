@@ -1,6 +1,7 @@
 ---
 title: "Little Jimmy Springs via Islip Saddle"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/_J8A4282.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/_J8A4282-thumbnail.jpg"
 date: "2017-11-24"
 location: "Angeles National Forest"
 distance: "4 miles"
@@ -40,7 +41,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4319.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4219.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first mile on the PCT can be heart pounding for some, but try to let the beautiful scenery take your mind off of it. The elevation is much higher in these areas, so you might find yourself short of breath from the start. Below you'll see a spot with a wide view of whats to come on this trail. The fashionable mountain ahead looks like its been acid washed and studded with green. Normally we talk about the color green as a singular color way, but on this hike we were treated to a myriad of shades. From pale green, to almost Crayola neon green, the spectrum shines on all fronts. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first mile on the PCT can be heart pounding for some, but try to let the beautiful scenery take your mind off of it. The elevation is much higher in these areas, so you might find yourself short of breath from the start. Below you'll see a spot with a wide view of whats to come on this trail. The fashionable mountain ahead looks like its been acid washed and studded with green. Normally we talk about the color green as a singular color way, but on this hike we were treated to a myriad of shades. From pale green, to almost Crayola neon green, the spectrum shines on all fronts.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4226.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4318.jpg)
@@ -64,14 +65,15 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4265.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4270.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trail to the left takes you to the springs, while the trail on the right takes you to Mt. Islip. If you decide you want to hit the peak after checking out the springs, the trail will join with the ascent to the peak, so don't worry about having to backtrack. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trail to the left takes you to the springs, while the trail on the right takes you to Mt. Islip. If you decide you want to hit the peak after checking out the springs, the trail will join with the ascent to the peak, so don't worry about having to backtrack.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4274.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walk a couple of yards past the sign and the spring will be right around the corner. There are a few tree stumps and makeshift benches. Relax and unwind, and take a drink of the springs. According to reviews and other blogs out there, many hikers have been observed drinking directly from the springs without any form of treatment. We don't know what happens to them after, but we encourage treating backcountry water no matter the circumstances. You know, just to prevent a zombie apocalypse and things of that nature. When everything is said and done this trail is a worthwhile trip, hands down. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walk a couple of yards past the sign and the spring will be right around the corner. There are a few tree stumps and makeshift benches. Relax and unwind, and take a drink of the springs. According to reviews and other blogs out there, many hikers have been observed drinking directly from the springs without any form of treatment. We don't know what happens to them after, but we encourage treating backcountry water no matter the circumstances. You know, just to prevent a zombie apocalypse and things of that nature. When everything is said and done this trail is a worthwhile trip, hands down.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4278.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4284.jpg)
+
 > Franz gives a quick lesson on how water filters work using the 3-Stage Straw by HydroBlu.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Content/_J8A4287.jpg)

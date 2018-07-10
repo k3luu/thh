@@ -1,6 +1,7 @@
 ---
 title: "How To Purify Water With Water Filters"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/water-filter.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/water-filter.jpg"
 author: "guinevere"
 category: "fundamentals"
 tags:

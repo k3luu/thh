@@ -1,6 +1,7 @@
 ---
 title: "Cooper Canyon Trail Camp via Burkhart Trail"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6582.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6582-thumbnail.jpg"
 date: "2016-02-27"
 location: "San Gabriel Mountains"
 distance: "3.1 miles"
@@ -53,7 +54,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6450.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6459.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trail is in great condition with a few notables that make this a great experience for an overnighter and especially, for first-time backpackers. The trail and campground is water accessible with seasonal streams (not potable, please treat before consuming). There's sage scrub, chaparral, and conifer trees as far as the eye I can see, several creeks to traverse, and a few wooden logs to climb. The elevation gain is steady, and quite moderate. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The trail is in great condition with a few notables that make this a great experience for an overnighter and especially, for first-time backpackers. The trail and campground is water accessible with seasonal streams (not potable, please treat before consuming). There's sage scrub, chaparral, and conifer trees as far as the eye I can see, several creeks to traverse, and a few wooden logs to climb. The elevation gain is steady, and quite moderate.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6462.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6526.jpg)
@@ -78,6 +79,5 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6627.jpg)
 
 <iframe src="https://www.google.com/maps/d/embed?mid=14UUpeEHDWYhDo3IoMUTjW4WNkbc" width="600" height="400"></iframe>
-
 
 <br><br>

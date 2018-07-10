@@ -1,6 +1,7 @@
 ---
 title: "Echo Mountain via Sam Merrill Trail"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Echo+Mountain/_J8A1667.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Echo+Mountain/_J8A1667-thumbnail.jpg"
 date: "2017-07-03"
 location: "Mount Lowe Park, Altadena"
 distance: "5.5 miles"

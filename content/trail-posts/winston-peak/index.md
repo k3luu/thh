@@ -1,6 +1,7 @@
 ---
 title: "Winston Peak & Winston Ridge"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2507.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2507-thumbnail.jpg"
 date: "2017-09-13"
 location: "Angeles National Forest"
 distance: "4 miles"
@@ -59,7 +60,7 @@ carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2843.jpg
 ---
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hit two peaks in one day! Winston Peak and Winston Ridge is a 4.5-mile, lightly-trafficked, loop through the lush backcountry of the San Gabriel Mountains. Winston peak is a half-mile hike from the trailhead with roughly 700 ft of elevation gain, followed by a descent to Winston Ridge. The views of the San Gabriels and Antelope Valley are outstanding, which is of no surprise when it comes to the northern parts of the Angeles Forest. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hit two peaks in one day! Winston Peak and Winston Ridge is a 4.5-mile, lightly-trafficked, loop through the lush backcountry of the San Gabriel Mountains. Winston peak is a half-mile hike from the trailhead with roughly 700 ft of elevation gain, followed by a descent to Winston Ridge. The views of the San Gabriels and Antelope Valley are outstanding, which is of no surprise when it comes to the northern parts of the Angeles Forest.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start your hike by parking at the Cloudburst Summit parking lot. If using Google Maps, search Winston Peak and you will be routed to a point along the Angeles Crest Highway just short of the parking lot. Continue on the highway for another 800 ft and the turnout will be on your left.
 
@@ -70,22 +71,22 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2464.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2471.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You'll notice that you may be short of breath from the start. This area of the Angeles Forest is at 7,000 ft in elevation. With that said, you will also notice how much more forested this place is, given that it is on the south side of the mountains. This means the weather is much cooler, maybe even windy, compared to the southern and western parts of the San Gabriels. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You'll notice that you may be short of breath from the start. This area of the Angeles Forest is at 7,000 ft in elevation. With that said, you will also notice how much more forested this place is, given that it is on the south side of the mountains. This means the weather is much cooler, maybe even windy, compared to the southern and western parts of the San Gabriels.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2462.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2480.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2481.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take some time to enjoy the views from Winston Peak. There are some unique rock formations you can climb, and plenty of boulders to sit on. You can see the strong juxtaposition between the south side of the San Gabriel mountains and the dry, desert feel of Antelope Valley. The rock formations invasively bleed into the blue sky, creating even more contrast in this area, which made us take notice and start climbing around. While we often get to climb rocks, it isn't every day that we're treated to the accompanying view we unexpectedly got. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take some time to enjoy the views from Winston Peak. There are some unique rock formations you can climb, and plenty of boulders to sit on. You can see the strong juxtaposition between the south side of the San Gabriel mountains and the dry, desert feel of Antelope Valley. The rock formations invasively bleed into the blue sky, creating even more contrast in this area, which made us take notice and start climbing around. While we often get to climb rocks, it isn't every day that we're treated to the accompanying view we unexpectedly got.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2497.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can see Winston Ridge if you stand on the highest rock formation on the peak. The view was already great, but standing on the shoulders of the mountain opened up a whole new line of sight, and one that didn't disappoint, but rather took on a whole new form. Winston Ridge looks as if it sits on a pillow of trees, and while it may not seem special, it is something that you just have to get out there to experience. You'll see what we mean. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can see Winston Ridge if you stand on the highest rock formation on the peak. The view was already great, but standing on the shoulders of the mountain opened up a whole new line of sight, and one that didn't disappoint, but rather took on a whole new form. Winston Ridge looks as if it sits on a pillow of trees, and while it may not seem special, it is something that you just have to get out there to experience. You'll see what we mean.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2510.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2511.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Try not to spend too much time at the peak, because surprisingly, the ridge will have a more clear and panoramic view. The next half-mile is a straight descent back into the canyon with short switch backs here and there. We recommend wearing hiking shoes with strong ankle support and grip. You'll need to walk over loose gravel and dirt, and climb over a few boulders and fallen trees. In any case, it makes the hike that much more interesting and challenging. The trail opens up a bit (as seen below) and invites the sky in to mix it up with the greens and browns that surround you. It's a refreshing effect that is more than welcome. Heading away from this little clearly is a slide of smooth rocks (watch your step). While they may seem like just plain ordinary rocks, we couldn't help but notice how they fold into each other, while other defiantly jut out. It kind of looked like the beginning phase of forming a dog pile. If you look at the third picture below, you'll see those switch backs we mentioned earlier. Don't sweat it, you'll notice some trees conveniently placed just in case you need a little something to orient yourself on the way down. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Try not to spend too much time at the peak, because surprisingly, the ridge will have a more clear and panoramic view. The next half-mile is a straight descent back into the canyon with short switch backs here and there. We recommend wearing hiking shoes with strong ankle support and grip. You'll need to walk over loose gravel and dirt, and climb over a few boulders and fallen trees. In any case, it makes the hike that much more interesting and challenging. The trail opens up a bit (as seen below) and invites the sky in to mix it up with the greens and browns that surround you. It's a refreshing effect that is more than welcome. Heading away from this little clearly is a slide of smooth rocks (watch your step). While they may seem like just plain ordinary rocks, we couldn't help but notice how they fold into each other, while other defiantly jut out. It kind of looked like the beginning phase of forming a dog pile. If you look at the third picture below, you'll see those switch backs we mentioned earlier. Don't sweat it, you'll notice some trees conveniently placed just in case you need a little something to orient yourself on the way down.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2550.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2568.jpg)
@@ -102,7 +103,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2675.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2682.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As you make your way to the ridge, it's easy to lose track of how far you've come. Take a look back and you can see Winston Peak from a distance. Don't worry, you won't have to hike up that mountain again. There will be a loop trail back at the saddle that will take you to the fire access road. Looking out, you can see the tree riddled slopes that define the views of this hike. The mountain stands proud against the sun and sky, while rock formations force themselves into frame. Everything seems to be in its place here. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As you make your way to the ridge, it's easy to lose track of how far you've come. Take a look back and you can see Winston Peak from a distance. Don't worry, you won't have to hike up that mountain again. There will be a loop trail back at the saddle that will take you to the fire access road. Looking out, you can see the tree riddled slopes that define the views of this hike. The mountain stands proud against the sun and sky, while rock formations force themselves into frame. Everything seems to be in its place here.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2717.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2745.jpg)
@@ -113,7 +114,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2764.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2773.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As mentioned in the beginning, this is a loop trail. Retrace your steps back to the saddle, and stray left. This trail will take you the fire access road. The subtle trail to the right is the way you came down from Winston Peak. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As mentioned in the beginning, this is a loop trail. Retrace your steps back to the saddle, and stray left. This trail will take you the fire access road. The subtle trail to the right is the way you came down from Winston Peak.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2887.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2874.jpg)

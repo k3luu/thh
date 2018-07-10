@@ -1,6 +1,7 @@
 ---
 title: "Sunset Peak via Glendora Ridge Road"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Sunset+Peak/_J8A1228.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Sunset+Peak/_J8A1228-thumbnail.jpg"
 date: "2017-06-30"
 location: "San Gabriel Mountains"
 distance: "8 miles"

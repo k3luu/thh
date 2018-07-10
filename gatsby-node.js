@@ -60,6 +60,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     tags
                     cover
+                    thumbnail
                     date
                     category
                     author
@@ -84,6 +85,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     tags
                     cover
+                    thumbnail
                     date
                     category
                     author
@@ -108,6 +110,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     tags
                     cover
+                    thumbnail
                     date
                     category
                     author
