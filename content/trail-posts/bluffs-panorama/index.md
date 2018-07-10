@@ -35,7 +35,7 @@ carousel:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There are several camp sites that span across Big Sur. Among the many popular are Andrew Molera State Park, Julia Pfeiffer Burns State Park, Kirk Creek Campground, Limekiln State Park, and of course, Point Lobos. If you decide not to make reservations, there are always the first-come, first-serve camp sites.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We stayed at Andrew Molera State Park, a beautiful, undeveloped land that offers several hiking trails and endless beachcombing.  There's a fee of $10 per car, per day and an additional $25 camping fee per night. If you decide to stay, there's also a one-third mile hike from the parking lot to about 24 walk-in campsites.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We stayed at Andrew Molera State Park, a beautiful, undeveloped land that offers several hiking trails and endless beachcombing. There's a fee of $10 per car, per day and an additional $25 camping fee per night. If you decide to stay, there's also a one-third mile hike from the parking lot to about 24 walk-in campsites.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7743.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7747.jpg)
