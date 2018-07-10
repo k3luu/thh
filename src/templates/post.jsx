@@ -39,7 +39,7 @@ function parsePost(post, slug) {
 const formatReadNext = value => ({
   path: value.fields.slug,
   title: value.frontmatter.title,
-  cover: value.frontmatter.cover,
+  cover: value.frontmatter.thumbnail,
   excerpt: value.excerpt
 });
 
@@ -259,7 +259,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 112)
       frontmatter {
         title
-        cover
+        thumbnail
         date
       }
       fields {
@@ -271,7 +271,7 @@ export const pageQuery = graphql`
       excerpt(pruneLength: 112)
       frontmatter {
         title
-        cover
+        thumbnail
         date
       }
       fields {

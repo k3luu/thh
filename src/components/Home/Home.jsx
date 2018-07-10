@@ -17,7 +17,7 @@ class Home extends Component {
         <div className="home-content">
           <h4>Featured Content</h4>
 
-          {/* PostListing component renders all the posts */}
+          {/* PostListing component renders the posts */}
           <PostListing
             postEdges={this.props.nodes}
             postAuthors={this.props.authorsEdges}
