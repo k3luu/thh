@@ -58,7 +58,7 @@ class GuidesPage extends React.Component {
       prev,
       next
     } = this.props.pathContext;
-    console.log('trail guide page', this.props);
+    // console.log('trail guide page', this.props);
 
     return (
       <Drawer className="author-template" isOpen={this.state.menuOpen}>

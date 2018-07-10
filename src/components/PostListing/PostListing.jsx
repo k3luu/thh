@@ -38,7 +38,7 @@ class PostListing extends React.Component {
         style={{ display: 'flex', flexWrap: 'wrap' }}
       >
         {postList.map((post, i) => {
-          console.log('post listing', post);
+          // console.log('post listing', post);
           const {
             title,
             path,
