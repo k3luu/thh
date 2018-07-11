@@ -102,38 +102,43 @@ class Calendar extends Component {
     const multipleDaysFlag =
       moment(event.start).format('MMMM Do YYYY') !==
       moment(event.end).format('MMMM Do YYYY');
+
     let dateFormat;
 
-    if (event.allDay && multipleDaysFlag)
+    if (event.allDay || multipleDaysFlag)
       dateFormat =
         moment(event.start).format('dddd, MMMM Do') +
         ' - ' +
-        moment(event.end).format('dddd, MMMM Do YYYY');
-    else dateFormat = moment(event.start).format('dddd, MMMM Do YYYY');
+        moment(event.end).format('dddd, MMMM Do');
+    else dateFormat = moment(event.start).format('dddd, MMMM Do');
 
     console.log(event, multipleDaysFlag);
 
     return (
       <Box paddingX={4} paddingY={2}>
         {multipleDaysFlag ? (
-          <Box>
-            <Box paddingY={1}>
-              {moment(event.start).format('dddd, MMMM Do') +
-                ' - ' +
-                moment(event.start).format('h:mm a')}
+          <Box paddingX={4}>
+            <Box display="flex" paddingY={1}>
+              <i className="fa fa-calendar" />
+              <Box marginLeft={5}>{dateFormat}</Box>
             </Box>
-            <Box paddingY={1}>
-              {moment(event.end).format('dddd, MMMM Do') +
-                ' - ' +
-                moment(event.end).format('h:mm a')}
+            <Box display="flex" paddingY={1}>
+              <i className="fa fa-clock-o" />
+              <Box marginLeft={5}>{moment(event.start).format('h:mm a')}</Box>
             </Box>
           </Box>
         ) : (
-          <Box>
-            <Box paddingY={1}>{dateFormat}</Box>
-            <Box paddingY={1}>
-              {moment(event.start).format('h:mm a')} -{' '}
-              {moment(event.end).format('h:mm a')}
+          <Box paddingX={4}>
+            <Box display="flex" paddingY={1}>
+              <i className="fa fa-calendar" />
+              <Box marginLeft={5}>{dateFormat}</Box>
+            </Box>
+            <Box display="flex" paddingY={1}>
+              <i className="fa fa-clock-o" />
+              <Box marginLeft={5}>
+                {moment(event.start).format('h:mm a')} -{' '}
+                {moment(event.end).format('h:mm a')}
+              </Box>
             </Box>
           </Box>
         )}

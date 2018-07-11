@@ -8,15 +8,6 @@ class SocialMediaIcons extends React.Component {
     if (urls && urls.length > 0) {
       return (
         <div className="social-media-icons">
-          {/*{urls.map(url => (*/}
-          {/*<SocialIcon*/}
-          {/*key={url}*/}
-          {/*className="social-media-icon"*/}
-          {/*url={url}*/}
-          {/*color={color}*/}
-          {/*style={{ height: null, width: null }}*/}
-          {/*/>*/}
-          {/*))}*/}
           <a href={urls[0]} target="_blank" rel="noopener noreferrer">
             <i className="fa fa-youtube-play" id="social-youtube" />
           </a>
