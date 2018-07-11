@@ -27,9 +27,6 @@ class Calendar extends Component {
 
   componentDidMount() {
     this.getEvents();
-    // setInterval(() => {
-    //   this.getEvents();
-    // }, 60000);
   }
 
   /**
@@ -186,48 +183,13 @@ class Calendar extends Component {
     if (isLoading)
       return (
         <div className="spinner__container">
-          <div className="spinner">
-            <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle
-                className="length"
-                fill="none"
-                strokeWidth="8"
-                strokeLinecap="round"
-                cx="33"
-                cy="33"
-                r="28"
-              />
-            </svg>
-            <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle
-                fill="none"
-                strokeWidth="8"
-                strokeLinecap="round"
-                cx="33"
-                cy="33"
-                r="28"
-              />
-            </svg>
-            <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle
-                fill="none"
-                strokeWidth="8"
-                strokeLinecap="round"
-                cx="33"
-                cy="33"
-                r="28"
-              />
-            </svg>
-            <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-              <circle
-                fill="none"
-                strokeWidth="8"
-                strokeLinecap="round"
-                cx="33"
-                cy="33"
-                r="28"
-              />
-            </svg>
+          <div className="quiver">
+            <span className="arrows st" />
+            <span className="arrows nd" />
+            <span className="arrows rd" />
+            <span className="arrows th" />
+            <span className="arrows fth" />
+            <span className="loading">Loading</span>
           </div>
         </div>
       );
