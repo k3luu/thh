@@ -1,3 +1,7 @@
 .rbc-calendar {
     height: 80vh;
 }
+
+.event-modal__container > div {
+    z-index: 9;
+}

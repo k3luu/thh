@@ -50,7 +50,7 @@ carousel:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jennie Lakes Wilderness is located at the center where the Kings Canyon National Forest, Sequoia National Forest, and Sequoia National Park boundaries intersect. Although Wilderness Permits are not required for hiking, you will need a California Campfire Permit, which allows you to make a campfire and use a gas or propane stove (Note: restrictions on open fires vary by conditions and/or seasons). These permits can be picked up at the Visitor Center as well.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jennie and Weaver Lake Trails are very popular, as they offer the opportunity for multiple day backpacking. Start at the parking lot of either Fox Meadows, or Big Meadows for an additional 1.4 miles.  The loop to both lakes is approximately 18.2 miles; however, the trail to Weaver Lake is a mere 6.6 miles out and back. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jennie and Weaver Lake Trails are very popular, as they offer the opportunity for multiple day backpacking. Start at the parking lot of either Fox Meadows, or Big Meadows for an additional 1.4 miles. The loop to both lakes is approximately 18.2 miles; however, the trail to Weaver Lake is a mere 6.6 miles out and back.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0696.jpg)
 
@@ -60,12 +60,12 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0735.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0748.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After passing the stream and junction, you will be greeted by the Jennie Lakes Wilderness sign. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After passing the stream and junction, you will be greeted by the Jennie Lakes Wilderness sign.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0705.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0750.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once you hit the peak, the pine curtain pulls back for momentary glimpses of the giant blue jewel that nature has charged the pines with guarding. The feeling is something similar to looking at royalty, simple enough, but somehow superior. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Once you hit the peak, the pine curtain pulls back for momentary glimpses of the giant blue jewel that nature has charged the pines with guarding. The feeling is something similar to looking at royalty, simple enough, but somehow superior.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0754.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0757.jpg)

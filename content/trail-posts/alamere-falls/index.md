@@ -39,7 +39,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Alamere+Falls/IMG_2663.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Alamere+Falls/IMG_2665.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The elevation gain over the 4 miles is gradual, so take advantage of this hike and check out your surroundings. The tree groves are typical of coastal forests, but one of the best part is that you will hit a bluff at the very beginning and will give you amazing views of the ocean, the coastline that makes up Marin County, and if you're lucky, the Farallon Islands. As always, we encourage you to take your time and really soak up these moments, otherwise, what's the point? 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The elevation gain over the 4 miles is gradual, so take advantage of this hike and check out your surroundings. The tree groves are typical of coastal forests, but one of the best part is that you will hit a bluff at the very beginning and will give you amazing views of the ocean, the coastline that makes up Marin County, and if you're lucky, the Farallon Islands. As always, we encourage you to take your time and really soak up these moments, otherwise, what's the point?
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Alamere+Falls/IMG_2618.jpg)
 
