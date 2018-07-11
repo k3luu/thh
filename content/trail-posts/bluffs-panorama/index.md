@@ -12,7 +12,7 @@ parking: "Parking Fee"
 category: "trails"
 tags:
     - big sur
-    - norcal
+    - northern california
     - trails
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7772.jpg
