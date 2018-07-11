@@ -12,6 +12,7 @@ parking: "Free"
 category: "trails"
 tags:
     - sequoia national forest
+    - lake
     - trails
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0672.jpg

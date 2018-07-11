@@ -11,6 +11,7 @@ season: "All"
 parking: "Free"
 category: "trails"
 tags:
+    - waterfalls
     - trails
     - northern california
     - beach
