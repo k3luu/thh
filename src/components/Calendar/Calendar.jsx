@@ -9,7 +9,13 @@ BigCalendar.momentLocalizer(moment);
 
 const GOOGLE_API_KEY = 'AIzaSyAy-Hn-2rmG7nmc2etp_hNdbLe_xFkpygw';
 const CALENDAR_ID = 'r511go4f29gmulloe8fmh5ts8s@group.calendar.google.com';
-const allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k]);
+// const allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k]);
+const allViews = {
+  month: true,
+  week: true,
+  day: true,
+  agenda: true
+};
 
 class Calendar extends Component {
   constructor(p) {
@@ -58,7 +64,7 @@ class Calendar extends Component {
           let newEvents = [];
 
           if (sortedEvents.length > 0) {
-            sortedEvents.map(e =>
+            sortedEvents.map(e => {
               newEvents.push({
                 id: e.id,
                 allDay: !!e.start.date,
@@ -72,8 +78,8 @@ class Calendar extends Component {
                   ? new Date(e.end.dateTime)
                   : new Date(e.end.date),
                 desc: e.description
-              })
-            );
+              });
+            });
 
             that.setState({
               events: newEvents,
@@ -204,6 +210,7 @@ class Calendar extends Component {
         <BigCalendar
           popup
           events={events}
+          formats={{ dateFormat: 'D' }}
           views={allViews}
           step={60}
           showMultiDayTimes
@@ -212,6 +219,7 @@ class Calendar extends Component {
             this.setState({ currEvent: event, showEventModal: true })
           }
         />
+
         {this.handleEventModal()}
       </div>
     );

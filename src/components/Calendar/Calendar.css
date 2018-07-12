@@ -1,6 +1,77 @@
+/* Big Calendar overrides */
 .rbc-calendar {
-    height: 80vh;
+    height: 70vh;
 }
+
+.rbc-month-header .rbc-header {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid #EAEFF3;
+    border-bottom: 2px solid #EAEFF3;
+    color: #002266;
+}
+
+.rbc-header + .rbc-header {
+    border: 1px solid #EAEFF3;
+    border-bottom: 2px solid #EAEFF3;
+}
+
+.rbc-month-view {
+    border: 1px solid #EAEFF3;
+}
+
+.rbc-day-bg {
+    border-left: 1px solid #EAEFF3;
+    border-right: 1px solid #EAEFF3;
+    border-bottom: 1px solid #EAEFF3;
+}
+
+.rbc-date-cell {
+    padding: 10px 5px;
+    text-align: left;
+}
+
+.rbc-date-cell a {
+    padding: 5px;
+    color: #002266;
+}
+
+.rbc-current a {
+    border-radius: 100px;
+    background: #0082fa;
+    color: #fff;
+}
+
+.rbc-event {
+    background: #0082fa;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 2px 10px;
+}
+
+.rbc-event.rbc-selected {
+    background: #0082fa;
+}
+
+.rbc-event-continues-prior {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+}
+
+.rbc-event-continues-after {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+}
+
+.rbc-event-content {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Big Calendar overrides - end */
 
 .event-modal__container > div {
     z-index: 9;
@@ -19,7 +90,7 @@
     backface-visibility: hidden;
 }
 
-.quiver {
+.spinner__container .quiver {
     position: absolute;
     bottom: 50%;
     left: 50%;
@@ -29,7 +100,7 @@
     width: 100px;
 }
 
-.arrows {
+.spinner__container .arrows {
     -moz-animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse infinite;
     -webkit-animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse infinite;
     animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse infinite;
@@ -42,51 +113,51 @@
     border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #0b486b rgba(255, 255, 255, 0);
 }
 
-.st {
+.spinner__container .st {
     border-bottom-color: #0b486b;
 }
 
-.nd {
+.spinner__container .nd {
     border-bottom-color: #3b8686;
 }
 
-.rd {
+.spinner__container .rd {
     border-bottom-color: #79bd9a;
 }
 
-.th {
+.spinner__container .th {
     border-bottom-color: #a8dba8;
 }
 
-.fth {
+.spinner__container .fth {
     border-bottom-color: #cff09e;
 }
 
-span:nth-child(1) {
+.spinner__container span:nth-child(1) {
     -moz-animation-delay: 0s;
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
 
-span:nth-child(2) {
+.spinner__container span:nth-child(2) {
     -moz-animation-delay: 0.1s;
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
 
-span:nth-child(3) {
+.spinner__container span:nth-child(3) {
     -moz-animation-delay: 0.2s;
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 
-span:nth-child(4) {
+.spinner__container span:nth-child(4) {
     -moz-animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
 
-span:nth-child(5) {
+.spinner__container span:nth-child(5) {
     -moz-animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
@@ -122,7 +193,7 @@ span:nth-child(5) {
     }
 }
 
-.loading {
+.spinner__container .loading {
     display: block;
     font: normal 22px/1em "Merriweather Sans", sans-serif;
     text-transform: uppercase;
