@@ -51,19 +51,19 @@
 
 .rbc-current > a {
     border-radius: 100px;
-    background: #0082fa;
+    background: #0186D4;
     color: #fff;
 }
 
 .rbc-event {
-    background: #0082fa;
+    background: #0186D4;
     border-radius: 10px;
     margin: 0 10px;
     padding: 2px 10px;
 }
 
 .rbc-event.rbc-selected {
-    background: #0082fa;
+    background: #0186D4;
 }
 
 .rbc-event-continues-prior {
@@ -108,7 +108,7 @@
 
 .rbc-time-view .rbc-header.rbc-today {
     padding: 10px;
-    border-bottom: 2px solid #0082fa;
+    border-bottom: 2px solid #0186D4;
 }
 
 .rbc-time-view .rbc-label {
