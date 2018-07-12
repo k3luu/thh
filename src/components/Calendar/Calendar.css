@@ -3,13 +3,29 @@
     height: 70vh;
 }
 
-.rbc-month-header .rbc-header {
-    padding: 10px;
+.rbc-toolbar-label {
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rbc-btn-group {
+    font-family: "Roboto", sans-serif;
+}
+
+.rbc-toolbar button {
+    font-weight: normal;
+}
+
+.rbc-header {
+    text-transform: uppercase;
+    padding: 10px;
     font-size: 12px;
+}
+
+/* MONTH VIEW */
+.rbc-month-header .rbc-header {
     border: 1px solid #EAEFF3;
     border-bottom: 2px solid #EAEFF3;
-    color: #002266;
 }
 
 .rbc-header + .rbc-header {
@@ -32,12 +48,11 @@
     text-align: left;
 }
 
-.rbc-date-cell a {
+.rbc-date-cell > a {
     padding: 5px;
-    color: #002266;
 }
 
-.rbc-current a {
+.rbc-current > a {
     border-radius: 100px;
     background: #0082fa;
     color: #fff;
@@ -69,6 +84,68 @@
 .rbc-event-content {
     font-size: 14px;
     font-weight: bold;
+}
+
+/* WEEK & DAY VIEW */
+.rbc-current-time-indicator {
+    height: 2px;
+    background: #FB616B;
+    margin: 0 -10px;
+}
+
+.rbc-current-time-indicator::before {
+    content: ' ';
+    display: block;
+    border-radius: 100px;
+    height: 8px;
+    width: 8px;
+    margin-top: -3px;
+    background: #FB616B;
+}
+
+.rbc-time-view .rbc-header {
+    padding: 10px;
+    border: 1px solid #EAEFF3;
+    border-bottom: 2px solid #EAEFF3;
+}
+
+.rbc-time-view .rbc-header.rbc-today {
+    padding: 10px;
+    border-bottom: 2px solid #0082fa;
+}
+
+.rbc-time-view .rbc-label {
+    font-size: 12px;
+}
+
+.rbc-time-header-gutter, .rbc-time-gutter {
+    min-width: 75px;
+}
+
+.rbc-today {
+    background: #F0F8FF;
+ }
+
+.rbc-day-slot .rbc-event {
+    border: 0;
+    margin: 0;
+}
+
+/* AGENDA VIEW */
+.rbc-agenda-view table.rbc-agenda-table {
+    margin: 0;
+}
+
+.rbc-agenda-view table.rbc-agenda-table thead > tr > th {
+    padding: 10px;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td {
+    font-size: 14px;
+}
+
+.rbc-agenda-view table.rbc-agenda-table tbody > tr > td + td {
+    /*font-size: 14px;*/
 }
 
 /* Big Calendar overrides - end */

@@ -210,7 +210,9 @@ class Calendar extends Component {
         <BigCalendar
           popup
           events={events}
-          formats={{ dateFormat: 'D' }}
+          formats={{
+            dateFormat: 'D'
+          }}
           views={allViews}
           step={60}
           showMultiDayTimes
