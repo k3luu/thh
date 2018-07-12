@@ -684,6 +684,16 @@ button {
     letter-spacing: 1px !important;
 }
 
+/* replaces the main red color */
+._5g {
+    background: #0082fa;
+}
+
+._sy:focus, ._sy:hover {
+    background: #0762B6;
+    transition: 0.2s ease;
+}
+
 /* ==========================================================================
        Media Queries - Smaller than 900px
    ========================================================================== */

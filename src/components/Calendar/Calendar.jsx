@@ -121,35 +121,31 @@ class Calendar extends Component {
     console.log(event, multipleDaysFlag);
 
     return (
-      <Box paddingX={4} paddingY={2}>
-        {multipleDaysFlag ? (
+      <Box paddingX={4} overflow="hidden">
+        <Box display="flex" alignItems="center">
           <Box paddingX={4}>
-            <Box display="flex" paddingY={1}>
-              <i className="fa fa-calendar" />
-              <Box marginLeft={5}>{dateFormat}</Box>
-            </Box>
-            <Box display="flex" paddingY={1}>
-              <i className="fa fa-clock-o" />
-              <Box marginLeft={5}>{moment(event.start).format('h:mm a')}</Box>
-            </Box>
+            <i className="fa fa-calendar" />
           </Box>
-        ) : (
-          <Box paddingX={4}>
-            <Box display="flex" paddingY={1}>
-              <i className="fa fa-calendar" />
-              <Box marginLeft={5}>{dateFormat}</Box>
-            </Box>
-            <Box display="flex" paddingY={1}>
-              <i className="fa fa-clock-o" />
-              <Box marginLeft={5}>
-                {moment(event.start).format('h:mm a')} -{' '}
-                {moment(event.end).format('h:mm a')}
-              </Box>
-            </Box>
-          </Box>
-        )}
+          <div className="event-date__start">
+            <div>{moment(event.start).format('ddd, MMM DD')}</div>
+            <div>{moment(event.start).format('h:mm a')}</div>
+          </div>
+          <div className="event-date__separator" />
+          <div className="event-date__end">
+            <div>{moment(event.end).format('ddd, MMM DD')}</div>
+            <div>{moment(event.end).format('h:mm a')}</div>
+          </div>
+        </Box>
 
-        {event.desc && <Box paddingY={2}>{event.desc}</Box>}
+        <div className="event-date__linebreak" />
+
+        {event.desc && <div className="event-description">{event.desc}</div>}
+
+        <div className="event-description">
+          Add a description to your Google Events to make the modal more
+          meaningful with content, like location, driving directions, meet-up
+          spot.
+        </div>
       </Box>
     );
   }
