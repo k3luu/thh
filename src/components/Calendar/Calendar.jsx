@@ -9,7 +9,6 @@ BigCalendar.momentLocalizer(moment);
 
 const GOOGLE_API_KEY = 'AIzaSyAy-Hn-2rmG7nmc2etp_hNdbLe_xFkpygw';
 const CALENDAR_ID = 'r511go4f29gmulloe8fmh5ts8s@group.calendar.google.com';
-// const allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k]);
 const allViews = {
   month: true,
   week: true,
@@ -118,8 +117,6 @@ class Calendar extends Component {
         moment(event.end).format('dddd, MMMM Do');
     else dateFormat = moment(event.start).format('dddd, MMMM Do');
 
-    console.log(event, multipleDaysFlag);
-
     return (
       <Box paddingX={4} overflow="hidden">
         <Box display="flex" alignItems="center">
@@ -185,7 +182,6 @@ class Calendar extends Component {
 
   render() {
     const { events, isLoading } = this.state;
-    console.log('events', events);
 
     if (isLoading)
       return (

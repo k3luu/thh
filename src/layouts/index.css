@@ -333,6 +333,7 @@ dl {
     text-rendering: geometricPrecision;
     letter-spacing: 0.2px;
     line-height: 1.3em;
+    text-align: justify;
 }
 
 ol,
