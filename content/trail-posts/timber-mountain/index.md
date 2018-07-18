@@ -43,7 +43,7 @@ carousel:
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7943.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We decided to go during late Winter/early Spring, when snow was still capping the mountains,  but off the trails. Luckily, we didn't need crampons. Regardless, we highly recommend that you go between Spring and Fall, when the trail is safer to hike.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We decided to go during late Winter/early Spring, when snow was still capping the mountains, but off the trails. Luckily, we didn't need crampons. Regardless, we highly recommend that you go between Spring and Fall, when the trail is safer to hike.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7779.jpg)
 
@@ -60,7 +60,7 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7813.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7807.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You'll start to see what appears to be the peak...but that's just nature putting you in check and making you work for the views. At that point, we were exhausted, but still determined to hit the peak. That last quarter mile is an ever greater elevation gain,  but just push yourself to press on. Unfortunately, we did not take any photos from the last marker to the peak. Honestly, we were just trying to get there as quickly as possible. You'll see the marker, and if you don't we'll read about you on the news the next day. Just kidding, you'll be fine!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You'll start to see what appears to be the peak...but that's just nature putting you in check and making you work for the views. At that point, we were exhausted, but still determined to hit the peak. That last quarter mile is an ever greater elevation gain, but just push yourself to press on. Unfortunately, we did not take any photos from the last marker to the peak. Honestly, we were just trying to get there as quickly as possible. You'll see the marker, and if you don't we'll read about you on the news the next day. Just kidding, you'll be fine!
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7814.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7821.jpg)
@@ -79,13 +79,13 @@ carousel:
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7864.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7910.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Somehow we always wake up right at golden hour, and were fortunate enough to experience the sunset. There's nothing that serves as a worthy comparison to connecting with that moment; breathing the fresh mountain air, and listening to the sounds of solitude. If your buddy ruins this moment for you, we totally support you giving them a ginger love-tap on the arm to bring them back to reality. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Somehow we always wake up right at golden hour, and were fortunate enough to experience the sunset. There's nothing that serves as a worthy comparison to connecting with that moment; breathing the fresh mountain air, and listening to the sounds of solitude. If your buddy ruins this moment for you, we totally support you giving them a ginger love-tap on the arm to bring them back to reality.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7880.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7894.jpg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the San Gabriel mountains, you can't help but feel like you're standing in one state and staring at the snow capped splendor of another. Thanks California, you're beautiful in so many different ways. The trees are spread in the seemingly random binary code that can be seen in any aspect of nature, however, look closely as they all seem to peek around each other to take a look at you. These types of moments are what make the sweat worth it, unless you hate nature...then you're probably not human and this is probably not a blog suited for your soulless eyes. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Looking at the San Gabriel mountains, you can't help but feel like you're standing in one state and staring at the snow capped splendor of another. Thanks California, you're beautiful in so many different ways. The trees are spread in the seemingly random binary code that can be seen in any aspect of nature, however, look closely as they all seem to peek around each other to take a look at you. These types of moments are what make the sweat worth it, unless you hate nature...then you're probably not human and this is probably not a blog suited for your soulless eyes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We come from the city, we run back to nature. Every post you read is what bonds us together as people sharing one experience together, and what binds us to the extraordinary gift of nature. These adventures are best experienced with friends and loved ones. Get off the couch, turn off your Playstation, and come play the ultimate co-op game with us. Ordinary people, extraordinary life: that's what it's about. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We come from the city, we run back to nature. Every post you read is what bonds us together as people sharing one experience together, and what binds us to the extraordinary gift of nature. These adventures are best experienced with friends and loved ones. Get off the couch, turn off your Playstation, and come play the ultimate co-op game with us. Ordinary people, extraordinary life: that's what it's about.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7914.jpg)

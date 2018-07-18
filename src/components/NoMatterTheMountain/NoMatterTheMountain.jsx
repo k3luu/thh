@@ -58,19 +58,47 @@ class NoMatterTheMountain extends Component {
   handleAmbassadorsDisplay() {
     return ambassadors.map(p => (
       <div key={p.id} className="ambassador-container">
-        <p className="ambassador-bio">{p.bio}</p>
+        <div className="ambassador-bio">
+          <p className="ambassador-paragraph">{p.bio}</p>
+        </div>
 
         {/* Ambassador info: [name, title, IG] & [image]*/}
-        <Box display="flex" justifyContent="end" alignItems="end" marginTop={4} marginLeft={4}>
-          <Box display="flex" direction="column" justifyContent="end" alignItems="end" marginRight={4}>
+        <Box
+          display="flex"
+          justifyContent="end"
+          alignItems="end"
+          marginTop={4}
+          marginLeft={4}
+        >
+          <Box
+            display="flex"
+            direction="column"
+            justifyContent="end"
+            alignItems="end"
+            marginRight={4}
+          >
             <h6 className="ambassador-name">{p.name}</h6>
-            <p className="ambassador-title">{this.handleAmbassadorTitle(p.title)}</p>
-            <a className="ambassador-social" href={`https://www.instagram.com/${p.instagram}`} target="_blank">
+            <p className="ambassador-title">
+              {this.handleAmbassadorTitle(p.title)}
+            </p>
+            <a
+              className="ambassador-social"
+              href={`https://www.instagram.com/${p.instagram}`}
+              target="_blank"
+            >
               <i className="fa fa-instagram" /> {p.instagram}
             </a>
           </Box>
           <div className="ambassador-image">
-            <Box shape="circle" color="darkGray" height={90} minHeight={90} width={90} minWidth={90} marginRight={2}>
+            <Box
+              shape="circle"
+              color="darkGray"
+              height={90}
+              minHeight={90}
+              width={90}
+              minWidth={90}
+              marginRight={2}
+            >
               <Image
                 alt={p.name}
                 color="rgb(231, 186, 176)"
@@ -93,24 +121,36 @@ class NoMatterTheMountain extends Component {
       <div className="main-content">
         <h1>No Matter The Mountain</h1>
         <p>
-          Life throws so many obstacles at us every day, creating a harsh ascent, similar to climbing a mountain. How we
-          overcome these "mountains" is what makes us who we are.
+          Life throws so many obstacles at us every day, creating a harsh
+          ascent, similar to climbing a mountain. How we overcome these
+          "mountains" is what makes us who we are.
         </p>
         <h2>How Do You Conquer Your Mountain?</h2>
-        <iframe title="thh-campaign" src="https://www.youtube.com/embed/05ifiSTb6Fc" frameBorder="0" allowFullScreen />
+        <iframe
+          title="thh-campaign"
+          src="https://www.youtube.com/embed/05ifiSTb6Fc"
+          frameBorder="0"
+          allowFullScreen
+        />
         <p>
           Share your story with us on Instagram! Nominate your friends, and tag{' '}
           <a href="https://www.instagram.com/twohalfhitches" target="_blank">
             @twohalfhitches
           </a>{' '}
           and{' '}
-          <a href="https://www.instagram.com/explore/tags/nomatterthemountain/" target="_blank">
+          <a
+            href="https://www.instagram.com/explore/tags/nomatterthemountain/"
+            target="_blank"
+          >
             #NoMattertheMountain
           </a>.
         </p>
 
         <h2>Meet Our Campaign Ambassadors</h2>
-        <p>Read up on our campaign ambassadors and how they conquer their own mountains!</p>
+        <p>
+          Read up on our campaign ambassadors and how they conquer their own
+          mountains!
+        </p>
 
         {this.handleAmbassadorsDisplay()}
       </div>

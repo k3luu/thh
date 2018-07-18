@@ -31,10 +31,11 @@
     content: '\201C';
     font-family: "Charter ITC", serif;
     font-size: 11rem;
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-top: -50px;
 }
 
-.ambassador-paragraph p::before {
+.ambassador-paragraph::before {
     content: ' ';
     padding-left: 55px;
 }
