@@ -18,25 +18,25 @@ disclaimer:
 
 ##Water Purification via Iodine Tablets
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most pristine water can be unsafe to drink, and will need proper treatment. In this video, we will demonstrate how to treat backcountry water with iodine tablets. Check out more useful tips below!
+Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most pristine water can be unsafe to drink, and will need proper treatment. In this video, we will demonstrate how to treat backcountry water with iodine tablets. Check out more useful tips below!
 
 ![pouring](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-tablets/pouring.jpeg)
 
 ###Is Backountry water safe to drink?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Water in the outdoors is exposed to both wildlife and humans. As the outdoors become more heavily trafficked with explorers, the quality of water decreases. Crystal clear sources may look safe, but can carry dangerous viruses and other bacteria detrimental to your health.
+Water in the outdoors is exposed to both wildlife and humans. As the outdoors become more heavily trafficked with explorers, the quality of water decreases. Crystal clear sources may look safe, but can carry dangerous viruses and other bacteria detrimental to your health.
 
 ###What water sources are available?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depending on where you are going, access to water sources may be limited. Research your destination and check for seasonal streams, access to water spigots, snow, etc.
+Depending on where you are going, access to water sources may be limited. Research your destination and check for seasonal streams, access to water spigots, snow, etc.
 
 ###Why should I use purification tablets?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Iodine tablets are able to decontaminate water with viruses and bacteria that are too small for water filters.
+Iodine tablets are able to decontaminate water with viruses and bacteria that are too small for water filters.
 
 ###Where should I get my water from?
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve your water from clear and free flowing sources. Make sure to check upstream and avoid collecting downstream of camping areas, areas where mining has occurred, and agricultural areas.
+Retrieve your water from clear and free flowing sources. Make sure to check upstream and avoid collecting downstream of camping areas, areas where mining has occurred, and agricultural areas.
 
 ![dumping](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-tablets/dumping.jpeg)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avoid getting water from stagnant sources if possible, such as lakes and ponds. Standing water is more prone to increased levels of waterborne viruses, sediments, and other bacteria.
+Avoid getting water from stagnant sources if possible, such as lakes and ponds. Standing water is more prone to increased levels of waterborne viruses, sediments, and other bacteria.
 
 ![source](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/iodine-tablets/source.jpeg)
 

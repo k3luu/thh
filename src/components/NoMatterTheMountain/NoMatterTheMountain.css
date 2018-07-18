@@ -33,3 +33,8 @@
     font-size: 11rem;
     margin-right: 30px;
 }
+
+.ambassador-paragraph p::before {
+    content: ' ';
+    padding-left: 55px;
+}

@@ -18,7 +18,7 @@ disclaimer:
 <iframe title="video" src="https://www.youtube.com/embed/UCzegdTxbXU" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting up a tent is straight forward, but it can be difficult and confusing your first time around. Before you head out, we recommend practicing at home!
+Setting up a tent is straight forward, but it can be difficult and confusing your first time around. Before you head out, we recommend practicing at home!
 
 ###Picking the Ideal Location
 

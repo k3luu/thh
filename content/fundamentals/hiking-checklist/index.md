@@ -13,7 +13,7 @@ date_added: "2018-06-06"
 <iframe title="video" src="https://www.youtube.com/embed/O0iLR9yb-J8" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before you step into the outdoors, ask yourself if you have all the gear you need. Our video and comprehensive checklist provides all hikers the fundamental gear for day hiking. Coordinate with your group to decide who will bring which items, and adapt the list based on the location of the hike, weather conditions, and personal/group preference.
+Before you step into the outdoors, ask yourself if you have all the gear you need. Our video and comprehensive checklist provides all hikers the fundamental gear for day hiking. Coordinate with your group to decide who will bring which items, and adapt the list based on the location of the hike, weather conditions, and personal/group preference.
 
 ###Your basic day hiking gear will comprise of the Ten Essentials
 
