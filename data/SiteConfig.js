@@ -10,7 +10,7 @@ module.exports = {
   siteUrl: 'http://www.twohalfhitches.com/', // Domain of your website without pathPrefix.
   pathPrefix: '/thh', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'No Matter the Mountain', // Website description used for RSS feeds/meta description tag.
-  siteCover: '/images/blog-cover.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  siteCover: '/images/Homepage.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: '/rss.xml', // Path to the RSS file.
   siteRssAuthor: 'Casper User', // The author name used in the RSS file
@@ -56,9 +56,9 @@ module.exports = {
   },
   aboutCover: '/images/nature.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   campaignCover: '/images/people.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  fundamentalsCover: '/images/water-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  guideCover: '/images/liftoff.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  finderCover: '/images/people-2.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  fundamentalsCover: '/images/backpacks.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  guideCover: '/images/team.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  finderCover: '/images/snowy-mountain.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   eventCover: '/images/cars.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0' // Used for setting manifest background color.

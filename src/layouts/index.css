@@ -329,9 +329,9 @@ dl {
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-    margin: 0 0 1.75em;
+    margin: 0 0 0.75em;
     text-rendering: geometricPrecision;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.1px;
     line-height: 1.3em;
     text-align: justify;
 }

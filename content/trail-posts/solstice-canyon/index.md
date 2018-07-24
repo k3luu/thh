@@ -53,19 +53,19 @@ We'd have to fact check this, but we're pretty sure we went on what have might h
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8453.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8455.jpg)
 
-After about 2 miles, the trail begins to descend into the canyon and you will soon be graced with a kind kiss of shade. Continue down the staircase, and you will reach a sign. 
+After about 2 miles, the trail begins to descend into the canyon and you will soon be graced with a kind kiss of shade. Continue down the staircase, and you will reach a sign.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8456.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8463.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8467.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8465.jpg)
 
-Take a breather, and explore around the area. There are some old ruins of a mansion constructed in 1952, but succumbed to a fire in 1982. Granted that the loss of a piece of history is always a tragedy, there is still some fun to be had rifling through a tangible look into the past. Make sure you take an imaginary dip in the claw-foot bathtub in the middle of the concrete slab. At this point, you'll probably feel like you need the mental rejuvenation.  
+Take a breather, and explore around the area. There are some old ruins of a mansion constructed in 1952, but succumbed to a fire in 1982. Granted that the loss of a piece of history is always a tragedy, there is still some fun to be had rifling through a tangible look into the past. Make sure you take an imaginary dip in the claw-foot bathtub in the middle of the concrete slab. At this point, you'll probably feel like you need the mental rejuvenation.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8471.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8476.jpg)
 
-Make sure that if you stop to take pictures, or explore the ruins, that you mind the sun. It's easy to become swept up in this adult playground, but try to grab a hold of your inner-child and remind them that dehydration and sunburns are cruel realities of the outdoor life. 
+Make sure that if you stop to take pictures, or explore the ruins, that you mind the sun. It's easy to become swept up in this adult playground, but try to grab a hold of your inner-child and remind them that dehydration and sunburns are cruel realities of the outdoor life.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8478.jpg)
 
@@ -74,7 +74,7 @@ After you're done taking semi-offensive pictures with your buddies go ahead over
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8489.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8491.jpg)
 
-Sure, the Rising Sun Trail is a good amount of physical effort, but we're pretty sure that the contrasting views of ocean and canyon will be enough to make you forget about your cramping legs. Stick together, pace yourself, don't be afraid to explore, but stay hydrated. 
+Sure, the Rising Sun Trail is a good amount of physical effort, but we're pretty sure that the contrasting views of ocean and canyon will be enough to make you forget about your cramping legs. Stick together, pace yourself, don't be afraid to explore, but stay hydrated.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8498.jpg)
 

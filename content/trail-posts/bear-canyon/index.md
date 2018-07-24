@@ -91,7 +91,7 @@ As you hit the top, you will come across a sign that will make you question your
 
 If you have some daylight left, check out the falls! You'll probably question if you're really just miles from the city. If not, make your way to the last stretch of Bear Canyon.
 
-After the fork, the trail becomes a bit more difficult to discern. Pay attention to paint marks and indicators on the boulders and trees. There will be smaller forks in the trail, but both ways lead to the same destination. 
+After the fork, the trail becomes a bit more difficult to discern. Pay attention to paint marks and indicators on the boulders and trees. There will be smaller forks in the trail, but both ways lead to the same destination.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9629.jpg)
 
@@ -100,13 +100,12 @@ Our favorite part of the trail are the rock formations. Our geology is a bit rus
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9636.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9640.jpg)
 
-Finally! The good ol' Angeles National Forest sign that serves as congratulations, but in reality, a sign of relief. According to the U.S. Forest Services, Bear Canyon Trail Camp offers only 3 hike-in campsites; however, the site can accommodate plenty. The campgrounds offer wooden tables and benches, developed campfire pits, makeshift benches, metal stoves, and several areas to set up tents. You'll find this is a place of celebration and bonding...over food because we've just hiked miles and we deserved it. In all seriousness though, as you can see below, we were happy to be there together, and grateful that we had the opportunity to accomplish another one of our little excursions. 
+Finally! The good ol' Angeles National Forest sign that serves as congratulations, but in reality, a sign of relief. According to the U.S. Forest Services, Bear Canyon Trail Camp offers only 3 hike-in campsites; however, the site can accommodate plenty. The campgrounds offer wooden tables and benches, developed campfire pits, makeshift benches, metal stoves, and several areas to set up tents. You'll find this is a place of celebration and bonding...over food because we've just hiked miles and we deserved it. In all seriousness though, as you can see below, we were happy to be there together, and grateful that we had the opportunity to accomplish another one of our little excursions.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9652.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9666.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9681.jpg)
 
-Make sure you get some pictures while you're relaxing up top to commemorate your journey. While you're at it, make sure you take a look around you at the people you've chosen to surround yourself with and brave the trail with, they're worth the memories. We're a tight knit group of people, but somehow these experiences manage to draw us closer to each other and help us to find our footing in the world. Eternally grateful. 
+Make sure you get some pictures while you're relaxing up top to commemorate your journey. While you're at it, make sure you take a look around you at the people you've chosen to surround yourself with and brave the trail with, they're worth the memories. We're a tight knit group of people, but somehow these experiences manage to draw us closer to each other and help us to find our footing in the world. Eternally grateful.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9709.jpg)
-

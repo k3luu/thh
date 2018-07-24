@@ -12,7 +12,7 @@ class Home extends Component {
     return (
       <div id="home">
         <div className="main-content">
-          <h2 className="home-title">Here to guide you through the outdoors</h2>
+          <h2 className="home-title">Your Guide Through the Great Outdoors</h2>
         </div>
         <div className="home-content">
           <h4>Featured Content</h4>
@@ -29,7 +29,6 @@ class Home extends Component {
               <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="No Matter the Mountain"
-                  color="rgb(231, 186, 176)"
                   naturalHeight={1}
                   naturalWidth={1}
                   fit="cover"
@@ -64,7 +63,6 @@ class Home extends Component {
               <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Trail Guides"
-                  color="rgb(231, 186, 176)"
                   naturalHeight={1}
                   naturalWidth={1}
                   fit="cover"
@@ -87,7 +85,6 @@ class Home extends Component {
               <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Trail Finder"
-                  color="rgb(231, 186, 176)"
                   naturalHeight={1}
                   naturalWidth={1}
                   fit="cover"
@@ -109,7 +106,6 @@ class Home extends Component {
               <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Fundamentals"
-                  color="rgb(231, 186, 176)"
                   naturalHeight={1}
                   naturalWidth={1}
                   fit="cover"
@@ -132,7 +128,6 @@ class Home extends Component {
               <Box shape="rounded" color="white" height={250}>
                 <Image
                   alt="Events"
-                  color="rgb(231, 186, 176)"
                   naturalHeight={1}
                   naturalWidth={1}
                   fit="cover"

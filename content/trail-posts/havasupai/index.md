@@ -74,9 +74,9 @@ carousel:
 
 ##“The people of the blue-green waters”
 
-Havasupai Falls is one of the most beautiful waterfalls on Earth, and serves as one of the best backpacking trips that you need to experience in your lifetime. The natural blue-green beauty of the water is something that will stick with you forever. There are few times in your life in which you get the privilege of witnessing something so naturally beautiful that it seems foreign. 
+Havasupai Falls is one of the most beautiful waterfalls on Earth, and serves as one of the best backpacking trips that you need to experience in your lifetime. The natural blue-green beauty of the water is something that will stick with you forever. There are few times in your life in which you get the privilege of witnessing something so naturally beautiful that it seems foreign.
 
-You MUST make reservations and obtain all necessary permits prior (Day hiking is not permitted - you will be cited and escorted out of the reservation at your own expense). Reservations are usually accepted for the calendar year beginning in February and require inputting the number of days/nights of stay and number of people in your party. Unfortunately, you cannot make any cancellations or add people/days to your reservation once completed. All fees are due at the time of the reservation, and only one credit card may be used. Check out Havasupai Reservations for more information and pricing. Depending on your luck, you may be hiking this on any day of the 4 seasons. Our trip was done late November 2017. 
+You MUST make reservations and obtain all necessary permits prior (Day hiking is not permitted - you will be cited and escorted out of the reservation at your own expense). Reservations are usually accepted for the calendar year beginning in February and require inputting the number of days/nights of stay and number of people in your party. Unfortunately, you cannot make any cancellations or add people/days to your reservation once completed. All fees are due at the time of the reservation, and only one credit card may be used. Check out Havasupai Reservations for more information and pricing. Depending on your luck, you may be hiking this on any day of the 4 seasons. Our trip was done late November 2017.
 
 We drove to the parking lot the night before and pitched our tents on the dirt plateau right beside the lots. We woke up at around 5AM the next day and caught this beautiful glimpse of the sky, just minutes before the sun rose over the canyon. Everything was awash with a dusty pink filter, as seen below.
 
@@ -97,7 +97,7 @@ At first glance, the trail is absolutely breathtaking. You will find yourself su
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0521.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0522.jpg)
 
-When you look up, try to match the canyon walls to each other. Sure, natural erosion has seen its job done here well before we were born, but it remains an entertaining pastime to look up and try to make the pieces fit. Don't stare up for too long though, you've got a trail to navigate! Some areas are slow from the sand and gravel, and the trail will split quite often. Simply follow the river bed, and you will reach the reservation. 
+When you look up, try to match the canyon walls to each other. Sure, natural erosion has seen its job done here well before we were born, but it remains an entertaining pastime to look up and try to make the pieces fit. Don't stare up for too long though, you've got a trail to navigate! Some areas are slow from the sand and gravel, and the trail will split quite often. Simply follow the river bed, and you will reach the reservation.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_7996.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_8406.jpg)
@@ -107,7 +107,7 @@ After about 7 miles, you will reach this sign for Supai that indicates you are a
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_6241.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0528.jpg)
 
-We passed by a portion of the village, and decided to stop taking photos. Per usual, we always find it interesting how we position ourselves in nature, whether it be as hikers, backpackers, or settlers, we find a way to try to coexist with nature. 
+We passed by a portion of the village, and decided to stop taking photos. Per usual, we always find it interesting how we position ourselves in nature, whether it be as hikers, backpackers, or settlers, we find a way to try to coexist with nature.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_8015.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_8016.jpg)
@@ -120,11 +120,11 @@ After you've completed the paperwork and received your wristbands from the reser
 
 As the trail descends into the campground, you will pass the namesake falls of the area: Havasu Falls. I can vividly recall the first glimpse of Havasu Falls. You may have seen photos and videos on social media, but in person, the size and color of the falls is unmatched. Stop and admire one of the majestic gifts of nature.
 
-The color of the water is a result of having been stored underground in limestone caverns and aquifers for thousands of years. Underground, the minerals are leached from the limestone and result in the beautiful turquoise color. Naturally unnatural. 
+The color of the water is a result of having been stored underground in limestone caverns and aquifers for thousands of years. Underground, the minerals are leached from the limestone and result in the beautiful turquoise color. Naturally unnatural.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0541.jpg)
 
-Below you'll see the falls. Before you scroll any further we suggest that you slowly scroll down to reveal the full picture. In doing this, you may be able to feel some of the wondrous shock that we experienced as we got our first, in real life view of the falls, and the resulting pool at its feet. It may feel strange to see the turquoise against some of the more familiar colors you've seen on many other trails. Every trail has something that sticks out, and for this one, well, a photo really is worth a thousand words. 
+Below you'll see the falls. Before you scroll any further we suggest that you slowly scroll down to reveal the full picture. In doing this, you may be able to feel some of the wondrous shock that we experienced as we got our first, in real life view of the falls, and the resulting pool at its feet. It may feel strange to see the turquoise against some of the more familiar colors you've seen on many other trails. Every trail has something that sticks out, and for this one, well, a photo really is worth a thousand words.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_6365.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0552.jpg)
@@ -142,17 +142,17 @@ By the time we got to the campgrounds, the day had passed and night was already 
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0574.jpg)
 
-Descend at your own risk. The way to the bottom of Mooney Falls is extremely dangerous. You will need to descend 200 ft into a cave, climb a wet and slippery ladder, and rappel down a few chains. The mist from the roaring falls coats everything, and the moss is extremely slippery. This is the only way down, and serves as the continuation to Beaver Falls thereafter. 
+Descend at your own risk. The way to the bottom of Mooney Falls is extremely dangerous. You will need to descend 200 ft into a cave, climb a wet and slippery ladder, and rappel down a few chains. The mist from the roaring falls coats everything, and the moss is extremely slippery. This is the only way down, and serves as the continuation to Beaver Falls thereafter.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_0487.jpg)
 
-Take your time, give the person in front of you space to get to each checkpoint, and make sure you have a good grip.  It almost felt like we were in a game of Uncharted or Tomb Raider, except this was real life and we weren't trying to steal sacred artifacts. If you are uncomfortable with confined spaces and heights, or lack in your scrambling abilities, we recommend observing the falls from the top. A fall from this height can be fatal.
+Take your time, give the person in front of you space to get to each checkpoint, and make sure you have a good grip. It almost felt like we were in a game of Uncharted or Tomb Raider, except this was real life and we weren't trying to steal sacred artifacts. If you are uncomfortable with confined spaces and heights, or lack in your scrambling abilities, we recommend observing the falls from the top. A fall from this height can be fatal.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0582.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0588.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_4592.jpg)
 
-If you survive the descent, Mooney Falls takes on a whole new and glorious perspective. As water flows, the limestone minerals are deposited, resulting in the travertine rock formations shown below. Water fluctuations and floods alter the stream bed, and produce these unique formations. Mooney Falls is the tallest out of the 5 total waterfalls. Below you'll catch a great shot of some of our trail crew standing at the foot of the waterfall. While we took plenty of photos of each waterfall on its own, we find that inserting ourselves into the frame helps present the real scale of this natural fixture. A beautiful falling tower of water; Mooney Falls is a marvel to look at behind a computer screen, but becomes even more jaw-dropping when you stand at the foot of the giant itself. 
+If you survive the descent, Mooney Falls takes on a whole new and glorious perspective. As water flows, the limestone minerals are deposited, resulting in the travertine rock formations shown below. Water fluctuations and floods alter the stream bed, and produce these unique formations. Mooney Falls is the tallest out of the 5 total waterfalls. Below you'll catch a great shot of some of our trail crew standing at the foot of the waterfall. While we took plenty of photos of each waterfall on its own, we find that inserting ourselves into the frame helps present the real scale of this natural fixture. A beautiful falling tower of water; Mooney Falls is a marvel to look at behind a computer screen, but becomes even more jaw-dropping when you stand at the foot of the giant itself.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_0563.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG-3093.jpg)
@@ -164,12 +164,12 @@ Continue past Mooney Falls and onto Beaver. There are boards and logs to travers
 
 One of our favorite moments of the hike is the view shown below. The trail can be difficult to follow and will require several stream crossings. Your way to Beaver Falls may not be the same route on your return. Havasupai offers guided tours, but for us, part of the adventure was finding our own way.
 
-At this point we had become familiar with dirt and dust coating our feet, so you can imagine what an absolute treat it was to be blessed with this view of a green riddled canyon floor. The greenery separates the strong shoulders of rock that preside over the canyon floor, which makes it seem like two different ecosystems colliding and splashing around right overhead. 
+At this point we had become familiar with dirt and dust coating our feet, so you can imagine what an absolute treat it was to be blessed with this view of a green riddled canyon floor. The greenery separates the strong shoulders of rock that preside over the canyon floor, which makes it seem like two different ecosystems colliding and splashing around right overhead.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0598.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0602.jpg)
 
-At approximately 2 miles, you will reach the sign for Beaver Falls. You can gaze from the top, but the base is also reachable by foot. Beaver Falls is the farthest and most remote from all other falls. The cascading falls and shallow swimming pools set this apart from all of the falls before, and is stunning and tranquil in its own unique way. Beaver falls was very enjoyable, but for us, it was more about the adventure of getting to it. As you traverse every obstacle, bravely cross each stream, walk atop each foot bridge your mother would beg you not to use, and hike through every dense wall of brush, like a scene straight out of Jurassic Park, remember that it is not always about the destination, but sharing in an adventure with the people you enjoy, and who will share this moment with you for as long as they have breath in their lungs. 
+At approximately 2 miles, you will reach the sign for Beaver Falls. You can gaze from the top, but the base is also reachable by foot. Beaver Falls is the farthest and most remote from all other falls. The cascading falls and shallow swimming pools set this apart from all of the falls before, and is stunning and tranquil in its own unique way. Beaver falls was very enjoyable, but for us, it was more about the adventure of getting to it. As you traverse every obstacle, bravely cross each stream, walk atop each foot bridge your mother would beg you not to use, and hike through every dense wall of brush, like a scene straight out of Jurassic Park, remember that it is not always about the destination, but sharing in an adventure with the people you enjoy, and who will share this moment with you for as long as they have breath in their lungs.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0612.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_8875.jpg)
@@ -191,6 +191,7 @@ Mooney Falls to Beaver Falls - 3 miles
 ###What to bring (Adapt this list to the weather/season and duration of stay):
 
 ####EQUIPMENT
+
 - Backpacking pack (48-60L)
 - Water (Reservoir and bottle)
 - Sleeping Bag/Pad
@@ -204,6 +205,7 @@ Mooney Falls to Beaver Falls - 3 miles
 - Compass
 
 ####CLOTHES
+
 - Shirts (base layer)
 - Long sleeve (base layer)
 - Fleece jacket (mid layer)
@@ -219,6 +221,7 @@ Mooney Falls to Beaver Falls - 3 miles
 - Beanie
 
 ####TOILETRIES
+
 - Lotion (unscented)
 - Shampoo/soap (biodegradable)
 - Deodorant (unscented)
@@ -229,11 +232,11 @@ Mooney Falls to Beaver Falls - 3 miles
 - Toothbrush/toothpaste
 
 ####MISCELLANEOUS
+
 - Dehydrated meals and trail snacks
 - External battery/charging cables
 - Water shoes/sandals
 - Compression sack
-
 
 ###Havasu Falls Seasons:
 ####SPRING/LATE FALL
@@ -245,6 +248,7 @@ Pros: You can swim all day in the waters because of the extremely hot weather.
 Cons: Extremely hot weather. Hiking will be very difficult with little shade. Potential flash floods from monsoon season.
 
 ####Other useful tips
+
 - Do NOT over pack. This is a minimum 20 mile, out and back, strenuous hike.
 - Be respectful and friendly to the locals. After all, this is their reservation and we are simply visitors.
 - Pack in, pack out. There are no trash receptacles and littering is strictly prohibited.
@@ -254,7 +258,6 @@ Cons: Extremely hot weather. Hiking will be very difficult with little shade. Po
 - Drugs/alcohol is not allowed.
 - Set up tents in designated camp sites only.
 - Pack away all food and anything with an odor when not in use. There are small animals and dogs that roam the campgrounds.
-
 
 ####A special thank you to our friends who made this trip possible!
 

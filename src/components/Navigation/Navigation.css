@@ -179,7 +179,7 @@
 
 .subheader {
     color: #b8b8b8;
-    text-decoration: none;
+    text-decoration: capitalize;
     line-height: 1.4;
     font-size: 14px;
     display: block;
@@ -192,10 +192,6 @@
 
 .subnav {
     padding-left: 30px !important;
-}
-
-.subnav a {
-    text-transform: none !important;
 }
 
 /* ==========================================================================
