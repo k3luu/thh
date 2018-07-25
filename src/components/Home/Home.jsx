@@ -26,7 +26,7 @@ class Home extends Component {
           <Link to="/no-matter-the-mountain">
             <h4>Campaign</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="white" height={250}>
+              <Box shape="rounded" color="white" height={300}>
                 <Image
                   alt="No Matter the Mountain"
                   naturalHeight={1}
@@ -60,7 +60,7 @@ class Home extends Component {
           <Link to="/guides">
             <h4>Trail Guides</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="white" height={250}>
+              <Box shape="rounded" color="white" height={300}>
                 <Image
                   alt="Trail Guides"
                   naturalHeight={1}
@@ -82,7 +82,7 @@ class Home extends Component {
           <Link to="/trail-finder">
             <h4>Trail Finder</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="white" height={250}>
+              <Box shape="rounded" color="white" height={300}>
                 <Image
                   alt="Trail Finder"
                   naturalHeight={1}
@@ -103,7 +103,7 @@ class Home extends Component {
           <Link to="/fundamentals">
             <h4>Fundamentals</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="white" height={250}>
+              <Box shape="rounded" color="white" height={300}>
                 <Image
                   alt="Fundamentals"
                   naturalHeight={1}
@@ -125,7 +125,7 @@ class Home extends Component {
           <Link to="/events">
             <h4>Events</h4>
             <div className="home-banner">
-              <Box shape="rounded" color="white" height={250}>
+              <Box shape="rounded" color="white" height={300}>
                 <Image
                   alt="Events"
                   naturalHeight={1}

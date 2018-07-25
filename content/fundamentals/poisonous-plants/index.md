@@ -1,7 +1,7 @@
 ---
 title: "How to Identify Common Poisonous Plants"
-cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/poisonous-plants/poisonous-cover.jpg"
-thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/poisonous-plants/poisonous-cover.jpg"
+cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Trail+Canyon+Falls/Content/_J8A5015.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Trail+Canyon+Falls/Content/_J8A5015.jpg"
 author: ""
 category: "fundamentals"
 tags:

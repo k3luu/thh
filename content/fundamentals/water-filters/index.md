@@ -1,7 +1,7 @@
 ---
 title: "How To Purify Water With Water Filters"
-cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/water-filter.jpg"
-thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/water-filter.jpg"
+cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/Water+Purification+-Water+Filters.jpg"
+thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/Water+Purification+-Water+Filters.jpg"
 author: "guinevere"
 category: "fundamentals"
 tags:
@@ -26,7 +26,7 @@ They are capable of removing particulates and molecules from contaminated water 
 
 Check out more useful tips below!
 
-![drinking](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/drinking.jpg)
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/_J8A3820.jpg)
 
 ###Is Backountry water safe to drink?
 Water in the outdoors is exposed to both wildlife and humans. As the outdoors become more
@@ -40,15 +40,15 @@ destination and check for seasonal streams, access to water spigots, snow, etc.
 Most water filters are able to remove 99.9% of all bacteria and protozoans (including heavy
 metals and chemicals depending on the type of filter) that may be upstream from your collection point. Modern water filter technology have higher flow rates, which means less waiting period for consumption, but requires periodic cleaning. Contrary to iodine tablets, water filters do not change the taste or color of water, and is a great option for those who are allergic to iodine tablets or chlorine. If you are unable to collect from clear/flowing sources, filters can prevent high sedimentation in your drinking water.
 
-![hydroblu-1](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/hydroblu.jpg)
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/straw.jpg)
 
-![hydroblu-2](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/hydroblu-2.jpg)
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/versa.jpg)
 
 ###Where should I get my water from?
 Retrieve your water from clear and free flowing sources. Make sure to check upstream and
 avoid collecting downstream of camping areas, areas where mining has occurred, and agricultural areas.
 
-![filling up](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/filling-up.jpg)
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/_J8A3806.jpg)
 
 ###More water treatment tips
 
