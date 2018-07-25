@@ -44,7 +44,7 @@
 }
 
 .mycarousel__overlay {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -90,10 +90,14 @@
 .mycarousel__modal-description {
     color: white;
     font-weight: bold;
-    text-align: center;
-    opacity: 0.9;
-    padding-bottom: 20px;
     font-size: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .mycarousel__modal-description .fa {
