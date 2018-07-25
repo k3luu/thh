@@ -7,7 +7,7 @@ category: "fundamentals"
 tags:
     - hiking
     - checklist
-date_added: "2018-06-06"
+date: "2017-08-15"
 ---
 
 <iframe title="video" src="https://www.youtube.com/embed/O0iLR9yb-J8" width="600" height="400" frameBorder="0" allowFullScreen></iframe>

@@ -31,12 +31,10 @@ const getPostList = (postEdges, authorEdges) =>
 class PostListing extends React.Component {
   render() {
     const postList = getPostList(this.props.postEdges, this.props.postAuthors);
+    const { hideDescription } = this.props;
 
     return (
-      <div
-        className="main-content"
-        style={{ display: 'flex', flexWrap: 'wrap' }}
-      >
+      <div className="" style={{ display: 'flex', flexWrap: 'wrap' }}>
         {postList.map((post, i) => {
           // console.log('post listing', post);
           const {
@@ -82,16 +80,18 @@ class PostListing extends React.Component {
                   <h3 className="post-title">
                     <Link to={path}>{title}</Link>
                   </h3>
-                  <section className="post-excerpt">
-                    <Box display="flex" marginTop={2}>
-                      <p>
-                        {excerpt.replace(/\s\s+/g, ' ')}{' '}
-                        <Link className="read-more" to={path}>
-                          &raquo;
-                        </Link>
-                      </p>
-                    </Box>
-                  </section>
+                  {!hideDescription && (
+                    <section className="post-excerpt">
+                      <Box display="flex" marginTop={2}>
+                        <p>
+                          {excerpt.replace(/\s\s+/g, ' ')}{' '}
+                          <Link className="read-more" to={path}>
+                            &raquo;
+                          </Link>
+                        </p>
+                      </Box>
+                    </section>
+                  )}
                 </Box>
               </PostHeader>
               <footer className="post-meta">

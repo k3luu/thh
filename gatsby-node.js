@@ -73,6 +73,32 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
               }
             }
+            fundamentalPosts: allMarkdownRemark(
+              limit: 1000
+              filter: { fileAbsolutePath: { regex: "/(\\/content\\/fundamentals)/.*\\\\.md$/" } }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              totalCount
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    tags
+                    cover
+                    thumbnail
+                    date
+                    category
+                    author
+                    date
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt
+                  timeToRead
+                }
+              }
+            }
             trailPosts: allMarkdownRemark(
               limit: 1000
               filter: { fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" } }
@@ -93,33 +119,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   fields {
                     slug
                   }
-                  excerpt
-                  timeToRead
-                }
-              }
-            }
-            fundamentalPosts: allMarkdownRemark(
-              limit: 1000
-              filter: { fileAbsolutePath: { regex: "/(\\/content\\/fundamentals)/.*\\\\.md$/" } }
-              sort: { fields: [frontmatter___date_added], order: DESC }
-            ) {
-              totalCount
-              edges {
-                node {
-                  frontmatter {
-                    title
-                    tags
-                    cover
-                    thumbnail
-                    date
-                    category
-                    author
-                    date_added
-                  }
-                  fields {
-                    slug
-                  }
-                  excerpt
+                  excerpt(pruneLength: 280)
                   timeToRead
                 }
               }
@@ -140,7 +140,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.allMarkdownRemark.edges,
           component: indexPage,
-          limit: 4
+          limit: 2
         });
 
         // Creates Guides page

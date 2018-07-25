@@ -85,22 +85,23 @@ class HikingPage extends React.Component {
               to get readers prepared for the unforeseen conditions the Great
               Outdoors will bring you.
             </p>
-          </div>
 
-          <PaginatedContent
-            page={page}
-            pages={pages}
-            total={total}
-            limit={limit}
-            prev={prev}
-            next={next}
-          >
-            {/* PostListing component renders all the posts */}
-            <PostListing
-              postEdges={nodes}
-              postAuthors={this.props.data.authors.edges}
-            />
-          </PaginatedContent>
+            <PaginatedContent
+              page={page}
+              pages={pages}
+              total={total}
+              limit={limit}
+              prev={prev}
+              next={next}
+            >
+              {/* PostListing component renders all the posts */}
+              <PostListing
+                postEdges={nodes}
+                postAuthors={this.props.data.authors.edges}
+                hideDescription
+              />
+            </PaginatedContent>
+          </div>
 
           <Footer
             copyright={config.copyright}
