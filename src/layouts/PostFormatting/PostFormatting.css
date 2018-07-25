@@ -152,6 +152,12 @@ div.page-template .post-title {
     list-style: disc;
 }
 
+.post__credit {
+    font-size: 12px;
+    text-align: right;
+    margin-top: -20px;
+}
+
 /* ==========================================================================
        Media Queries - Smaller than 900px
    ========================================================================== */

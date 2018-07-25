@@ -1,0 +1,101 @@
+.carousel:not(.carousel-slider) .control-next.control-arrow,
+.carousel:not(.carousel-slider) .control-prev.control-arrow {
+    background: #000;
+    padding: 0;
+    border-radius: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.carousel .carousel-status {
+    left: 0;
+}
+
+.mycarousel {
+    position: relative;
+}
+
+.mycarousel .expand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel .slide img {
+    display: block;
+    max-width: 900px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+}
+
+.carousel .thumb img {
+    display: block;
+    max-width: 80px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mycarousel__overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.mycarousel__modal {
+    height: 80vh;
+    width: 90vw;
+    padding: 20px;
+}
+
+.mycarousel__modal .slider-wrapper {
+    max-height: 70vh !important;
+}
+
+.mycarousel__modal .carousel .slide {
+    background: transparent;
+}
+
+.mycarousel__modal .carousel .slide img {
+    display: block;
+    max-width: 1200px;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+}
+
+.mycarousel__modal .carousel .thumb img {
+    display: block;
+    max-width: 80px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mycarousel__modal-description {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.9;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.mycarousel__modal-description .fa {
+    padding: 0 5px;
+}
