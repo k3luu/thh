@@ -32,13 +32,13 @@ class MyCarousel extends Component {
     selectedPhotoId = 0;
   }
 
-  componentWillUpdate() {
-    if (this.state.carouselFullscreen) {
-      document.documentElement.style.overflow = 'scroll';
-      document.body.scroll = 'yes';
-    } else {
+  componentWillUpdate(nextProps, nextState) {
+    if (nextState.carouselFullscreen) {
       document.documentElement.style.overflow = 'hidden';
       document.body.scroll = 'no';
+    } else {
+      document.documentElement.style.overflow = 'scroll';
+      document.body.scroll = 'yes';
     }
   }
 
