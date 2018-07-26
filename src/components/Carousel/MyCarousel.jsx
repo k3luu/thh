@@ -28,6 +28,10 @@ class MyCarousel extends Component {
     this.updatePhotoIndex = this.updatePhotoIndex.bind(this);
   }
 
+  componentWillMount() {
+    selectedPhotoId = 0;
+  }
+
   toggleFullscreen() {
     this.setState({ carouselFullscreen: !this.state.carouselFullscreen });
   }
@@ -44,12 +48,6 @@ class MyCarousel extends Component {
       return (
         <div className="mycarousel__overlay">
           <div className="mycarousel__modal">
-            <div className="mycarousel__modal-description">
-              You can use your keyboard keys{' '}
-              <i className="fa fa-keyboard-o" role="span" /> or drag your mouse{' '}
-              <i className="fa fa-mouse-pointer" role="span" />
-              across the image to navigate through the photos.
-            </div>
             <Carousel
               key="modal"
               emulateTouch
