@@ -11,7 +11,7 @@ class Home extends Component {
 
     return (
       <div id="home" className="home-content">
-        <h2 className="home-title">Your Guide Through the Great Outdoors</h2>
+        <h3 className="home-title">Your Guide Through the Great Outdoors</h3>
 
         <h4 className="home-subtitle">Featured Content</h4>
 
@@ -166,6 +166,10 @@ class Home extends Component {
           Be a part of Two Half-Hitches and join us as we hit the trails! Check
           out our monthly calendar of events for more details.
         </p>
+
+        {process.env.NODE_ENV === 'production' && (
+          <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
+        )}
 
         <div className="home-subscription">
           <SubscribeForm />
