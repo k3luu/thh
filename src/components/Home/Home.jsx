@@ -1,17 +1,65 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import { Box, Image } from 'gestalt';
+import Instafeed from 'react-instafeed';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
 import './Home.css';
 
 class Home extends Component {
+  constructor(p) {
+    super(p);
+
+    this.state = {
+      instaFeed: [],
+      instaLoading: true
+    };
+  }
+
+  componentDidMount() {}
+
+  getPhotos() {
+    return fetch(
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token='
+    )
+      .then(response => response.json())
+      .then(json => {
+        console.log('IG:', json.data);
+      });
+  }
+
   render() {
     const { config } = this.props;
+
+    const template =
+      '<a href="{{link}}" target="_blank" class="instafeed__item">' +
+      '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
+      '</div>' +
+      '<div class="instafeed__item__overlay">' +
+      '<div class="instafeed__item__overlay--inner">' +
+      '<p class="instafeed__item__caption">{{model.short_caption}}</p>' +
+      '<p class="instafeed__item__location">{{location}}</p>' +
+      '</div>' +
+      '</div>' +
+      '</a>';
 
     return (
       <div id="home" className="home-content">
         <h3 className="home-title">Your Guide Through the Great Outdoors</h3>
+
+        <div className="instafeed" id="instafeed">
+          <Instafeed
+            limit="10"
+            ref="instafeed"
+            resolution="standard_resolution"
+            sortBy="most-recent"
+            target="instafeed"
+            template={template}
+            userId="self"
+            clientId="e733ec859fb74aa2b2961cefd57ea767"
+            accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"
+          />
+        </div>
 
         <h4 className="home-subtitle">Featured Content</h4>
 
