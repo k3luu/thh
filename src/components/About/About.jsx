@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Box, Image } from "gestalt";
-import "./About.css";
+import React, { Component } from 'react';
+import { Box, Image } from 'gestalt';
+import './About.css';
 
 class About extends Component {
   // Edit About component or pages/about.jsx to include your information.

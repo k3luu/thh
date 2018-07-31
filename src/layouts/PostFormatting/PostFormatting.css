@@ -148,8 +148,15 @@ div.page-template .post-title {
     content: '\00a0\00a0\00a0\00a0\00a0';
 }
 
-.trail-data li {
-    list-style: disc;
+.trail-data__icon {
+    width: 10px;
+}
+
+.trail-data__label {
+    font-size: 14px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: 125px;
 }
 
 .post__credit {
