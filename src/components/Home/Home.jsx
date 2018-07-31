@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import Link from 'gatsby-link';
-import { Box, Image } from 'gestalt';
-import Instafeed from 'react-instafeed';
-import PostListing from '../PostListing/PostListing';
-import SubscribeForm from '../Subscribe/SubscribeForm';
-import './Home.css';
+import React, { Component } from "react";
+import Link from "gatsby-link";
+import { Box, Image } from "gestalt";
+import Instafeed from "react-instafeed";
+import PostListing from "../PostListing/PostListing";
+import SubscribeForm from "../Subscribe/SubscribeForm";
+import "./Home.css";
 
 class Home extends Component {
   constructor(p) {
@@ -20,11 +20,11 @@ class Home extends Component {
 
   getPhotos() {
     return fetch(
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token='
+      "https://api.instagram.com/v1/users/self/media/recent/?access_token="
     )
       .then(response => response.json())
       .then(json => {
-        console.log('IG:', json.data);
+        console.log("IG:", json.data);
       });
   }
 
@@ -34,32 +34,34 @@ class Home extends Component {
     const template =
       '<a href="{{link}}" target="_blank" class="instafeed__item">' +
       '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
-      '</div>' +
+      "</div>" +
       '<div class="instafeed__item__overlay">' +
       '<div class="instafeed__item__overlay--inner">' +
       '<p class="instafeed__item__caption">{{model.short_caption}}</p>' +
       '<p class="instafeed__item__location">{{location}}</p>' +
-      '</div>' +
-      '</div>' +
-      '</a>';
+      "</div>" +
+      "</div>" +
+      "</a>";
 
     return (
       <div id="home" className="home-content">
         <h3 className="home-title">Your Guide Through the Great Outdoors</h3>
 
-        <div className="instafeed" id="instafeed">
-          <Instafeed
-            limit="10"
-            ref="instafeed"
-            resolution="standard_resolution"
-            sortBy="most-recent"
-            target="instafeed"
-            template={template}
-            userId="self"
-            clientId="e733ec859fb74aa2b2961cefd57ea767"
-            accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"
-          />
-        </div>
+        {process.env.NODE_ENV === "development" && (
+          <div className="instafeed" id="instafeed">
+            <Instafeed
+              limit="10"
+              ref="instafeed"
+              resolution="standard_resolution"
+              sortBy="most-recent"
+              target="instafeed"
+              template={template}
+              userId="self"
+              clientId="e733ec859fb74aa2b2961cefd57ea767"
+              accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"
+            />
+          </div>
+        )}
 
         <h4 className="home-subtitle">Featured Content</h4>
 
@@ -87,7 +89,7 @@ class Home extends Component {
               the most beautiful waterfalls on this planet, and is one of the
               best backpacking trips that you need to experience in your
               lifetime. Check out our complete guide and backpacking experience
-              to the hidden oasis of{' '}
+              to the hidden oasis of{" "}
               <i>&#34;the people of the blue-green waters.&#34;</i>
             </p>
           </Box>
@@ -114,15 +116,15 @@ class Home extends Component {
           </div>
         </Link>
         <p>
-          Share your story with us on Instagram! Nominate your friends, and tag{' '}
+          Share your story with us on Instagram! Nominate your friends, and tag{" "}
           <a
             href="https://www.instagram.com/twohalfhitches"
             target="_blank"
             rel="noopener noreferrer"
           >
             @twohalfhitches
-          </a>{' '}
-          and{' '}
+          </a>{" "}
+          and{" "}
           <a
             href="https://www.instagram.com/explore/tags/nomatterthemountain/"
             target="_blank"
@@ -215,7 +217,7 @@ class Home extends Component {
           out our monthly calendar of events for more details.
         </p>
 
-        {process.env.NODE_ENV === 'production' && (
+        {process.env.NODE_ENV === "production" && (
           <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
         )}
 

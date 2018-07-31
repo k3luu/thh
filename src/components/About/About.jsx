@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Box, Image } from 'gestalt';
-import './About.css';
+import React, { Component } from "react";
+import { Box, Image } from "gestalt";
+import "./About.css";
 
 class About extends Component {
   // Edit About component or pages/about.jsx to include your information.
@@ -106,7 +106,7 @@ class About extends Component {
         <h5 className="about-title">Senior Editor</h5>
         <div className="about-section">
           <p>
-            Colt is a writer and scholar currently studying in the Sonoma County
+            Colt is a writer and scholar currently teaching in the Sonoma County
             area and has been “playing with rocks” his entire life. Although his
             education is seemingly unrelated to the world around him, he often
             pulls creative inspiration from his surroundings. 2010 served as a
