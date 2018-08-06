@@ -2,7 +2,7 @@
 title: "Santa Ynez Falls"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Santa+Ynez/_J8A5376.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Santa+Ynez/thumbnail.jpeg"
-date: "2018-07-02"
+date: "2018-08-02"
 location: "Topanga State Park"
 distance: "2.5 miles"
 difficulty: "Easy"
