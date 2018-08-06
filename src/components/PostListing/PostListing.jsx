@@ -41,11 +41,13 @@ class PostListing extends React.Component {
     }
   }
 
-  handlePostContent(post) {
+  handlePostContent(post, index) {
     const { title, path, excerpt, author, tags, date, cover, thumbnail } = post;
     const { hideDescription, columns } = this.props;
-    const className = post.post_class ? post.post_class : 'post post-listing';
+    let className = post.post_class ? post.post_class : 'post post-listing';
     let maskHeight;
+
+    if (index % columns !== columns - 1) className += ' margin';
 
     switch (columns) {
       case 2:
@@ -119,7 +121,8 @@ class PostListing extends React.Component {
       code.push(
         <div className="post-listing__group" style={style} key={i}>
           {list.map((p, j) => {
-            if (postList[i + j]) return this.handlePostContent(postList[i + j]);
+            if (postList[i + j])
+              return this.handlePostContent(postList[i + j], i + j);
           })}
         </div>
       );
@@ -136,63 +139,7 @@ class PostListing extends React.Component {
 
     return (
       <div className="post-listing__container">
-        {postList.map((post, i) => {
-          console.log('post listing', post);
-          const {
-            title,
-            path,
-            excerpt,
-            author,
-            tags,
-            date,
-            cover,
-            thumbnail
-          } = post;
-          const className = post.post_class
-            ? post.post_class
-            : this.handleListingClass();
-
-          return (
-            <PostFormatting className={className} key={title}>
-              <PostHeader>
-                {cover && (
-                  <Link to={path} className="post-image">
-                    <Box color="darkGray" height={350}>
-                      <Image
-                        alt={title}
-                        naturalHeight={1}
-                        naturalWidth={1}
-                        fit="cover"
-                        src={thumbnail}
-                      />
-                    </Box>
-                  </Link>
-                )}
-                <Box alignItems="center">
-                  <h3 className="post-title">
-                    <Link to={path}>{title}</Link>
-                  </h3>
-                  {!hideDescription && (
-                    <section className="post-excerpt">
-                      <Box display="flex" marginTop={2}>
-                        <p>
-                          {excerpt.replace(/\s\s+/g, ' ')}{' '}
-                          <Link className="read-more" to={path}>
-                            &raquo;
-                          </Link>
-                        </p>
-                      </Box>
-                    </section>
-                  )}
-                </Box>
-              </PostHeader>
-              <footer className="post-meta">
-                {/*<PostTags prefix="tags: " tags={tags} />*/}
-                {/*<PostDate date={date} />*/}
-              </footer>
-            </PostFormatting>
-          );
-        })}
+        {postList.map((post, i) => this.handlePostContent(post, i))}
       </div>
     );
   }

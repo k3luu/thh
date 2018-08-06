@@ -10,7 +10,11 @@
 
 .post-listing {
     flex-grow: 1;
-    margin: 4rem 10px;
+    margin: 4rem 0;
+}
+
+.post-listing.margin {
+    margin-right: 20px;
 }
 
 /* ==========================================================================
@@ -20,5 +24,10 @@
 @media only screen and (max-width: 960px) {
     .post-listing__group {
         display: block;
+        width: 100% !important;
+    }
+
+    .post-listing.margin {
+        margin-right: 0;
     }
 }

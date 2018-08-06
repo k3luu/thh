@@ -99,6 +99,7 @@ class Home extends Component {
         <PostListing
           postEdges={this.props.nodes}
           postAuthors={this.props.authorsEdges}
+          columns={3}
         />
 
         <Link to="/no-matter-the-mountain">

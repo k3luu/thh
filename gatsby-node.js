@@ -140,7 +140,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.allMarkdownRemark.edges,
           component: indexPage,
-          limit: 2
+          limit: 3
         });
 
         // Creates Guides page
