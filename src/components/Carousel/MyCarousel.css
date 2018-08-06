@@ -35,6 +35,7 @@
 }
 
 .carousel .thumb,
+.carousel .thumb.selected,
 .carousel .thumb:hover {
     padding: 0;
 }
