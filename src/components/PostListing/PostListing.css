@@ -10,16 +10,15 @@
 
 .post-listing {
     flex-grow: 1;
-    margin: 4rem 5px;
+    margin: 4rem 10px;
 }
 
 /* ==========================================================================
        Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 1020px) {
-    .post-listing {
-        width: 100%;
-        margin: 4rem auto !important;
+@media only screen and (max-width: 960px) {
+    .post-listing__group {
+        display: block;
     }
 }
