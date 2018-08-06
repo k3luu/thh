@@ -103,6 +103,7 @@ class GuidesPage extends React.Component {
               <PostListing
                 postEdges={nodes}
                 postAuthors={this.props.data.authors.edges}
+                columns={3}
               />
             </PaginatedContent>
           </div>

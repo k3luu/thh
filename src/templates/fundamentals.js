@@ -99,6 +99,7 @@ class HikingPage extends React.Component {
                 postEdges={nodes}
                 postAuthors={this.props.data.authors.edges}
                 hideDescription
+                columns={2}
               />
             </PaginatedContent>
           </div>

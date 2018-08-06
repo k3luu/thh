@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { Box, Image } from 'gestalt';
+import { Box, Mask, Image } from 'gestalt';
 import AuthorThumbnail from '../AuthorThumbnail/AuthorThumbnail';
 import PostTags from '../PostTags/PostTags';
 import SiteConfig from '../../../data/SiteConfig';
@@ -29,14 +29,115 @@ const getPostList = (postEdges, authorEdges) =>
   }));
 
 class PostListing extends React.Component {
+  handleListingClass() {
+    const { columns } = this.props;
+
+    switch (columns) {
+      case 2:
+        return 'post post-listing column-two';
+
+      default:
+        return 'post post-listing';
+    }
+  }
+
+  handlePostContent(post) {
+    const { title, path, excerpt, author, tags, date, cover, thumbnail } = post;
+    const { hideDescription, columns } = this.props;
+    const className = post.post_class ? post.post_class : 'post post-listing';
+    let maskHeight;
+
+    switch (columns) {
+      case 2:
+        maskHeight = 390;
+        break;
+
+      default:
+        maskHeight = 250;
+    }
+
+    return (
+      <PostFormatting className={className} key={title}>
+        <PostHeader>
+          {cover && (
+            <Link to={path} className="post-image">
+              <Mask color="darkGray" height={maskHeight}>
+                <Image
+                  alt={title}
+                  naturalHeight={1}
+                  naturalWidth={1}
+                  fit="cover"
+                  src={thumbnail}
+                />
+              </Mask>
+            </Link>
+          )}
+          <Box alignItems="center">
+            <h3 className="post-title">
+              <Link to={path}>{title}</Link>
+            </h3>
+            {!hideDescription && (
+              <section className="post-excerpt">
+                <Box display="flex" marginTop={2}>
+                  <p>
+                    {excerpt.replace(/\s\s+/g, ' ')}{' '}
+                    <Link className="read-more" to={path}>
+                      &raquo;
+                    </Link>
+                  </p>
+                </Box>
+              </section>
+            )}
+          </Box>
+        </PostHeader>
+        <footer className="post-meta">
+          {/*<PostTags prefix="tags: " tags={tags} />*/}
+          {/*<PostDate date={date} />*/}
+        </footer>
+      </PostFormatting>
+    );
+  }
+
+  handlePostGroups() {
+    const { columns } = this.props;
+    const postList = getPostList(this.props.postEdges, this.props.postAuthors);
+
+    let list = [];
+    let code = [];
+
+    for (let i = 0; i < columns; i++) {
+      list.push('hi');
+    }
+
+    for (let i = 0; i < postList.length; i += columns) {
+      let style = {};
+      if (i + columns >= postList.length) {
+        const items = postList.length - i;
+        style = { width: (100 * items) / columns + '%' };
+      }
+
+      code.push(
+        <div className="post-listing__group" style={style} key={i}>
+          {list.map((p, j) => {
+            if (postList[i + j]) return this.handlePostContent(postList[i + j]);
+          })}
+        </div>
+      );
+    }
+
+    return code;
+  }
+
   render() {
     const postList = getPostList(this.props.postEdges, this.props.postAuthors);
     const { hideDescription } = this.props;
 
+    if (this.props.columns) return this.handlePostGroups();
+
     return (
-      <div className="" style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div className="post-listing__container">
         {postList.map((post, i) => {
-          // console.log('post listing', post);
+          console.log('post listing', post);
           const {
             title,
             path,
@@ -49,23 +150,14 @@ class PostListing extends React.Component {
           } = post;
           const className = post.post_class
             ? post.post_class
-            : 'post post-listing';
+            : this.handleListingClass();
 
           return (
-            <PostFormatting
-              className={className}
-              style={i % 2 === 0 ? { marginRight: 40 } : {}}
-              key={title}
-            >
+            <PostFormatting className={className} key={title}>
               <PostHeader>
                 {cover && (
                   <Link to={path} className="post-image">
-                    <Box
-                      shape="rounded"
-                      color="darkGray"
-                      height={320}
-                      minHeight={320}
-                    >
+                    <Box color="darkGray" height={350}>
                       <Image
                         alt={title}
                         naturalHeight={1}

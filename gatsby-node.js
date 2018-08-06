@@ -148,7 +148,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.trailPosts.edges,
           component: guidesPage,
-          limit: siteConfig.sitePaginationLimit,
+          limit: 15,
           pathFormatter: prefixPathFormatter('/guides')
         });
 

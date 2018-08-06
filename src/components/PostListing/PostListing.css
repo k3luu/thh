@@ -1,10 +1,16 @@
-.post-listing {
-    width: 480px;
-    margin: 4rem 0;
+.post-listing__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.post-image > div > div {
-    border-radius: 3px;
+.post-listing__group {
+    display: flex;
+}
+
+.post-listing {
+    flex-grow: 1;
+    margin: 4rem 5px;
 }
 
 /* ==========================================================================
