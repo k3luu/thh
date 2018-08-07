@@ -194,17 +194,19 @@ class Calendar extends Component {
         </div>
       );
 
+    console.log('events', events);
+
     return (
       <div>
         <BigCalendar
           popup
           events={events}
-          formats={{
-            dateFormat: 'D'
-          }}
+          // formats={{
+          //   dateFormat: 'D'
+          // }}
           views={['agenda', 'month', 'week', 'day']}
-          step={60}
-          showMultiDayTimes
+          // step={60}
+          // showMultiDayTimes
           defaultDate={new Date()}
           onSelectEvent={event =>
             this.setState({ currEvent: event, showEventModal: true })
