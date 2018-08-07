@@ -44,11 +44,11 @@ class Calendar extends Component {
         .init({
           apiKey: GOOGLE_API_KEY
         })
-        .then(function() {
-          return gapi.client.request({
+        .then(() =>
+          gapi.client.request({
             path: `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?orderBy=updated`
-          });
-        })
+          })
+        )
         .then(response => {
           const sortedEvents = response.result.items.sort((a, b) => {
             return (
@@ -82,9 +82,7 @@ class Calendar extends Component {
               isLoading: false
             });
           } else {
-            that.setState({
-              isLoading: false
-            });
+            that.setState({ isLoading: false });
           }
         });
     }
@@ -194,19 +192,34 @@ class Calendar extends Component {
         </div>
       );
 
-    console.log('events', events);
+    console.log('events', events, [
+      {
+        id: 0,
+        title: 'All Day Event very long title',
+        allDay: true,
+        start: new Date(2015, 3, 0),
+        end: new Date(2015, 3, 1)
+      },
+      {
+        id: 1,
+        title: 'Long Event',
+        start: new Date(2015, 3, 7),
+        end: new Date(2015, 3, 10)
+      },
+
+      {
+        id: 2,
+        title: 'DTS STARTS',
+        start: new Date(2016, 2, 13, 0, 0, 0),
+        end: new Date(2016, 2, 20, 0, 0, 0)
+      }
+    ]);
 
     return (
       <div>
         <BigCalendar
-          popup
           events={events}
-          // formats={{
-          //   dateFormat: 'D'
-          // }}
-          views={['agenda', 'month', 'week', 'day']}
-          // step={60}
-          // showMultiDayTimes
+          views={allViews}
           defaultDate={new Date()}
           onSelectEvent={event =>
             this.setState({ currEvent: event, showEventModal: true })
