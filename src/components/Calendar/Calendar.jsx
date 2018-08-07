@@ -192,33 +192,40 @@ class Calendar extends Component {
         </div>
       );
 
-    console.log('events', events, [
+    let model = [
       {
         id: 0,
         title: 'All Day Event very long title',
         allDay: true,
-        start: new Date(2015, 3, 0),
-        end: new Date(2015, 3, 1)
+        start: new Date(2018, 7, 3),
+        end: new Date(2018, 7, 6)
       },
       {
         id: 1,
         title: 'Long Event',
-        start: new Date(2015, 3, 7),
-        end: new Date(2015, 3, 10)
+        start: new Date(2018, 7, 1),
+        end: new Date(2018, 7, 1)
       },
-
+      {
+        id: 8,
+        title: 'Meeting',
+        start: new Date(2018, 7, 12, 14, 0, 0, 0),
+        end: new Date(2018, 7, 12, 15, 0, 0, 0)
+      },
       {
         id: 2,
         title: 'DTS STARTS',
-        start: new Date(2016, 2, 13, 0, 0, 0),
-        end: new Date(2016, 2, 20, 0, 0, 0)
+        start: new Date(2018, 7, 13, 6, 0, 0),
+        end: new Date(2018, 7, 13, 7, 0, 0)
       }
-    ]);
+    ];
+
+    console.log('events', events, model);
 
     return (
       <div>
         <BigCalendar
-          events={events}
+          events={events.concat(model)}
           views={allViews}
           defaultDate={new Date()}
           onSelectEvent={event =>
