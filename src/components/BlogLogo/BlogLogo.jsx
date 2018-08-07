@@ -6,6 +6,8 @@ class BlogLogo extends Component {
   handleCurrTab(link) {
     if (typeof window !== 'undefined' && window.location)
       return window.location.pathname.includes(link) ? 'selected' : '';
+
+    return '';
   }
 
   render() {
