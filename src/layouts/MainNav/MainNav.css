@@ -34,6 +34,10 @@ div {
         margin-bottom: 2rem;
     }
 
+    .main-nav.overlay {
+        justify-content: flex-end;
+    }
+
     .main-nav.overlay a:hover {
         color: #fff;
         border-color: transparent;

@@ -2,7 +2,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    display: inline-block;
+    display: none;
     float: right;
     height: 38px;
     padding: 0 15px;
@@ -87,6 +87,7 @@
 
 @media only screen and (max-width: 500px) {
     .menu-button {
+        display: inline-block;
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;

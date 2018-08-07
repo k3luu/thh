@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const tagPage = path.resolve('src/templates/tag.jsx');
     const categoryPage = path.resolve('src/templates/category.jsx');
     const authorPage = path.resolve('src/templates/author.jsx');
-    const guidesPage = path.resolve('src/templates/guides.js');
+    const guidesPage = path.resolve('src/templates/trail-guides.js');
     const fundamentalsPage = path.resolve('src/templates/fundamentals.js');
 
     if (!fs.existsSync(path.resolve(`content/${siteConfig.blogAuthorDir}/authors/`))) {
@@ -149,7 +149,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           edges: result.data.trailPosts.edges,
           component: guidesPage,
           limit: 15,
-          pathFormatter: prefixPathFormatter('/guides')
+          pathFormatter: prefixPathFormatter('/trail-guides')
         });
 
         // Creates Hiking Fundamentals page
