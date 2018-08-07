@@ -4,15 +4,12 @@ import './BlogLogo.css';
 
 class BlogLogo extends Component {
   handleCurrTab(link) {
-    if (window.location.pathname.includes(link)) return 'selected';
-
-    return '';
+    if (typeof window !== 'undefined' && window.location)
+      return window.location.pathname.includes(link) ? 'selected' : '';
   }
 
   render() {
     const { logo, title } = this.props;
-
-    console.log('blog', this.props, window.location.pathname);
 
     if (logo) {
       return (
@@ -26,7 +23,7 @@ class BlogLogo extends Component {
             </li>
             <li className={this.handleCurrTab('trail')}>
               <Link to="/trail-guides">Trail</Link>
-              <ul>
+              <ul className="dropdown">
                 <li>
                   <Link to="/trail-guides">Guides</Link>
                 </li>
