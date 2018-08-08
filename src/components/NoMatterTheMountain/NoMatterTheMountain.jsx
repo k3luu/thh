@@ -72,45 +72,48 @@ class NoMatterTheMountain extends Component {
 
   render() {
     return (
-      <div className="main-content campaign">
-        <h1>No Matter The Mountain</h1>
-        <p>
-          Life throws so many obstacles at us every day, creating a harsh
-          ascent, similar to climbing a mountain. How we overcome these
-          "mountains" is what makes us who we are.
-        </p>
-        <h2>How Do You Conquer Your Mountain?</h2>
-        <iframe
-          title="thh-campaign"
-          src="https://www.youtube.com/embed/05ifiSTb6Fc"
-          height="500"
-          frameBorder="0"
-          allowFullScreen
-        />
-        <p>
-          Share your story with us on Instagram! Nominate your friends, and tag{' '}
-          <a
-            href="https://www.instagram.com/twohalfhitches"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @twohalfhitches
-          </a>{' '}
-          and{' '}
-          <a
-            href="https://www.instagram.com/explore/tags/nomatterthemountain/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            #NoMattertheMountain
-          </a>.
-        </p>
+      <div className="campaign">
+        <div className="main-content">
+          <h1>No Matter The Mountain</h1>
+          <p>
+            Life throws so many obstacles at us every day, creating a harsh
+            ascent, similar to climbing a mountain. How we overcome these
+            "mountains" is what makes us who we are.
+          </p>
+          <h2>How Do You Conquer Your Mountain?</h2>
+          <iframe
+            title="thh-campaign"
+            src="https://www.youtube.com/embed/05ifiSTb6Fc"
+            height="500"
+            frameBorder="0"
+            allowFullScreen
+          />
+          <p>
+            Share your story with us on Instagram! Nominate your friends, and
+            tag{' '}
+            <a
+              href="https://www.instagram.com/twohalfhitches"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @twohalfhitches
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://www.instagram.com/explore/tags/nomatterthemountain/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              #NoMattertheMountain
+            </a>.
+          </p>
 
-        <h2>Meet Our Campaign Ambassadors</h2>
-        <p>
-          Read up on our campaign ambassadors and how they conquer their own
-          mountains!
-        </p>
+          <h2>Meet Our Campaign Ambassadors</h2>
+          <p>
+            Read up on our campaign ambassadors and how they conquer their own
+            mountains!
+          </p>
+        </div>
 
         <Carousel
           key="blog-post"
@@ -118,6 +121,7 @@ class NoMatterTheMountain extends Component {
           useKeyboardArrows
           showArrows
           centerMode
+          centerSlidePercentage={70}
           showIndicators={false}
           showThumbs={false}
           showStatus={false}

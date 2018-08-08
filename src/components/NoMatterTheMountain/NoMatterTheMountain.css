@@ -1,5 +1,5 @@
 .ambassador-container {
-    margin-top: 50px;
+    padding-left: 50px;
     position: relative;
 }
 
@@ -8,6 +8,8 @@
 
 .ambassador-testimonial,
 .ambassador-testimonial--hidden {
+    width: 80%;
+    max-width: 900px;
     padding: 20px 70px;
 }
 
@@ -19,9 +21,8 @@
     justify-content: space-between;
     position: absolute;
     right: 0;
-    left: 45px;
+    left: 105px;
     margin-top: -50px;
-    width: 80%;
     z-index: 2;
 }
 
@@ -81,6 +82,10 @@
     top: auto;
 }
 
+.campaign .carousel .control-next.control-arrow {
+    right: 5px;
+}
+
 .campaign .carousel .control-prev.control-arrow {
     right: 60px;
     left: auto;
@@ -89,6 +94,7 @@
 @media only screen and (max-width: 700px) {
     .ambassador-container {
         margin-right: 10px;
+        padding: 0;
     }
 
     .carousel .slide .ambassador-image img {
