@@ -1,5 +1,46 @@
 .ambassador-container {
     margin-top: 50px;
+    position: relative;
+    height: 900px;
+}
+
+.ambassador-testimonial {
+    background: #3b8686;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    left: 45px;
+    margin-top: -50px;
+    padding: 30px 70px;
+    width: 80%;
+    z-index: 2;
+}
+
+.ambassador-bio {
+    color: #fff;
+    display: flex;
+    font-family: "Crimson Text", serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.ambassador-info {
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.ambassador-info::before {
+    content: "\2014";
+    padding-right: 5px;
 }
 
 .ambassador-name {
@@ -10,32 +51,28 @@
 
 .ambassador-title {
     margin: 0;
-    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .ambassador-social {
-    font-size: 16px;
     margin: 0;
+    color: #fff;
 }
 
-.ambassador-image > div > div {
-    border-radius: 50%;
+.campaign .carousel .slide {
+    background: #fff;
 }
 
-.ambassador-bio {
-    display: flex;
-    font-style: italic;
+.campaign .carousel.carousel-slider .control-arrow {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    top: auto;
 }
 
-.ambassador-bio::before {
-    content: '\201C';
-    font-family: "Charter ITC", serif;
-    font-size: 11rem;
-    margin-right: 15px;
-    margin-top: -50px;
-}
-
-.ambassador-paragraph::before {
-    content: ' ';
-    padding-left: 55px;
+.campaign .carousel .control-prev.control-arrow {
+    right: 60px;
+    left: auto;
 }
