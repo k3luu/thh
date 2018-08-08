@@ -102,55 +102,67 @@ class PostTemplate extends React.Component {
   };
 
   handleTrailData = data => {
-    const { location, distance, difficulty, elevation, season, parking } = data;
-    return (
-      <table className="trail-data">
-        <tbody>
-          <tr>
-            <td className="trail-data__icon">
-              <i className="fa fa-map-marker" />
-            </td>
-            <td className="trail-data__label">Location</td>
-            <td>{location}</td>
-          </tr>
-          <tr>
-            <td className="trail-data__icon">
-              <i className="fa fa-arrows-h" />
-            </td>
-            <td className="trail-data__label">Distance</td>
-            <td>{distance}</td>
-          </tr>
-          <tr>
-            <td className="trail-data__icon">
-              <i className="fa fa-tachometer" />
-            </td>
-            <td className="trail-data__label">Difficulty</td>
-            <td>{difficulty}</td>
-          </tr>
-          <tr>
-            <td className="trail-data__icon">
-              <i className="fa fa-arrows-v" />
-            </td>
-            <td className="trail-data__label">Elevation</td>
-            <td>{elevation}</td>
-          </tr>
-          <tr>
-            <td className="trail-data__icon">
-              <i className="fa fa-snowflake-o" />
-            </td>
-            <td className="trail-data__label">Seasons</td>
-            <td>{season}</td>
-          </tr>
-          <tr>
-            <td className="trail-data__icon">
-              <i className="fa fa-car" />
-            </td>
-            <td className="trail-data__label">Parking</td>
-            <td>{parking}</td>
-          </tr>
-        </tbody>
-      </table>
-    );
+    const {
+      location,
+      distance,
+      difficulty,
+      elevation,
+      season,
+      parking,
+      category
+    } = data;
+
+    console.log(' trail data', category);
+
+    if (category === 'trails')
+      return (
+        <table className="trail-data">
+          <tbody>
+            <tr>
+              <td className="trail-data__icon">
+                <i className="fa fa-map-marker" />
+              </td>
+              <td className="trail-data__label">Location</td>
+              <td>{location}</td>
+            </tr>
+            <tr>
+              <td className="trail-data__icon">
+                <i className="fa fa-arrows-h" />
+              </td>
+              <td className="trail-data__label">Distance</td>
+              <td>{distance}</td>
+            </tr>
+            <tr>
+              <td className="trail-data__icon">
+                <i className="fa fa-tachometer" />
+              </td>
+              <td className="trail-data__label">Difficulty</td>
+              <td>{difficulty}</td>
+            </tr>
+            <tr>
+              <td className="trail-data__icon">
+                <i className="fa fa-arrows-v" />
+              </td>
+              <td className="trail-data__label">Elevation</td>
+              <td>{elevation}</td>
+            </tr>
+            <tr>
+              <td className="trail-data__icon">
+                <i className="fa fa-snowflake-o" />
+              </td>
+              <td className="trail-data__label">Seasons</td>
+              <td>{season}</td>
+            </tr>
+            <tr>
+              <td className="trail-data__icon">
+                <i className="fa fa-car" />
+              </td>
+              <td className="trail-data__label">Parking</td>
+              <td>{parking}</td>
+            </tr>
+          </tbody>
+        </table>
+      );
   };
 
   render() {

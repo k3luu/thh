@@ -122,7 +122,11 @@ class NoMatterTheMountain extends Component {
           showArrows
           centerMode
           centerSlidePercentage={
-            /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? 100 : 70
+            typeof window !== 'undefined' &&
+            window.navigator &&
+            /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
+              ? 100
+              : 70
           }
           showIndicators={false}
           showThumbs={false}
