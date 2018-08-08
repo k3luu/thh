@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import localizer from 'react-big-calendar/lib/localizers/globalize';
 import { Modal, Box, Button } from 'gestalt';
 import './Calendar.css';
 
 BigCalendar.momentLocalizer(moment);
+// const mylocalizer = localizer(moment);
 
 const GOOGLE_API_KEY = 'AIzaSyAy-Hn-2rmG7nmc2etp_hNdbLe_xFkpygw';
 const CALENDAR_ID = 'r511go4f29gmulloe8fmh5ts8s@group.calendar.google.com';
