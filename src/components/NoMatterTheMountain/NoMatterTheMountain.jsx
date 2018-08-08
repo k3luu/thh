@@ -121,7 +121,9 @@ class NoMatterTheMountain extends Component {
           useKeyboardArrows
           showArrows
           centerMode
-          centerSlidePercentage={70}
+          centerSlidePercentage={
+            /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? 100 : 70
+          }
           showIndicators={false}
           showThumbs={false}
           showStatus={false}
