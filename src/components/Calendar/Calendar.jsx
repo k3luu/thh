@@ -11,8 +11,6 @@ const GOOGLE_API_KEY = 'AIzaSyAy-Hn-2rmG7nmc2etp_hNdbLe_xFkpygw';
 const CALENDAR_ID = 'r511go4f29gmulloe8fmh5ts8s@group.calendar.google.com';
 const allViews = {
   month: true,
-  week: false,
-  day: false,
   agenda: true
 };
 
