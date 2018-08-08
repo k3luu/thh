@@ -2,19 +2,17 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import localizer from 'react-big-calendar/lib/localizers/globalize';
 import { Modal, Box, Button } from 'gestalt';
 import './Calendar.css';
 
 BigCalendar.momentLocalizer(moment);
-// const mylocalizer = localizer(moment);
 
 const GOOGLE_API_KEY = 'AIzaSyAy-Hn-2rmG7nmc2etp_hNdbLe_xFkpygw';
 const CALENDAR_ID = 'r511go4f29gmulloe8fmh5ts8s@group.calendar.google.com';
 const allViews = {
   month: true,
-  week: true,
-  day: true,
+  week: false,
+  day: false,
   agenda: true
 };
 
@@ -300,21 +298,18 @@ class Calendar extends Component {
         end: new Date(new Date().setHours(new Date().getHours() + 3))
       }
     ];
-    let allViews = Object.keys(BigCalendar.Views).map(
-      k => BigCalendar.Views[k]
-    );
 
     console.log('events', events, model);
 
     return (
       <div>
         <BigCalendar
-          // events={events.concat(model)}
-          events={model}
+          events={events}
+          // events={model}
           views={allViews}
           step={60}
           showMultiDayTimes
-          defaultDate={new Date(2015, 3, 1)}
+          defaultDate={new Date()}
           onSelectEvent={event =>
             this.setState({ currEvent: event, showEventModal: true })
           }
