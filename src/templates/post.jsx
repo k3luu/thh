@@ -109,7 +109,8 @@ class PostTemplate extends React.Component {
       elevation,
       season,
       parking,
-      category
+      category,
+      dogs
     } = data;
 
     console.log(' trail data', category);
@@ -160,6 +161,15 @@ class PostTemplate extends React.Component {
               <td className="trail-data__label">Parking</td>
               <td>{parking}</td>
             </tr>
+            {dogs && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-paw" />
+                </td>
+                <td className="trail-data__label">Dogs</td>
+                <td>Welcome!</td>
+              </tr>
+            )}
           </tbody>
         </table>
       );
@@ -291,6 +301,7 @@ export const pageQuery = graphql`
         distance
         difficulty
         elevation
+        dogs
         season
         parking
         references
