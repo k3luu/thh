@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Mask, Image } from 'gestalt';
+import { Box, Image } from 'gestalt';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -21,21 +21,32 @@ class NoMatterTheMountain extends Component {
   renderAmbassadors() {
     return ambassadors.map(p => (
       <div key={p.id} className="ambassador-container">
-        {/*<Mask color="darkGray" height={500}>*/}
-        {/*<Image*/}
-        {/*alt={p.name}*/}
-        {/*color="rgb(231, 186, 176)"*/}
-        {/*naturalHeight={1}*/}
-        {/*naturalWidth={1}*/}
-        {/*fit="cover"*/}
-        {/*src={p.photo_src}*/}
-        {/*/>*/}
-        {/*</Mask>*/}
-        <div>
-          <img src={p.photo_src} />
+        <div className="ambassador-image">
+          <img src={p.photo_src} alt={p.name} />
         </div>
 
         <div className="ambassador-testimonial">
+          <div className="ambassador-bio">&quot;{p.bio}&quot;</div>
+
+          {/* Ambassador info: [name, title, IG] & [image]*/}
+          <div className="ambassador-info">
+            <div>
+              <h6 className="ambassador-name">{p.name}</h6>
+              <p className="ambassador-title">
+                {this.handleAmbassadorTitle(p.title)}
+              </p>
+              <a
+                className="ambassador-social"
+                href={`https://www.instagram.com/${p.instagram}`}
+                target="_blank"
+              >
+                <i className="fa fa-instagram" /> {p.instagram}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="ambassador-testimonial--hidden">
           <div className="ambassador-bio">&quot;{p.bio}&quot;</div>
 
           {/* Ambassador info: [name, title, IG] & [image]*/}

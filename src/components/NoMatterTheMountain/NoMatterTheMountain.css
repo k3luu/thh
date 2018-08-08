@@ -1,7 +1,14 @@
 .ambassador-container {
     margin-top: 50px;
     position: relative;
-    height: 900px;
+}
+
+.ambassador-image {
+}
+
+.ambassador-testimonial,
+.ambassador-testimonial--hidden {
+    padding: 20px 70px;
 }
 
 .ambassador-testimonial {
@@ -14,14 +21,16 @@
     right: 0;
     left: 45px;
     margin-top: -50px;
-    padding: 30px 70px;
     width: 80%;
     z-index: 2;
 }
 
+.ambassador-testimonial--hidden {
+    visibility: hidden;
+}
+
 .ambassador-bio {
     color: #fff;
-    display: flex;
     font-family: "Crimson Text", serif;
     font-size: 18px;
     font-weight: bold;
@@ -32,7 +41,7 @@
 .ambassador-info {
     color: #fff;
     display: flex;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     margin-top: 20px;
     text-align: left;
@@ -75,4 +84,38 @@
 .campaign .carousel .control-prev.control-arrow {
     right: 60px;
     left: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .ambassador-container {
+        margin-right: 10px;
+    }
+
+    .carousel .slide .ambassador-image img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    .ambassador-testimonial {
+        border-radius: 0;
+        margin-top: 0;
+        position: unset;
+        padding: 20px 10px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .ambassador-testimonial--hidden {
+        display: none;
+    }
+
+    .ambassador-bio {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .ambassador-info {
+        font-size: 12px;
+    }
 }
