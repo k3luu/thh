@@ -1,5 +1,56 @@
 .ambassador-container {
-    margin-top: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.ambassador-image {
+}
+
+.ambassador-testimonial,
+.ambassador-testimonial--hidden {
+    width: 80%;
+    max-width: 900px;
+    padding: 20px 70px;
+}
+
+.ambassador-testimonial {
+    background: #3b8686;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    left: 105px;
+    margin-top: -50px;
+    z-index: 2;
+}
+
+.ambassador-testimonial--hidden {
+    visibility: hidden;
+}
+
+.ambassador-bio {
+    color: #fff;
+    font-family: "Crimson Text", serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.ambassador-info {
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.ambassador-info::before {
+    content: "\2014";
+    padding-right: 5px;
 }
 
 .ambassador-name {
@@ -10,32 +61,72 @@
 
 .ambassador-title {
     margin: 0;
-    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .ambassador-social {
-    font-size: 16px;
     margin: 0;
+    color: #fff;
 }
 
-.ambassador-image > div > div {
-    border-radius: 50%;
+.campaign .carousel .slide {
+    background: #fff;
 }
 
-.ambassador-bio {
-    display: flex;
-    font-style: italic;
+.campaign .carousel.carousel-slider .control-arrow {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    top: auto;
 }
 
-.ambassador-bio::before {
-    content: '\201C';
-    font-family: "Charter ITC", serif;
-    font-size: 11rem;
-    margin-right: 15px;
-    margin-top: -50px;
+.campaign .carousel .control-next.control-arrow {
+    right: 5px;
 }
 
-.ambassador-paragraph::before {
-    content: ' ';
-    padding-left: 55px;
+.campaign .carousel .control-prev.control-arrow {
+    right: 60px;
+    left: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .ambassador-container {
+        margin-right: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .campaign .carousel .slide {
+        /*min-width: 100% !important;*/
+    }
+
+    .carousel .slide .ambassador-image img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    .ambassador-testimonial {
+        border-radius: 0;
+        margin-top: 0;
+        position: unset;
+        padding: 20px;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .ambassador-testimonial--hidden {
+        display: none;
+    }
+
+    .ambassador-bio {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .ambassador-info {
+        font-size: 12px;
+    }
 }

@@ -111,6 +111,10 @@ div.page-template .post-title {
     margin-top: 50px;
 }
 
+.post-content ul li {
+    list-style: disc;
+}
+
 .carousel-img {
     width: 100%;
 }
@@ -150,6 +154,7 @@ div.page-template .post-title {
 
 .trail-data__icon {
     width: 10px;
+    text-align: center;
 }
 
 .trail-data__label {

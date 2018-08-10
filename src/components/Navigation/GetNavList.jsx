@@ -23,13 +23,13 @@ function GetNavList(config) {
       primaryText: 'Trail',
       subHeader: true,
       component: Link,
-      to: '/guides'
+      to: '/trail-guides'
     },
     {
       primaryText: 'Guides',
       component: Link,
       subNav: true,
-      to: '/guides'
+      to: '/trail-guides'
     },
     {
       divider: true

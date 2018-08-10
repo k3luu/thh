@@ -320,7 +320,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 p,
@@ -691,7 +691,8 @@ button {
     background: #0186D4;
 }
 
-._sy:focus, ._sy:hover {
+._sy:focus,
+._sy:hover {
     background: #0762B6;
     transition: 0.2s ease;
 }

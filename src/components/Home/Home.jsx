@@ -44,7 +44,7 @@ class Home extends Component {
       '</a>';
 
     return (
-      <div id="home" className="home-content">
+      <div id="home" className="home-content main-content">
         <h3 className="home-title">Your Guide Through the Great Outdoors</h3>
 
         {process.env.NODE_ENV === 'development' && (

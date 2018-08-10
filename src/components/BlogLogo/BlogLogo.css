@@ -1,9 +1,15 @@
-/* Appears in the top left corner of your home page */
+.header-nav {
+    height: 100%;
+    display: flex;
+}
+
 .blog-logo {
     display: flex;
     float: left;
-    background: none !important; /* Makes sure there is never a background */
-    border: none !important; /* Makes sure there is never a border */
+    background: none !important;
+    border: none !important;
+    margin: auto 0;
+    margin-right: 20px;
 }
 
 .blog-logo img {
@@ -11,22 +17,92 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: block;
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
 
-.blog-logo div {
-    color: white;
-    opacity: 0.9;
-    margin-left: 5px;
-    text-align: center;
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.main-nav ul.navigation {
+    display: flex;
+    height: 100%;
+}
+
+.main-nav a {
+    color: #fff !important;
+}
+
+.header-nav > ul > li {
+    box-sizing: border-box;
+    color: #fff !important;
+    display: block;
     font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 35px;
-    white-space: nowrap;
-    /*text-shadow: 1px 2px 20px black;*/
-    /*font-family: 'Chivo', sans-serif;*/
+    line-height: 40px;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.header-nav > ul > li.selected,
+.header-nav > ul > li:hover {
+    border-bottom: 4px solid #fff;
+    text-shadow: 0 0 1px white;
+}
+
+.header-nav > ul > li a {
+    padding: 30px 10px;
+    vertical-align: text-top;
+}
+
+.main-nav li:hover {
+    cursor: pointer;
+}
+
+.main-nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 0;
+    min-width: 160px;
+    margin-top: 0.9rem;
+    padding: 0;
+    /*transform: scale(1, 0);*/
+    /*transition: all 0.5s ease;*/
+    /*visibility: hidden;*/
+    z-index: 4;
+}
+
+.main-nav ul li:hover > ul.dropdown,
+.main-nav ul li ul.dropdown:hover {
+    display: block;
+    /*transform: scale(1);*/
+    /*transition: 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;*/
+    /*transform-origin: right top;*/
+    visibility: visible;
+}
+
+.main-nav ul.navigation li ul.dropdown li {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.13);
+    background-color: #f9f9f9;
+    clear: both;
+    width: 100%;
+}
+
+.main-nav ul li ul a {
+    color: black !important;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.main-nav ul li ul a:hover {
+    background: #f1f1f1;
 }
 
 /* ==========================================================================
@@ -41,11 +117,11 @@
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
-    .blog-logo {
-        padding: 0;
+    .header-nav {
+        display: none;
     }
 
-    .blog-logo img {
-        /*height: 30px;*/
+    .blog-logo {
+        padding: 0;
     }
 }
