@@ -63,44 +63,52 @@ class Home extends Component {
           </div>
         )}
 
-        <h4 className="home-subtitle">Featured Content</h4>
+        <div className="featured-section">
+          <Link
+            to="/havasupai-falls-mooney-falls-and-beaver-falls"
+            className="featured-photo"
+          >
+            <Box shape="rounded" color="darkGray" height={600} marginRight={4}>
+              <Image
+                alt="Featured Image"
+                naturalHeight={1}
+                naturalWidth={1}
+                fit="cover"
+                src="https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg"
+              />
+            </Box>
+          </Link>
+          <section className="featured-info">
+            <h4 className="home-subtitle">Featured Content</h4>
+            <h6 className="featured-title">
+              Havasupai Falls: A Backpacker&#39;s Guide
+            </h6>
 
-        <h6 className="home-featured">
-          Havasupai Falls: A Backpacker&#39;s Guide
-        </h6>
-        <Link
-          to="/havasupai-falls-mooney-falls-and-beaver-falls"
-          className="post-image"
-        >
-          <Box shape="rounded" color="darkGray" height={600}>
-            <Image
-              alt="Featured Image"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src="https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg"
-            />
-          </Box>
-        </Link>
-        <section className="post-excerpt">
-          <Box marginTop={4}>
-            <p>
-              Stand at the foot of the giant itself. Havasupai Falls is one of
-              the most beautiful waterfalls on this planet, and is one of the
-              best backpacking trips that you need to experience in your
-              lifetime. Check out our complete guide and backpacking experience
-              to the hidden oasis of{' '}
-              <i>&#34;the people of the blue-green waters.&#34;</i>
-            </p>
-          </Box>
+            <div className="featured-excerpt post-excerpt">
+              <p>
+                Stand at the foot of the giant itself. Havasupai Falls is one of
+                the most beautiful waterfalls on this planet, and is one of the
+                best backpacking trips that you need to experience in your
+                lifetime. Check out our complete guide and backpacking
+                experience to the hidden oasis of{' '}
+                <i>&#34;the people of the blue-green waters.&#34;</i>
+              </p>
+            </div>
+
+            <Link to="/havasupai-falls-mooney-falls-and-beaver-falls">
+              <button type="submit">Learn More</button>
+            </Link>
+          </section>
+        </div>
+
+        <section className="recent-section">
+          <h4 className="home-subtitle">Recent Content</h4>
+          <PostListing
+            postEdges={this.props.nodes}
+            postAuthors={this.props.authorsEdges}
+            columns={3}
+          />
         </section>
-
-        <h4 className="home-subtitle">Recent Content</h4>
-        <PostListing
-          postEdges={this.props.nodes}
-          postAuthors={this.props.authorsEdges}
-          columns={3}
-        />
 
         <Link to="/no-matter-the-mountain">
           <h4>Campaign</h4>
