@@ -43,7 +43,6 @@
 
 .instafeed {
     display: flex;
-    max-width: 1000px;
     overflow: auto;
 }
 

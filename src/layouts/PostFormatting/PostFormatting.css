@@ -1,6 +1,7 @@
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
+    width: 90%;
     max-width: 900px;
     margin: 4rem auto;
     padding-bottom: 4rem;
