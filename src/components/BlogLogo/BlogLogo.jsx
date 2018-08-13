@@ -19,6 +19,7 @@ class BlogLogo extends Component {
           <Link className="blog-logo" to="/">
             <img src={logo} alt={title} />
           </Link>
+
           <ul className="navigation">
             <li className={this.handleCurrTab('/no-matter-the-mountain')}>
               <Link to="/no-matter-the-mountain">Campaign</Link>

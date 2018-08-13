@@ -113,7 +113,7 @@ class PostTemplate extends React.Component {
       dogs
     } = data;
 
-    console.log(' trail data', category);
+    // console.log(' trail data', category);
 
     if (category === 'trails')
       return (

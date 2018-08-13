@@ -1,7 +1,9 @@
 .main-nav {
-    position: relative;
-    z-index: 3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
     padding: 0 40px;
+    width: 100%;
+    z-index: 3;
 }
 
 .main-nav a,
@@ -13,7 +15,8 @@ div {
 /* Special styles when overlaid on an image */
 .main-nav.overlay {
     border: none;
-    background: rgba(0, 0, 0, 0.8);
+    /*background: rgba(0, 0, 0, 0.8);*/
+    background: #fff;
     height: 60px;
     display: flex;
     align-items: center;

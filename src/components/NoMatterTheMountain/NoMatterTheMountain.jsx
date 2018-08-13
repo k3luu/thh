@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Box, Image } from 'gestalt';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -21,16 +20,6 @@ class NoMatterTheMountain extends Component {
   renderAmbassadors() {
     return ambassadors.map(p => (
       <div key={p.id} className="ambassador-container">
-        {/*<Box color="darkGray" height="500px" width={500} minWidth={500}>*/}
-        {/*<Image*/}
-        {/*alt={p.name}*/}
-        {/*color="darkGray"*/}
-        {/*naturalHeight={1}*/}
-        {/*naturalWidth={1}*/}
-        {/*fit="cover"*/}
-        {/*src={p.photo_src}*/}
-        {/*/>*/}
-        {/*</Box>*/}
         <div className="ambassador-image">
           <img src={p.photo_src} alt={p.name} />
         </div>
@@ -77,6 +66,7 @@ class NoMatterTheMountain extends Component {
             frameBorder="0"
             allowFullScreen
           />
+          <br />
           <p>
             Share your story with us on Instagram! Nominate your friends, and
             tag{' '}

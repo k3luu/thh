@@ -24,7 +24,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
@@ -45,7 +45,7 @@
 /* Homepage Title content */
 .main-header-content {
     z-index: 2;
-    top: 50%;
+    top: 57%;
     transform: translateY(-65%);
 }
 
