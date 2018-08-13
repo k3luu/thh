@@ -16,7 +16,53 @@ tags:
     - dogs welcome
     - trails
 carousel:
-    - 
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5438.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5439.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5441.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5449.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5451.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5454.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5455.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5460.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5464.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5468.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5470.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5473.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5477.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5479.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5482.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5486.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5488.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5489.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5496.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5497.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5502.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5507.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5505.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5517.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5534.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5536.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5545.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5546.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5547.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5549.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5550.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5551.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5552.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5555.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5556.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5559.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5561.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5564.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5566.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5572.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5577.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5583.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5585.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5587.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5590.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5592.jpg
+    - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5594.jpg
 ---
 
 Hoegee’s Campground is nestled in the canyons of the Winter Creek and nicely shaded under a canopy of trees. This hike-in, first come first serve, campsite perfectly serves those who want a quick getaway without sacrificing time and a bit of effort. The route to the campground follows a 5 mile, moderately trafficked, loop via the Upper and Lower Winter Creek Trail. We recommend tackling the elevation gain of the Lower Winter Creek Trail first, and then descend down the Upper Winter Creek Trail the next morning after your stay. The destination does not offer a waterfall, but you will find the serenity of the campground equally fulfilling.
@@ -80,10 +126,9 @@ There are no trash receptacles, so pack in and pack out!
 The sign at the entrance offers your standard information about the rules of the campgrounds. Take notice of the Bear Country sign. Be prepared for a bear encounter and have a bear bag ready. At approximately 6:30PM, a brown bear strolled onto our campsite and stayed the entire night. Unfortunately, we were caught off guard as the bear arrived minutes after we had eaten dinner. We ended up using an old sleeping bag case as a makeshift bear bag, but the bear ultimately outwitted us. Nevertheless, we were able to retrieve our scented belongings the next morning, and packed it out. It was a beautiful and frightening experience.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5513.jpg)
-![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5536a.jpg)
-![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5541.jpg)
+<iframe title="video" src="https://www.youtube.com/embed/mwJNDv7UyOs" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
-[VIDEO CLIP]
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5541.jpg)
 
 The next morning, we woke up and the bear had disappeared. To continue on the loop to Upper Winter Creek Trail, look out for the small trail sign shown in the photo below. You may think they are tombstones, but they’re your guide for the 2.5 mile hike back to Chantry Flats.
 
