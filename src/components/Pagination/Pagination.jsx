@@ -7,11 +7,20 @@ class Pagination extends React.Component {
     const { page, pages, prev, next } = this.props;
     return (
       <nav className="pagination">
-        <PaginationLink className="newer-posts" url={prev} text="← Newer Posts" />
+        <PaginationLink
+          className="newer-posts"
+          url={prev}
+          text={<i className="fa fa-caret-left" />}
+        />
         <span className="page-number">
-          Page {page} of {pages}
+          {/*Page {page} of {pages}*/}
+          {page} of {pages}
         </span>
-        <PaginationLink className="older-posts" url={next} text="Older Posts →" />
+        <PaginationLink
+          className="older-posts"
+          url={next}
+          text={<i className="fa fa-caret-right" />}
+        />
       </nav>
     );
   }

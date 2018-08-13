@@ -1,12 +1,19 @@
 .pagination {
     position: relative;
-    width: 80%;
-    max-width: 710px;
+    width: 200px;
     margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Roboto", sans-serif;
-    font-size: 1.3rem;
-    color: #4c586f;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
+    border: #4c586f 1px solid;
+    border-radius: 100px;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.15);
+    padding: 2px;
 }
 
 .pagination a {
@@ -16,28 +23,32 @@
 
 .page-number {
     display: inline-block;
-    padding: 2px 0;
+    padding: 10px 15px;
     min-width: 100px;
 }
 
 /* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
-    position: absolute;
+    /*position: absolute;*/
     display: inline-block;
-    padding: 0 15px;
-    border: #4c586f 1px solid;
+    padding: 10px 15px;
+    /*border: #4c586f 1px solid;*/
     text-decoration: none;
-    border-radius: 4px;
     transition: border 0.3s ease;
+    width: 100%;
 }
 
 .older-posts {
     right: 0;
+    border-left: #4c586f 1px solid;
+    /*border-radius: 0 100% 100% 0;*/
 }
 
 .newer-posts {
     left: 0;
+    border-right: #4c586f 1px solid;
+    /*border-radius: 100% 0 0 100%;*/
 }
 
 .older-posts:hover,

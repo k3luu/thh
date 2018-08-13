@@ -18,10 +18,6 @@
     box-shadow: #fff 0 0 0 5px;
 }
 
-.extra-pagination .pagination {
-    width: auto;
-}
-
 /* On page2+ show extra pagination controls at the top of post list */
 .paged .extra-pagination {
     display: block;
