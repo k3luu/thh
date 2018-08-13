@@ -1,6 +1,7 @@
 .ambassador-container {
     position: relative;
     display: flex;
+    margin: 0 1px;
 }
 
 .ambassador-image {

@@ -68,7 +68,7 @@ class Home extends Component {
             to="/havasupai-falls-mooney-falls-and-beaver-falls"
             className="featured-photo"
           >
-            <Box shape="rounded" color="darkGray" height={600} marginRight={4}>
+            <div className="featured-photo__container">
               <Image
                 alt="Featured Image"
                 naturalHeight={1}
@@ -76,7 +76,7 @@ class Home extends Component {
                 fit="cover"
                 src="https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg"
               />
-            </Box>
+            </div>
           </Link>
           <section className="featured-info">
             <h4 className="home-subtitle">Featured Content</h4>

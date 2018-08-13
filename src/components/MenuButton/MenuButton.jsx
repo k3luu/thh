@@ -8,7 +8,7 @@ class MenuButton extends Component {
     if (navigation && onClick) {
       return (
         <div className="menu-button icon-menu" onClick={onClick}>
-          <span className="word">Menu</span>
+          <span className="word" />
         </div>
       );
     }

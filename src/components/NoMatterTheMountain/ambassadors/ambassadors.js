@@ -1,6 +1,7 @@
 const ambassadors = [
   {
     id: 0,
+    color: '#172121',
     name: 'France Marie',
     title: ['Pediatric Intensive Care Nurse', 'Outdoor Enthusiast'],
     bio:
@@ -11,6 +12,7 @@ const ambassadors = [
   },
   {
     id: 1,
+    color: '#253C78',
     name: 'Francis Kenneth',
     title: ['Hyper-Creative', 'Influencer-Brand Manager'],
     bio:
@@ -21,6 +23,7 @@ const ambassadors = [
   },
   {
     id: 2,
+    color: '#29524A',
     name: 'Lawrence Coronel',
     title: ['Fitness & Lifestyle Influencer'],
     bio:
@@ -31,6 +34,7 @@ const ambassadors = [
   },
   {
     id: 3,
+    color: '#444554',
     name: 'Tiffany Huang',
     title: ['Transportation Technology Engineer', 'Climber'],
     bio:
@@ -41,6 +45,7 @@ const ambassadors = [
   },
   {
     id: 4,
+    color: '#2B59C3',
     name: 'Scottie Nguyen',
     title: ['Salt & Fresh Water Fisherman'],
     bio:

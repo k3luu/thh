@@ -148,6 +148,10 @@
         height: 60vh;
     }
 
+    .main-header-content {
+        top: 62%;
+    }
+
     .home-template .main-header::before { display: none; }
 
     .paged .main-header {
@@ -187,7 +191,7 @@
     }
 
     .main-header-content {
-        top: 40%;
+        top: 62%;
     }
 
     .no-cover.main-header {

@@ -24,7 +24,7 @@ class NoMatterTheMountain extends Component {
           <img src={p.photo_src} alt={p.name} />
         </div>
 
-        <div className="ambassador-testimonial">
+        <div className="ambassador-testimonial" style={{ background: p.color }}>
           <div className="ambassador-bio">&quot;{p.bio}&quot;</div>
 
           {/* Ambassador info: [name, title, IG] & [image]*/}

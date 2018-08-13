@@ -20,7 +20,7 @@
 }
 
 .menu-button::before {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 6px;
     position: relative;
@@ -88,7 +88,7 @@
 @media only screen and (max-width: 500px) {
     .menu-button {
         display: inline-block;
-        padding: 0 5px;
+        padding: 3px 5px;
         border-radius: 0;
         border-width: 0;
         color: #2e2e2e;
