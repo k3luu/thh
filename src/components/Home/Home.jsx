@@ -226,9 +226,9 @@ class Home extends Component {
           out our monthly calendar of events for more details.
         </p>
 
-        {process.env.NODE_ENV === 'production' && (
-          <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
-        )}
+        {/*{process.env.NODE_ENV === 'production' && (*/}
+        {/*<div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />*/}
+        {/*)}*/}
 
         <div className="home-subscription">
           <SubscribeForm />
