@@ -142,14 +142,10 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-
-        /* height: auto; Node: duplicate height values included in original Casper css */
-        /*min-height: 240px;*/
-        /*height: 60vh;*/
     }
 
     .main-header-content {
-        top: 62%;
+        top: 58%;
     }
 
     .home-template .main-header::before { display: none; }
@@ -177,7 +173,10 @@
         padding: 0;
     }
 
-    /*.scroll-down { display: none; }*/
+    .scroll-down {
+        display: flex;
+        align-items: center;
+    }
 }
 
 /* ==========================================================================
@@ -187,11 +186,10 @@
 @media only screen and (max-width: 500px) {
     .main-header {
         margin-bottom: 15px;
-        /*height: 70vh;*/
     }
 
     .main-header-content {
-        top: 62%;
+        top: 55%;
     }
 
     .no-cover.main-header {
