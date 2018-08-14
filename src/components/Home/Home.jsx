@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 import { Box, Image } from 'gestalt';
 import Instafeed from 'react-instafeed';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
 import './Home.css';
+
+const HomeTitle = styled.h3`
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+
+  ${breakpoint('sm')`
+    margin-bottom: 60px;
+    font-size: 2.7rem;
+  `};
+`;
 
 class Home extends Component {
   constructor(p) {
@@ -15,8 +28,6 @@ class Home extends Component {
       instaLoading: true
     };
   }
-
-  componentDidMount() {}
 
   getPhotos() {
     return fetch(
@@ -45,7 +56,9 @@ class Home extends Component {
 
     return (
       <div id="home" className="home-content main-content">
-        <h3 className="home-title">Your Guide Through the Great Outdoors</h3>
+        <HomeTitle className="home-title">
+          Your Guide Through the Great Outdoors
+        </HomeTitle>
 
         {/*{process.env.NODE_ENV === 'development' && (*/}
         {/*<div className="instafeed" id="instafeed">*/}

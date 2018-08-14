@@ -14,5 +14,6 @@
 
 @media only screen and (max-width: 500px) {
     .main-content {
+        margin: 2rem auto;
     }
 }

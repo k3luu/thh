@@ -144,8 +144,8 @@
         box-sizing: border-box;
 
         /* height: auto; Node: duplicate height values included in original Casper css */
-        min-height: 240px;
-        height: 60vh;
+        /*min-height: 240px;*/
+        /*height: 60vh;*/
     }
 
     .main-header-content {
@@ -177,7 +177,7 @@
         padding: 0;
     }
 
-    .scroll-down { display: none; }
+    /*.scroll-down { display: none; }*/
 }
 
 /* ==========================================================================
@@ -187,7 +187,7 @@
 @media only screen and (max-width: 500px) {
     .main-header {
         margin-bottom: 15px;
-        height: 40vh;
+        /*height: 70vh;*/
     }
 
     .main-header-content {
@@ -211,6 +211,10 @@
     .tag-head.main-header,
     .author-head.main-header {
         height: 20vh;
+    }
+
+    .icon-arrow-left::before {
+        font-size: 20px;
     }
 }
 

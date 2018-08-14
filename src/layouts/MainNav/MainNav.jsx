@@ -6,17 +6,21 @@ import config from '../../../data/SiteConfig';
 import MenuButton from '../../components/MenuButton/MenuButton';
 
 const NavContainer = styled.nav`
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: none;
   background: #172121;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  padding: 0 40px;
+  padding: 0 20px;
   height: 60px;
   width: 100%;
   z-index: 3;
+  transition: 0.5s ease;
+
+  ${breakpoint('md')`
+      padding: 0 40px;
+  `};
 
   ul {
     list-style: none;
@@ -128,19 +132,47 @@ class MainNav extends React.Component {
   constructor(p) {
     super(p);
 
+    this.state = {
+      atTheTop: true
+    };
+
+    this.handleScrollDetection = this.handleScrollDetection.bind(this);
     this.handleCurrTab = this.handleCurrTab.bind(this);
   }
 
-  handleCurrTab = link => {
+  componentDidMount() {
+    document.addEventListener(
+      'scroll',
+      this.handleScrollDetection.bind(this),
+      true
+    );
+  }
+
+  handleScrollDetection() {
+    this.setState({ atTheTop: window.scrollY === 0 });
+  }
+
+  handleCurrTab(link) {
     if (typeof window !== 'undefined' && window.location)
       return window.location.pathname.includes(link) ? 'selected' : '';
 
     return '';
-  };
+  }
 
   render() {
+    const { atTheTop } = this.state;
+
     return (
-      <NavContainer>
+      <NavContainer
+        style={
+          atTheTop
+            ? { background: 'transparent' }
+            : {
+                background: '#172121',
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+              }
+        }
+      >
         <Link className="blog-logo" to="/">
           <Logo src={config.siteLogo} alt={config.siteTitle} />
         </Link>
