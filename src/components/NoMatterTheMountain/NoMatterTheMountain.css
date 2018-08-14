@@ -27,7 +27,7 @@
 
 .ambassador-bio,
 .ambassador-info {
-    padding: 1em 3em;
+    padding: 2em 50px;
 }
 
 .ambassador-bio {
@@ -39,6 +39,7 @@
     text-align: justify;
     overflow-y: auto;
     max-height: 400px;
+    position: relative;
 }
 
 .ambassador-info {
@@ -46,7 +47,6 @@
     display: flex;
     font-size: 12px;
     font-weight: bold;
-    margin-top: 20px;
     text-align: left;
 }
 

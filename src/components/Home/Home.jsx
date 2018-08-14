@@ -47,21 +47,21 @@ class Home extends Component {
       <div id="home" className="home-content main-content">
         <h3 className="home-title">Your Guide Through the Great Outdoors</h3>
 
-        {process.env.NODE_ENV === 'development' && (
-          <div className="instafeed" id="instafeed">
-            <Instafeed
-              limit="10"
-              ref="instafeed"
-              resolution="standard_resolution"
-              sortBy="most-recent"
-              target="instafeed"
-              template={template}
-              userId="self"
-              clientId="e733ec859fb74aa2b2961cefd57ea767"
-              accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"
-            />
-          </div>
-        )}
+        {/*{process.env.NODE_ENV === 'development' && (*/}
+        {/*<div className="instafeed" id="instafeed">*/}
+        {/*<Instafeed*/}
+        {/*limit="10"*/}
+        {/*ref="instafeed"*/}
+        {/*resolution="standard_resolution"*/}
+        {/*sortBy="most-recent"*/}
+        {/*target="instafeed"*/}
+        {/*template={template}*/}
+        {/*userId="self"*/}
+        {/*clientId="e733ec859fb74aa2b2961cefd57ea767"*/}
+        {/*accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"*/}
+        {/*/>*/}
+        {/*</div>*/}
+        {/*)}*/}
 
         <div className="featured-section">
           <Link
@@ -80,9 +80,9 @@ class Home extends Component {
           </Link>
           <section className="featured-info">
             <h4 className="home-subtitle">Featured Content</h4>
-            <h6 className="featured-title">
+            <h5 className="featured-title">
               Havasupai Falls: A Backpacker&#39;s Guide
-            </h6>
+            </h5>
 
             <div className="featured-excerpt post-excerpt">
               <p>
@@ -143,7 +143,7 @@ class Home extends Component {
           </a>.
         </p>
 
-        <Link to="/guides">
+        <Link to="/trail-guides">
           <h4>Trail Guides</h4>
           <div className="home-banner">
             <Box shape="rounded" color="white" height={300}>

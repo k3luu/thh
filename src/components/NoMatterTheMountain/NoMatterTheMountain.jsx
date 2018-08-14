@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import styled from 'styled-components';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ambassadors from './ambassadors/ambassadors';
 import './NoMatterTheMountain.css';
+
+const BioContainer = styled.div`
+  &::before {
+    // display: block;
+    // content: ' ';
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // left: 0;
+    // margin-top: 75%;
+    // background: linear-gradient(
+    //   rgba(255, 0, 0, 0),
+    //   ${props => props.background}
+    );
+  }
+`;
 
 class NoMatterTheMountain extends Component {
   handleAmbassadorTitle(list) {
@@ -25,7 +42,9 @@ class NoMatterTheMountain extends Component {
         </div>
 
         <div className="ambassador-testimonial" style={{ background: p.color }}>
-          <div className="ambassador-bio">&quot;{p.bio}&quot;</div>
+          <BioContainer className="ambassador-bio" background={p.color}>
+            &quot;{p.bio}&quot;
+          </BioContainer>
 
           {/* Ambassador info: [name, title, IG] & [image]*/}
           <div className="ambassador-info">

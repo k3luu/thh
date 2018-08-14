@@ -9,14 +9,12 @@
 .main-nav a,
 div {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
 }
 
 /* Special styles when overlaid on an image */
 .main-nav.overlay {
     border: none;
-    /*background: rgba(0, 0, 0, 0.8);*/
-    background: #fff;
+    background: #172121;
     height: 60px;
     display: flex;
     align-items: center;

@@ -46,7 +46,7 @@ export default class HTML extends React.Component {
           <link
             rel="stylesheet"
             type="text/css"
-            href="//fonts.googleapis.com/css?family=Chivo|Lato|Merriweather|Crimson+Text"
+            href="//fonts.googleapis.com/css?family=Crimson+Text|Pontano+Sans"
           />
 
           {this.props.headComponents}
