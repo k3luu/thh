@@ -1,11 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import BlogLogo from '../components/BlogLogo/BlogLogo';
-import MenuButton from '../components/MenuButton/MenuButton';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
@@ -203,80 +202,76 @@ class PostTemplate extends React.Component {
     // console.log('BLOG POST', this.props);
 
     return (
-      <Drawer className="post-template" isOpen={this.state.menuOpen}>
-        <Helmet>
-          <title>{`${post.title} | ${config.siteTitle}`}</title>
-        </Helmet>
-        <SEO postPath={slug} postNode={postNode} postSEO />
+      <ThemeProvider theme={config.breakpoints}>
+        <Drawer className="post-template" isOpen={this.state.menuOpen}>
+          <Helmet>
+            <title>{`${post.title} | ${config.siteTitle}`}</title>
+          </Helmet>
+          <SEO postPath={slug} postNode={postNode} postSEO />
 
-        {/* The blog navigation links */}
-        <Navigation config={config} onClose={this.handleOnClose} />
+          {/* The blog navigation links */}
+          <Navigation config={config} onClose={this.handleOnClose} />
 
-        <SiteWrapper>
-          <MainHeader className="post-head" cover={cover}>
-            <MainNav>
-              <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton
-                navigation={config.siteNavigation}
-                onClick={this.handleOnClick}
-              />
-            </MainNav>
-          </MainHeader>
-          <MainContent>
-            <PostFormatting className={className}>
-              <PostHeader>
-                <h1 className="post-title">{title}</h1>
-                <section className="post-meta">
-                  {/*{date && <PostDate date={date} />}*/}
-                  {/*<PostTags prefix="tags: " tags={tags} />*/}
-                </section>
-              </PostHeader>
+          <SiteWrapper>
+            <MainHeader className="post-head" cover={cover}>
+              <MainNav onClick={this.handleOnClick} />
+            </MainHeader>
+            <MainContent>
+              <PostFormatting className={className}>
+                <PostHeader>
+                  <h1 className="post-title">{title}</h1>
+                  <section className="post-meta">
+                    {/*{date && <PostDate date={date} />}*/}
+                    {/*<PostTags prefix="tags: " tags={tags} />*/}
+                  </section>
+                </PostHeader>
 
-              {this.handleTrailData(post)}
+                {this.handleTrailData(post)}
 
-              <section
-                className="post-content"
-                dangerouslySetInnerHTML={{ __html: postNode.html }}
-              />
-
-              {carousel && <MyCarousel data={carousel} />}
-
-              {disclaimer && (
-                <div className="post-disclaimer">
-                  <h4>Disclaimer</h4>
-                  {disclaimer.map(text => <p key={text}>{text}</p>)}
-                </div>
-              )}
-
-              {references && (
-                <div className="post-disclaimer">
-                  <h4>References</h4>
-                  {references.map(text => <p key={text}>{text}</p>)}
-                </div>
-              )}
-
-              <PostFooter>
-                {/*<AuthorImage author={authorData} />*/}
-                {/*<AuthorInfo prefix="/author" author={authorData} />*/}
-                <PostShare
-                  postNode={postNode}
-                  postPath={location.pathname}
-                  config={config}
+                <section
+                  className="post-content"
+                  dangerouslySetInnerHTML={{ __html: postNode.html }}
                 />
-                <GhostSubscribe />
-                <Disqus postNode={postNode} />
-              </PostFooter>
-            </PostFormatting>
-          </MainContent>
-          <ReadNext next={getNextData()} prev={getPrevData()} />
 
-          {/* The tiny footer at the very bottom */}
-          <Footer
-            copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
-          />
-        </SiteWrapper>
-      </Drawer>
+                {carousel && <MyCarousel data={carousel} />}
+
+                {disclaimer && (
+                  <div className="post-disclaimer">
+                    <h4>Disclaimer</h4>
+                    {disclaimer.map(text => <p key={text}>{text}</p>)}
+                  </div>
+                )}
+
+                {references && (
+                  <div className="post-disclaimer">
+                    <h4>References</h4>
+                    {references.map(text => <p key={text}>{text}</p>)}
+                  </div>
+                )}
+
+                <PostFooter>
+                  {/*<AuthorImage author={authorData} />*/}
+                  {/*<AuthorInfo prefix="/author" author={authorData} />*/}
+                  <PostShare
+                    postNode={postNode}
+                    postPath={location.pathname}
+                    config={config}
+                  />
+                  <GhostSubscribe />
+                  <Disqus postNode={postNode} />
+                </PostFooter>
+              </PostFormatting>
+            </MainContent>
+            <ReadNext next={getNextData()} prev={getPrevData()} />
+
+            {/* The tiny footer at the very bottom */}
+            <Footer
+              copyright={config.copyright}
+              promoteGatsby={config.promoteGatsby}
+            />
+          </SiteWrapper>
+        </Drawer>
+      </ThemeProvider>
     );
   }
 }

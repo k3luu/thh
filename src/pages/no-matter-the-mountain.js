@@ -1,11 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
 import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import BlogLogo from '../components/BlogLogo/BlogLogo';
-import MenuButton from '../components/MenuButton/MenuButton';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import NoMatterTheMountain from '../components/NoMatterTheMountain/NoMatterTheMountain';
@@ -47,32 +46,28 @@ class NoMatterTheMountainPage extends React.Component {
 
   render() {
     return (
-      <Drawer className="author-template" isOpen={this.state.menuOpen}>
-        <Helmet title={`No Matter The Mountain | ${config.siteTitle}`} />
+      <ThemeProvider theme={config.breakpoints}>
+        <Drawer className="author-template" isOpen={this.state.menuOpen}>
+          <Helmet title={`No Matter The Mountain | ${config.siteTitle}`} />
 
-        {/* The blog navigation links */}
-        <Navigation config={config} onClose={this.handleOnClose} />
+          {/* The blog navigation links */}
+          <Navigation config={config} onClose={this.handleOnClose} />
 
-        <SiteWrapper>
-          <MainHeader className="post-head" cover={config.campaignCover}>
-            <MainNav>
-              <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton
-                navigation={config.siteNavigation}
-                onClick={this.handleOnClick}
-              />
-            </MainNav>
-          </MainHeader>
+          <SiteWrapper>
+            <MainHeader className="post-head" cover={config.campaignCover}>
+              <MainNav onClick={this.handleOnClick} />
+            </MainHeader>
 
-          <div className="about-container">
-            <NoMatterTheMountain />
-          </div>
-          <Footer
-            copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
-          />
-        </SiteWrapper>
-      </Drawer>
+            <div className="about-container">
+              <NoMatterTheMountain />
+            </div>
+            <Footer
+              copyright={config.copyright}
+              promoteGatsby={config.promoteGatsby}
+            />
+          </SiteWrapper>
+        </Drawer>
+      </ThemeProvider>
     );
   }
 }

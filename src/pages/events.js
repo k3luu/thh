@@ -4,8 +4,6 @@ import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import BlogLogo from '../components/BlogLogo/BlogLogo';
-import MenuButton from '../components/MenuButton/MenuButton';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import Events from '../components/Events/Events';
@@ -55,13 +53,7 @@ class EventsPage extends React.Component {
 
         <SiteWrapper>
           <MainHeader className="post-head" cover={config.eventCover}>
-            <MainNav>
-              <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton
-                navigation={config.siteNavigation}
-                onClick={this.handleOnClick}
-              />
-            </MainNav>
+            <MainNav onClick={this.handleOnClick} />
           </MainHeader>
 
           <Events />

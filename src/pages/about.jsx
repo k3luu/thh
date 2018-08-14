@@ -1,12 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
 import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import About from '../components/About/About';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import BlogLogo from '../components/BlogLogo/BlogLogo';
-import MenuButton from '../components/MenuButton/MenuButton';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
@@ -47,25 +46,27 @@ class AboutPage extends React.Component {
 
   render() {
     return (
-      <Drawer className="author-template" isOpen={this.state.menuOpen}>
-        <Helmet title={`About | ${config.siteTitle}`} />
+      <ThemeProvider theme={config.breakpoints}>
+        <Drawer className="author-template" isOpen={this.state.menuOpen}>
+          <Helmet title={`About | ${config.siteTitle}`} />
 
-        {/* The blog navigation links */}
-        <Navigation config={config} onClose={this.handleOnClose} />
+          {/* The blog navigation links */}
+          <Navigation config={config} onClose={this.handleOnClose} />
 
-        <SiteWrapper>
-          <MainHeader className="post-head" cover={config.aboutCover}>
-            <MainNav>
-              <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
-              <MenuButton navigation={config.siteNavigation} onClick={this.handleOnClick} />
-            </MainNav>
-          </MainHeader>
-          <div className="about-container">
-            <About />
-          </div>
-          <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
-        </SiteWrapper>
-      </Drawer>
+          <SiteWrapper>
+            <MainHeader className="post-head" cover={config.aboutCover}>
+              <MainNav onClick={this.handleOnClick} />
+            </MainHeader>
+            <div className="about-container">
+              <About />
+            </div>
+            <Footer
+              copyright={config.copyright}
+              promoteGatsby={config.promoteGatsby}
+            />
+          </SiteWrapper>
+        </Drawer>
+      </ThemeProvider>
     );
   }
 }

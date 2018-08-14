@@ -6,9 +6,13 @@ class MainHeader extends React.Component {
   render() {
     const { children, cover } = this.props;
 
-    const classes = classNames('main-header arrow-radial', this.props.className, {
-      'no-cover': !cover
-    });
+    const classes = classNames(
+      'main-header arrow-radial',
+      this.props.className,
+      {
+        'no-cover': !cover
+      }
+    );
 
     const getStyle = () => {
       if (cover) {

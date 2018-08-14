@@ -60,7 +60,16 @@ module.exports = {
   guideCover: '/images/team.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   finderCover: '/images/snowy-mountain.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   eventCover: '/images/cars.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  themeColor: '#c62828', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#e0e0e0' // Used for setting manifest background color.
+  themeColor: '#172121', // Used for setting manifest and progress theme colors.
+  backgroundColor: '#e0e0e0', // Used for setting manifest background color.
+  breakpoints: {
+    breakpoints: {
+      xs: 0,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920
+    }
+  }
   // promoteGatsby: true // Enables the GatsbyJS promotion information in footer.
 };
