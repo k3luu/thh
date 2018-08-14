@@ -68,7 +68,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   fields {
                     slug
                   }
-                  excerpt
+                  excerpt(pruneLength: 280)
                   timeToRead
                 }
               }

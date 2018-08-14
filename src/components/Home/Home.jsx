@@ -2,11 +2,24 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import { Box, Image } from 'gestalt';
+import { Image } from 'gestalt';
 import Instafeed from 'react-instafeed';
+import FeaturedContent from './FeaturedContent';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
 import './Home.css';
+
+const Container = styled.div`
+  padding-top: 60px;
+
+  ${breakpoint('md')`
+    padding-top: 70px;
+  `};
+
+  h4 {
+    letter-spacing: 2px;
+  }
+`;
 
 const HomeTitle = styled.h3`
   font-size: 1.5rem;
@@ -16,6 +29,81 @@ const HomeTitle = styled.h3`
   ${breakpoint('sm')`
     margin-bottom: 60px;
     font-size: 2.7rem;
+  `};
+`;
+
+const RecentSection = styled.div`
+  margin: 70px 0;
+  border-bottom: #d8d8d8 1px solid;
+
+  ${breakpoint('md')`
+    border-bottom: 0;
+  `};
+
+  .post-listing {
+    margin: 2rem 0;
+  }
+
+  .post-title,
+  .post-excerpt {
+    padding: 0 10px;
+
+    ${breakpoint('md')`
+      padding: 0;
+    `};
+  }
+
+  .post {
+    border-bottom: 0;
+
+    ${breakpoint('md')`
+        border-bottom: #d8d8d8 1px solid;
+    `};
+
+    &:after {
+      content: unset;
+
+      ${breakpoint('md')`
+        content: "";
+      `};
+    }
+  }
+`;
+
+const RecentHeader = styled.h4`
+  padding: 0 10px;
+  font-size: 12px;
+  margin: 0;
+
+  ${breakpoint('md')`
+    padding: 0;
+  `};
+`;
+
+const BannerTitle = styled.h4`
+  padding: 0 10px;
+
+  ${breakpoint('md')`
+    padding: 0;
+  `};
+`;
+
+const BannerImage = styled.div`
+  margin-bottom: 20px;
+  height: 300px;
+
+  > div:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+`;
+
+const BannerDescription = styled.p`
+  padding: 0 10px;
+  margin-bottom: 70px;
+
+  ${breakpoint('md')`
+    padding: 0;
   `};
 `;
 
@@ -55,7 +143,7 @@ class Home extends Component {
       '</a>';
 
     return (
-      <div id="home" className="home-content main-content">
+      <Container id="home" className="main-content">
         <HomeTitle className="home-title">
           Your Guide Through the Great Outdoors
         </HomeTitle>
@@ -76,68 +164,30 @@ class Home extends Component {
         {/*</div>*/}
         {/*)}*/}
 
-        <div className="featured-section">
-          <Link
-            to="/havasupai-falls-mooney-falls-and-beaver-falls"
-            className="featured-photo"
-          >
-            <div className="featured-photo__container">
-              <Image
-                alt="Featured Image"
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src="https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg"
-              />
-            </div>
-          </Link>
-          <section className="featured-info">
-            <h4 className="home-subtitle">Featured Content</h4>
-            <h5 className="featured-title">
-              Havasupai Falls: A Backpacker&#39;s Guide
-            </h5>
+        <FeaturedContent />
 
-            <div className="featured-excerpt post-excerpt">
-              <p>
-                Stand at the foot of the giant itself. Havasupai Falls is one of
-                the most beautiful waterfalls on this planet, and is one of the
-                best backpacking trips that you need to experience in your
-                lifetime. Check out our complete guide and backpacking
-                experience to the hidden oasis of{' '}
-                <i>&#34;the people of the blue-green waters.&#34;</i>
-              </p>
-            </div>
-
-            <Link to="/havasupai-falls-mooney-falls-and-beaver-falls">
-              <button type="submit">Learn More</button>
-            </Link>
-          </section>
-        </div>
-
-        <section className="recent-section">
-          <h4 className="home-subtitle">Recent Content</h4>
+        <RecentSection>
+          <RecentHeader className="home-subtitle">Recent Content</RecentHeader>
           <PostListing
             postEdges={this.props.nodes}
             postAuthors={this.props.authorsEdges}
             columns={3}
           />
-        </section>
+        </RecentSection>
 
         <Link to="/no-matter-the-mountain">
-          <h4>Campaign</h4>
-          <div className="home-banner">
-            <Box shape="rounded" color="white" height={300}>
-              <Image
-                alt="No Matter the Mountain"
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src={config.campaignCover}
-              />
-            </Box>
-          </div>
+          <BannerTitle>Campaign</BannerTitle>
+          <BannerImage>
+            <Image
+              alt="No Matter the Mountain"
+              naturalHeight={1}
+              naturalWidth={1}
+              fit="cover"
+              src={config.campaignCover}
+            />
+          </BannerImage>
         </Link>
-        <p>
+        <BannerDescription>
           Share your story with us on Instagram! Nominate your friends, and tag{' '}
           <a
             href="https://www.instagram.com/twohalfhitches"
@@ -154,90 +204,82 @@ class Home extends Component {
           >
             #NoMattertheMountain
           </a>.
-        </p>
+        </BannerDescription>
 
         <Link to="/trail-guides">
-          <h4>Trail Guides</h4>
-          <div className="home-banner">
-            <Box shape="rounded" color="white" height={300}>
-              <Image
-                alt="Trail Guides"
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src={config.guideCover}
-              />
-            </Box>
-          </div>
+          <BannerTitle>Trail Guides</BannerTitle>
+          <BannerImage>
+            <Image
+              alt="Trail Guides"
+              naturalHeight={1}
+              naturalWidth={1}
+              fit="cover"
+              src={config.guideCover}
+            />
+          </BannerImage>
         </Link>
-        <p>
+        <BannerDescription>
           Follow us on our most recent expeditions! The blog is our way of
           sharing our personal experiences to show readers how engaging and
           inspiring the outdoors can be. We provide reviews of trails, photos
           from our trip, and tips if you're planning on trekking the same trail.
-        </p>
+        </BannerDescription>
 
         <Link to="/trail-finder">
-          <h4>Trail Finder</h4>
-          <div className="home-banner">
-            <Box shape="rounded" color="white" height={300}>
-              <Image
-                alt="Trail Finder"
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src={config.finderCover}
-              />
-            </Box>
-          </div>
+          <BannerTitle>Trail Finder</BannerTitle>
+          <BannerImage>
+            <Image
+              alt="Trail Finder"
+              naturalHeight={1}
+              naturalWidth={1}
+              fit="cover"
+              src={config.finderCover}
+            />
+          </BannerImage>
         </Link>
-        <p>
+        <BannerDescription>
           Find a trail that best suits you based on your personal interest and
           level of experience! The map has over 100 California trails plotted,
           and is designed to provide you with the basic information you will
           need to decide which is the right fit for you.
-        </p>
+        </BannerDescription>
 
         <Link to="/fundamentals">
-          <h4>Fundamentals</h4>
-          <div className="home-banner">
-            <Box shape="rounded" color="white" height={300}>
-              <Image
-                alt="Fundamentals"
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src={config.fundamentalsCover}
-              />
-            </Box>
-          </div>
+          <BannerTitle>Fundamentals</BannerTitle>
+          <BannerImage>
+            <Image
+              alt="Fundamentals"
+              naturalHeight={1}
+              naturalWidth={1}
+              fit="cover"
+              src={config.fundamentalsCover}
+            />
+          </BannerImage>
         </Link>
-        <p>
+        <BannerDescription>
           Are you new to hiking, or need to brush up on your outdoor skills?
           Fundamentals gives you a breakdown of all sorts of skills you will
           want to know before you head out. Part of exploring is being
           adaptable, and understanding the way nature can shift. Be prepared for
           the unforeseen conditions the Great Outdoors will bring you.
-        </p>
+        </BannerDescription>
 
         <Link to="/events">
-          <h4>Events</h4>
-          <div className="home-banner">
-            <Box shape="rounded" color="white" height={300}>
-              <Image
-                alt="Events"
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src={config.eventCover}
-              />
-            </Box>
-          </div>
+          <BannerTitle>Events</BannerTitle>
+          <BannerImage>
+            <Image
+              alt="Events"
+              naturalHeight={1}
+              naturalWidth={1}
+              fit="cover"
+              src={config.eventCover}
+            />
+          </BannerImage>
         </Link>
-        <p>
+        <BannerDescription>
           Be a part of Two Half-Hitches and join us as we hit the trails! Check
           out our monthly calendar of events for more details.
-        </p>
+        </BannerDescription>
 
         {/*{process.env.NODE_ENV === 'production' && (*/}
         {/*<div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />*/}
@@ -246,7 +288,7 @@ class Home extends Component {
         <div className="home-subscription">
           <SubscribeForm />
         </div>
-      </div>
+      </Container>
     );
   }
 }
