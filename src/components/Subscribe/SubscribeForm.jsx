@@ -4,13 +4,12 @@ import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
 const Title = styled.h4`
-  padding: 0 20px;
   font-size: 14px;
   line-height: 20px;
-  margin: 0;
+  margin: 0 10px;
 
   ${breakpoint('md')`
-    padding: 0;
+    margin: 0 auto;
   `};
 `;
 
