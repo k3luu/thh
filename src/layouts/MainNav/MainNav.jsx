@@ -12,11 +12,10 @@ const NavContainer = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  padding: 0 20px;
   height: 60px;
   width: 100%;
   z-index: 3;
-  transition: 0.5s ease;
+  transition: 0.3s ease-out;
 
   ${breakpoint('md')`
       padding: 0 40px;
@@ -102,6 +101,7 @@ const NavDropdown = styled.ul`
   }
 
   > li {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
     clear: both;
     width: 100%;
@@ -166,10 +166,11 @@ class MainNav extends React.Component {
       <NavContainer
         style={
           atTheTop
-            ? { background: 'transparent' }
+            ? { background: 'transparent', padding: '0 20px' }
             : {
                 background: '#172121',
-                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                padding: '0 30px'
               }
         }
       >
