@@ -3,7 +3,6 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import breakpoint from "styled-components-breakpoint";
 import config from "../../../data/SiteConfig";
-import MenuButton from "../../components/MenuButton/MenuButton";
 import "./MainNav.css";
 
 const NavContainer = styled.nav`
@@ -125,6 +124,36 @@ const NavDropdown = styled.ul`
   }
 `;
 
+const MenuButton = styled.div`
+  color: #fff;
+  background: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  height: 38px;
+  line-height: 35px;
+  padding: 5px;
+  opacity: 1;
+  text-align: center;
+  transition: all 0.5s ease;
+
+  ${breakpoint("sm")`
+    display: none;
+  `};
+
+  &:before {
+    content: "\f609";
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
+  }
+`;
+
 class MainNav extends React.Component {
   constructor(p) {
     super(p);
@@ -157,6 +186,7 @@ class MainNav extends React.Component {
   }
 
   render() {
+    const { onClick } = this.props;
     const { atTheTop } = this.state;
 
     return (
@@ -205,10 +235,9 @@ class MainNav extends React.Component {
           </li>
         </Navigation>
 
-        <MenuButton
-          navigation={config.siteNavigation}
-          onClick={this.props.onClick}
-        />
+        {config.siteNavigation && (
+          <MenuButton className="menu-button icon-menu" onClick={onClick} />
+        )}
       </NavContainer>
     );
   }
