@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import config from '../../../data/SiteConfig';
 import MenuButton from '../../components/MenuButton/MenuButton';
+import './MainNav.css';
 
 const NavContainer = styled.nav`
   border: none;
@@ -175,7 +176,7 @@ class MainNav extends React.Component {
         }
       >
         <Link className="blog-logo" to="/">
-          <Logo src={config.siteLogo} alt={config.siteTitle} />
+          <Logo className="logo" src={config.siteLogo} alt={config.siteTitle} />
         </Link>
 
         <Navigation>
