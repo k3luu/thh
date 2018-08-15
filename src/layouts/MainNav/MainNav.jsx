@@ -6,152 +6,18 @@ import config from "../../../data/SiteConfig";
 import "./MainNav.css";
 
 const NavContainer = styled.nav`
-  border: none;
-  background: #172121;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  height: 60px;
-  width: 100%;
-  z-index: 3;
-  transition: 0.3s ease-out;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    box-sizing: border-box;
-  }
-
-  li:hover {
-    cursor: pointer;
-  }
-
-  li:hover > ul {
-    transform: scale(1);
-    transition: 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-    transform-origin: right top;
-    visibility: visible;
-  }
-
-  a {
-    font-weight: 400;
-  }
 `;
 
 const Logo = styled.img`
-  box-sizing: border-box;
-  display: block;
-  height: 40px;
-  width: 40px;
 `;
 
 const Navigation = styled.ul`
-  display: none;
-  height: 100%;
-
-  ${breakpoint("sm")`
-      display: flex;
-  `};
-
-  > li {
-    box-sizing: border-box;
-    display: block;
-    font-size: 16px;
-    line-height: 40px;
-    margin: 0;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover > a,
-    &.selected > a {
-      border-bottom: 3px solid #fff;
-      transition: all 0.2s;
-    }
-
-    > a {
-      color: #fff;
-      padding: 5px 0;
-      margin: 0 15px;
-      vertical-align: text-top;
-      letter-spacing: 0.4px;
-      font-size: 14px;
-    }
-  }
 `;
 
 const NavDropdown = styled.ul`
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  min-width: 160px;
-  margin-top: 0.9rem;
-  padding: 0;
-  transform: scale(1, 0);
-  transition: all 0.2s ease;
-  visibility: hidden;
-  z-index: 4;
-
-  &:hover {
-    transform: scale(1);
-    transition: 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-    transform-origin: right top;
-    visibility: visible;
-  }
-
-  > li {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    clear: both;
-    width: 100%;
-
-    > a {
-      color: #000;
-      display: block;
-      padding: 12px 16px;
-      text-decoration: none;
-      text-transform: capitalize;
-      font-weight: unset;
-
-      &:hover {
-        background: #eee;
-      }
-    }
-  }
 `;
 
 const MenuButton = styled.div`
-  color: #fff;
-  background: transparent;
-  border-width: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 400;
-  height: 38px;
-  line-height: 35px;
-  padding: 5px;
-  opacity: 1;
-  text-align: center;
-  transition: all 0.5s ease;
-
-  ${breakpoint("sm")`
-    display: none;
-  `};
-
-  &:before {
-    content: "\f609";
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 6px;
-    position: relative;
-    top: 1px;
-  }
 `;
 
 class MainNav extends React.Component {
