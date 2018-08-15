@@ -1,3 +1,31 @@
+.nav-container {
+  border: none;
+  background: #172121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 3;
+  transition: 0.3s ease-out;
+}
+
+.nav-container ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.nav-container li:hover {
+  cursor: pointer;
+}
+
+.nav-container a {
+  font-weight: 400;
+}
+
 .logo {
   box-sizing: border-box;
   display: block;
@@ -75,7 +103,10 @@
 }
 
 .nav-dropdown > li > a:hover {
-    background: #eee;
+  background: #eee;
+}
+
+@media only screen and (max-width: 960px) {
 }
 
 @media only screen and (max-width: 600px) {
