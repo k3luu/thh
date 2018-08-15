@@ -161,6 +161,7 @@ class MainNav extends React.Component {
 
     return (
       <NavContainer
+        className="nav-container"
         style={
           atTheTop
             ? { background: "transparent", padding: "0 20px" }
