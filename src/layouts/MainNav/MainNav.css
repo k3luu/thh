@@ -8,7 +8,7 @@
   height: 60px;
   width: 100%;
   z-index: 3;
-  transition: padding 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .nav-container ul {

@@ -41,7 +41,7 @@ class MainNav extends React.Component {
   }
 
   handleScrollDetection() {
-    this.setState({ atTheTop: window.scrollY === 0 });
+    this.setState({ atTheTop: window.scrollY < 100 });
   }
 
   handleCurrTab(link) {
@@ -64,7 +64,7 @@ class MainNav extends React.Component {
             : {
                 background: "#172121",
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                padding: "0 30px"
+                padding: "0 25px"
               }
         }
       >
