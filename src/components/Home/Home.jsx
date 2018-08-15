@@ -40,10 +40,6 @@ const RecentSection = styled.div`
     border-bottom: 0;
   `};
 
-  .post-listing {
-    margin: 2rem 0;
-  }
-
   .post-title,
   .post-excerpt {
     padding: 0 10px;
