@@ -5,7 +5,7 @@ module.exports = {
   blogAuthorId: 'casper', // The default and fallback author ID used for blog posts without a defined author.
   siteTitle: 'Two Half-Hitches', // Site title.
   siteTitleAlt: 'Two Half Hitches', // Alternative site title for SEO.
-  siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
+  siteLogo: '/logos/logo-48.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteLogoName: '/logos/logo.png', // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
   siteUrl: 'http://www.twohalfhitches.com/', // Domain of your website without pathPrefix.
   pathPrefix: '/thh', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.

@@ -45,6 +45,13 @@ const NavContainer = styled.nav`
   }
 `;
 
+const Logo = styled.img`
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  width: 40px;
+`;
+
 const Navigation = styled.ul`
   display: none;
   height: 100%;
@@ -106,27 +113,20 @@ const NavDropdown = styled.ul`
     background-color: #f9f9f9;
     clear: both;
     width: 100%;
-  }
 
-  > li > a {
-    color: #000;
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-weight: unset;
-
-    &:hover {
-      background: #eee;
+    > a {
+      color: #000;
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-weight: unset;
+  
+      &:hover {
+        background: #eee;
+      }
     }
   }
-`;
-
-const Logo = styled.img`
-  box-sizing: border-box;
-  display: block;
-  height: 40px;
-  width: 40px;
 `;
 
 class MainNav extends React.Component {
@@ -179,13 +179,13 @@ class MainNav extends React.Component {
           <Logo className="logo" src={config.siteLogo} alt={config.siteTitle} />
         </Link>
 
-        <Navigation>
+        <Navigation className="navigation">
           <li className={this.handleCurrTab('/no-matter-the-mountain')}>
             <Link to="/no-matter-the-mountain">Campaign</Link>
           </li>
           <li className={this.handleCurrTab('trail')}>
             <Link to="/trail-guides">Trail</Link>
-            <NavDropdown className="dropdown">
+            <NavDropdown className="nav-dropdown">
               <li>
                 <Link to="/trail-guides">Guides</Link>
               </li>

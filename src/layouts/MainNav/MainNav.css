@@ -4,3 +4,82 @@
   height: 40px;
   width: 40px;
 }
+
+.navigation {
+  display: flex;
+  height: 100%;
+}
+
+.navigation > li {
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation > li:hover > a,
+.navigation > li.selected > a {
+  border-bottom: 3px solid #fff;
+  transition: all 0.2s;
+}
+
+.navigation > li > a {
+  color: #fff;
+  padding: 5px 0;
+  margin: 0 15px;
+  vertical-align: text-top;
+  letter-spacing: 0.4px;
+  font-size: 14px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  min-width: 160px;
+  margin-top: 0.9rem;
+  padding: 0;
+  transform: scale(1, 0);
+  transition: all 0.2s ease;
+  visibility: hidden;
+  z-index: 4;
+}
+
+.nav-dropdown:hover {
+  transform: scale(1);
+  transition: 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transform-origin: right top;
+  visibility: visible;
+}
+
+.nav-dropdown > li {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  clear: both;
+  width: 100%;
+}
+
+.nav-dropdown > li > a {
+  color: #000;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: unset;
+}
+
+.nav-dropdown > li > a:hover {
+    background: #eee;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+}
