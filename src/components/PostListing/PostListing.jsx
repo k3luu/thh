@@ -75,9 +75,9 @@ class PostListing extends React.Component {
             </Link>
           )}
           <Box alignItems="center">
-            <h3 className="post-title">
+            <h4 className="post-title">
               <Link to={path}>{title}</Link>
-            </h3>
+            </h4>
             {!hideDescription && (
               <section className="post-excerpt">
                 <Box display="flex" marginTop={2}>

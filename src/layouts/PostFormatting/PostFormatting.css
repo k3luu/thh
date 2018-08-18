@@ -191,6 +191,10 @@ div.page-template .post-title {
         font-size: 0.85em;
         margin: 0 10px;
     }
+
+    .post-title {
+        margin: 10px !important;
+    }
 }
 
 /* ==========================================================================
@@ -215,10 +219,6 @@ div.page-template .post-title {
     .post-template .post-date,
     .page-template .post-date {
         display: inline-block;
-    }
-
-    .post-title {
-        margin: 10px !important;
     }
 
     .post-excerpt p {

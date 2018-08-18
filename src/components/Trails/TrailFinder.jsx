@@ -22,7 +22,7 @@ class TrailFinder extends Component {
           Distance, Difficulty, Elevation Gain, and Season.
         </p>
 
-        <h5>Difficulty Level</h5>
+        <h2>Difficulty Level</h2>
         <div className="trail-pin__container">
           <div>
             <div className="trail-pin">

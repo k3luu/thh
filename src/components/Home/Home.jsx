@@ -65,10 +65,15 @@ const RecentSection = styled.div`
   }
 `;
 
-const RecentHeader = styled.h4`
+const RecentHeader = styled.div`
   padding: 0 10px;
-  font-size: 12px;
   margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  line-height: 1.15em;
+  text-rendering: geometricPrecision;
+  text-transform: uppercase;
 
   ${breakpoint('md')`
     padding: 0;
