@@ -1,9 +1,52 @@
-import React, { Component } from 'react';
-import { Box, Image } from 'gestalt';
-import './About.css';
+import React, { Component } from "react";
+import { Box, Image } from "gestalt";
+import styled from "styled-components";
+import breakpoint from "styled-components-breakpoint";
+import "./About.css";
+
+const PhotoContainer = styled.div`
+  width: 100%;
+  height: 300px;
+
+  ${breakpoint("sm")`
+    height: 500px;
+  `};
+`;
+
+const Name = styled.h3`
+  margin: 10px !important;
+
+  ${breakpoint("md")`
+    margin: 10px 0 !important;
+  `};
+`;
+
+const Title = styled.h5`
+  font-style: italic;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: unset;
+  margin: 0 10px !important;
+
+  ${breakpoint("md")`
+    margin: 10px 0 !important;
+  `};
+`;
+
+const Bio = styled.div`
+  margin-bottom: 70px;
+  p {
+    margin: 10px;
+  }
+
+  ${breakpoint("md")`
+    p {
+      margin: 10px 0;
+    }
+  `};
+`;
 
 class About extends Component {
-  // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
       <div className="main-content">
@@ -18,13 +61,7 @@ class About extends Component {
           outdoor enthusiasts who share the same passion as you!
         </p>
 
-        <Box
-          shape="circle"
-          color="darkGray"
-          height="500px"
-          width="100%"
-          marginRight={2}
-        >
+        <PhotoContainer>
           <Image
             alt="Franz Stanley Anunciacion"
             color="darkGray"
@@ -33,10 +70,10 @@ class About extends Component {
             fit="cover"
             src="https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/franz.jpeg"
           />
-        </Box>
-        <h3 className="about-leader">Franz Stanley Anunciacion</h3>
-        <h5 className="about-title">Founder/Editor-in-Chief</h5>
-        <div className="about-section">
+        </PhotoContainer>
+        <Name>Franz Stanley Anunciacion</Name>
+        <Title>Founder/Editor-in-Chief</Title>
+        <Bio>
           <p>
             Franz began exploring the Great Outdoors at the age of 5 with the
             Boy Scouts of America. After achieving the rank of Eagle Scout in
@@ -56,9 +93,9 @@ class About extends Component {
             various expeditions, teach the fundamentals of surviving in the
             outdoors, and help viewers find fulfillment in nature.
           </p>
-        </div>
+        </Bio>
 
-        <Box color="darkGray" height="500px" width="100%" marginRight={2}>
+        <PhotoContainer>
           <Image
             alt="Robert Aaron Hebron"
             color="darkGray"
@@ -67,10 +104,10 @@ class About extends Component {
             fit="cover"
             src="https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/robert.jpeg"
           />
-        </Box>
-        <h3 className="about-leader">Robert Aaron Hebron</h3>
-        <h5 className="about-title">Photographer/Multi-Media Manager</h5>
-        <div className="about-section">
+        </PhotoContainer>
+        <Name>Robert Aaron Hebron</Name>
+        <Title>Photographer/Multi-Media Manager</Title>
+        <Bio>
           <p>
             Los Angeles-based photographer, Robert, is susceptible to elevation
             sickness. Why does he continue to explore the Great Outdoors?
@@ -90,9 +127,9 @@ class About extends Component {
             produces breathtaking images that he shares and inspires viewers to
             explore the world around them.
           </p>
-        </div>
+        </Bio>
 
-        <Box color="darkGray" height="500px" width="100%" marginRight={2}>
+        <PhotoContainer>
           <Image
             alt="Colt Thomas Deck"
             color="darkGray"
@@ -101,10 +138,10 @@ class About extends Component {
             fit="cover"
             src="https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/colt.jpeg"
           />
-        </Box>
-        <h3 className="about-leader">Colt Thomas Deck</h3>
-        <h5 className="about-title">Senior Editor</h5>
-        <div className="about-section">
+        </PhotoContainer>
+        <Name>Colt Thomas Deck</Name>
+        <Title>Senior Editor</Title>
+        <Bio>
           <p>
             Colt is a writer and scholar currently teaching in the Sonoma County
             area and has been “playing with rocks” his entire life. Although his
@@ -129,7 +166,7 @@ class About extends Component {
             out with a serious knee injury, we hope to have him exploring with
             Two Half-Hitches again soon.
           </p>
-        </div>
+        </Bio>
       </div>
     );
   }

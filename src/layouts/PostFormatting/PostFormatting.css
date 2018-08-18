@@ -170,10 +170,10 @@ div.page-template .post-title {
 }
 
 /* ==========================================================================
-       Media Queries - Smaller than 900px
+       Media Queries - Smaller than 960px
    ========================================================================== */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
     .post {
         width: auto;
         font-size: 0.95em;
@@ -186,13 +186,18 @@ div.page-template .post-title {
     div.page-template .post-title {
         font-size: 4.5rem;
     }
+
+    .post-excerpt p {
+        font-size: 0.85em;
+        margin: 0 10px;
+    }
 }
 
 /* ==========================================================================
-       Media Queries - Smaller than 500px
+       Media Queries - Smaller than 600px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .post {
         margin: 2rem 16px;
         padding-bottom: 2rem;
@@ -210,6 +215,10 @@ div.page-template .post-title {
     .post-template .post-date,
     .page-template .post-date {
         display: inline-block;
+    }
+
+    .post-title {
+        margin: 10px !important;
     }
 
     .post-excerpt p {

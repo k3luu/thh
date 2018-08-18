@@ -42,7 +42,6 @@ const RecentSection = styled.div`
 
   .post-title,
   .post-excerpt {
-    padding: 0 10px;
 
     ${breakpoint('md')`
       padding: 0;
@@ -95,11 +94,9 @@ const BannerImage = styled.div`
 `;
 
 const BannerDescription = styled.p`
-  padding: 0 10px;
   margin-bottom: 70px;
 
   ${breakpoint('md')`
-    padding: 0;
   `};
 `;
 

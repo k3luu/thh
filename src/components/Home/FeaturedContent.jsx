@@ -63,6 +63,10 @@ const Title = styled.h5`
 
 const Excerpt = styled.div`
   margin: 50px 0;
+
+  p {
+    margin: 0 !important;
+  }
 `;
 
 const LearnMore = styled.div`

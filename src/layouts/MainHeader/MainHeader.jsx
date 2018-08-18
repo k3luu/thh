@@ -17,7 +17,7 @@ class MainHeader extends React.Component {
 
     return (
       <header className={classes}>
-        <Box height="100vh" width="100%">
+        <Box height="100%" width="100%">
           <Image
             alt="Header"
             naturalHeight={1}

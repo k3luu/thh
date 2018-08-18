@@ -1,18 +1,14 @@
 .contact-form {
-    width: 100%;
-    box-sizing: border-box !important;
 }
 
 .contact-fields {
     display: flex;
     width: 100%;
-    box-sizing: border-box !important;
 }
 
 .contact-message {
     width: 100%;
     margin-top: 20px;
-    box-sizing: border-box !important;
 }
 
 .contact h5 {
@@ -21,4 +17,10 @@
 
 .contact-button {
     width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .contact-form {
+        margin: 0 10px;
+    }
 }

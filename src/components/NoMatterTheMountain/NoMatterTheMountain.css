@@ -70,6 +70,10 @@
     color: #fff;
 }
 
+.campaign iframe {
+    height: 500px;
+}
+
 .campaign .carousel .slide {
     background: #fff;
 }
@@ -109,6 +113,10 @@
     .ambassador-image {
         max-width: 100%;
         max-height: 400px;
+    }
+
+    .campaign iframe {
+        height: 300px;
     }
 
     .campaign .carousel .slide {

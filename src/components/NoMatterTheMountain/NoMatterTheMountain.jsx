@@ -81,7 +81,6 @@ class NoMatterTheMountain extends Component {
           <iframe
             title="thh-campaign"
             src="https://www.youtube.com/embed/05ifiSTb6Fc"
-            height="500"
             frameBorder="0"
             allowFullScreen
           />
