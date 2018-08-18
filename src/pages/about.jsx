@@ -54,7 +54,7 @@ class AboutPage extends React.Component {
           <Navigation config={config} onClose={this.handleOnClose} />
 
           <SiteWrapper>
-            <MainHeader className="post-head" cover={config.aboutCover}>
+            <MainHeader className="author-head" cover={config.aboutCover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
             <div className="about-container">

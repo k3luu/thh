@@ -35,7 +35,7 @@ class MainNav extends React.Component {
   }
 
   handleScrollDetection() {
-    this.setState({ atTheTop: window.scrollY < 100 });
+    this.setState({ atTheTop: window.scrollY < 200 });
   }
 
   handleCurrTab(link) {
