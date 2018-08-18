@@ -32,9 +32,9 @@
 
 .ambassador-bio {
     color: #fff;
-    font-family: "Crimson Text", serif;
-    font-size: 18px;
-    font-weight: bold;
+    /* font-family: "Crimson Text", serif; */
+    font-size: 16px;
+    font-style: italic;
     line-height: 24px;
     text-align: justify;
     overflow-y: auto;

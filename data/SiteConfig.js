@@ -54,13 +54,14 @@ module.exports = {
     // year: "2018" // optional, set specific copyright year or range of years, defaults to current year
     // url: "https://www.gatsbyjs.org/" // optional, set link address of copyright, defaults to site root
   },
-  aboutCover: '/images/nature.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  campaignCover: '/images/people.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  fundamentalsCover: '/images/backpacks.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  guideCover: '/images/team.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  finderCover: '/images/snowy-mountain.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  eventCover: '/images/cars.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
-  themeColor: '#172121', // Used for setting manifest and progress theme colors.
+  aboutCover: '/images/nature.jpg',
+  contactCover: '/images/old-homepage.jpg', 
+  campaignCover: '/images/people.jpg',
+  fundamentalsCover: '/images/backpacks.jpg',
+  guideCover: '/images/team.jpg',
+  finderCover: '/images/snowy-mountain.jpg',
+  eventCover: '/images/cars.jpg',
+  themeColor: '#172121', // Color: $outer-space. Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0', // Used for setting manifest background color.
   breakpoints: {
     breakpoints: {

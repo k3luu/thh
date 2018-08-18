@@ -59,7 +59,7 @@ class HikingPage extends React.Component {
     return (
       <ThemeProvider theme={config.breakpoints}>
         <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Hiking Fundamentals | ${config.siteTitle}`} />
+          <Helmet title={`Fundamentals | ${config.siteTitle}`} />
 
           {/* The blog navigation links */}
           <Navigation config={config} onClose={this.handleOnClose} />
@@ -70,7 +70,7 @@ class HikingPage extends React.Component {
             </MainHeader>
 
             <div className="main-content">
-              <h1>Hiking Fundamentals</h1>
+              <h1>Fundamentals</h1>
               <p>
                 Are you new to hiking, or need to brush up on your outdoor
                 skills? Fundamentals gives you a breakdown of all sorts of
@@ -93,7 +93,7 @@ class HikingPage extends React.Component {
                   postEdges={nodes}
                   postAuthors={this.props.data.authors.edges}
                   hideDescription
-                  columns={2}
+                  columns={3}
                 />
               </PaginatedContent>
             </div>

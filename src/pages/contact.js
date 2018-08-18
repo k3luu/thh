@@ -54,7 +54,7 @@ class ContactPage extends React.Component {
           <Navigation config={config} onClose={this.handleOnClose} />
 
           <SiteWrapper>
-            <MainHeader className="post-head" cover={config.siteCover}>
+            <MainHeader className="post-head" cover={config.contactCover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
