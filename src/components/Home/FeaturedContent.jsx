@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import { Image } from "gestalt";
-import "./Home.css";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
+import { Image } from 'gestalt';
+import './Home.css';
 
 const FeaturedSection = styled.div`
   display: block;
@@ -13,12 +13,12 @@ const FeaturedSection = styled.div`
   border-top: #d8d8d8 1px solid;
   border-bottom: #d8d8d8 1px solid;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     display: flex;
     margin-top: 0;
   `};
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   `};
 `;
 
@@ -26,7 +26,7 @@ const FeaturedPhoto = styled.div`
   margin-right: 0;
   height: 300px;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     height: 600px;
   `};
 `;
@@ -35,7 +35,7 @@ const FeaturedInfo = styled.div`
   width: 100%;
   padding: 10px;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
       padding: 10px 20px;
       width: 50%;
   `};
@@ -52,7 +52,7 @@ const FeaturedHeader = styled.div`
   text-rendering: geometricPrecision;
   text-transform: uppercase;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     position: unset;
   `};
 `;
@@ -60,7 +60,7 @@ const FeaturedHeader = styled.div`
 const Title = styled.h5`
   margin-top: 10px;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     margin-top: 50px;
   `};
 `;
@@ -72,7 +72,7 @@ const Excerpt = styled.div`
     margin: 0 !important;
   }
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     margin: 50px 0 ;
   `};
 `;
@@ -81,7 +81,7 @@ const LearnMore = styled.div`
   display: flex;
   justify-content: center;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     justify-content: flex-start;
   `};
 `;
@@ -117,7 +117,7 @@ class FeaturedContent extends Component {
               the most beautiful waterfalls on this planet, and is one of the
               best backpacking trips that you need to experience in your
               lifetime. Check out our complete guide and backpacking experience
-              to the hidden oasis of{" "}
+              to the hidden oasis of{' '}
               <i>&#34;the people of the blue-green waters.&#34;</i>
             </p>
           </Excerpt>

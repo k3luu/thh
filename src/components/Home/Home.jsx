@@ -42,7 +42,6 @@ const RecentSection = styled.div`
 
   .post-title,
   .post-excerpt {
-
     ${breakpoint('md')`
       padding: 0;
     `};

@@ -1,12 +1,12 @@
-import React from "react";
-import { Box } from "gestalt";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
+import React from 'react';
+import { Box } from 'gestalt';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 const Title = styled.h6`
   margin: 0 10px !important;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 0 auto;
   `};
 `;

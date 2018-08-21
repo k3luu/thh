@@ -51,7 +51,7 @@
 }
 
 .ambassador-info::before {
-    content: "\2014";
+    content: '\2014';
     padding-right: 5px;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .campaign .carousel.carousel-slider .control-arrow:hover {
-    opacity: 1
+    opacity: 1;
 }
 
 .campaign .carousel .control-next.control-arrow {

@@ -55,7 +55,7 @@ module.exports = {
     // url: "https://www.gatsbyjs.org/" // optional, set link address of copyright, defaults to site root
   },
   aboutCover: '/images/ABOUT.jpg',
-  contactCover: '/images/CONTACT.jpg', 
+  contactCover: '/images/CONTACT.jpg',
   campaignCover: '/images/CAMPAIGN.jpg',
   fundamentalsCover: '/images/ABOUT.jpg',
   guideCover: '/images/GUIDES.jpg',
