@@ -1,5 +1,6 @@
 ---
 title: "Cooper Canyon Trail Camp via Burkhart Trail"
+camp_title: "Cooper Canyon Trail Camp"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6582.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6582-thumbnail.jpg"
 date: "2016-02-27"
@@ -9,10 +10,12 @@ difficulty: "Easy"
 elevation: "638 ft"
 season: "Spring, Summer, Fall"
 parking: "Adventure Pass Required"
-category: "trails"
+category: "hike in"
 tags:
     - san gabriel mountains
     - trails
+    - camp
+    - hike in
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6457.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6442.jpg

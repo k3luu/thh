@@ -12,7 +12,7 @@ import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
 import PostListing from '../components/PostListing/PostListing';
 import Footer from '../components/Footer/Footer';
 
-class GuidesPage extends React.Component {
+class HikeInPage extends React.Component {
   constructor() {
     super();
 
@@ -57,32 +57,26 @@ class GuidesPage extends React.Component {
       next
     } = this.props.pathContext;
 
-    console.log('trail guide page', this.props);
+    console.log('HIKE IN page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
         <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Trail Guides | ${config.siteTitle}`} />
+          <Helmet title={`Camp Hike-In | ${config.siteTitle}`} />
 
           {/* The blog navigation links */}
           <Navigation config={config} onClose={this.handleOnClose} />
 
           <SiteWrapper>
-            <MainHeader className="post-head" cover={config.guideCover}>
+            <MainHeader className="post-head" cover={config.hikeInCover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
             <div className="main-content">
-              <h1>Trail Guides</h1>
+              <h1>Camp Hike-In</h1>
               <p>
-                Follow us on our most recent expeditions! The blog is our way of
-                sharing our personal experiences to show readers how engaging
-                and inspiring the outdoors can be. We provide reviews of trails,
-                photos from our trip, and tips if you're planning on trekking
-                the same trail. We understand that getting out there can seem
-                daunting, but hopefully by sharing our experiences you can
-                benefit by having a clear view of what to expect going into your
-                adventure.
+                Whether its for a solo trip, or a group of your best friends,
+                find the trail camp that bests suits you!
               </p>
 
               <PaginatedContent
@@ -116,7 +110,7 @@ class GuidesPage extends React.Component {
 
 // /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query GuidesQuery {
+  query hikeInQuery {
     # posts data comes from the context
     # authors
     authors: allAuthorsJson {
@@ -133,4 +127,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default GuidesPage;
+export default HikeInPage;

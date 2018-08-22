@@ -70,7 +70,7 @@ class MainNav extends React.Component {
           <li className={this.handleCurrTab('/no-matter-the-mountain')}>
             <Link to="/no-matter-the-mountain">Campaign</Link>
           </li>
-          <li className={this.handleCurrTab('trail')}>
+          <li className={this.handleCurrTab('trail-')}>
             <Link to="/trail-guides">Trail</Link>
             <NavDropdown className="nav-dropdown">
               <li>
@@ -81,11 +81,11 @@ class MainNav extends React.Component {
               </li>
             </NavDropdown>
           </li>
-          <li className={this.handleCurrTab('camp')}>
-            <Link to="/trail-guides">Camp</Link>
+          <li className={this.handleCurrTab('-in')}>
+            <Link to="/hike-in">Camp</Link>
             <NavDropdown className="nav-dropdown">
               <li>
-                <Link to="/trail-guides">Hike-In</Link>
+                <Link to="/hike-in">Hike-In</Link>
               </li>
               <li>
                 <Link to="/trail-finder">Drive-In</Link>
@@ -101,9 +101,6 @@ class MainNav extends React.Component {
           <li className={this.handleCurrTab('/about')}>
             <Link to="/about">About</Link>
           </li>
-          {/*<li className={this.handleCurrTab('/contact')}>*/}
-          {/*<Link to="/contact">Contact</Link>*/}
-          {/*</li>*/}
         </Navigation>
 
         {config.siteNavigation && (

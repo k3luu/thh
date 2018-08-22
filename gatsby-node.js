@@ -42,7 +42,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const categoryPage = path.resolve('src/templates/category.jsx');
     const authorPage = path.resolve('src/templates/author.jsx');
     const guidesPage = path.resolve('src/templates/trail-guides.js');
-    const fundamentalsPage = path.resolve('src/templates/fundamentals.js');
+    const fundamentalsPage = path.resolve('src/templates/fundamentals.jsx');
+    const hikeInPage = path.resolve('src/templates/hike-in.jsx');
 
     if (!fs.existsSync(path.resolve(`content/${siteConfig.blogAuthorDir}/authors/`))) {
       reject("The 'authors' folder is missing within the 'blogAuthorDir' folder.");
@@ -115,6 +116,42 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     date
                     category
                     author
+                    location
+                    distance
+                    difficulty
+                    elevation
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt(pruneLength: 280)
+                  timeToRead
+                }
+              }
+            }
+            hikeInPosts: allMarkdownRemark(
+              limit: 1000
+              filter: { 
+                fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" }
+                frontmatter: { category: { eq: "hike in" } }
+              }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              totalCount
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    tags
+                    cover
+                    thumbnail
+                    date
+                    category
+                    author
+                    location
+                    distance
+                    difficulty
+                    elevation
                   }
                   fields {
                     slug
@@ -143,7 +180,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           limit: 3
         });
 
-        // Creates Guides page
+        /* Creates Guides page */
         createPaginationPages({
           createPage,
           edges: result.data.trailPosts.edges,
@@ -152,16 +189,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           pathFormatter: prefixPathFormatter('/trail-guides')
         });
 
-        // Creates Hiking Fundamentals page
-        createPaginationPages({
-          createPage,
-          edges: result.data.fundamentalPosts.edges,
-          component: fundamentalsPage,
-          limit: siteConfig.sitePaginationLimit,
-          pathFormatter: prefixPathFormatter('/fundamentals')
-        });
-
-        // Creates Posts - to edit the READ NEXT pages?
         createLinkedPages({
           createPage,
           edges: result.data.trailPosts.edges,
@@ -177,6 +204,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           circular: true
         });
 
+        /* Creates Hiking Fundamentals page */
+        createPaginationPages({
+          createPage,
+          edges: result.data.fundamentalPosts.edges,
+          component: fundamentalsPage,
+          limit: siteConfig.sitePaginationLimit,
+          pathFormatter: prefixPathFormatter('/fundamentals')
+        });
+
         createLinkedPages({
           createPage,
           edges: result.data.fundamentalPosts.edges,
@@ -190,6 +226,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           }),
           circular: true
+        });
+
+        /* Creates Camp Hike-In page */
+        createPaginationPages({
+          createPage,
+          edges: result.data.hikeInPosts.edges,
+          component: hikeInPage,
+          limit: 15,
+          pathFormatter: prefixPathFormatter('/hike-in')
         });
 
         const tagSet = new Set();

@@ -92,7 +92,7 @@ class HikingPage extends React.Component {
                 <PostListing
                   postEdges={nodes}
                   postAuthors={this.props.data.authors.edges}
-                  hideDescription
+                  description="none"
                   columns={3}
                 />
               </PaginatedContent>

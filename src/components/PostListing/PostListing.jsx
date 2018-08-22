@@ -19,6 +19,10 @@ const getPostList = (postEdges, authorEdges) =>
     thumbnail: postEdge.node.frontmatter.thumbnail,
     title: postEdge.node.frontmatter.title,
     date: postEdge.node.frontmatter.date,
+    location: postEdge.node.frontmatter.location,
+    distance: postEdge.node.frontmatter.distance,
+    difficulty: postEdge.node.frontmatter.difficulty,
+    elevation: postEdge.node.frontmatter.elevation,
     author: AuthorModel.getAuthor(
       authorEdges,
       postEdge.node.frontmatter.author,
@@ -41,9 +45,73 @@ class PostListing extends React.Component {
     }
   }
 
+  handleDescription(post) {
+    const { description } = this.props;
+    const { path, excerpt, location, elevation, difficulty, distance } = post;
+
+    switch (description) {
+      case 'none':
+        return '';
+
+      case 'details':
+        return (
+          <section className="post-excerpt">
+            <Box display="flex" marginTop={2}>
+              <table className="trail-data">
+                <tbody>
+                  <tr>
+                    {/*<td className="trail-data__icon">*/}
+                    {/*<i className="fa fa-map-marker" />*/}
+                    {/*</td>*/}
+                    <td className="trail-data__label">Location</td>
+                    <td>{location}</td>
+                  </tr>
+                  <tr>
+                    {/*<td className="trail-data__icon">*/}
+                    {/*<i className="fa fa-arrows-h" />*/}
+                    {/*</td>*/}
+                    <td className="trail-data__label">Distance</td>
+                    <td>{distance}</td>
+                  </tr>
+                  <tr>
+                    {/*<td className="trail-data__icon">*/}
+                    {/*<i className="fa fa-tachometer" />*/}
+                    {/*</td>*/}
+                    <td className="trail-data__label">Difficulty</td>
+                    <td>{difficulty}</td>
+                  </tr>
+                  <tr>
+                    {/*<td className="trail-data__icon">*/}
+                    {/*<i className="fa fa-arrows-v" />*/}
+                    {/*</td>*/}
+                    <td className="trail-data__label">Elevation</td>
+                    <td>{elevation}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </Box>
+          </section>
+        );
+
+      default:
+        return (
+          <section className="post-excerpt">
+            <Box display="flex" marginTop={2}>
+              <p>
+                {excerpt.replace(/\s\s+/g, ' ')}{' '}
+                <Link className="read-more" to={path}>
+                  &raquo;
+                </Link>
+              </p>
+            </Box>
+          </section>
+        );
+    }
+  }
+
   handlePostContent(post, index) {
-    const { title, path, excerpt, author, tags, date, cover, thumbnail } = post;
-    const { hideDescription, columns } = this.props;
+    const { title, path, excerpt, cover, thumbnail } = post;
+    const { columns } = this.props;
     let className = post.post_class ? post.post_class : 'post post-listing';
     let maskHeight;
 
@@ -78,18 +146,7 @@ class PostListing extends React.Component {
             <h4 className="post-title">
               <Link to={path}>{title}</Link>
             </h4>
-            {!hideDescription && (
-              <section className="post-excerpt">
-                <Box display="flex" marginTop={2}>
-                  <p>
-                    {excerpt.replace(/\s\s+/g, ' ')}{' '}
-                    <Link className="read-more" to={path}>
-                      &raquo;
-                    </Link>
-                  </p>
-                </Box>
-              </section>
-            )}
+            {this.handleDescription(post)}
           </Box>
         </PostHeader>
         <footer className="post-meta">
@@ -133,7 +190,6 @@ class PostListing extends React.Component {
 
   render() {
     const postList = getPostList(this.props.postEdges, this.props.postAuthors);
-    const { hideDescription } = this.props;
 
     if (this.props.columns) return this.handlePostGroups();
 

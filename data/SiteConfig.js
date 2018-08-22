@@ -61,6 +61,8 @@ module.exports = {
   guideCover: '/images/GUIDES.jpg',
   finderCover: '/images/FINDER.jpg',
   eventCover: '/images/EVENTS.jpg',
+  hikeInCover: '/images/CAMP-HIKE.jpg',
+  driveInCover: '/images/CAMP-DRIVE.jpg',
   themeColor: '#172121', // Color: $outer-space. Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0', // Used for setting manifest background color.
   breakpoints: {
