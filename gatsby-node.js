@@ -44,6 +44,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     const guidesPage = path.resolve('src/templates/trail-guides.js');
     const fundamentalsPage = path.resolve('src/templates/fundamentals.jsx');
     const hikeInPage = path.resolve('src/templates/hike-in.jsx');
+    const driveInPage = path.resolve('src/templates/drive-in.jsx');
 
     if (!fs.existsSync(path.resolve(`content/${siteConfig.blogAuthorDir}/authors/`))) {
       reject("The 'authors' folder is missing within the 'blogAuthorDir' folder.");
@@ -142,6 +143,42 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   frontmatter {
                     title
+                    campTitle
+                    category
+                    tags
+                    cover
+                    thumbnail
+                    date
+                    category
+                    author
+                    location
+                    distance
+                    difficulty
+                    elevation
+                  }
+                  fields {
+                    slug
+                  }
+                  excerpt(pruneLength: 280)
+                  timeToRead
+                }
+              }
+            }
+            driveInPosts: allMarkdownRemark(
+              limit: 1000
+              filter: { 
+                fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" }
+                frontmatter: { category: { eq: "drive in" } }
+              }
+              sort: { fields: [frontmatter___date], order: DESC }
+            ) {
+              totalCount
+              edges {
+                node {
+                  frontmatter {
+                    title
+                    campTitle
+                    category
                     tags
                     cover
                     thumbnail
@@ -235,6 +272,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           component: hikeInPage,
           limit: 15,
           pathFormatter: prefixPathFormatter('/hike-in')
+        });
+
+        /* Creates Camp Drive-In page */
+        createPaginationPages({
+          createPage,
+          edges: result.data.driveInPosts.edges,
+          component: driveInPage,
+          limit: 15,
+          pathFormatter: prefixPathFormatter('/drive-in')
         });
 
         const tagSet = new Set();

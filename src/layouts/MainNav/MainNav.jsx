@@ -88,7 +88,7 @@ class MainNav extends React.Component {
                 <Link to="/hike-in">Hike-In</Link>
               </li>
               <li>
-                <Link to="/trail-finder">Drive-In</Link>
+                <Link to="/drive-in">Drive-In</Link>
               </li>
             </NavDropdown>
           </li>

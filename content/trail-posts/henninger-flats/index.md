@@ -1,5 +1,6 @@
 ---
 title: "Henninger Flats via Eaton Canyon"
+campTitle: "Henninger Flats Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Henninger+Flats/5J8A7327.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Henninger+Flats/thumbnail.jpeg"
 date: "2016-06-14"
@@ -9,7 +10,7 @@ difficulty: "Moderate"
 elevation: "2896 ft"
 season: "All"
 parking: "Free"
-category: "trails"
+category: "hike in"
 tags:
     - san gabriel mountains
     - trails

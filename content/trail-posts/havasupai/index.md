@@ -1,5 +1,6 @@
 ---
 title: "Havasupai Falls, Mooney Falls, and Beaver Falls"
+campTitle: "Havasupai Falls Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/IMG_0664.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg"
 date: "2018-07-01"
@@ -9,7 +10,7 @@ difficulty: "Difficult-Strenuous"
 elevation: "~2400 ft"
 season: "Spring, Summer, Fall"
 parking: "Hualapai Hilltop (free w/ reservation)"
-category: "trails"
+category: "hike in"
 tags:
     - waterfalls
     - arizona

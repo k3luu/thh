@@ -1,5 +1,6 @@
 ---
 title: "Little Jimmy Springs via Islip Saddle"
+campTitle: "Little Jimmy Trail Camp"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/_J8A4282.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/_J8A4282-thumbnail.jpg"
 date: "2017-11-24"
@@ -9,7 +10,7 @@ difficulty: "Easy-Moderate"
 elevation: "1200 ft"
 season: "Spring, Summer, Fall"
 parking: "Adventure Pass Required"
-category: "trails"
+category: "hike in"
 tags:
     - angeles national forest
     - spring

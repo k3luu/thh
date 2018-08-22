@@ -1,5 +1,6 @@
 ---
 title: "Hoegee's Campground"
+campTitle: "Hoegee's Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5530.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/thumbnail.jpeg"
 date: "2018-08-08"
@@ -10,7 +11,7 @@ elevation: "1420 ft"
 season: "All"
 parking: "Free (Adventure Pass Required)"
 dogs: "true"
-category: "trails"
+category: "hike in"
 tags:
     - angeles national forest
     - dogs welcome

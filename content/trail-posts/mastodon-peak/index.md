@@ -1,5 +1,6 @@
 ---
 title: "Mastodon Peak via Cottonwood Campground"
+campTitle: "Cottonwood Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7731.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7731-thumbnail.jpg"
 date: "2016-03-19"
@@ -9,7 +10,7 @@ difficulty: "Easy"
 elevation: "440 ft"
 season: "All"
 parking: "Entrance Fee & Vehicle Fee"
-category: "trails"
+category: "drive in"
 tags:
     - joshua tree
     - trails

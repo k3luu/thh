@@ -1,5 +1,6 @@
 ---
 title: "Bluffs, Panorama & Ridge Trail via Andrew Molera Loop"
+campTitle: "Andrew Molera Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7776.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7776.jpg"
 date: "2016-05-26"
@@ -9,7 +10,7 @@ difficulty: "Easy"
 elevation: "1100 ft"
 season: "All"
 parking: "Parking Fee"
-category: "trails"
+category: "drive in"
 tags:
     - big sur
     - northern california

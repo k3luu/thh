@@ -1,6 +1,6 @@
 ---
 title: "Cooper Canyon Trail Camp via Burkhart Trail"
-camp_title: "Cooper Canyon Trail Camp"
+campTitle: "Cooper Canyon Trail Camp"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6582.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6582-thumbnail.jpg"
 date: "2016-02-27"

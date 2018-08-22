@@ -1,5 +1,6 @@
 ---
 title: "Bear Canyon Trail Camp via Switzer Canyon"
+campTitle: "Bear Canyon Trail Camp"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9594.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/thumbnail.jpeg"
 date: "2016-11-03"
@@ -9,7 +10,7 @@ difficulty: "Easy-Moderate"
 elevation: "800 ft"
 season: "Spring, Summer, Fall"
 parking: "Adventure Pass Required"
-category: "trails"
+category: "hike in"
 tags:
     - angeles national forest
     - trails

@@ -53,7 +53,8 @@ class PostTemplate extends React.Component {
     this.state = {
       menuOpen: false,
       activeStep: 0,
-      post
+      post,
+      details: ['trails', 'drive in', 'hike in']
     };
 
     this.handleTrailData = this.handleTrailData.bind(this);
@@ -111,10 +112,11 @@ class PostTemplate extends React.Component {
       category,
       dogs
     } = data;
+    const { details } = this.state;
 
     // console.log(' trail data', category);
 
-    if (category === 'trails')
+    if (details.includes(category))
       return (
         <table className="trail-data">
           <tbody>
@@ -172,6 +174,8 @@ class PostTemplate extends React.Component {
           </tbody>
         </table>
       );
+
+    return '';
   };
 
   render() {

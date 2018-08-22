@@ -1,5 +1,6 @@
 ---
 title: "Cedar Glen via Ice House Canyon and Chapman Trail"
+campTitle: "Cedar Glen Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cedar+Glen/IMG_7729.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cedar+Glen/thumbnail.jpeg"
 date: "2016-06-16"
@@ -9,7 +10,7 @@ difficulty: "Easy-Moderate"
 elevation: "1100 ft"
 season: "Spring, Summer, Fall"
 parking: "Adventure Pass Required"
-category: "trails"
+category: "hike in"
 tags:
     - san gabriel mountains
     - trails

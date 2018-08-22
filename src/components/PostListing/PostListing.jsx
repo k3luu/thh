@@ -18,6 +18,8 @@ const getPostList = (postEdges, authorEdges) =>
     cover: postEdge.node.frontmatter.cover,
     thumbnail: postEdge.node.frontmatter.thumbnail,
     title: postEdge.node.frontmatter.title,
+    campTitle: postEdge.node.frontmatter.campTitle,
+    category: postEdge.node.frontmatter.category,
     date: postEdge.node.frontmatter.date,
     location: postEdge.node.frontmatter.location,
     distance: postEdge.node.frontmatter.distance,
@@ -33,6 +35,10 @@ const getPostList = (postEdges, authorEdges) =>
   }));
 
 class PostListing extends React.Component {
+  state = {
+    camp: ['drive in', 'hike in']
+  };
+
   handleListingClass() {
     const { columns } = this.props;
 
@@ -43,6 +49,15 @@ class PostListing extends React.Component {
       default:
         return 'post post-listing';
     }
+  }
+
+  handleTitle(post) {
+    const { camp } = this.state;
+    const { category, title, campTitle } = post;
+
+    if (camp.includes(category)) return campTitle;
+
+    return title;
   }
 
   handleDescription(post) {
@@ -144,7 +159,7 @@ class PostListing extends React.Component {
           )}
           <Box alignItems="center">
             <h4 className="post-title">
-              <Link to={path}>{title}</Link>
+              <Link to={path}>{this.handleTitle(post)}</Link>
             </h4>
             {this.handleDescription(post)}
           </Box>
@@ -190,6 +205,7 @@ class PostListing extends React.Component {
 
   render() {
     const postList = getPostList(this.props.postEdges, this.props.postAuthors);
+    console.log(postList);
 
     if (this.props.columns) return this.handlePostGroups();
 

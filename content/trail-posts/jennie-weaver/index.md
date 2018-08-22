@@ -1,5 +1,6 @@
 ---
 title: "Jennie and Weaver Lake via Big Meadows"
+campTitle: "Weaver Lake Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0815.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0815.jpg"
 date: "2016-10-21"
@@ -9,7 +10,7 @@ difficulty: "Easy-Moderate"
 elevation: "1243 ft"
 season: "Spring, Summer, Fall"
 parking: "Free"
-category: "trails"
+category: "hike in"
 tags:
     - sequoia national forest
     - lake
