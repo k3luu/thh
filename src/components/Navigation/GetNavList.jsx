@@ -44,6 +44,30 @@ function GetNavList(config) {
       divider: true
     },
     {
+      primaryText: 'Camp',
+      subHeader: true,
+      component: Link,
+      to: '/hike-in'
+    },
+    {
+      primaryText: 'Hike-In',
+      component: Link,
+      subNav: true,
+      to: '/hike-in'
+    },
+    {
+      divider: true
+    },
+    {
+      primaryText: 'Drive-In',
+      component: Link,
+      subNav: true,
+      to: '/drive-in'
+    },
+    {
+      divider: true
+    },
+    {
       primaryText: 'Fundamentals',
       component: Link,
       to: '/fundamentals'
