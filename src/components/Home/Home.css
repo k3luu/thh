@@ -2,6 +2,14 @@
     width: 50%;
 }
 
+.banner-link {
+    color: #fff;
+}
+
+.banner-link.desc {
+    text-decoration: underline;
+}
+
 .home-subscription {
     text-align: center;
     margin-top: 100px;
@@ -55,7 +63,6 @@
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
-
 }
 
 /* ==========================================================================

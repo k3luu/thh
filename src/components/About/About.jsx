@@ -100,8 +100,14 @@ class About extends Component {
       <div className="main-content">
         <h1>Our Objective</h1>
         <p>
-          Two Half-Hitches is designed to help guide you through the outdoors
-          and share information on various hiking trails.
+          Two Half-Hitches was founded on the principle of tethering man back to
+          nature. With a strong focus on self-generated content, we create all
+          of our content by experiencing it first hand. From hiking the trails
+          ourselves, to creating the trail guides, our small team does it all.
+          No matter what your level of experience is, we’re here to help you get
+          back out there, or maybe even get out there for the first time. We
+          hope that you find the same joy that returning to nature brings us,
+          and be re-enchanted with the Great Outdoors.
         </p>
         <h1>Our Team</h1>
         <p>

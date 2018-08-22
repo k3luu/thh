@@ -297,7 +297,7 @@ class Calendar extends Component {
       }
     ];
 
-    console.log('events', events, model);
+    // console.log('events', events, model);
 
     return (
       <div>

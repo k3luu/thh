@@ -10,16 +10,7 @@ class TrailFinder extends Component {
         <h1>Trail Finder</h1>
         <p>
           Find a trail that best suits you based on your personal interest and
-          level of experience! The map has over 100 California trails plotted,
-          and is designed to provide you with the basic information you'll need
-          to decide which is the right fit for you. The trail map is constantly
-          being updated, so keep an eye out for new trails!
-        </p>
-        <p>
-          Open the legend in the top left corner to filter trails by location.
-          By clicking on the pin, the Legend will automatically open up and
-          provide you with further details, including: Trail Name, Area,
-          Distance, Difficulty, Elevation Gain, and Season.
+          level of experience!
         </p>
 
         <h2>Difficulty Level</h2>

@@ -35,10 +35,6 @@ const getPostList = (postEdges, authorEdges) =>
   }));
 
 class PostListing extends React.Component {
-  state = {
-    camp: ['drive in', 'hike in']
-  };
-
   handleListingClass() {
     const { columns } = this.props;
 
@@ -52,10 +48,10 @@ class PostListing extends React.Component {
   }
 
   handleTitle(post) {
-    const { camp } = this.state;
+    const { campListing } = this.props;
     const { category, title, campTitle } = post;
 
-    if (camp.includes(category)) return campTitle;
+    if (campListing) return campTitle;
 
     return title;
   }
@@ -205,7 +201,6 @@ class PostListing extends React.Component {
 
   render() {
     const postList = getPostList(this.props.postEdges, this.props.postAuthors);
-    console.log(postList);
 
     if (this.props.columns) return this.handlePostGroups();
 

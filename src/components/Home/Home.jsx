@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
-import { Image } from 'gestalt';
 import Instafeed from 'react-instafeed';
+import { Image } from 'gestalt';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/main.min.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import FeaturedContent from './FeaturedContent';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
+import sections from './sections';
 import './Home.css';
 
 const Container = styled.div`
@@ -79,28 +84,63 @@ const RecentHeader = styled.div`
   `};
 `;
 
-const BannerTitle = styled.h4`
-  padding: 0 10px;
+const BannerImage = styled.div`
+  height: 70vh;
+`;
+
+const BannerTextBox = styled.div`
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 150px 140px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+
+  ${breakpoint('sm')`
+    padding: 80px;
+    width: 75%;
+  `};
 
   ${breakpoint('md')`
-    padding: 0;
+    width: 50%;
   `};
 `;
 
-const BannerImage = styled.div`
-  margin-bottom: 20px;
-  height: 300px;
+const BannerTitle = styled.div`
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-indent: -3px;
+  text-transform: uppercase;
+  line-height: 1.15em;
+  margin: 0 0 0.4em;
 
-  > div:hover {
-    opacity: 0.8;
-    transition: 0.3s;
-  }
+  ${breakpoint('sm')`
+    font-size: 8rem;
+  `};
 `;
 
-const BannerDescription = styled.p`
-  margin-bottom: 70px;
+const BannerDescription = styled.div`
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  p {
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+  }
+
+  ${breakpoint('sm')`
+    font-size: 1.7rem;
+  `};
 
   ${breakpoint('md')`
+    font-size: 2rem;
   `};
 `;
 
@@ -124,9 +164,67 @@ class Home extends Component {
       });
   }
 
-  render() {
-    const { config } = this.props;
+  handleDescription(item) {
+    if (item.description) return <p>{item.description}</p>;
 
+    switch (item.name) {
+      case 'Campaign':
+        return (
+          <p>
+            Share your story with us on Instagram! Nominate your friends, and
+            tag{' '}
+            <a
+              href="https://www.instagram.com/twohalfhitches"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="banner-link desc"
+            >
+              @twohalfhitches
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://www.instagram.com/explore/tags/nomatterthemountain/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="banner-link desc"
+            >
+              #NoMattertheMountain
+            </a>
+          </p>
+        );
+
+      default:
+        return '';
+    }
+  }
+
+  renderCategories() {
+    const { config } = this.props;
+    return sections.map(p => (
+      <div key={p.id}>
+        <Link to={p.to} className="banner-link">
+          <BannerImage>
+            <Image
+              alt={p.name}
+              naturalHeight={1}
+              naturalWidth={1}
+              fit="cover"
+              src={config[p.photo_src]}
+            >
+              <BannerTextBox>
+                <BannerTitle>{p.name}</BannerTitle>
+                <BannerDescription>
+                  {this.handleDescription(p)}
+                </BannerDescription>
+              </BannerTextBox>
+            </Image>
+          </BannerImage>
+        </Link>
+      </div>
+    ));
+  }
+
+  render() {
     const template =
       '<a href="{{link}}" target="_blank" class="instafeed__item">' +
       '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
@@ -140,143 +238,55 @@ class Home extends Component {
       '</a>';
 
     return (
-      <Container id="home" className="main-content">
-        <HomeTitle className="home-title">
-          Your Guide Through the Great Outdoors
-        </HomeTitle>
+      <Container id="home">
+        <div className="main-content">
+          <HomeTitle className="home-title">
+            Your Guide Through the Great Outdoors
+          </HomeTitle>
 
-        {/*{process.env.NODE_ENV === 'development' && (*/}
-        {/*<div className="instafeed" id="instafeed">*/}
-        {/*<Instafeed*/}
-        {/*limit="10"*/}
-        {/*ref="instafeed"*/}
-        {/*resolution="standard_resolution"*/}
-        {/*sortBy="most-recent"*/}
-        {/*target="instafeed"*/}
-        {/*template={template}*/}
-        {/*userId="self"*/}
-        {/*clientId="e733ec859fb74aa2b2961cefd57ea767"*/}
-        {/*accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"*/}
-        {/*/>*/}
-        {/*</div>*/}
-        {/*)}*/}
+          {/*{process.env.NODE_ENV === 'development' && (*/}
+          {/*<div className="instafeed" id="instafeed">*/}
+          {/*<Instafeed*/}
+          {/*limit="10"*/}
+          {/*ref="instafeed"*/}
+          {/*resolution="standard_resolution"*/}
+          {/*sortBy="most-recent"*/}
+          {/*target="instafeed"*/}
+          {/*template={template}*/}
+          {/*userId="self"*/}
+          {/*clientId="e733ec859fb74aa2b2961cefd57ea767"*/}
+          {/*accessToken="3078281633.e733ec8.ce842c4c91074ffb82ddb2a7fb0adf8a"*/}
+          {/*/>*/}
+          {/*</div>*/}
+          {/*)}*/}
 
-        <FeaturedContent />
+          <FeaturedContent />
 
-        <RecentSection>
-          <RecentHeader className="home-subtitle">Recent Content</RecentHeader>
-          <PostListing
-            postEdges={this.props.nodes}
-            postAuthors={this.props.authorsEdges}
-            columns={3}
-          />
-        </RecentSection>
-
-        <Link to="/no-matter-the-mountain">
-          <BannerTitle>Campaign</BannerTitle>
-          <BannerImage>
-            <Image
-              alt="No Matter the Mountain"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src={config.campaignCover}
+          <RecentSection>
+            <RecentHeader className="home-subtitle">
+              Recent Content
+            </RecentHeader>
+            <PostListing
+              postEdges={this.props.nodes}
+              postAuthors={this.props.authorsEdges}
+              columns={3}
             />
-          </BannerImage>
-        </Link>
-        <BannerDescription>
-          Share your story with us on Instagram! Nominate your friends, and tag{' '}
-          <a
-            href="https://www.instagram.com/twohalfhitches"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @twohalfhitches
-          </a>{' '}
-          and{' '}
-          <a
-            href="https://www.instagram.com/explore/tags/nomatterthemountain/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            #NoMattertheMountain
-          </a>.
-        </BannerDescription>
+          </RecentSection>
+        </div>
 
-        <Link to="/trail-guides">
-          <BannerTitle>Trail Guides</BannerTitle>
-          <BannerImage>
-            <Image
-              alt="Trail Guides"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src={config.guideCover}
-            />
-          </BannerImage>
-        </Link>
-        <BannerDescription>
-          Follow us on our most recent expeditions! The blog is our way of
-          sharing our personal experiences to show readers how engaging and
-          inspiring the outdoors can be. We provide reviews of trails, photos
-          from our trip, and tips if you're planning on trekking the same trail.
-        </BannerDescription>
-
-        <Link to="/trail-finder">
-          <BannerTitle>Trail Finder</BannerTitle>
-          <BannerImage>
-            <Image
-              alt="Trail Finder"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src={config.finderCover}
-            />
-          </BannerImage>
-        </Link>
-        <BannerDescription>
-          Find a trail that best suits you based on your personal interest and
-          level of experience! The map has over 100 California trails plotted,
-          and is designed to provide you with the basic information you will
-          need to decide which is the right fit for you.
-        </BannerDescription>
-
-        <Link to="/fundamentals">
-          <BannerTitle>Fundamentals</BannerTitle>
-          <BannerImage>
-            <Image
-              alt="Fundamentals"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src={config.fundamentalsCover}
-            />
-          </BannerImage>
-        </Link>
-        <BannerDescription>
-          Are you new to hiking, or need to brush up on your outdoor skills?
-          Fundamentals gives you a breakdown of all sorts of skills you will
-          want to know before you head out. Part of exploring is being
-          adaptable, and understanding the way nature can shift. Be prepared for
-          the unforeseen conditions the Great Outdoors will bring you.
-        </BannerDescription>
-
-        <Link to="/events">
-          <BannerTitle>Events</BannerTitle>
-          <BannerImage>
-            <Image
-              alt="Events"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src={config.eventCover}
-            />
-          </BannerImage>
-        </Link>
-        <BannerDescription>
-          Be a part of Two Half-Hitches and join us as we hit the trails! Check
-          out our monthly calendar of events for more details.
-        </BannerDescription>
+        <Carousel
+          key="homepage"
+          emulateTouch
+          useKeyboardArrows
+          showArrows
+          showThumbs={false}
+          showStatus={false}
+          autoPlay
+          interval={4000}
+          infiniteLoop
+        >
+          {this.renderCategories()}
+        </Carousel>
 
         {/*{process.env.NODE_ENV === 'production' && (*/}
         {/*<div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />*/}

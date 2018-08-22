@@ -57,8 +57,6 @@ class HikeInPage extends React.Component {
       next
     } = this.props.pathContext;
 
-    console.log('HIKE IN page', this.props);
-
     return (
       <ThemeProvider theme={config.breakpoints}>
         <Drawer className="author-template" isOpen={this.state.menuOpen}>
@@ -93,6 +91,7 @@ class HikeInPage extends React.Component {
                   postAuthors={this.props.data.authors.edges}
                   columns={3}
                   description="details"
+                  campListing
                 />
               </PaginatedContent>
             </div>
