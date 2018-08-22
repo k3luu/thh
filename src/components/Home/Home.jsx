@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import Instafeed from 'react-instafeed';
-import { Image } from 'gestalt';
+import { Box, Image } from 'gestalt';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -85,28 +85,28 @@ const RecentHeader = styled.div`
 `;
 
 const BannerImage = styled.div`
-  height: 70vh;
+  height: 100vh;
 `;
 
 const BannerTextBox = styled.div`
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 150px 140px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  //box-shadow: 0 0 150px 140px rgba(0, 0, 0, 0.3);
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
   padding: 30px;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  max-width: 75%;
+  height: auto;
   text-align: left;
+  //text-shadow: 0 0 2px #172121;
 
   ${breakpoint('sm')`
     padding: 80px;
-    width: 75%;
   `};
 
   ${breakpoint('md')`
-    width: 50%;
   `};
 `;
 
@@ -150,8 +150,13 @@ class Home extends Component {
 
     this.state = {
       instaFeed: [],
-      instaLoading: true
+      instaLoading: true,
+      autoplay: false
     };
+  }
+
+  componentDidMount() {
+    this.setState({ autoplay: true });
   }
 
   getPhotos() {
@@ -211,12 +216,20 @@ class Home extends Component {
               fit="cover"
               src={config[p.photo_src]}
             >
-              <BannerTextBox>
-                <BannerTitle>{p.name}</BannerTitle>
-                <BannerDescription>
-                  {this.handleDescription(p)}
-                </BannerDescription>
-              </BannerTextBox>
+              <Box
+                display="flex"
+                height="100%"
+                justifyContent="start"
+                alignItems="center"
+                marginLeft={8}
+              >
+                <BannerTextBox>
+                  <BannerTitle>{p.name}</BannerTitle>
+                  <BannerDescription>
+                    {this.handleDescription(p)}
+                  </BannerDescription>
+                </BannerTextBox>
+              </Box>
             </Image>
           </BannerImage>
         </Link>
@@ -281,7 +294,7 @@ class Home extends Component {
           showArrows
           showThumbs={false}
           showStatus={false}
-          autoPlay
+          autoPlay={this.state.autoplay}
           interval={4000}
           infiniteLoop
         >

@@ -6,7 +6,7 @@ const team = [
       'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/franz.jpeg',
     titles: ['Founder', 'Editor-in-Chief'],
     bio: [
-      'FFranz began exploring the Great Outdoors at the age of 5 with the Boy Scouts of America. After achieving the rank of Eagle Scout in 2010, he continued to pursue the lifelong values set forth by the organization - adventure, conservation, challenge, responsibility, and integrity. Without waver, his strong passion for the outdoors inevitably led to protecting it.',
+      'Franz began exploring the Great Outdoors at the age of 5 with the Boy Scouts of America. After achieving the rank of Eagle Scout in 2010, he continued to pursue the lifelong values set forth by the organization - adventure, conservation, challenge, responsibility, and integrity. Without waver, his strong passion for the outdoors inevitably led to protecting it.',
       "Franz later received a Bachelor's Degree in Environmental Science with a minor in Environmental Engineering from the University of California, Los Angeles. He is currently an Environmental Compliance Specialist at an environmental consulting firm.",
       'Through Two Half-Hitches, Franz will share a wealth of knowledge on various expeditions, teach the fundamentals of surviving in the outdoors, and help viewers find fulfillment in nature.'
     ]
