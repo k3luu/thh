@@ -1,8 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
+
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
 import Drawer from '../layouts/Drawer/Drawer';
@@ -11,16 +13,11 @@ import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainContent from '../layouts/MainContent/MainContent';
 import PostHeader from '../layouts/PostHeader/PostHeader';
 import PostFormatting from '../layouts/PostFormatting/PostFormatting';
-import PostDate from '../components/PostDate/PostDate';
 import PostFooter from '../layouts/PostFooter/PostFooter';
-import AuthorImage from '../components/AuthorImage/AuthorImage';
-import AuthorInfo from '../components/AuthorInfo/AuthorInfo';
 import PostShare from '../components/PostShare/PostShare';
 import GhostSubscribe from '../components/GhostSubscribe/GhostSubscribe';
 import ReadNext from '../components/ReadNext/ReadNext';
-import PostTags from '../components/PostTags/PostTags';
 import Footer from '../components/Footer/Footer';
-import AuthorModel from '../models/author-model';
 import Disqus from '../components/Disqus/Disqus';
 import MyCarousel from '../components/Carousel/MyCarousel';
 
@@ -52,9 +49,8 @@ class PostTemplate extends React.Component {
 
     this.state = {
       menuOpen: false,
-      activeStep: 0,
       post,
-      details: ['trails', 'drive in', 'hike in']
+      detailTypes: ['trails', 'drive in', 'hike in']
     };
 
     this.handleTrailData = this.handleTrailData.bind(this);
@@ -82,93 +78,104 @@ class PostTemplate extends React.Component {
     this.setState({ menuOpen: false });
   };
 
-  handleBack = () => {
-    let step = this.state.activeStep - 1;
-    if (step < 0) step = 0;
-
-    this.setState({ activeStep: step });
-  };
-
-  handleForward = () => {
-    let step = this.state.activeStep + 1;
-    if (step >= this.state.post.carousel.length)
-      step = this.state.post.carousel.length - 1;
-
-    this.setState({ activeStep: step });
-  };
-
-  handleStepChange = activeStep => {
-    this.setState({ activeStep });
-  };
-
   handleTrailData = data => {
     const {
       location,
+      category,
+      type,
       distance,
       difficulty,
       elevation,
       season,
       parking,
-      category,
+      usage,
       dogs
     } = data;
-    const { details } = this.state;
+    const { detailTypes } = this.state;
 
-    // console.log(' trail data', category);
-
-    if (details.includes(category))
+    if (detailTypes.includes(category))
       return (
         <table className="trail-data">
           <tbody>
-            <tr>
-              <td className="trail-data__icon">
-                <i className="fa fa-map-marker" />
-              </td>
-              <td className="trail-data__label">Location</td>
-              <td>{location}</td>
-            </tr>
-            <tr>
-              <td className="trail-data__icon">
-                <i className="fa fa-arrows-h" />
-              </td>
-              <td className="trail-data__label">Distance</td>
-              <td>{distance}</td>
-            </tr>
-            <tr>
-              <td className="trail-data__icon">
-                <i className="fa fa-tachometer" />
-              </td>
-              <td className="trail-data__label">Difficulty</td>
-              <td>{difficulty}</td>
-            </tr>
-            <tr>
-              <td className="trail-data__icon">
-                <i className="fa fa-arrows-v" />
-              </td>
-              <td className="trail-data__label">Elevation</td>
-              <td>{elevation}</td>
-            </tr>
-            <tr>
-              <td className="trail-data__icon">
-                <i className="fa fa-snowflake-o" />
-              </td>
-              <td className="trail-data__label">Seasons</td>
-              <td>{season}</td>
-            </tr>
-            <tr>
-              <td className="trail-data__icon">
-                <i className="fa fa-car" />
-              </td>
-              <td className="trail-data__label">Parking</td>
-              <td>{parking}</td>
-            </tr>
+            {location && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-map-marker" />
+                </td>
+                <td className="trail-data__label">Location</td>
+                <td>{location}</td>
+              </tr>
+            )}
+            {type && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-file-o" />
+                </td>
+                <td className="trail-data__label">Type</td>
+                <td>{type}</td>
+              </tr>
+            )}
+            {distance && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-arrows-h" />
+                </td>
+                <td className="trail-data__label">Distance</td>
+                <td>{distance}</td>
+              </tr>
+            )}
+            {difficulty && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-tachometer" />
+                </td>
+                <td className="trail-data__label">Difficulty</td>
+                <td>{difficulty}</td>
+              </tr>
+            )}
+            {elevation && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-arrows-v" />
+                </td>
+                <td className="trail-data__label">Elevation</td>
+                <td>{elevation}</td>
+              </tr>
+            )}
+            {season && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-snowflake-o" />
+                </td>
+                <td className="trail-data__label">Seasons</td>
+                <td>{season}</td>
+              </tr>
+            )}
+            {parking && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-car" />
+                </td>
+                <td className="trail-data__label">Parking</td>
+                <td>{parking}</td>
+              </tr>
+            )}
+            {usage && (
+              <tr>
+                <td className="trail-data__icon">
+                  <i className="fa fa-thermometer-4" />
+                </td>
+                <td className="trail-data__label">Usage</td>
+                <td>{usage}</td>
+              </tr>
+            )}
             {dogs && (
               <tr>
                 <td className="trail-data__icon">
                   <i className="fa fa-paw" />
                 </td>
                 <td className="trail-data__label">Dogs</td>
-                <td>Welcome!</td>
+                <td>{dogs}</td>
               </tr>
             )}
           </tbody>
@@ -186,24 +193,18 @@ class PostTemplate extends React.Component {
     const {
       cover,
       title,
-      date,
-      author,
-      tags,
       carousel,
-      category,
+      carouselTitle,
+      secondaryCarousel,
+      secondaryCarouselTitle,
       disclaimer,
       references
     } = post;
     const className = post.post_class ? post.post_class : 'post';
-    const authorData = AuthorModel.getAuthor(
-      this.props.data.authors.edges,
-      author,
-      config.blogAuthorId
-    );
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
-    // console.log('BLOG POST', this.props);
+    // console.log('POST', post);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
@@ -224,10 +225,6 @@ class PostTemplate extends React.Component {
               <PostFormatting className={className}>
                 <PostHeader>
                   <h1 className="post-title">{title}</h1>
-                  <section className="post-meta">
-                    {/*{date && <PostDate date={date} />}*/}
-                    {/*<PostTags prefix="tags: " tags={tags} />*/}
-                  </section>
                 </PostHeader>
 
                 {this.handleTrailData(post)}
@@ -237,7 +234,11 @@ class PostTemplate extends React.Component {
                   dangerouslySetInnerHTML={{ __html: postNode.html }}
                 />
 
+                {carouselTitle && <h3>{carouselTitle}</h3>}
                 {carousel && <MyCarousel data={carousel} />}
+
+                {secondaryCarouselTitle && <h3>{secondaryCarouselTitle}</h3>}
+                {secondaryCarousel && <MyCarousel data={secondaryCarousel} />}
 
                 {disclaimer && (
                   <div className="post-disclaimer">
@@ -254,8 +255,6 @@ class PostTemplate extends React.Component {
                 )}
 
                 <PostFooter>
-                  {/*<AuthorImage author={authorData} />*/}
-                  {/*<AuthorInfo prefix="/author" author={authorData} />*/}
                   <PostShare
                     postNode={postNode}
                     postPath={location.pathname}
@@ -289,21 +288,24 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover
-        date
-        category
-        tags
-        author
         carousel
-        disclaimer
-        location
-        distance
+        carouselTitle
+        category
+        cover
         difficulty
-        elevation
+        disclaimer
+        distance
         dogs
-        season
+        elevation
+        location
         parking
         references
+        season
+        secondaryCarousel
+        secondaryCarouselTitle
+        tags
+        type
+        usage
       }
       fields {
         slug

@@ -1,6 +1,6 @@
-import React from "react";
-import { Box, Image } from "gestalt";
-import "./BannerTitle.css";
+import React from 'react';
+import { Box, Image } from 'gestalt';
+import './BannerTitle.css';
 
 class BannerTitle extends React.Component {
   render() {

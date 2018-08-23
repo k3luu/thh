@@ -8,7 +8,7 @@ tags:
     - water
     - filter
     - purification
-date: "2018-8-04"
+date: "2018-7-23"
 disclaimer:
     - The water filters shown in the video were provided entirely by HydroBlu. The opinions expressed herein are solely of Two Half-Hitches.
     - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. Any action you take upon the information on this website is strictly at your own risk.

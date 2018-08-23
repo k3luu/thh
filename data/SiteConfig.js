@@ -10,7 +10,8 @@ module.exports = {
   siteUrl: 'http://www.twohalfhitches.com/', // Domain of your website without pathPrefix.
   pathPrefix: '/thh', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'No Matter the Mountain', // Website description used for RSS feeds/meta description tag.
-  siteCover: '/images/HOME.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+  siteCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/HOME.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: '/rss.xml', // Path to the RSS file.
   siteRssAuthor: 'Casper User', // The author name used in the RSS file
@@ -54,15 +55,23 @@ module.exports = {
     // year: "2018" // optional, set specific copyright year or range of years, defaults to current year
     // url: "https://www.gatsbyjs.org/" // optional, set link address of copyright, defaults to site root
   },
-  aboutCover: '/images/ABOUT.jpg',
-  contactCover: '/images/CONTACT.jpg',
-  campaignCover: '/images/CAMPAIGN.jpg',
+  aboutCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/ABOUT.jpg',
+  contactCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CONTACT.jpg',
+  campaignCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CAMPAIGN.jpg',
   fundamentalsCover: '/images/ABOUT.jpg',
-  guideCover: '/images/GUIDES.jpg',
-  finderCover: '/images/FINDER.jpg',
-  eventCover: '/images/EVENTS.jpg',
-  hikeInCover: '/images/CAMP-HIKE.jpg',
-  driveInCover: '/images/CAMP-DRIVE.jpg',
+  guideCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/GUIDES.jpg',
+  finderCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/FINDER.jpg',
+  eventCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/EVENTS.jpg',
+  hikeInCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CAMP-HIKE.jpg',
+  driveInCover:
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CAMP-DRIVE.jpg',
   themeColor: '#172121', // Color: $outer-space. Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0', // Used for setting manifest background color.
   breakpoints: {

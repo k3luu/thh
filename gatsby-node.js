@@ -145,16 +145,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     campTitle
                     category
-                    tags
                     cover
-                    thumbnail
                     date
-                    category
-                    author
-                    location
-                    distance
                     difficulty
+                    distance                    
                     elevation
+                    location
+                    tags
+                    thumbnail
                   }
                   fields {
                     slug
@@ -179,16 +177,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     title
                     campTitle
                     category
-                    tags
                     cover
-                    thumbnail
                     date
-                    category
-                    author
-                    location
-                    distance
                     difficulty
+                    distance                    
                     elevation
+                    location
+                    tags
+                    thumbnail
                   }
                   fields {
                     slug

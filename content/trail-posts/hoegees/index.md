@@ -10,7 +10,7 @@ difficulty: "Easy-Moderate"
 elevation: "1420 ft"
 season: "All"
 parking: "Free (Adventure Pass Required)"
-dogs: "true"
+dogs: "Welcomed (Confined or Leashed)"
 category: "hike in"
 tags:
     - angeles national forest
