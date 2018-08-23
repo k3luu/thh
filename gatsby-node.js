@@ -111,16 +111,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   frontmatter {
                     title
-                    tags
                     cover
                     thumbnail
-                    date
-                    category
                     author
-                    location
-                    distance
+                    category
+                    date
                     difficulty
+                    distance
                     elevation
+                    location
+                    tags
                   }
                   fields {
                     slug
@@ -153,6 +153,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     location
                     tags
                     thumbnail
+                    usage
                   }
                   fields {
                     slug
@@ -185,6 +186,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     location
                     tags
                     thumbnail
+                    usage
                   }
                   fields {
                     slug

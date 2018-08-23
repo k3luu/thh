@@ -1,55 +1,34 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { Box, Mask, Image } from 'gestalt';
-import AuthorThumbnail from '../AuthorThumbnail/AuthorThumbnail';
-import PostTags from '../PostTags/PostTags';
 import SiteConfig from '../../../data/SiteConfig';
-import AuthorLink from '../AuthorLink/AuthorLink';
 import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
 import PostHeader from '../../layouts/PostHeader/PostHeader';
-import PostDate from '../PostDate/PostDate';
-import AuthorModel from '../../models/author-model';
 import './PostListing.css';
 
-const getPostList = (postEdges, authorEdges) =>
+const getPostList = postEdges =>
   postEdges.map(postEdge => ({
     path: postEdge.node.fields.slug,
-    tags: postEdge.node.frontmatter.tags,
+    title: postEdge.node.frontmatter.title,
     cover: postEdge.node.frontmatter.cover,
     thumbnail: postEdge.node.frontmatter.thumbnail,
-    title: postEdge.node.frontmatter.title,
     campTitle: postEdge.node.frontmatter.campTitle,
     category: postEdge.node.frontmatter.category,
     date: postEdge.node.frontmatter.date,
-    location: postEdge.node.frontmatter.location,
-    distance: postEdge.node.frontmatter.distance,
     difficulty: postEdge.node.frontmatter.difficulty,
+    distance: postEdge.node.frontmatter.distance,
     elevation: postEdge.node.frontmatter.elevation,
-    author: AuthorModel.getAuthor(
-      authorEdges,
-      postEdge.node.frontmatter.author,
-      SiteConfig.blogAuthorId
-    ),
+    location: postEdge.node.frontmatter.location,
+    tags: postEdge.node.frontmatter.tags,
+    usage: postEdge.node.frontmatter.usage,
     excerpt: postEdge.node.excerpt,
     timeToRead: postEdge.node.timeToRead
   }));
 
 class PostListing extends React.Component {
-  handleListingClass() {
-    const { columns } = this.props;
-
-    switch (columns) {
-      case 2:
-        return 'post post-listing column-two';
-
-      default:
-        return 'post post-listing';
-    }
-  }
-
   handleTitle(post) {
     const { campListing } = this.props;
-    const { category, title, campTitle } = post;
+    const { title, campTitle } = post;
 
     if (campListing) return campTitle;
 
@@ -58,7 +37,15 @@ class PostListing extends React.Component {
 
   handleDescription(post) {
     const { description } = this.props;
-    const { path, excerpt, location, elevation, difficulty, distance } = post;
+    const {
+      path,
+      excerpt,
+      location,
+      elevation,
+      difficulty,
+      distance,
+      usage
+    } = post;
 
     switch (description) {
       case 'none':
@@ -70,34 +57,36 @@ class PostListing extends React.Component {
             <Box display="flex" marginTop={2}>
               <table className="trail-data">
                 <tbody>
-                  <tr>
-                    {/*<td className="trail-data__icon">*/}
-                    {/*<i className="fa fa-map-marker" />*/}
-                    {/*</td>*/}
-                    <td className="trail-data__label">Location</td>
-                    <td>{location}</td>
-                  </tr>
-                  <tr>
-                    {/*<td className="trail-data__icon">*/}
-                    {/*<i className="fa fa-arrows-h" />*/}
-                    {/*</td>*/}
-                    <td className="trail-data__label">Distance</td>
-                    <td>{distance}</td>
-                  </tr>
-                  <tr>
-                    {/*<td className="trail-data__icon">*/}
-                    {/*<i className="fa fa-tachometer" />*/}
-                    {/*</td>*/}
-                    <td className="trail-data__label">Difficulty</td>
-                    <td>{difficulty}</td>
-                  </tr>
-                  <tr>
-                    {/*<td className="trail-data__icon">*/}
-                    {/*<i className="fa fa-arrows-v" />*/}
-                    {/*</td>*/}
-                    <td className="trail-data__label">Elevation</td>
-                    <td>{elevation}</td>
-                  </tr>
+                  {location && (
+                    <tr>
+                      <td className="trail-data__label">Location</td>
+                      <td>{location}</td>
+                    </tr>
+                  )}
+                  {distance && (
+                    <tr>
+                      <td className="trail-data__label">Distance</td>
+                      <td>{distance}</td>
+                    </tr>
+                  )}
+                  {difficulty && (
+                    <tr>
+                      <td className="trail-data__label">Difficulty</td>
+                      <td>{difficulty}</td>
+                    </tr>
+                  )}
+                  {elevation && (
+                    <tr>
+                      <td className="trail-data__label">Elevation</td>
+                      <td>{elevation}</td>
+                    </tr>
+                  )}
+                  {usage && (
+                    <tr>
+                      <td className="trail-data__label">Usage</td>
+                      <td>{usage}</td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </Box>
@@ -121,7 +110,7 @@ class PostListing extends React.Component {
   }
 
   handlePostContent(post, index) {
-    const { title, path, excerpt, cover, thumbnail } = post;
+    const { title, path, cover, thumbnail } = post;
     const { columns } = this.props;
     let className = post.post_class ? post.post_class : 'post post-listing';
     let maskHeight;
@@ -160,17 +149,13 @@ class PostListing extends React.Component {
             {this.handleDescription(post)}
           </Box>
         </PostHeader>
-        <footer className="post-meta">
-          {/*<PostTags prefix="tags: " tags={tags} />*/}
-          {/*<PostDate date={date} />*/}
-        </footer>
       </PostFormatting>
     );
   }
 
   handlePostGroups() {
     const { columns } = this.props;
-    const postList = getPostList(this.props.postEdges, this.props.postAuthors);
+    const postList = getPostList(this.props.postEdges);
 
     let list = [];
     let code = [];
@@ -200,7 +185,7 @@ class PostListing extends React.Component {
   }
 
   render() {
-    const postList = getPostList(this.props.postEdges, this.props.postAuthors);
+    const postList = getPostList(this.props.postEdges);
 
     if (this.props.columns) return this.handlePostGroups();
 
