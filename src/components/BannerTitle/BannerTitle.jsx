@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Image } from "gestalt";
-import './BannerTitle.css';
+import "./BannerTitle.css";
 
 class BannerTitle extends React.Component {
   render() {
@@ -14,16 +14,10 @@ class BannerTitle extends React.Component {
           fit="cover"
           src="https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/Mt+Baden-Powell+Topo+Map.jpg"
         >
-          <Box
-            display="flex"
-            direction="column"
-            height="100%"
-            justifyContent="center"
-            alignItems="center"
-          >
+          <div className="banner__content">
             <div className="banner-title">{title}</div>
             {desc && <div className="banner-description">{desc}</div>}
-          </Box>
+          </div>
         </Image>
       </div>
     );

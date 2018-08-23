@@ -6,15 +6,25 @@
     margin: 4rem auto;
 }
 
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
 .banner-title {
     font-size: 4rem;
     letter-spacing: 0.6px;
     line-height: 1.15em;
     text-align: center;
-    text-transform: uppercase;
     text-shadow: 0 0 2px #172121;
+    text-transform: uppercase;
 }
 
 .banner-description {
     font-size: 2.5rem;
+    text-align: center;
 }
