@@ -72,15 +72,25 @@ const BannerImage = styled.div`
   height: 100vh;
 `;
 
+const BannerInfoContainer = styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: start;
+  align-items: center;
+
+  ${breakpoint('md')`
+  `};
+`;
+
 const BannerTextBox = styled.div`
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
   padding: 30px;
+  margin: 0;
   width: auto;
   max-width: 100%;
   height: auto;
   text-align: left;
-  //text-shadow: 0 0 2px #172121;
 
   ${breakpoint('sm')`
     padding: 60px;
@@ -162,24 +172,21 @@ class Home extends Component {
         return (
           <p>
             Share your story with us on Instagram! Nominate your friends, and
-            tag{' '}
-            <a
-              href="https://www.instagram.com/twohalfhitches"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="banner-link desc"
-            >
-              @twohalfhitches
-            </a>{' '}
-            and{' '}
-            <a
-              href="https://www.instagram.com/explore/tags/nomatterthemountain/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="banner-link desc"
-            >
-              #NoMattertheMountain
-            </a>
+            tag {/*<a*/}
+            {/*href="https://www.instagram.com/twohalfhitches"*/}
+            {/*target="_blank"*/}
+            {/*rel="noopener noreferrer"*/}
+            {/*className="banner-link desc"*/}
+            {/*>*/}
+            @twohalfhitches and #NoMattertheMountain
+            {/*</a>{' '}*/}
+            {/*<a*/}
+            {/*href="https://www.instagram.com/explore/tags/nomatterthemountain/"*/}
+            {/*target="_blank"*/}
+            {/*rel="noopener noreferrer"*/}
+            {/*className="banner-link desc"*/}
+            {/*>*/}
+            {/*</a>*/}
           </p>
         );
 
@@ -201,20 +208,14 @@ class Home extends Component {
               fit="cover"
               src={config[p.photo_src]}
             >
-              <Box
-                display="flex"
-                height="100%"
-                justifyContent="start"
-                alignItems="center"
-                marginLeft={8}
-              >
+              <BannerInfoContainer>
                 <BannerTextBox>
                   <BannerHeading>{p.name}</BannerHeading>
                   <BannerDescription>
                     {this.handleDescription(p)}
                   </BannerDescription>
                 </BannerTextBox>
-              </Box>
+              </BannerInfoContainer>
             </Image>
           </BannerImage>
         </Link>
