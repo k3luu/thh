@@ -9,7 +9,6 @@ dogs: "Wecomed (Confined or Leashed)"
 elevation: "5300 ft"
 location: "Angeles National Forest"
 season: "Spring, Summer, Fall"
-type: "Drive-In"
 tags:
     - angeles national forest
     - trails
@@ -57,7 +56,7 @@ So you want to go camping with your buddies for the weekend, but were unable to 
 From the 210 Freeway, exit La Canada Flintridge and head north on the Angeles Crest Highway (Hwy 2). Drive northeast for 26 miles until you reach the sign for Chilao Campground.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5631.jpg)
-![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5631.jpg)
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5633.jpg)
 
 ###CAMPGROUND INFORMATION
 - 84 campsites
@@ -76,9 +75,9 @@ From the 210 Freeway, exit La Canada Flintridge and head north on the Angeles Cr
 - Wooden picnic tables
 - Campfire Pits (w/ folding grill)
 
-![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5631.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5703.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5642.jpg)
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/P1090740.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5648.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5652.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/_J8A5670.jpg)

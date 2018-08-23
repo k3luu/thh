@@ -82,7 +82,6 @@ class PostTemplate extends React.Component {
     const {
       location,
       category,
-      type,
       distance,
       difficulty,
       elevation,
@@ -104,15 +103,6 @@ class PostTemplate extends React.Component {
                 </td>
                 <td className="trail-data__label">Location</td>
                 <td>{location}</td>
-              </tr>
-            )}
-            {type && (
-              <tr>
-                <td className="trail-data__icon">
-                  <i className="fa fa-file-o" />
-                </td>
-                <td className="trail-data__label">Type</td>
-                <td>{type}</td>
               </tr>
             )}
             {distance && (
@@ -138,7 +128,7 @@ class PostTemplate extends React.Component {
                 <td className="trail-data__icon">
                   <i className="fa fa-arrows-v" />
                 </td>
-                <td className="trail-data__label">Elevation</td>
+                <td className="trail-data__label">Elevation Gain</td>
                 <td>{elevation}</td>
               </tr>
             )}
@@ -163,7 +153,7 @@ class PostTemplate extends React.Component {
             {usage && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-thermometer-4" />
+                  <i className="fa fa-group" />
                 </td>
                 <td className="trail-data__label">Usage</td>
                 <td>{usage}</td>
@@ -304,7 +294,6 @@ export const pageQuery = graphql`
         secondaryCarousel
         secondaryCarouselTitle
         tags
-        type
         usage
       }
       fields {

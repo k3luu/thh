@@ -77,7 +77,7 @@ class PostListing extends React.Component {
                   )}
                   {elevation && (
                     <tr>
-                      <td className="trail-data__label">Elevation</td>
+                      <td className="trail-data__label">Elevation Gain</td>
                       <td>{elevation}</td>
                     </tr>
                   )}
