@@ -3,7 +3,7 @@ const team = [
     id: 0,
     name: 'Franz Stanley Anunciacion',
     photo:
-      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/franz.jpeg',
+      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/_J8A5821.jpg',
     titles: ['Founder', 'Editor-in-Chief'],
     bio: [
       'Franz began exploring the Great Outdoors at the age of 5 with the Boy Scouts of America. After achieving the rank of Eagle Scout in 2010, he continued to pursue the lifelong values set forth by the organization - adventure, conservation, challenge, responsibility, and integrity. Without waver, his strong passion for the outdoors inevitably led to protecting it.',
@@ -15,7 +15,7 @@ const team = [
     id: 1,
     name: 'Robert Aaron Hebron',
     photo:
-      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/robert.jpeg',
+      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/_J8A5828.jpg',
     titles: ['Photographer', 'Multi-Media Manager'],
     bio: [
       'Los Angeles-based photographer, Robert, is susceptible to elevation sickness. Why does he continue to explore the Great Outdoors? Because he loves it.',
@@ -26,7 +26,7 @@ const team = [
   {
     id: 2,
     photo:
-      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/colt.jpeg',
+      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/_J8A5814.jpg',
     name: 'Colt Thomas Deck',
     titles: ['Senior Editor'],
     bio: [

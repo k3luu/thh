@@ -97,21 +97,23 @@ const BannerTextBox = styled.div`
   //justify-content: center;
   padding: 30px;
   width: auto;
-  max-width: 75%;
+  max-width: 100%;
   height: auto;
   text-align: left;
   //text-shadow: 0 0 2px #172121;
 
   ${breakpoint('sm')`
-    padding: 80px;
+    padding: 60px;
+    max-width: 75%;
   `};
 
   ${breakpoint('md')`
+    padding: 80px;
   `};
 `;
 
 const BannerTitle = styled.div`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-indent: -3px;
@@ -120,6 +122,10 @@ const BannerTitle = styled.div`
   margin: 0 0 0.4em;
 
   ${breakpoint('sm')`
+    font-size: 6rem;
+  `};
+
+  ${breakpoint('md')`
     font-size: 8rem;
   `};
 `;
