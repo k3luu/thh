@@ -28,7 +28,7 @@ Check out more useful tips below!
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/water-filter/_J8A3820.jpg)
 
-###Is Backountry water safe to drink?
+###Is Backcountry water safe to drink?
 Water in the outdoors is exposed to both wildlife and humans. As the outdoors become more
 heavily trafficked with explorers, the quality of water decreases. Crystal clear sources may look safe, but can carry dangerous viruses and other bacteria detrimental to your health.
 

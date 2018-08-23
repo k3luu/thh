@@ -7,18 +7,37 @@ import team from './team';
 
 const MemberContainer = styled.div`
   display: flex;
+  flex-direction: column;
   margin: 30px 0;
+
+  ${breakpoint('md')`
+    flex-direction: row;
+  `};
 `;
 
 const PhotoContainer = styled.div`
   flex-grow: 1;
-  min-width: 500px;
-  height: 500px;
+  min-width: unset;
+  height: 45vh;
+
+  ${breakpoint('md')`
+    min-width: 500px;
+    width: 100%;
+    height: 500px;
+  `};
 `;
 
 const InfoContainer = styled.div`
   flex-grow: 1;
-  margin: 5px 20px;
+  margin: 5px 0;
+
+  ${breakpoint('sm')`
+    margin: 5px 10px;
+  `};
+
+  ${breakpoint('md')`
+    margin: 5px 20px;
+  `};
 `;
 
 const Name = styled.h3`

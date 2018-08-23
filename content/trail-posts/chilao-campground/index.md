@@ -5,7 +5,7 @@ cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Ca
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/thumbnail.jpg"
 category: "drive in"
 date: "2018-7-23"
-dogs: "Wecomed (Confined or Leashed)"
+dogs: "Welcomed (Confined or Leashed)"
 elevation: "5300 ft"
 location: "Angeles National Forest"
 season: "Spring, Summer, Fall"

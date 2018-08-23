@@ -22,7 +22,6 @@ const Container = styled.div`
 `;
 
 const RecentSection = styled.div`
-  margin: 70px 0;
   border-bottom: #d8d8d8 1px solid;
 
   ${breakpoint('md')`

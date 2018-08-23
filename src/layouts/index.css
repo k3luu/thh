@@ -776,7 +776,7 @@ button:hover {
     ol,
     dl {
         font-size: 1.1em;
-        margin: 0 10px 2.5rem;
+        margin: 0 20px 2.5rem;
     }
 
     ol,
@@ -786,7 +786,7 @@ button:hover {
 
     h1,
     h2 {
-        margin: 0 10px 0.3em !important;
+        margin: 0 20px 0.3em !important;
     }
 
     h1 {
@@ -828,6 +828,12 @@ button:hover {
     ol,
     dl {
         font-size: 0.95em;
+        margin: 0 10px 2.5rem;
+    }
+
+    h1,
+    h2 {
+        margin: 0 10px 0.3em !important;
     }
 
     h3,
