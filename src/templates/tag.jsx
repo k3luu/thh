@@ -8,7 +8,7 @@ import Navigation from '../components/Navigation/Navigation';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import PageTitle from '../components/PageTitle/PageTitle';
+import PageHeader from '../components/PageHeader/PageHeader';
 import PageDescription from '../components/PageDescription/PageDescription';
 import Footer from '../components/Footer/Footer';
 import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
@@ -68,7 +68,7 @@ class TagTemplate extends React.Component {
                 <MainNav onClick={this.handleOnClick} />
                 <div className="vertical">
                   <div className="main-header-content inner">
-                    <PageTitle text={tag} />
+                    <PageHeader text={tag} />
                     <PageDescription
                       text={tag.description || `A ${total}-post collection`}
                     />

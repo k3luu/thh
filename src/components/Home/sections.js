@@ -18,7 +18,7 @@ const sections = [
     name: 'Trail Finder',
     to: '/trail-guides',
     photo_src: 'finderCover',
-    description: 'Find some inspiration and direction for your next hike!'
+    description: 'Find a trail that best suits you based on your personal interest and level of experience!'
   },
   {
     id: 3,

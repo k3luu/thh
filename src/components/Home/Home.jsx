@@ -8,6 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import PageTitle from '../PageTitle/PageTitle';
 import FeaturedContent from './FeaturedContent';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
@@ -15,26 +16,9 @@ import sections from './sections';
 import './Home.css';
 
 const Container = styled.div`
-  padding-top: 60px;
-
-  ${breakpoint('md')`
-    padding-top: 70px;
-  `};
-
   h4 {
     letter-spacing: 2px;
   }
-`;
-
-const HomeTitle = styled.h3`
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 20px;
-
-  ${breakpoint('sm')`
-    margin-bottom: 60px;
-    font-size: 2.7rem;
-  `};
 `;
 
 const RecentSection = styled.div`
@@ -91,10 +75,6 @@ const BannerImage = styled.div`
 const BannerTextBox = styled.div`
   color: #fff;
   background: rgba(0, 0, 0, 0.3);
-  //box-shadow: 0 0 150px 140px rgba(0, 0, 0, 0.3);
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: center;
   padding: 30px;
   width: auto;
   max-width: 100%;
@@ -116,7 +96,6 @@ const BannerTitle = styled.div`
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
-  text-indent: -3px;
   text-transform: uppercase;
   line-height: 1.15em;
   margin: 0 0 0.4em;
@@ -259,9 +238,9 @@ class Home extends Component {
     return (
       <Container id="home">
         <div className="main-content">
-          <HomeTitle className="home-title">
-            Your Guide Through the Great Outdoors
-          </HomeTitle>
+          <PageTitle
+            title="Your Guide Through the Great Outdoors"
+          />
 
           {/*{process.env.NODE_ENV === 'development' && (*/}
           {/*<div className="instafeed" id="instafeed">*/}

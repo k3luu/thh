@@ -10,7 +10,7 @@ import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import Footer from '../components/Footer/Footer';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import PageTitle from '../components/PageTitle/PageTitle';
+import PageHeader from '../components/PageHeader/PageHeader';
 import PageDescription from '../components/PageDescription/PageDescription';
 import Home from '../components/Home/Home';
 
@@ -64,7 +64,7 @@ class IndexTemplate extends React.Component {
                 <MainNav onClick={this.handleOnClick} />
 
                 <div className="main-header-content inner">
-                  <PageTitle
+                  <PageHeader
                     logo={config.siteLogoName}
                     title={config.siteTitle}
                   />
@@ -74,7 +74,7 @@ class IndexTemplate extends React.Component {
                 <Link
                   className="scroll-down icon-arrow-left"
                   to="home"
-                  data-offset="-45"
+                  offset={-50}
                   spy
                   smooth
                   duration={500}

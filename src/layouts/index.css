@@ -331,7 +331,6 @@ h6 {
 h1 {
     font-size: 5rem;
     letter-spacing: 1px;
-    text-indent: -3px;
     text-transform: uppercase;
 }
 
@@ -792,7 +791,6 @@ button:hover {
 
     h1 {
         font-size: 4.5rem !important;
-        text-indent: -2px;
     }
 
     h2 {
