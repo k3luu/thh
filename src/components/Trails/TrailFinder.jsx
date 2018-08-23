@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import Contact from '../Contact/Contact';
-import './Trails.css';
+import React, { Component } from "react";
+import BannerTitle from "../BannerTitle/BannerTitle";
+import Contact from "../Contact/Contact";
+import "./Trails.css";
 
 class TrailFinder extends Component {
   // Edit About component or pages/about.jsx to include your information.
   render() {
     return (
       <div className="main-content">
-        <h1>Trail Finder</h1>
-        <p>
-          Find a trail that best suits you based on your personal interest and
-          level of experience!
-        </p>
+        <BannerTitle
+          title="Trail Finder"
+          desc="Find a trail that best suits you based on your personal interest and
+            level of experience!"
+        />
 
         <h2>Difficulty Level</h2>
         <div className="trail-pin__container">

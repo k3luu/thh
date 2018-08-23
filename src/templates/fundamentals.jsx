@@ -1,15 +1,16 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import config from '../../data/SiteConfig';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
-import PostListing from '../components/PostListing/PostListing';
-import Footer from '../components/Footer/Footer';
+import React from "react";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import config from "../../data/SiteConfig";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
+import PostListing from "../components/PostListing/PostListing";
+import Footer from "../components/Footer/Footer";
 
 class HikingPage extends React.Component {
   constructor() {
@@ -70,11 +71,11 @@ class HikingPage extends React.Component {
             </MainHeader>
 
             <div className="main-content">
-              <h1>Fundamentals</h1>
-              <p>
-                Not sure how to prepare? Take a look at our Fundamentals
-                section!
-              </p>
+              <BannerTitle
+                title="Fundamentals"
+                desc="Not sure how to prepare? Take a look at our Fundamentals
+                section!"
+              />
 
               <PaginatedContent
                 page={page}

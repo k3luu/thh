@@ -74,7 +74,7 @@ class IndexTemplate extends React.Component {
                 <Link
                   className="scroll-down icon-arrow-left"
                   to="home"
-                  offset={-50}
+                  offset={-80}
                   spy
                   smooth
                   duration={500}

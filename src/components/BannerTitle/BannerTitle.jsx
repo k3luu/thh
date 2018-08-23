@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Image } from "gestalt";
-import "./PageTitle.css";
+import './BannerTitle.css';
 
-class PageTitle extends React.Component {
+class BannerTitle extends React.Component {
   render() {
     const { title, desc } = this.props;
     return (
-      <div className="page-title__container">
+      <div className="banner__container">
         <Image
           alt={title}
           naturalHeight={1}
@@ -21,8 +21,8 @@ class PageTitle extends React.Component {
             justifyContent="center"
             alignItems="center"
           >
-            <div className="page-title">{title}</div>
-            {desc && <div className="page-title__description">{desc}</div>}
+            <div className="banner-title">{title}</div>
+            {desc && <div className="banner-description">{desc}</div>}
           </Box>
         </Image>
       </div>
@@ -30,4 +30,4 @@ class PageTitle extends React.Component {
   }
 }
 
-export default PageTitle;
+export default BannerTitle;

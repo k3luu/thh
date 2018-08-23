@@ -7,7 +7,7 @@ import MainHeader from "../layouts/MainHeader/MainHeader";
 import MainNav from "../layouts/MainNav/MainNav";
 import Drawer from "../layouts/Drawer/Drawer";
 import Navigation from "../components/Navigation/Navigation";
-import PageTitle from "../Components/PageTitle/PageTitle";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import PostListing from "../components/PostListing/PostListing";
 import Footer from "../components/Footer/Footer";
@@ -73,7 +73,7 @@ class GuidesPage extends React.Component {
             </MainHeader>
 
             <div className="main-content">
-              <PageTitle
+              <BannerTitle
                 title="Trail Guides"
                 desc="Find some inspiration and direction for your next hike!"
               />

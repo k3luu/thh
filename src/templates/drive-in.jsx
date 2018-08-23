@@ -7,6 +7,7 @@ import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
+import BannerTitle from "../components/BannerTitle/BannerTitle";
 import PageDescription from '../components/PageDescription/PageDescription';
 import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
 import PostListing from '../components/PostListing/PostListing';
@@ -71,10 +72,10 @@ class DriveInPage extends React.Component {
             </MainHeader>
 
             <div className="main-content">
-              <h1>Camp Drive-In</h1>
-              <p>
-                Need helping finding a perfect campsite? We’ve got your back!
-              </p>
+              <BannerTitle
+                title="Camp Drive-In"
+                desc="Need helping finding a perfect campsite? We’ve got your back!"
+              />
 
               <PaginatedContent
                 page={page}

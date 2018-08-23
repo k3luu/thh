@@ -6,20 +6,20 @@
     position: relative;
     margin: 8rem 0 0;
     padding: 1rem 15px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.75em;
-    color: #bbc7cc;
+    color: #032b2f;
 }
 
 .site-footer a {
-    color: #bbc7cc;
+    color: #032b2f;
     text-decoration: none;
     font-weight: bold;
+    border-bottom: transparent 2px solid;
 }
 
 .site-footer a:hover {
-    color: #bbc7cc;
-    border-bottom: #bbc7cc 1px solid;
+    border-bottom: #032b2f 2px solid;
 }
 
 .poweredby {

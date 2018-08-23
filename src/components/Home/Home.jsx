@@ -8,7 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import PageTitle from '../PageTitle/PageTitle';
+import BannerTitle from '../BannerTitle/BannerTitle';
 import FeaturedContent from './FeaturedContent';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
@@ -92,7 +92,7 @@ const BannerTextBox = styled.div`
   `};
 `;
 
-const BannerTitle = styled.div`
+const BannerHeading = styled.div`
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -209,7 +209,7 @@ class Home extends Component {
                 marginLeft={8}
               >
                 <BannerTextBox>
-                  <BannerTitle>{p.name}</BannerTitle>
+                  <BannerHeading>{p.name}</BannerHeading>
                   <BannerDescription>
                     {this.handleDescription(p)}
                   </BannerDescription>
@@ -238,7 +238,7 @@ class Home extends Component {
     return (
       <Container id="home">
         <div className="main-content">
-          <PageTitle
+          <BannerTitle
             title="Your Guide Through the Great Outdoors"
           />
 

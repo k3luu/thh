@@ -1,16 +1,17 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import config from '../../data/SiteConfig';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import PageDescription from '../components/PageDescription/PageDescription';
-import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
-import PostListing from '../components/PostListing/PostListing';
-import Footer from '../components/Footer/Footer';
+import React from "react";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import config from "../../data/SiteConfig";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import PageDescription from "../components/PageDescription/PageDescription";
+import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
+import PostListing from "../components/PostListing/PostListing";
+import Footer from "../components/Footer/Footer";
 
 class HikeInPage extends React.Component {
   constructor() {
@@ -71,11 +72,11 @@ class HikeInPage extends React.Component {
             </MainHeader>
 
             <div className="main-content">
-              <h1>Camp Hike-In</h1>
-              <p>
-                Whether its for a solo trip, or a group of your best friends,
-                find the trail camp that bests suits you!
-              </p>
+              <BannerTitle
+                title="Camp Hike-In"
+                desc="Whether its for a solo trip, or a group of your best friends,
+                find the trail camp that bests suits you!"
+              />
 
               <PaginatedContent
                 page={page}

@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
+import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+import BannerTitle from '../BannerTitle/BannerTitle';
 import ambassadors from './ambassadors/ambassadors';
 import './NoMatterTheMountain.css';
 
@@ -71,12 +73,13 @@ class NoMatterTheMountain extends Component {
     return (
       <div className="campaign">
         <div className="main-content">
-          <h1>No Matter The Mountain</h1>
-          <p>
-            Life throws so many obstacles at us every day, creating a harsh
+          <BannerTitle
+            title="No Matter The Mountain"
+            desc="Life throws so many obstacles at us every day, creating a harsh
             ascent, similar to climbing a mountain. How we overcome these
-            "mountains" is what makes us who we are.
-          </p>
+            'mountains' is what makes us who we are."
+          />
+
           <h2>How Do You Conquer Your Mountain?</h2>
           <iframe
             title="thh-campaign"

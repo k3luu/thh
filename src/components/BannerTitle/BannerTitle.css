@@ -1,4 +1,4 @@
-.page-title__container {
+.banner__container {
     color: #fff;
     font-weight: bold;
     height: 200px;
@@ -6,7 +6,7 @@
     margin: 4rem auto;
 }
 
-.page-title {
+.banner-title {
     font-size: 4rem;
     letter-spacing: 0.6px;
     line-height: 1.15em;
@@ -15,6 +15,6 @@
     text-shadow: 0 0 2px #172121;
 }
 
-.page-title__description {
+.banner-description {
     font-size: 2.5rem;
 }
