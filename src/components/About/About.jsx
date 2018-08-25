@@ -94,7 +94,7 @@ class About extends Component {
 
   renderTeamMembers() {
     return _.map(team, p => (
-      <MemberContainer>
+      <MemberContainer key={p.id}>
         <PhotoContainer>
           <Image
             alt={p.name}
@@ -108,7 +108,7 @@ class About extends Component {
         <InfoContainer>
           <Name>{p.name}</Name>
           <Title>{this.handleTitles(p.titles)}</Title>
-          <Bio>{_.map(p.bio, line => <p>{line}</p>)}</Bio>
+          <Bio>{_.map(p.bio, line => <p key={line}>{line}</p>)}</Bio>
         </InfoContainer>
       </MemberContainer>
     ));

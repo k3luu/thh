@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "gatsby-link";
-import { Box, Mask, Image } from "gestalt";
-import PostFormatting from "../../layouts/PostFormatting/PostFormatting";
-import PostHeader from "../../layouts/PostHeader/PostHeader";
-import "./PostListing.css";
+import React from 'react';
+import Link from 'gatsby-link';
+import { Box, Mask, Image } from 'gestalt';
+import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
+import PostHeader from '../../layouts/PostHeader/PostHeader';
+import './PostListing.css';
 
 const getPostList = postEdges =>
   postEdges.map(postEdge => ({
@@ -47,10 +47,10 @@ class PostListing extends React.Component {
     } = post;
 
     switch (description) {
-      case "none":
-        return <span></span>;
+      case 'none':
+        return <span />;
 
-      case "details":
+      case 'details':
         return (
           <section className="post-excerpt">
             <Box display="flex" marginTop={2}>
@@ -97,7 +97,7 @@ class PostListing extends React.Component {
           <section className="post-excerpt">
             <Box display="flex" marginTop={2}>
               <p>
-                {excerpt.replace(/\s\s+/g, " ")}{" "}
+                {excerpt.replace(/\s\s+/g, ' ')}{' '}
                 <Link className="read-more" to={path}>
                   &raquo;
                 </Link>
@@ -111,14 +111,14 @@ class PostListing extends React.Component {
   handlePostContent(post, index, lastEntry) {
     const { title, path, cover, thumbnail } = post;
     const { columns } = this.props;
-    let className = post.post_class ? post.post_class : "post post-listing";
-    let maskHeight,
-      style = {};
+    let className = post.post_class ? post.post_class : 'post post-listing';
+    let maskHeight;
+    let style = {};
 
-    if (index % columns !== columns - 1) className += " margin";
+    if (index % columns !== columns - 1) className += ' margin';
 
-    //TODO: tentative... check width on different sreens
-    if (lastEntry && index < columns - 1) style = { width: "32%" };
+    // TODO: tentative... check width on different screens
+    if (lastEntry && index < columns - 1) style = { width: '32%' };
 
     switch (columns) {
       case 2:
@@ -160,57 +160,34 @@ class PostListing extends React.Component {
     const { columns } = this.props;
     const postList = getPostList(this.props.postEdges);
 
-    let groupedPosts = [];
-    let groupedCode = [];
-    let mod = false;
-
-    console.log('GROUPING 1', postList);
+    const groupedPosts = [];
+    const groupedCode = [];
+    let mod;
 
     while (postList.length > 0) {
       groupedPosts.push(postList.splice(0, columns));
     }
-    
-    console.log('GROUPING 2', groupedPosts);
 
-    return (
-      groupedPosts.map((p,i) => <span key={i}>hi</span>)
-    );
+    for (let i = 0; i < groupedPosts.length; i++) {
+      mod = groupedPosts[i].length % columns !== 0;
 
-    // for (let i = 0; i < groupedPosts.length; i++) {
-    //   mod = groupedPosts[i].length % columns !== 0;
+      groupedCode.push(
+        <div className="post-listing__group" key={i}>
+          {groupedPosts[i].map((p, j) => {
+            return this.handlePostContent(p, j, mod);
+          })}
+        </div>
+      );
+    }
 
-    //   // groupedCode.push(
-    //   //   <div className="post-listing__group" key={i}>
-    //   //     hello
-    //   //     {/* {groupedPosts[i].map((p, j) => {return this.handlePostContent(p, j, mod);})} */}
-    //   //   </div>
-    //   // );
-    //   groupedCode.push(<span key={i}>hello</span>);
-    // }
-
-    // console.log('POST LISTING', groupedPosts, groupedCode);
-
-    // return groupedCode || null;
-    // return null;
+    return [groupedCode];
   }
 
   render() {
-    // if (this.props.columns) return this.handlePostGroups();
     const { columns } = this.props;
     const postList = getPostList(this.props.postEdges);
 
-    let groupedPosts = [];
-    // let groupedCode = [];
-    // let mod = false;
-    console.log('LISTINGS 1', postList, columns);
-
-    while (postList.length > 0) {
-      groupedPosts.push(postList.splice(0, columns));
-    }
-
-    console.log('LISTINGS 2', groupedPosts);
-
-    if (this.props.columns) return this.handlePostGroups();
+    if (columns) return this.handlePostGroups();
 
     return (
       <div className="post-listing__container">

@@ -1,16 +1,16 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { ThemeProvider } from "styled-components";
-import config from "../../data/SiteConfig";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import BannerTitle from "../components/BannerTitle/BannerTitle";
-import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
-import PostListing from "../components/PostListing/PostListing";
-import Footer from "../components/Footer/Footer";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
+import config from '../../data/SiteConfig';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import BannerTitle from '../components/BannerTitle/BannerTitle';
+import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
+import PostListing from '../components/PostListing/PostListing';
+import Footer from '../components/Footer/Footer';
 
 class GuidesPage extends React.Component {
   constructor() {
@@ -57,7 +57,7 @@ class GuidesPage extends React.Component {
       next
     } = this.props.pathContext;
 
-    console.log("trail guide page", this.props);
+    console.log('trail guide page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>

@@ -34,6 +34,14 @@ class MainNav extends React.Component {
     );
   }
 
+  componentWillUnmount() {
+    document.removeEventListener(
+      'scroll',
+      this.handleScrollDetection.bind(this),
+      true
+    );
+  }
+
   handleScrollDetection() {
     this.setState({ atTheTop: window.scrollY < 200 });
   }

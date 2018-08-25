@@ -1,15 +1,15 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { ThemeProvider } from "styled-components";
-import config from "../../data/SiteConfig";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import BannerTitle from "../components/BannerTitle/BannerTitle";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import NoMatterTheMountain from "../components/NoMatterTheMountain/NoMatterTheMountain";
-import Footer from "../components/Footer/Footer";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
+import config from '../../data/SiteConfig';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import BannerTitle from '../components/BannerTitle/BannerTitle';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import NoMatterTheMountain from '../components/NoMatterTheMountain/NoMatterTheMountain';
+import Footer from '../components/Footer/Footer';
 
 class NoMatterTheMountainPage extends React.Component {
   constructor() {

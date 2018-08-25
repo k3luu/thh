@@ -8,7 +8,6 @@ class TrailFinder extends Component {
   render() {
     return (
       <div className="main-content">
-      
         <h2>Difficulty Level</h2>
         <div className="trail-pin__container">
           <div>
