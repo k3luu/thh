@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint';
-import Instafeed from 'react-instafeed';
-import { Box, Image } from 'gestalt';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/main.min.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { Component } from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
+import breakpoint from "styled-components-breakpoint";
+import Instafeed from "react-instafeed";
+import { Box, Image } from "gestalt";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/main.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import BannerTitle from '../BannerTitle/BannerTitle';
-import FeaturedContent from './FeaturedContent';
-import PostListing from '../PostListing/PostListing';
-import SubscribeForm from '../Subscribe/SubscribeForm';
-import sections from './sections';
-import './Home.css';
+import BannerTitle from "../BannerTitle/BannerTitle";
+import FeaturedContent from "./FeaturedContent";
+import PostListing from "../PostListing/PostListing";
+import SubscribeForm from "../Subscribe/SubscribeForm";
+import sections from "./sections";
+import "./Home.css";
 
 const Container = styled.div`
   h4 {
@@ -24,29 +24,30 @@ const Container = styled.div`
 const RecentSection = styled.div`
   border-bottom: #d8d8d8 1px solid;
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
     border-bottom: 0;
   `};
 
   .post-title,
   .post-excerpt {
-    ${breakpoint('md')`
+    ${breakpoint("md")`
       padding: 0;
     `};
   }
 
   .post {
     border-bottom: 0;
+    margin-bottom: 0;
 
-    ${breakpoint('md')`
-        border-bottom: #d8d8d8 1px solid;
+    ${breakpoint("md")`
+        // border-bottom: #d8d8d8 1px solid;
     `};
 
     &:after {
       content: unset;
 
-      ${breakpoint('md')`
-        content: "";
+      ${breakpoint("md")`
+        // content: "";
       `};
     }
   }
@@ -62,7 +63,7 @@ const RecentHeader = styled.div`
   text-rendering: geometricPrecision;
   text-transform: uppercase;
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
     padding: 0;
   `};
 `;
@@ -77,7 +78,7 @@ const BannerInfoContainer = styled.div`
   justify-content: start;
   align-items: center;
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
   `};
 `;
 
@@ -91,12 +92,12 @@ const BannerTextBox = styled.div`
   height: auto;
   text-align: left;
 
-  ${breakpoint('sm')`
+  ${breakpoint("sm")`
     padding: 60px;
     max-width: 75%;
   `};
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
     padding: 80px;
   `};
 `;
@@ -109,11 +110,11 @@ const BannerHeading = styled.div`
   line-height: 1.15em;
   margin: 0 0 0.4em;
 
-  ${breakpoint('sm')`
+  ${breakpoint("sm")`
     font-size: 6rem;
   `};
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
     font-size: 8rem;
   `};
 `;
@@ -129,11 +130,11 @@ const BannerDescription = styled.div`
     margin: 0;
   }
 
-  ${breakpoint('sm')`
+  ${breakpoint("sm")`
     font-size: 1.7rem;
   `};
 
-  ${breakpoint('md')`
+  ${breakpoint("md")`
     font-size: 2rem;
   `};
 `;
@@ -155,11 +156,11 @@ class Home extends Component {
 
   getPhotos() {
     return fetch(
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token='
+      "https://api.instagram.com/v1/users/self/media/recent/?access_token="
     )
       .then(response => response.json())
       .then(json => {
-        console.log('IG:', json.data);
+        console.log("IG:", json.data);
       });
   }
 
@@ -167,7 +168,7 @@ class Home extends Component {
     if (item.description) return <p>{item.description}</p>;
 
     switch (item.name) {
-      case 'Campaign':
+      case "Campaign":
         return (
           <p>
             Share your story with us on Instagram! Nominate your friends, and
@@ -190,7 +191,7 @@ class Home extends Component {
         );
 
       default:
-        return '';
+        return "";
     }
   }
 
@@ -226,18 +227,18 @@ class Home extends Component {
     const template =
       '<a href="{{link}}" target="_blank" class="instafeed__item">' +
       '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
-      '</div>' +
+      "</div>" +
       '<div class="instafeed__item__overlay">' +
       '<div class="instafeed__item__overlay--inner">' +
       '<p class="instafeed__item__caption">{{model.short_caption}}</p>' +
       '<p class="instafeed__item__location">{{location}}</p>' +
-      '</div>' +
-      '</div>' +
-      '</a>';
+      "</div>" +
+      "</div>" +
+      "</a>";
 
     return (
       <Container id="home">
-        <div className="main-content">
+        <div className="main-content" style={{ marginBottom: 0 }}>
           <BannerTitle title="Your Guide Through the Great Outdoors" />
 
           {/*{process.env.NODE_ENV === 'development' && (*/}

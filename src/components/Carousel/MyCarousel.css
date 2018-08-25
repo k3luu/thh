@@ -126,3 +126,26 @@
 .mycarousel__modal .carousel .carousel-status {
     font-size: 14px;
 }
+
+@media only screen and (max-width: 960px) {
+    .carousel .slide img {
+        max-width: unset;
+        max-height: 60vw;
+        width: unset;
+        height: unset;
+    }
+
+    .mycarousel__modal .carousel .slide img {
+        max-width: unset;
+        max-height: 60vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel .slide img {
+        max-width: unset;
+        max-height: 200px;
+        width: unset;
+        height: unset;
+    }
+}
