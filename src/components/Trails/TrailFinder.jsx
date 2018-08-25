@@ -8,12 +8,7 @@ class TrailFinder extends Component {
   render() {
     return (
       <div className="main-content">
-        <BannerTitle
-          title="Trail Finder"
-          desc="Find a trail that best suits you based on your personal interest and
-            level of experience!"
-        />
-
+      
         <h2>Difficulty Level</h2>
         <div className="trail-pin__container">
           <div>

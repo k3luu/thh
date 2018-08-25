@@ -1,17 +1,17 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import config from '../../data/SiteConfig';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import BannerTitle from '../components/BannerTitle/BannerTitle';
-import PageDescription from '../components/PageDescription/PageDescription';
-import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
-import PostListing from '../components/PostListing/PostListing';
-import Footer from '../components/Footer/Footer';
+import React from "react";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import config from "../../data/SiteConfig";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import PageDescription from "../components/PageDescription/PageDescription";
+import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
+import PostListing from "../components/PostListing/PostListing";
+import Footer from "../components/Footer/Footer";
 
 class DriveInPage extends React.Component {
   constructor() {
@@ -71,12 +71,12 @@ class DriveInPage extends React.Component {
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
-            <div className="main-content">
-              <BannerTitle
-                title="Camp Drive-In"
-                desc="Need helping finding a perfect campsite? We’ve got your back!"
-              />
+            <BannerTitle
+              title="Camp Drive-In"
+              desc="Need helping finding a perfect campsite? We’ve got your back!"
+            />
 
+            <div className="main-content">
               <PaginatedContent
                 page={page}
                 pages={pages}

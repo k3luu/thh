@@ -105,9 +105,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               limit: 1000
               filter: { 
                 fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" }
-                fields: { 
-                  slug: { ne: "/chilao-campground" } 
-                }
               }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
@@ -212,6 +209,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors);
         }
 
+        const excludedTrails = ['/chilao-campground'];
+        const acceptedTrails = result.data.trailPosts.edges.filter(p => {
+          return !excludedTrails.includes(p.node.fields.slug);
+        });
+
         // Creates Index page
         createPaginationPages({
           createPage,
@@ -223,7 +225,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         /* Creates Guides page */
         createPaginationPages({
           createPage,
-          edges: result.data.trailPosts.edges,
+          edges: acceptedTrails,
           component: guidesPage,
           limit: 15,
           pathFormatter: prefixPathFormatter('/trail-guides')

@@ -238,9 +238,9 @@ class Home extends Component {
 
     return (
       <Container id="home">
-        <div className="main-content" style={{ marginBottom: 0 }}>
-          <BannerTitle title="Your Guide Through the Great Outdoors" />
+        <BannerTitle title="Your Guide Through the Great Outdoors" />
 
+        <div className="main-content" style={{ marginBottom: 0 }}>
           {/*{process.env.NODE_ENV === 'development' && (*/}
           {/*<div className="instafeed" id="instafeed">*/}
           {/*<Instafeed*/}

@@ -1,14 +1,15 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import config from '../../data/SiteConfig';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import TrailFinder from '../components/Trails/TrailFinder';
-import Footer from '../components/Footer/Footer';
+import React from "react";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import config from "../../data/SiteConfig";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import TrailFinder from "../components/Trails/TrailFinder";
+import Footer from "../components/Footer/Footer";
 
 class TrailsPage extends React.Component {
   constructor() {
@@ -58,7 +59,14 @@ class TrailsPage extends React.Component {
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
+            <BannerTitle
+              title="Trail Finder"
+              desc="Find a trail that best suits you based on your personal interest and
+            level of experience!"
+            />
+
             <TrailFinder />
+
             <Footer
               copyright={config.copyright}
               promoteGatsby={config.promoteGatsby}

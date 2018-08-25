@@ -1,14 +1,15 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import config from '../../data/SiteConfig';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import Events from '../components/Events/Events';
-import Footer from '../components/Footer/Footer';
+import React from "react";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import config from "../../data/SiteConfig";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import Calendar from "../components/Calendar/Calendar";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/Footer/Footer";
 
 class EventsPage extends React.Component {
   constructor() {
@@ -58,7 +59,16 @@ class EventsPage extends React.Component {
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
-            <Events />
+            <BannerTitle
+              title="Events"
+              desc="Join us as we hit the trails! Check our calendar of events for more
+                details"
+            />
+
+            <div className="main-content">
+              <Calendar />
+            </div>
+
             <Footer
               copyright={config.copyright}
               promoteGatsby={config.promoteGatsby}
