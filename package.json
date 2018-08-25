@@ -37,7 +37,7 @@
     "moment": "^2.20.1",
     "postcss-less": "^1.1.5",
     "prismjs": "^1.14.0",
-    "react": "^15.6.1",
+    "react": "^16.4.2",
     "react-big-calendar": "^0.19.2",
     "react-disqus-comments": "^1.0.3",
     "react-dom": "^15.6.1",

@@ -48,7 +48,7 @@ class PostListing extends React.Component {
 
     switch (description) {
       case "none":
-        return "";
+        return <span></span>;
 
       case "details":
         return (
@@ -162,28 +162,53 @@ class PostListing extends React.Component {
 
     let groupedPosts = [];
     let groupedCode = [];
+    let mod = false;
+
+    console.log('GROUPING 1', postList);
+
+    while (postList.length > 0) {
+      groupedPosts.push(postList.splice(0, columns));
+    }
+    
+    console.log('GROUPING 2', groupedPosts);
+
+    return (
+      groupedPosts.map((p,i) => <span key={i}>hi</span>)
+    );
+
+    // for (let i = 0; i < groupedPosts.length; i++) {
+    //   mod = groupedPosts[i].length % columns !== 0;
+
+    //   // groupedCode.push(
+    //   //   <div className="post-listing__group" key={i}>
+    //   //     hello
+    //   //     {/* {groupedPosts[i].map((p, j) => {return this.handlePostContent(p, j, mod);})} */}
+    //   //   </div>
+    //   // );
+    //   groupedCode.push(<span key={i}>hello</span>);
+    // }
+
+    // console.log('POST LISTING', groupedPosts, groupedCode);
+
+    // return groupedCode || null;
+    // return null;
+  }
+
+  render() {
+    // if (this.props.columns) return this.handlePostGroups();
+    const { columns } = this.props;
+    const postList = getPostList(this.props.postEdges);
+
+    let groupedPosts = [];
+    // let groupedCode = [];
+    // let mod = false;
+    console.log('LISTINGS 1', postList, columns);
 
     while (postList.length > 0) {
       groupedPosts.push(postList.splice(0, columns));
     }
 
-    let mod = false;
-
-    for (let i = 0; i < groupedPosts.length; i++) {
-      mod = groupedPosts[i].length % columns !== 0;
-
-      groupedCode.push(
-        <div className="post-listing__group" key={i}>
-          {groupedPosts[i].map((p, j) => this.handlePostContent(p, j, mod))}
-        </div>
-      );
-    }
-
-    return groupedCode;
-  }
-
-  render() {
-    const postList = getPostList(this.props.postEdges);
+    console.log('LISTINGS 2', groupedPosts);
 
     if (this.props.columns) return this.handlePostGroups();
 

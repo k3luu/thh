@@ -87,8 +87,8 @@ class IndexTemplate extends React.Component {
               <div id="home">
                 <BannerTitle title="Your Guide Through the Great Outdoors" />
 
-                <Modal />
-                
+                {/* <Modal /> */}
+
                 <Home config={config} nodes={nodes} />
               </div>
             </div>
