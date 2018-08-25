@@ -20,16 +20,14 @@ class MyCarousel extends Component {
   constructor(p) {
     super(p);
 
+    selectedPhotoId = 0;
+
     this.state = {
       carouselFullscreen: false
     };
 
     this.toggleFullscreen = this.toggleFullscreen.bind(this);
     this.updatePhotoIndex = this.updatePhotoIndex.bind(this);
-  }
-
-  componentWillMount() {
-    selectedPhotoId = 0;
   }
 
   componentWillUpdate(nextProps, nextState) {

@@ -1,18 +1,20 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import { Link } from 'react-scroll';
-import SEO from '../components/SEO/SEO';
-import config from '../../data/SiteConfig';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import Footer from '../components/Footer/Footer';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import PageHeader from '../components/PageHeader/PageHeader';
-import PageDescription from '../components/PageDescription/PageDescription';
-import Home from '../components/Home/Home';
+import React from "react";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import { Link } from "react-scroll";
+import SEO from "../components/SEO/SEO";
+import config from "../../data/SiteConfig";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import Footer from "../components/Footer/Footer";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import PageHeader from "../components/PageHeader/PageHeader";
+import PageDescription from "../components/PageDescription/PageDescription";
+import Home from "../components/Home/Home";
+import Modal from "../components/Modal/Modal";
 
 class IndexTemplate extends React.Component {
   state = {
@@ -43,7 +45,6 @@ class IndexTemplate extends React.Component {
 
   render() {
     const { nodes } = this.props.pathContext;
-    const authorsEdges = this.props.data.authors.edges;
 
     // console.log('INDEX', this.props);
 
@@ -74,7 +75,7 @@ class IndexTemplate extends React.Component {
                 <Link
                   className="scroll-down icon-arrow-left"
                   to="home"
-                  offset={-80}
+                  offset={-30}
                   spy
                   smooth
                   duration={500}
@@ -83,7 +84,13 @@ class IndexTemplate extends React.Component {
                 </Link>
               </MainHeader>
 
-              <Home config={config} nodes={nodes} authorsEdges={authorsEdges} />
+              <div id="home">
+                <BannerTitle title="Your Guide Through the Great Outdoors" />
+
+                <Modal />
+                
+                <Home config={config} nodes={nodes} />
+              </div>
             </div>
 
             {/* The tiny footer at the very bottom */}

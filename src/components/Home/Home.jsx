@@ -8,7 +8,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/main.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import BannerTitle from "../BannerTitle/BannerTitle";
 import FeaturedContent from "./FeaturedContent";
 import PostListing from "../PostListing/PostListing";
 import SubscribeForm from "../Subscribe/SubscribeForm";
@@ -237,10 +236,8 @@ class Home extends Component {
       "</a>";
 
     return (
-      <Container id="home">
-        <BannerTitle title="Your Guide Through the Great Outdoors" />
-
-        <div className="main-content" style={{ marginBottom: 0 }}>
+      <Container>
+        <div className="main-content">
           {/*{process.env.NODE_ENV === 'development' && (*/}
           {/*<div className="instafeed" id="instafeed">*/}
           {/*<Instafeed*/}
@@ -265,7 +262,6 @@ class Home extends Component {
             </RecentHeader>
             <PostListing
               postEdges={this.props.nodes}
-              postAuthors={this.props.authorsEdges}
               columns={3}
             />
           </RecentSection>
