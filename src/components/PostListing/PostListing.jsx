@@ -1,10 +1,9 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import { Box, Mask, Image } from 'gestalt';
-import SiteConfig from '../../../data/SiteConfig';
-import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
-import PostHeader from '../../layouts/PostHeader/PostHeader';
-import './PostListing.css';
+import React from "react";
+import Link from "gatsby-link";
+import { Box, Mask, Image } from "gestalt";
+import PostFormatting from "../../layouts/PostFormatting/PostFormatting";
+import PostHeader from "../../layouts/PostHeader/PostHeader";
+import "./PostListing.css";
 
 const getPostList = postEdges =>
   postEdges.map(postEdge => ({
@@ -48,10 +47,10 @@ class PostListing extends React.Component {
     } = post;
 
     switch (description) {
-      case 'none':
-        return '';
+      case "none":
+        return "";
 
-      case 'details':
+      case "details":
         return (
           <section className="post-excerpt">
             <Box display="flex" marginTop={2}>
@@ -98,7 +97,7 @@ class PostListing extends React.Component {
           <section className="post-excerpt">
             <Box display="flex" marginTop={2}>
               <p>
-                {excerpt.replace(/\s\s+/g, ' ')}{' '}
+                {excerpt.replace(/\s\s+/g, " ")}{" "}
                 <Link className="read-more" to={path}>
                   &raquo;
                 </Link>
@@ -109,13 +108,17 @@ class PostListing extends React.Component {
     }
   }
 
-  handlePostContent(post, index) {
+  handlePostContent(post, index, lastEntry) {
     const { title, path, cover, thumbnail } = post;
     const { columns } = this.props;
-    let className = post.post_class ? post.post_class : 'post post-listing';
-    let maskHeight;
+    let className = post.post_class ? post.post_class : "post post-listing";
+    let maskHeight,
+      style = {};
 
-    if (index % columns !== columns - 1) className += ' margin';
+    if (index % columns !== columns - 1) className += " margin";
+
+    //TODO: tentative... check width on different sreens
+    if (lastEntry && index < columns - 1) style = { width: "32%" };
 
     switch (columns) {
       case 2:
@@ -127,7 +130,7 @@ class PostListing extends React.Component {
     }
 
     return (
-      <PostFormatting className={className} key={title}>
+      <PostFormatting className={className} style={style} key={title}>
         <PostHeader>
           {cover && (
             <Link to={path} className="post-image">
@@ -157,31 +160,26 @@ class PostListing extends React.Component {
     const { columns } = this.props;
     const postList = getPostList(this.props.postEdges);
 
-    let list = [];
-    let code = [];
+    let groupedPosts = [];
+    let groupedCode = [];
 
-    for (let i = 0; i < columns; i++) {
-      list.push('hi');
+    while (postList.length > 0) {
+      groupedPosts.push(postList.splice(0, columns));
     }
 
-    for (let i = 0; i < postList.length; i += columns) {
-      let style = {};
-      if (i + columns >= postList.length) {
-        const items = postList.length - i;
-        style = { width: (100 * items) / columns + '%' };
-      }
+    let mod = false;
 
-      code.push(
-        <div className="post-listing__group" style={style} key={i}>
-          {list.map((p, j) => {
-            if (postList[i + j])
-              return this.handlePostContent(postList[i + j], i + j);
-          })}
+    for (let i = 0; i < groupedPosts.length; i++) {
+      mod = groupedPosts[i].length % columns !== 0;
+
+      groupedCode.push(
+        <div className="post-listing__group" key={i}>
+          {groupedPosts[i].map((p, j) => this.handlePostContent(p, j, mod))}
         </div>
       );
     }
 
-    return code;
+    return groupedCode;
   }
 
   render() {

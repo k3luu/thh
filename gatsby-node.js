@@ -103,7 +103,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
             trailPosts: allMarkdownRemark(
               limit: 1000
-              filter: { fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" } }
+              filter: { 
+                fileAbsolutePath: { regex: "/(\\/content\\/trail-posts)/.*\\\\.md$/" }
+                fields: { 
+                  slug: { ne: "/chilao-campground" } 
+                }
+              }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
               totalCount
