@@ -20,6 +20,7 @@ class Modal extends React.Component {
     return (
       <Dialog {...this.props}>
         <CloseIcon className="fa fa-times" onClick={onClose} />
+
         <Content>{children}</Content>
       </Dialog>
     );

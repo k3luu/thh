@@ -7,6 +7,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
+import { Link } from 'react-scroll';
 
 import Modal from '../Modal/Modal';
 import './Calendar.css';
@@ -155,25 +156,27 @@ class Calendar extends Component {
   handleEventModal() {
     const { showEventModal, currEvent } = this.state;
 
-    // if (showEventModal)
-    return (
-      <Modal open={showEventModal} onClose={this.handleToggleModal}>
-        {currEvent && (
-          <div>
-            <DialogTitle>{currEvent.title}</DialogTitle>
-            <DialogContent>
-              {this.handleEventDescription(currEvent)}
-            </DialogContent>
-          </div>
-        )}
+    if (showEventModal)
+      return (
+        <Modal
+          open={showEventModal}
+          onClose={this.handleToggleModal}
+          closeContainer={Link}
+        >
+          <DialogTitle>{currEvent.title}</DialogTitle>
+          <DialogContent>
+            {this.handleEventDescription(currEvent)}
+          </DialogContent>
 
-        <ModalButtonContainer>
-          <button type="button" onClick={this.handleToggleModal}>
-            Ok
-          </button>
-        </ModalButtonContainer>
-      </Modal>
-    );
+          <ModalButtonContainer>
+            <Link to="calendar-container" spy smooth duration={0}>
+              <button type="button" onClick={this.handleToggleModal}>
+                Ok
+              </button>
+            </Link>
+          </ModalButtonContainer>
+        </Modal>
+      );
 
     return null;
   }
@@ -305,7 +308,7 @@ class Calendar extends Component {
     // console.log('events', events, model);
 
     return (
-      <div>
+      <div id="calendar-container">
         <BigCalendar
           events={events}
           // events={model}

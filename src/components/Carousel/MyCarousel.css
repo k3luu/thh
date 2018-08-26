@@ -50,7 +50,7 @@
 }
 
 .mycarousel__overlay {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     left: 0;
@@ -66,6 +66,17 @@
 /* MODAL CAROUSEL */
 
 .mycarousel__modal {
+}
+
+.carousel-icon__compress {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 7px;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    z-index: 2;
 }
 
 .mycarousel__modal .carousel.carousel-slider {
