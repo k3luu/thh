@@ -16,10 +16,10 @@ const Content = styled.div`
 
 class Modal extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children, onClose } = this.props;
     return (
       <Dialog {...this.props}>
-        <CloseIcon className="fa fa-times" onClick={this.props.onClose} />
+        <CloseIcon className="fa fa-times" onClick={onClose} />
         <Content>{children}</Content>
       </Dialog>
     );

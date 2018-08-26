@@ -181,7 +181,8 @@
 .event-description {
     font-size: 14px;
     line-height: 22px;
-    padding: 16px;
+    padding: 16px 0;
+    min-width: 500px;
 }
 
 /* LOADING SPINNER */
@@ -307,7 +308,6 @@
 
 .spinner__container .loading {
     display: block;
-    font: normal 22px/1em 'Merriweather Sans', sans-serif;
     text-transform: uppercase;
     color: #cff09e;
 }

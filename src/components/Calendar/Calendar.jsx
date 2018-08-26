@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import { Modal, Box, Button } from 'gestalt';
+import { Box } from 'gestalt';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContent from '@material-ui/core/DialogContent';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
+
+import Modal from '../Modal/Modal';
 import './Calendar.css';
 
 BigCalendar.momentLocalizer(moment);
@@ -13,6 +19,16 @@ const allViews = {
   month: true,
   agenda: true
 };
+
+const ModalContent = styled.div`
+  width: 500px;
+`;
+
+const ModalButtonContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+`;
 
 class Calendar extends Component {
   constructor(p) {
@@ -36,7 +52,7 @@ class Calendar extends Component {
    * function from user @sivafass, package: react-meeting-room
    */
   getEvents() {
-    let that = this;
+    const that = this;
     function start() {
       gapi.client
         .init({
@@ -111,7 +127,9 @@ class Calendar extends Component {
     else dateFormat = moment(event.start).format('dddd, MMMM Do');
 
     return (
-      <Box paddingX={4} overflow="hidden">
+      <ModalContent>
+        <div className="event-date__linebreak" />
+
         <Box display="flex" alignItems="center">
           <Box paddingX={4}>
             <i className="fa fa-calendar" />
@@ -130,47 +148,34 @@ class Calendar extends Component {
         <div className="event-date__linebreak" />
 
         {event.desc && <div className="event-description">{event.desc}</div>}
-
-        <div className="event-description">
-          Add a description to your Google Events to make the modal more
-          meaningful with content, like location, driving directions, meet-up
-          spot.
-        </div>
-      </Box>
+      </ModalContent>
     );
   }
 
   handleEventModal() {
     const { showEventModal, currEvent } = this.state;
 
-    if (showEventModal) {
-      return (
-        <div className="event-modal__container">
-          <Modal
-            accessibilityCloseLabel="close"
-            accessibilityModalLabel={currEvent.title}
-            heading={currEvent.title}
-            onDismiss={this.handleToggleModal}
-            footer={
-              <Box display="flex" justifyContent="end">
-                <Box padding={1}>
-                  <Button
-                    size="sm"
-                    color="red"
-                    text="Ok"
-                    onClick={this.handleToggleModal}
-                  />
-                </Box>
-              </Box>
-            }
-            role="dialog"
-            size="md"
-          >
-            {this.handleEventDescription(currEvent)}
-          </Modal>
-        </div>
-      );
-    }
+    // if (showEventModal)
+    return (
+      <Modal open={showEventModal} onClose={this.handleToggleModal}>
+        {currEvent && (
+          <div>
+            <DialogTitle>{currEvent.title}</DialogTitle>
+            <DialogContent>
+              {this.handleEventDescription(currEvent)}
+            </DialogContent>
+          </div>
+        )}
+
+        <ModalButtonContainer>
+          <button type="button" onClick={this.handleToggleModal}>
+            Ok
+          </button>
+        </ModalButtonContainer>
+      </Modal>
+    );
+
+    return null;
   }
 
   render() {
@@ -308,9 +313,10 @@ class Calendar extends Component {
           step={60}
           showMultiDayTimes
           defaultDate={new Date()}
-          onSelectEvent={event =>
-            this.setState({ currEvent: event, showEventModal: true })
-          }
+          onSelectEvent={(event, e) => {
+            e.preventDefault();
+            this.setState({ currEvent: event, showEventModal: true });
+          }}
         />
 
         {this.handleEventModal()}
