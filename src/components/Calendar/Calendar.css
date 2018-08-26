@@ -20,23 +20,23 @@
 
 /* MONTH VIEW */
 .rbc-month-header .rbc-header {
-    border: 1px solid #EAEFF3;
-    border-bottom: 2px solid #EAEFF3;
+    border: 1px solid #eaeff3;
+    border-bottom: 2px solid #eaeff3;
 }
 
 .rbc-header + .rbc-header {
-    border: 1px solid #EAEFF3;
-    border-bottom: 2px solid #EAEFF3;
+    border: 1px solid #eaeff3;
+    border-bottom: 2px solid #eaeff3;
 }
 
 .rbc-month-view {
-    border: 1px solid #EAEFF3;
+    border: 1px solid #eaeff3;
 }
 
 .rbc-day-bg {
-    border-left: 1px solid #EAEFF3;
-    border-right: 1px solid #EAEFF3;
-    border-bottom: 1px solid #EAEFF3;
+    border-left: 1px solid #eaeff3;
+    border-right: 1px solid #eaeff3;
+    border-bottom: 1px solid #eaeff3;
 }
 
 .rbc-date-cell {
@@ -85,7 +85,7 @@
 /* WEEK & DAY VIEW */
 .rbc-current-time-indicator {
     height: 2px;
-    background: #FB616B;
+    background: #fb616b;
     margin: 0 -10px;
 }
 
@@ -96,13 +96,13 @@
     height: 8px;
     width: 8px;
     margin-top: -3px;
-    background: #FB616B;
+    background: #fb616b;
 }
 
 .rbc-time-view .rbc-header {
     padding: 10px;
-    border: 1px solid #EAEFF3;
-    border-bottom: 2px solid #EAEFF3;
+    border: 1px solid #eaeff3;
+    border-bottom: 2px solid #eaeff3;
 }
 
 .rbc-time-view .rbc-header.rbc-today {
@@ -114,13 +114,14 @@
     font-size: 12px;
 }
 
-.rbc-time-header-gutter, .rbc-time-gutter {
+.rbc-time-header-gutter,
+.rbc-time-gutter {
     min-width: 75px;
 }
 
 .rbc-today {
     background: #172121;
- }
+}
 
 .rbc-day-slot .rbc-event {
     border: 0;
@@ -162,7 +163,7 @@
 .event-date__separator {
     height: 70px;
     width: 70px;
-    border: 2px solid #EAEFF3;
+    border: 2px solid #eaeff3;
     border-left: 0;
     border-bottom: 0;
     border-radius: 3px;
@@ -174,7 +175,7 @@
 .event-date__linebreak {
     height: 2px;
     width: 100%;
-    background: #EAEFF3;
+    background: #eaeff3;
 }
 
 .event-description {
@@ -208,16 +209,20 @@
 }
 
 .spinner__container .arrows {
-    -moz-animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse infinite;
-    -webkit-animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse infinite;
-    animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse infinite;
+    -moz-animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s
+        alternate-reverse infinite;
+    -webkit-animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s
+        alternate-reverse infinite;
+    animation: equalizor cubic-bezier(0.77, 0, 0.175, 1) 0.5s alternate-reverse
+        infinite;
     vertical-align: baseline;
     display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 10px 1px;
-    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #0b486b rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #0b486b
+        rgba(255, 255, 255, 0);
 }
 
 .spinner__container .st {
@@ -302,8 +307,7 @@
 
 .spinner__container .loading {
     display: block;
-    font: normal 22px/1em "Merriweather Sans", sans-serif;
+    font: normal 22px/1em 'Merriweather Sans', sans-serif;
     text-transform: uppercase;
     color: #cff09e;
 }
-

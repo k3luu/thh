@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import BannerTitle from '../BannerTitle/BannerTitle';
 import Contact from '../Contact/Contact';
 import './Trails.css';
 

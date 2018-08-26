@@ -1,32 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Dialog from '@material-ui/core/Dialog';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
-const Container = styled.div`
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
+const CloseIcon = styled.i`
+  position: absolute;
   right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  overflow-y: hidden;
+  padding: 20px;
+  cursor: pointer;
 `;
 
-class Modal extends Component {
-  constructor(p) {
-    super(p);
+const Content = styled.div`
+  padding: 20px;
+`;
 
-    this.state = {};
-  }
-
+class Modal extends React.Component {
   render() {
-    const {} = this.props;
-
-    return <Container>hi</Container>;
+    const { children } = this.props;
+    return (
+      <Dialog {...this.props}>
+        <CloseIcon className="fa fa-times" onClick={this.props.onClose} />
+        <Content>{children}</Content>
+      </Dialog>
+    );
   }
 }
 

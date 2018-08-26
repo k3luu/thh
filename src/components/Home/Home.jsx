@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 import Instafeed from 'react-instafeed';
-import { Box, Image } from 'gestalt';
+import { Image } from 'gestalt';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/main.min.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -145,12 +145,8 @@ class Home extends Component {
     this.state = {
       instaFeed: [],
       instaLoading: true,
-      autoplay: false
+      autoplay: true
     };
-  }
-
-  componentDidMount() {
-    this.setState({ autoplay: true });
   }
 
   getPhotos() {

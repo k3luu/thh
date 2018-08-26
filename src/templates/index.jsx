@@ -2,6 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-scroll';
+import DialogContent from '@material-ui/core/DialogContent';
+
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import Drawer from '../layouts/Drawer/Drawer';
@@ -14,11 +16,13 @@ import BannerTitle from '../components/BannerTitle/BannerTitle';
 import PageHeader from '../components/PageHeader/PageHeader';
 import PageDescription from '../components/PageDescription/PageDescription';
 import Home from '../components/Home/Home';
+import SubscribeForm from '../components/Subscribe/SubscribeForm';
 import Modal from '../components/Modal/Modal';
 
 class IndexTemplate extends React.Component {
   state = {
-    menuOpen: false
+    menuOpen: false,
+    subscribeModal: true
   };
 
   handleOnClick = evt => {
@@ -41,6 +45,10 @@ class IndexTemplate extends React.Component {
 
   closeMenu = () => {
     this.setState({ menuOpen: false });
+  };
+
+  handleCloseSubscribe = () => {
+    this.setState({ subscribeModal: false });
   };
 
   render() {
@@ -87,11 +95,18 @@ class IndexTemplate extends React.Component {
               <div id="home">
                 <BannerTitle title="Your Guide Through the Great Outdoors" />
 
-                {/* <Modal /> */}
-
                 <Home config={config} nodes={nodes} />
               </div>
             </div>
+
+            <Modal
+              open={this.state.subscribeModal}
+              onClose={this.handleCloseSubscribe}
+            >
+              <DialogContent>
+                <SubscribeForm />
+              </DialogContent>
+            </Modal>
 
             {/* The tiny footer at the very bottom */}
             <Footer
