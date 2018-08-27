@@ -54,7 +54,7 @@ class TermsPage extends React.Component {
           <Navigation config={config} onClose={this.handleOnClose} />
 
           <SiteWrapper>
-            <MainHeader className="post-head" cover={config.eventCover}>
+            <MainHeader className="post-head" cover={config.siteCover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 

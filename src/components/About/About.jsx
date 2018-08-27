@@ -16,7 +16,6 @@ const MemberContainer = styled.div`
 `;
 
 const PhotoContainer = styled.div`
-  flex-grow: 1;
   min-width: unset;
   height: 45vh;
 
@@ -28,7 +27,6 @@ const PhotoContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  flex-grow: 1;
   margin: 5px 0;
 
   ${breakpoint('sm')`
@@ -130,8 +128,10 @@ class About extends Component {
         </p>
         <h1>Our Team</h1>
         <p>
-          Get to know the team behind Two Half-Hitches. After all, we're just
-          outdoor enthusiasts who share the same passion as you!
+          Get to know the team behind Two Half-Hitches. After all, we're all
+          really just outdoor power rangers.
+          {/*we're just*/}
+          {/*outdoor enthusiasts who share the same passion as you!*/}
         </p>
 
         {this.renderTeamMembers()}

@@ -52,6 +52,7 @@ carousel:
 <iframe title="video" src="https://www.youtube.com/embed/lrGes6TzjuI" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
 <br>
+
 Cooper Canyon Trail Camp via Burkhart Trail is a beautiful, light hike that takes you through the San Gabriel high country. Your hike begins at Buckhorn Campground on the Burkhart Trail for about 2.75 miles to your destination, located right off the Pacific Crest Trail (PCT).
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6450.jpg)

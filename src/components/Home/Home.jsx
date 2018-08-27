@@ -20,6 +20,18 @@ const Container = styled.div`
   }
 `;
 
+const ContentContainer = styled.div`
+  margin: 2rem auto;
+  padding: 0;
+  max-width: 1500px;
+  height: 100%;
+
+  ${breakpoint('md')`
+    margin: 4rem auto;
+    padding: 0 10px;
+  `};
+`;
+
 const RecentSection = styled.div`
   border-bottom: #d8d8d8 1px solid;
 
@@ -233,7 +245,7 @@ class Home extends Component {
 
     return (
       <Container>
-        <div className="main-content">
+        <ContentContainer>
           {/*{process.env.NODE_ENV === 'development' && (*/}
           {/*<div className="instafeed" id="instafeed">*/}
           {/*<Instafeed*/}
@@ -258,7 +270,7 @@ class Home extends Component {
             </RecentHeader>
             <PostListing postEdges={this.props.nodes} columns={3} />
           </RecentSection>
-        </div>
+        </ContentContainer>
 
         <Carousel
           key="homepage"

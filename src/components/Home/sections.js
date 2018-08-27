@@ -27,7 +27,7 @@ const sections = [
     to: '/hike-in',
     photo_src: 'hikeInCover',
     description:
-      'Whether you’re hiking in, or driving in, we’ve got some ideas for you next camping trip!'
+      'Whether you’re hiking in, or driving in, we’ve got some ideas for your next camping trip!'
   },
   {
     id: 4,

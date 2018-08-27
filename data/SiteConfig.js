@@ -61,7 +61,7 @@ module.exports = {
     'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CONTACT.jpg',
   campaignCover:
     'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CAMPAIGN.jpg',
-  fundamentalsCover: '/images/ABOUT.jpg',
+  fundamentalsCover: '/images/TRAIL.jpg',
   guideCover:
     'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/GUIDES.jpg',
   finderCover:
