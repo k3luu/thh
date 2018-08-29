@@ -58,7 +58,7 @@ class IndexTemplate extends React.Component {
   render() {
     const { nodes } = this.props.pathContext;
 
-    console.log('INDEX', cookies.get('previousVisitor'));
+    console.log('INDEX', nodes);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
