@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 .banner-title {
@@ -26,4 +26,5 @@
 .banner-description {
     font-size: 2.5rem;
     text-align: center;
+    max-width: 1200px;
 }
