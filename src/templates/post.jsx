@@ -263,6 +263,7 @@ class PostTemplate extends React.Component {
 
             {/* The tiny footer at the very bottom */}
             <Footer
+              darkBackground
               copyright={config.copyright}
               promoteGatsby={config.promoteGatsby}
             />

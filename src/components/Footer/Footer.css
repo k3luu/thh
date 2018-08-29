@@ -16,22 +16,30 @@
     text-decoration: none;
     font-weight: bold;
     border-bottom: transparent 2px solid;
+    transition: 0;
 }
 
 .site-footer a:hover {
     border-bottom: #032b2f 2px solid;
 }
 
+.site-footer.dark-background,
+.site-footer.dark-background a {
+    color: #fff;
+}
+
+.site-footer.dark-background a:hover {
+    border-bottom: #fff 2px solid;
+}
+
 .poweredby {
     display: block;
-    /*width: 45%;*/
     float: right;
     text-align: right;
 }
 
 .copyright {
     display: block;
-    /*width: 45%;*/
     float: left;
 }
 
