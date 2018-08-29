@@ -1,4 +1,5 @@
 import React from 'react';
+import Cookies from 'universal-cookie';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-scroll';
@@ -18,6 +19,8 @@ import PageDescription from '../components/PageDescription/PageDescription';
 import Home from '../components/Home/Home';
 import SubscribeForm from '../components/Subscribe/SubscribeForm';
 import Modal from '../components/Modal/Modal';
+
+const cookies = new Cookies();
 
 class IndexTemplate extends React.Component {
   state = {
@@ -48,13 +51,14 @@ class IndexTemplate extends React.Component {
   };
 
   handleCloseSubscribe = () => {
+    cookies.set('previousVisitor', true, { path: '/' });
     this.setState({ subscribeModal: false });
   };
 
   render() {
     const { nodes } = this.props.pathContext;
 
-    // console.log('INDEX', this.props);
+    console.log('INDEX', cookies.get('previousVisitor'));
 
     return (
       <ThemeProvider theme={config.breakpoints}>
@@ -99,14 +103,16 @@ class IndexTemplate extends React.Component {
               </div>
             </div>
 
-            <Modal
-              open={this.state.subscribeModal}
-              onClose={this.handleCloseSubscribe}
-            >
-              <DialogContent>
-                <SubscribeForm />
-              </DialogContent>
-            </Modal>
+            {!cookies.get('previousVisitor') && (
+              <Modal
+                open={this.state.subscribeModal}
+                onClose={this.handleCloseSubscribe}
+              >
+                <DialogContent>
+                  <SubscribeForm />
+                </DialogContent>
+              </Modal>
+            )}
 
             {/* The tiny footer at the very bottom */}
             <Footer

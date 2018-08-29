@@ -1,25 +1,25 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { ThemeProvider } from "styled-components";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
 
-import SEO from "../components/SEO/SEO";
-import config from "../../data/SiteConfig";
+import SEO from '../components/SEO/SEO';
+import config from '../../data/SiteConfig';
 
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainContent from "../layouts/MainContent/MainContent";
-import PostHeader from "../layouts/PostHeader/PostHeader";
-import PostFormatting from "../layouts/PostFormatting/PostFormatting";
-import PostFooter from "../layouts/PostFooter/PostFooter";
-import PostShare from "../components/PostShare/PostShare";
-import GhostSubscribe from "../components/GhostSubscribe/GhostSubscribe";
-import ReadNext from "../components/ReadNext/ReadNext";
-import Footer from "../components/Footer/Footer";
-import Disqus from "../components/Disqus/Disqus";
-import MyCarousel from "../components/Carousel/MyCarousel";
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainContent from '../layouts/MainContent/MainContent';
+import PostHeader from '../layouts/PostHeader/PostHeader';
+import PostFormatting from '../layouts/PostFormatting/PostFormatting';
+import PostFooter from '../layouts/PostFooter/PostFooter';
+import PostShare from '../components/PostShare/PostShare';
+import GhostSubscribe from '../components/GhostSubscribe/GhostSubscribe';
+import ReadNext from '../components/ReadNext/ReadNext';
+import Footer from '../components/Footer/Footer';
+import Disqus from '../components/Disqus/Disqus';
+import MyCarousel from '../components/Carousel/MyCarousel';
 
 function parsePost(post, slug) {
   const result = post;
@@ -33,14 +33,14 @@ function parsePost(post, slug) {
 }
 
 const formatReadNext = value => ({
-  path: (value && value.fields.slug) || "/chilao-campground",
-  title: (value && value.frontmatter.title) || "Chilao Campground",
+  path: (value && value.fields.slug) || '/chilao-campground',
+  title: (value && value.frontmatter.title) || 'Chilao Campground',
   cover:
     (value && value.frontmatter.thumbnail) ||
-    "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/thumbnail.jpg",
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Chilao+Campground/Content/thumbnail.jpg',
   excerpt:
     (value && value.excerpt) ||
-    "So you want to go camping with your buddies for the weekend, but were unable to nag a spot at Buckhorn Campground? Check out Chilao Campground!"
+    'So you want to go camping with your buddies for the weekend, but were unable to nag a spot at Buckhorn Campground? Check out Chilao Campground!'
 });
 
 class PostTemplate extends React.Component {
@@ -54,7 +54,7 @@ class PostTemplate extends React.Component {
     this.state = {
       menuOpen: false,
       post,
-      detailTypes: ["trails", "drive in", "hike in"]
+      detailTypes: ['trails', 'drive in', 'hike in']
     };
 
     this.handleTrailData = this.handleTrailData.bind(this);
@@ -176,7 +176,7 @@ class PostTemplate extends React.Component {
         </table>
       );
 
-    return "";
+    return '';
   };
 
   render() {
@@ -194,11 +194,11 @@ class PostTemplate extends React.Component {
       disclaimer,
       references
     } = post;
-    const className = post.post_class ? post.post_class : "post";
+    const className = post.post_class ? post.post_class : 'post';
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
-    console.log("POST", data);
+    console.log('POST', data);
 
     return (
       <ThemeProvider theme={config.breakpoints}>

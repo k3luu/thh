@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import _ from "lodash";
-import { Image } from "gestalt";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import team from "./team";
+import React, { Component } from 'react';
+import _ from 'lodash';
+import { Image } from 'gestalt';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
+import team from './team';
 
 const MemberContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 30px 0;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     flex-direction: row;
   `};
 `;
@@ -19,7 +19,7 @@ const PhotoContainer = styled.div`
   min-width: unset;
   height: 45vh;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     min-width: 500px;
     width: 100%;
     height: 500px;
@@ -29,11 +29,11 @@ const PhotoContainer = styled.div`
 const InfoContainer = styled.div`
   margin: 5px 0;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     margin: 5px 10px;
   `};
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 5px 20px;
   `};
 `;
@@ -41,7 +41,7 @@ const InfoContainer = styled.div`
 const Name = styled.h3`
   margin: 10px !important;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 10px 0 !important;
   `};
 `;
@@ -53,7 +53,7 @@ const Title = styled.h5`
   font-weight: unset;
   margin: 0 10px !important;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 10px 0 !important;
   `};
 `;
@@ -64,7 +64,7 @@ const Bio = styled.div`
     margin: 10px;
   }
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     p {
       margin: 10px 0;
     }
@@ -79,10 +79,10 @@ class About extends Component {
   }
 
   handleTitles(list) {
-    let titles = "";
+    let titles = '';
 
     _.map(list, t => {
-      if (titles.length > 0) titles += "/";
+      if (titles.length > 0) titles += '/';
 
       titles += t;
     });

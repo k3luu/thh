@@ -28,5 +28,6 @@
 
     .post-listing.margin {
         margin-right: 0;
+        width: 100% !important;
     }
 }
