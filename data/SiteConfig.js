@@ -11,7 +11,7 @@ module.exports = {
   pathPrefix: '/thh', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription: 'No Matter the Mountain', // Website description used for RSS feeds/meta description tag.
   siteCover:
-    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/HOME.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+    'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/HOMEPAGE.jpg', // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: '/rss.xml', // Path to the RSS file.
   siteRssAuthor: 'Casper User', // The author name used in the RSS file
@@ -61,7 +61,7 @@ module.exports = {
     'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CONTACT.jpg',
   campaignCover:
     'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/CAMPAIGN.jpg',
-  fundamentalsCover: '/images/TRAIL.jpg',
+  fundamentalsCover: 'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/FUNDAMENTALS+B.jpg',
   guideCover:
     'https://s3-us-west-1.amazonaws.com/twohalfhitches/assets/covers/GUIDES.jpg',
   finderCover:
