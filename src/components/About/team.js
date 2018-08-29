@@ -34,14 +34,14 @@ const team = [
       'Drawing much of his inspiration from nature for his creative thesis at Sonoma State University, Colt feels that many people miss out on what surrounds them on a daily basis. Being a part of Two Half-Hitches gives him the opportunity to work with like-minded people and educate those who may be curious to get back into the wild.',
       'Colt serves as the senior editor. His ultimate goal is to re-enchant those who have become jaded towards the outdoors by communicating our values in a more poetic way to a wider audience. Although he is out with a serious knee injury, we hope to have him exploring with Two Half-Hitches again soon.'
     ]
-  },
-  {
-    id: 3,
-    photo: '',
-    name: 'Kathy Luu',
-    titles: ['Web Developer'],
-    bio: ['']
   }
+  // {
+  //   id: 3,
+  //   photo: '',
+  //   name: 'Kathy Luu',
+  //   titles: ['Web Developer'],
+  //   bio: ['']
+  // }
 ];
 
 export default team;
