@@ -34,14 +34,18 @@ const team = [
       'Drawing much of his inspiration from nature for his creative thesis at Sonoma State University, Colt feels that many people miss out on what surrounds them on a daily basis. Being a part of Two Half-Hitches gives him the opportunity to work with like-minded people and educate those who may be curious to get back into the wild.',
       'Colt serves as the senior editor. His ultimate goal is to re-enchant those who have become jaded towards the outdoors by communicating our values in a more poetic way to a wider audience. Although he is out with a serious knee injury, we hope to have him exploring with Two Half-Hitches again soon.'
     ]
+  },
+  {
+    id: 3,
+    photo: '',
+    name: 'Kathy Luu',
+    titles: ['Web Developer'],
+    bio: [
+      'Kathy is a frontend engineer from the Bay Area. She spends most of her days kicking ass at her job and maintaining our site. She enjoys the ability to stretch her creative muscles via web development. As an engineer, her field has let her create new things out of nothing and see the final product right in front of her. The real reward is knowing people can see and interact with it, which can be its own lesson.',
+      'Outside of work and Two Half-Hitches, Kathy has been getting out there with her trusty four-footed companion. In contrast to her ‘heads down’ work, she enjoys the relief and exhilaration from stepping into nature and getting soaked by waterfalls. Being in the great outdoors reminds her that life goes beyond coding and screens. Tiring out the pup is a big plus, too.',
+      'Inspired by our amazing team of self-starters, she wants to foster the connection between Two Half-Hitches and the public by bringing new ideas to life and enhancing the way we share our material to our readers.'
+    ]
   }
-  // {
-  //   id: 3,
-  //   photo: '',
-  //   name: 'Kathy Luu',
-  //   titles: ['Web Developer'],
-  //   bio: ['']
-  // }
 ];
 
 export default team;
