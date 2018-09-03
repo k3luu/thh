@@ -39,7 +39,7 @@ const InfoContainer = styled.div`
 `;
 
 const Name = styled.h3`
-  margin: 10px !important;
+  margin: 10px 20px !important;
 
   ${breakpoint('md')`
     margin: 10px 0 !important;
@@ -51,7 +51,7 @@ const Title = styled.h5`
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: unset;
-  margin: 0 10px !important;
+  margin: 0 20px !important;
 
   ${breakpoint('md')`
     margin: 10px 0 !important;
@@ -60,8 +60,9 @@ const Title = styled.h5`
 
 const Bio = styled.div`
   margin-bottom: 70px;
+
   p {
-    margin: 10px;
+    margin: 20px;
   }
 
   ${breakpoint('md')`

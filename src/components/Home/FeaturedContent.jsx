@@ -33,7 +33,7 @@ const FeaturedPhoto = styled.div`
 
 const FeaturedInfo = styled.div`
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 
   ${breakpoint('sm')`
       padding: 10px 20px;

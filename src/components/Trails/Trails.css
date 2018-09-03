@@ -9,10 +9,24 @@
 .trail-pin {
     height: 30px;
     display: flex;
-    margin: 10px;
+    margin: 10px 20px;
 }
 
 .trail-pin img {
     height: 30px;
     width: auto;
+}
+
+.trail-map {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .trail-pin {
+        margin: 10px;
+    }
+
+    .trail-map {
+        height: 400px;
+    }
 }

@@ -311,3 +311,17 @@
     text-transform: uppercase;
     color: #cff09e;
 }
+
+@media only screen and (max-width: 600px) {
+    .rbc-btn-group {
+
+    }
+
+    .rbc-btn-group > button {
+        display: block;
+        border: 1px solid #373a3c;
+        border-radius: 0;
+        margin: 0 auto !important;
+        width: 100%;
+    }
+}

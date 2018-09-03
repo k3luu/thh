@@ -65,7 +65,7 @@ const RecentSection = styled.div`
 `;
 
 const RecentHeader = styled.div`
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 0;
   font-size: 14px;
   font-weight: bold;

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Contact from '../Contact/Contact';
-import './Trails.css';
+import React, { Component } from "react";
+import Contact from "../Contact/Contact";
+import "./Trails.css";
 
 class TrailFinder extends Component {
   // Edit About component or pages/about.jsx to include your information.
@@ -55,6 +55,7 @@ class TrailFinder extends Component {
           src="https://www.google.com/maps/d/embed?mid=1sCNANxiTadBW6BQmQ-lF71kYEm4"
           width="710"
           height="700"
+          className="trail-map"
         />
         <p>
           If you have a particular trail you recommend, let us know by filling

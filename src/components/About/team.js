@@ -37,7 +37,7 @@ const team = [
   },
   {
     id: 3,
-    photo: '',
+    photo: 'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/kathy.jpg',
     name: 'Kathy Luu',
     titles: ['Web Developer'],
     bio: [

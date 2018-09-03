@@ -47,9 +47,13 @@
    13. Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .site-footer {
-        margin-top: 3rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+
     }
 
     .post-template .site-footer,

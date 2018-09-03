@@ -151,6 +151,10 @@ div.page-template .post-title {
     content: '\00a0\00a0\00a0\00a0\00a0';
 }
 
+.trail-data {
+    margin-bottom: 1.75em;
+}
+
 .trail-data__icon {
     width: 10px;
     text-align: center;
@@ -189,11 +193,11 @@ div.page-template .post-title {
 
     .post-excerpt p {
         font-size: 0.85em;
-        margin: 0 10px;
+        margin: 0 20px;
     }
 
     .post-title {
-        margin: 10px !important;
+        margin: 20px !important;
     }
 }
 
@@ -203,7 +207,7 @@ div.page-template .post-title {
 
 @media only screen and (max-width: 600px) {
     .post {
-        margin: 2rem 16px;
+        margin: 2rem 0;
         padding-bottom: 2rem;
         line-height: 1.65em;
     }

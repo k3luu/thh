@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/main.min.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { Component } from "react";
+import styled from "styled-components";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/main.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import ambassadors from './ambassadors/ambassadors';
-import './NoMatterTheMountain.css';
+import ambassadors from "./ambassadors/ambassadors";
+import "./NoMatterTheMountain.css";
 
 const BioContainer = styled.div`
   &::before {
@@ -25,10 +25,10 @@ const BioContainer = styled.div`
 
 class NoMatterTheMountain extends Component {
   handleAmbassadorTitle(list) {
-    let titles = '';
+    let titles = "";
 
     list.map(item => {
-      if (titles.length > 1) titles += ' | ';
+      if (titles.length > 1) titles += " | ";
       titles += item;
     });
 
@@ -78,19 +78,20 @@ class NoMatterTheMountain extends Component {
             src="https://www.youtube.com/embed/05ifiSTb6Fc"
             frameBorder="0"
             allowFullScreen
+            style={{ marginTop: 30 }}
           />
           <br />
           <p>
             Share your story with us on Instagram! Nominate your friends, and
-            tag{' '}
+            tag{" "}
             <a
               href="https://www.instagram.com/twohalfhitches"
               target="_blank"
               rel="noopener noreferrer"
             >
               @twohalfhitches
-            </a>{' '}
-            and{' '}
+            </a>{" "}
+            and{" "}
             <a
               href="https://www.instagram.com/explore/tags/nomatterthemountain/"
               target="_blank"
@@ -114,7 +115,7 @@ class NoMatterTheMountain extends Component {
           showArrows
           centerMode
           centerSlidePercentage={
-            typeof window !== 'undefined' &&
+            typeof window !== "undefined" &&
             window.navigator &&
             /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
               ? 100
