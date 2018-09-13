@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.trail-pin__container > div{
+.trail-pin__container > div {
     flex-grow: 1;
 }
 

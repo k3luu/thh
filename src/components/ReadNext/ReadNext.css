@@ -73,7 +73,7 @@
 }
 
 .read-next-story h2 {
-    margin-top: 2rem;
+    margin-top: 2rem !important;
     color: #fff;
 }
 
@@ -151,7 +151,6 @@
 
 @media only screen and (max-width: 500px) {
     .read-next {
-        margin-top: 2rem;
         margin-bottom: -37px;
     }
 

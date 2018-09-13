@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import Contact from "../Contact/Contact";
-import "./Trails.css";
+import React, { Component } from 'react';
+import Contact from '../Contact/Contact';
+import './Trails.css';
 
 class TrailFinder extends Component {
   // Edit About component or pages/about.jsx to include your information.

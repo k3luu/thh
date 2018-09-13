@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
 
 const Title = styled.h4`
   font-size: 2.5rem;
   margin: 20px !important;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 20px 0 !important;
   `};
 `;
@@ -14,7 +14,7 @@ const Title = styled.h4`
 const LastUpdated = styled.h6`
   margin: 20px !important;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 20px 0 !important;
   `};
 `;

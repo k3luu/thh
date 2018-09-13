@@ -817,7 +817,8 @@ button:hover {
         margin: 0;
     }
 
-    table th, table td {
+    table th,
+    table td {
         padding: 8px 20px;
     }
 }

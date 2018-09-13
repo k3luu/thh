@@ -37,13 +37,14 @@ const team = [
   },
   {
     id: 3,
-    photo: 'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/kathy.jpg',
+    photo:
+      'https://s3-us-west-1.amazonaws.com/twohalfhitches/persons/kathy.jpg',
     name: 'Kathy Luu',
     titles: ['Web Developer'],
     bio: [
-      'Kathy is a frontend engineer from the Bay Area. She spends most of her days kicking ass at her job and maintaining our site. She enjoys the ability to stretch her creative muscles via web development. As an engineer, her field has let her create new things out of nothing and see the final product right in front of her. The real reward is knowing people can see and interact with it, which can be its own lesson.',
-      'Outside of work and Two Half-Hitches, Kathy has been getting out there with her trusty four-footed companion. In contrast to her ‘heads down’ work, she enjoys the relief and exhilaration from stepping into nature and getting soaked by waterfalls. Being in the great outdoors reminds her that life goes beyond coding and screens. Tiring out the pup is a big plus, too.',
-      'Inspired by our amazing team of self-starters, she wants to foster the connection between Two Half-Hitches and the public by bringing new ideas to life and enhancing the way we share our material to our readers.'
+      'Kathy is a frontend engineer from the Bay Area. She spends most of her days kicking ass at her job and maintaining the Two Half-Hitches site. She enjoys the ability to stretch her creative muscles via web development. As an engineer, Kathy’s field has allowed her to build applications from scratch and see the final product right in front of her. The real reward is knowing people can see and interact with it, which also serves as a constant crash course in design and usability.',
+      'Outside of work and Two Half-Hitches, Kathy has been getting out there with her trusty four-legged companion, Pim. In contrast to her ‘head down’ work style, she enjoys the relief and exhilaration of stepping into nature and getting soaked by waterfalls. The Great Outdoors remind her that life goes beyond coding and screens. Tiring out the pup is a big plus, too.',
+      'Inspired by our amazing team of self-starters, Kathy wants to foster the connection between Two Half-Hitches and the public by bringing new ideas to life and enhancing the way we share our material with our readers.'
     ]
   }
 ];
