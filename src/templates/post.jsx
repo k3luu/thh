@@ -198,7 +198,7 @@ class PostTemplate extends React.Component {
     const getNextData = () => (next ? formatReadNext(data.next) : null);
     const getPrevData = () => (prev ? formatReadNext(data.prev) : null);
 
-    console.log('POST', data);
+    // console.log('POST', data);
 
     return (
       <ThemeProvider theme={config.breakpoints}>

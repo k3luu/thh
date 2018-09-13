@@ -8,14 +8,6 @@ import Navigation from '../components/Navigation/Navigation';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
-import AuthorImage from '../components/AuthorImage/AuthorImage';
-import AuthorProfile from '../layouts/AuthorProfile/AuthorProfile';
-import AuthorName from '../components/AuthorName/AuthorName';
-import AuthorBio from '../components/AuthorBio/AuthorBio';
-import AuthorMeta from '../layouts/AuthorMeta/AuthorMeta';
-import AuthorLocation from '../components/AuthorLocation/AuthorLocation';
-import AuthorWebsite from '../components/AuthorWebsite/AuthorWebsite';
-import AuthorStats from '../components/AuthorStats/AuthorStats';
 import Footer from '../components/Footer/Footer';
 import SocialMediaIcons from '../components/SocialMediaIcons/SocialMediaIcons';
 
@@ -71,17 +63,6 @@ class AuthorTemplate extends React.Component {
             <MainHeader className="author-head" cover={cover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
-
-            <AuthorProfile className="inner">
-              <AuthorImage author={getAuthor()} />
-              <AuthorName name={getAuthor().name} />
-              <AuthorBio bio={getAuthor().bio} />
-              <AuthorMeta>
-                <AuthorLocation location={getAuthor().location} />
-                <AuthorWebsite url={getAuthor().url} />
-              </AuthorMeta>
-              <AuthorStats postEdges={postEdges} />
-            </AuthorProfile>
 
             {/* PostListing component renders all the posts */}
             <PostListing postEdges={postEdges} postAuthors={authorsEdges} />
