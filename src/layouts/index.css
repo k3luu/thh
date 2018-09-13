@@ -529,7 +529,7 @@ kbd {
 table {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.75em 0;
+    margin: 1em 0;
     width: 100%;
     max-width: 100%;
     background-color: transparent;

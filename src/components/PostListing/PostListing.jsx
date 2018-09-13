@@ -59,31 +59,31 @@ class PostListing extends React.Component {
                   {location && (
                     <tr>
                       <td className="trail-data__label">Location</td>
-                      <td>{location}</td>
+                      <td className="trail-data__data">{location}</td>
                     </tr>
                   )}
                   {distance && (
                     <tr>
                       <td className="trail-data__label">Distance</td>
-                      <td>{distance}</td>
+                      <td className="trail-data__data">{distance}</td>
                     </tr>
                   )}
                   {difficulty && (
                     <tr>
                       <td className="trail-data__label">Difficulty</td>
-                      <td>{difficulty}</td>
+                      <td className="trail-data__data">{difficulty}</td>
                     </tr>
                   )}
                   {elevation && (
                     <tr>
                       <td className="trail-data__label">Elevation Gain</td>
-                      <td>{elevation}</td>
+                      <td className="trail-data__data">{elevation}</td>
                     </tr>
                   )}
                   {usage && (
                     <tr>
                       <td className="trail-data__label">Usage</td>
-                      <td>{usage}</td>
+                      <td className="trail-data__data">{usage}</td>
                     </tr>
                   )}
                 </tbody>

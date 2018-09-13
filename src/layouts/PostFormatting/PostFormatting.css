@@ -30,6 +30,7 @@
 }
 
 .post-title a {
+    text-align: center;
     text-decoration: none;
 }
 
@@ -158,13 +159,20 @@ div.page-template .post-title {
 .trail-data__icon {
     width: 10px;
     text-align: center;
+    color: #fff;
+    background: #F56700 !important;
 }
 
 .trail-data__label {
-    font-size: 14px;
-    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+    color: #727479;
     text-transform: uppercase;
-    width: 125px;
+    width: 150px;
+}
+
+.trail-data__data {
+    /*font-weight: bold;*/
 }
 
 .post__credit {
@@ -232,5 +240,9 @@ div.page-template .post-title {
     .post-meta {
         font-size: 1.3rem;
         margin-top: 1rem;
+    }
+
+    .trail-data__label {
+        width: 100px;
     }
 }

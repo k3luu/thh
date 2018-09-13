@@ -106,7 +106,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-map-marker" />
                 </td>
                 <td className="trail-data__label">Location</td>
-                <td>{location}</td>
+                <td className="trail-data__data">{location}</td>
               </tr>
             )}
             {distance && (
@@ -115,7 +115,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-arrows-h" />
                 </td>
                 <td className="trail-data__label">Distance</td>
-                <td>{distance}</td>
+                <td className="trail-data__data">{distance}</td>
               </tr>
             )}
             {difficulty && (
@@ -124,7 +124,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-tachometer" />
                 </td>
                 <td className="trail-data__label">Difficulty</td>
-                <td>{difficulty}</td>
+                <td className="trail-data__data">{difficulty}</td>
               </tr>
             )}
             {elevation && (
@@ -133,7 +133,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-arrows-v" />
                 </td>
                 <td className="trail-data__label">Elevation Gain</td>
-                <td>{elevation}</td>
+                <td className="trail-data__data">{elevation}</td>
               </tr>
             )}
             {season && (
@@ -142,7 +142,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-snowflake-o" />
                 </td>
                 <td className="trail-data__label">Seasons</td>
-                <td>{season}</td>
+                <td className="trail-data__data">{season}</td>
               </tr>
             )}
             {parking && (
@@ -151,7 +151,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-car" />
                 </td>
                 <td className="trail-data__label">Parking</td>
-                <td>{parking}</td>
+                <td className="trail-data__data">{parking}</td>
               </tr>
             )}
             {usage && (
@@ -160,7 +160,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-group" />
                 </td>
                 <td className="trail-data__label">Usage</td>
-                <td>{usage}</td>
+                <td className="trail-data__data">{usage}</td>
               </tr>
             )}
             {dogs && (
@@ -169,7 +169,7 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-paw" />
                 </td>
                 <td className="trail-data__label">Dogs</td>
-                <td>{dogs}</td>
+                <td className="trail-data__data">{dogs}</td>
               </tr>
             )}
           </tbody>
