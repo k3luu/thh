@@ -6,6 +6,7 @@ import breakpoint from 'styled-components-breakpoint';
 const Title = styled.h6`
   margin: 0 20px !important;
   text-align: center;
+  letter-spacing: 0.6px;
 
   ${breakpoint('md')`
     margin: 0 auto;

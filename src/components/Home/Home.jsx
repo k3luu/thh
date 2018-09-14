@@ -150,6 +150,13 @@ const BannerDescription = styled.div`
   `};
 `;
 
+const IGContainer = styled.div`
+  margin: 4rem auto;
+
+  ${breakpoint("md")`
+  `};
+`;
+
 class Home extends Component {
   constructor(p) {
     super(p);
@@ -287,7 +294,9 @@ class Home extends Component {
         </Carousel>
 
         {process.env.NODE_ENV === "production" && (
-          <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
+          <IGContainer>
+            <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
+          </IGContainer>
         )}
 
         <div className="home-subscription">
