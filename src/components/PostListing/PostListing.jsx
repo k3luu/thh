@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { Box, Mask, Image } from 'gestalt';
 import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
-import PostHeader from '../../layouts/PostHeader/PostHeader';
 import './PostListing.css';
 
 const getPostList = postEdges =>
@@ -131,7 +130,6 @@ class PostListing extends React.Component {
 
     return (
       <PostFormatting className={className} style={style} key={title}>
-        <PostHeader>
           {cover && (
             <Link to={path} className="post-image">
               <Mask color="darkGray" height={maskHeight}>
@@ -151,7 +149,6 @@ class PostListing extends React.Component {
             </h4>
             {this.handleDescription(post)}
           </Box>
-        </PostHeader>
       </PostFormatting>
     );
   }

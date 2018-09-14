@@ -1,6 +1,18 @@
 .post-template .post-header,
 .page-template .post-header {
     margin-bottom: 3.4rem;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.post-template .post-header .post-title,
+.page-template .post-header .post-title {
+    text-shadow: 0px 2px 15px #000;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 /* ==========================================================================
