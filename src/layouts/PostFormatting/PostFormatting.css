@@ -29,8 +29,12 @@
 .post p::before {
 }
 
-.post-title a {
+.post-title {
     text-align: center;
+    letter-spacing: 0.6px;
+}
+
+.post-title a {
     text-decoration: none;
 }
 

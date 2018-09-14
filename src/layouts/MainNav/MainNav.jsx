@@ -82,10 +82,16 @@ class MainNav extends React.Component {
             <Link to="/trail-guides">Trail</Link>
             <NavDropdown className="nav-dropdown">
               <li>
-                <Link to="/trail-guides">Guides</Link>
+                <Link to="/trail-guides">
+                  <i className="fa fa-map-signs" />
+                  <span>Guides</span>
+                </Link>
               </li>
               <li>
-                <Link to="/trail-finder">Finder</Link>
+                <Link to="/trail-finder">
+                  <i className="fa fa-binoculars" />
+                  <span>Finder</span>
+                </Link>
               </li>
             </NavDropdown>
           </li>
@@ -93,10 +99,16 @@ class MainNav extends React.Component {
             <Link to="/hike-in">Camp</Link>
             <NavDropdown className="nav-dropdown">
               <li>
-                <Link to="/hike-in">Hike-In</Link>
+                <Link to="/hike-in">
+                  <i className="fa fa-blind" />
+                  <span>Hike-In</span>
+                </Link>
               </li>
               <li>
-                <Link to="/drive-in">Drive-In</Link>
+                <Link to="/drive-in">
+                  <i className="fa fa-car" />
+                  <span>Drive-In</span>
+                </Link>
               </li>
             </NavDropdown>
           </li>

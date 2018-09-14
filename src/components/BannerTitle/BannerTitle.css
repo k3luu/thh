@@ -16,7 +16,7 @@
 
 .banner-title {
     font-size: 4rem;
-    letter-spacing: 0.6px;
+    letter-spacing: 1px;
     line-height: 1.15em;
     text-align: center;
     /*text-shadow: 0 0 2px #172121;*/
@@ -25,6 +25,7 @@
 
 .banner-description {
     font-size: 2.5rem;
+    letter-spacing: 0.6px;
     text-align: center;
     max-width: 1200px;
 }

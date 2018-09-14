@@ -59,6 +59,7 @@ const FeaturedHeader = styled.div`
 
 const Title = styled.h5`
   margin-top: 10px;
+  letter-spacing: 0.6px;
 
   ${breakpoint('sm')`
     margin-top: 50px;

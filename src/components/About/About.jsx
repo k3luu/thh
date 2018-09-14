@@ -40,6 +40,7 @@ const InfoContainer = styled.div`
 
 const Name = styled.h3`
   margin: 10px 20px !important;
+  letter-spacing: 0.8px;
 
   ${breakpoint('md')`
     margin: 10px 0 !important;
