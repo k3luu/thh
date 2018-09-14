@@ -1,5 +1,6 @@
 ---
 title: "Timber Mountain via Ice House Canyon Trail"
+campTitle: "Timber Mountain"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7902.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/thumbnail.jpeg"
 date: "2016-06-29"
@@ -9,10 +10,11 @@ difficulty: "Difficult"
 elevation: "3325 ft"
 season: "Spring, Summer, Fall"
 parking: "Adventure Pass Required"
-category: "trails"
+category: "hike in"
 tags:
     - san gabriel mountains
     - trails
+    - difficult
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7783.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7784.jpg

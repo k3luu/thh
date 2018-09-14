@@ -62,7 +62,7 @@ class EventsPage extends React.Component {
             <BannerTitle
               title="Events"
               desc="Join us as we hit the trails! Check our calendar of events for more
-                details"
+                details."
             />
 
             <div className="main-content">

@@ -73,7 +73,7 @@ class DriveInPage extends React.Component {
 
             <BannerTitle
               title="Camp Drive-In"
-              desc="Need helping finding a perfect campsite? We’ve got your back!"
+              desc="Need help finding a perfect campsite? We’ve got your back!"
             />
 
             <div className="main-content">
