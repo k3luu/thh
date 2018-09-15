@@ -27,7 +27,7 @@
     }
 
     .post-listing.margin {
-        margin-right: 0;
+        margin: 4rem auto;
         width: 100% !important;
     }
 }

@@ -17,7 +17,7 @@ const Logo = styled.img``;
 
 const Navigation = styled.ul``;
 
-const NavDropdown = styled.ul``;
+const NavDropdown = styled.div``;
 
 const MenuButton = styled.div``;
 
@@ -88,35 +88,35 @@ class MainNav extends React.Component {
           <li className={this.handleCurrTab("trail-")}>
             <Link to="/trail-guides">Trail</Link>
             <NavDropdown className="nav-dropdown">
-              <li>
+              <div>
                 <Link to="/trail-guides">
                   <FontAwesomeIcon icon={faMapSigns} />
                   <span>Guides</span>
                 </Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link to="/trail-finder">
                   <FontAwesomeIcon icon={faBinoculars} />
                   <span>Finder</span>
                 </Link>
-              </li>
+              </div>
             </NavDropdown>
           </li>
           <li className={this.handleCurrTab("-in")}>
             <Link to="/hike-in">Camp</Link>
             <NavDropdown className="nav-dropdown">
-              <li>
+              <div>
                 <Link to="/hike-in">
                   <FontAwesomeIcon icon={faWalking} />
                   <span>Hike-In</span>
                 </Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link to="/drive-in">
                   <FontAwesomeIcon icon={faCar} />
                   <span>Drive-In</span>
                 </Link>
-              </li>
+              </div>
             </NavDropdown>
           </li>
           <li className={this.handleCurrTab("/fundamentals")}>
