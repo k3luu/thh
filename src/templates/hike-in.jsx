@@ -74,7 +74,7 @@ class HikeInPage extends React.Component {
             <BannerTitle
               title="Camp Hike-In"
               desc="Whether it's for a solo trip, or a group of your best friends,
-                find the trail camp that bests suits you!"
+                find the trail camp that best suits you!"
             />
 
             <div className="main-content">
