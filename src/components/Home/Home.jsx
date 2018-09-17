@@ -114,7 +114,7 @@ const BannerTextBox = styled.div`
 `;
 
 const BannerHeading = styled.div`
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -131,7 +131,7 @@ const BannerHeading = styled.div`
 `;
 
 const BannerDescription = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 
   p {
@@ -142,7 +142,6 @@ const BannerDescription = styled.div`
   }
 
   ${breakpoint('sm')`
-    font-size: 1.2rem;
   `};
 
   ${breakpoint('md')`

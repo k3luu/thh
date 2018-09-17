@@ -13,6 +13,7 @@ date: "2016-10-30"
 disclaimer:
     - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. 
 ---
+<br>
 
 <iframe title="video" src="https://www.youtube.com/embed/FkvDrzPe_vk" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
