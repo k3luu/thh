@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import Instafeed from "react-instafeed";
-import { Image } from "gestalt";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/main.min.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import breakpoint from 'styled-components-breakpoint';
+import Instafeed from 'react-instafeed';
+import { Image } from 'gestalt';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/main.min.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import FeaturedContent from "./FeaturedContent";
-import PostListing from "../PostListing/PostListing";
-import SubscribeForm from "../Subscribe/SubscribeForm";
-import sections from "./sections";
-import "./Home.css";
+import FeaturedContent from './FeaturedContent';
+import PostListing from '../PostListing/PostListing';
+import SubscribeForm from '../Subscribe/SubscribeForm';
+import sections from './sections';
+import './Home.css';
 
 const Container = styled.div`
   h4 {
@@ -26,7 +26,7 @@ const ContentContainer = styled.div`
   max-width: 1500px;
   height: 100%;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     margin: 4rem auto;
     padding: 0 10px;
   `};
@@ -35,13 +35,13 @@ const ContentContainer = styled.div`
 const RecentSection = styled.div`
   border-bottom: #d8d8d8 1px solid;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     border-bottom: 0;
   `};
 
   .post-title,
   .post-excerpt {
-    ${breakpoint("md")`
+    ${breakpoint('md')`
       padding: 0;
     `};
   }
@@ -50,14 +50,14 @@ const RecentSection = styled.div`
     border-bottom: 0;
     margin-bottom: 0;
 
-    ${breakpoint("md")`
+    ${breakpoint('md')`
         // border-bottom: #d8d8d8 1px solid;
     `};
 
     &:after {
       content: unset;
 
-      ${breakpoint("md")`
+      ${breakpoint('md')`
         // content: "";
       `};
     }
@@ -74,7 +74,7 @@ const RecentHeader = styled.div`
   text-rendering: geometricPrecision;
   text-transform: uppercase;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     padding: 0;
   `};
 `;
@@ -89,7 +89,7 @@ const BannerInfoContainer = styled.div`
   justify-content: start;
   align-items: center;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   `};
 `;
 
@@ -103,12 +103,12 @@ const BannerTextBox = styled.div`
   height: auto;
   text-align: left;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     padding: 60px;
     max-width: 75%;
   `};
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     padding: 80px;
   `};
 `;
@@ -121,11 +121,11 @@ const BannerHeading = styled.div`
   line-height: 1.15em;
   margin: 0 0 0.4em;
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     font-size: 6rem;
   `};
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     font-size: 8rem;
   `};
 `;
@@ -141,11 +141,11 @@ const BannerDescription = styled.div`
     margin: 0;
   }
 
-  ${breakpoint("sm")`
+  ${breakpoint('sm')`
     font-size: 1.7rem;
   `};
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
     font-size: 2rem;
   `};
 `;
@@ -153,7 +153,7 @@ const BannerDescription = styled.div`
 const IGContainer = styled.div`
   margin: 4rem auto;
 
-  ${breakpoint("md")`
+  ${breakpoint('md')`
   `};
 `;
 
@@ -170,11 +170,11 @@ class Home extends Component {
 
   getPhotos() {
     return fetch(
-      "https://api.instagram.com/v1/users/self/media/recent/?access_token="
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token='
     )
       .then(response => response.json())
       .then(json => {
-        console.log("IG:", json.data);
+        console.log('IG:', json.data);
       });
   }
 
@@ -182,7 +182,7 @@ class Home extends Component {
     if (item.description) return <p>{item.description}</p>;
 
     switch (item.name) {
-      case "Campaign":
+      case 'Campaign':
         return (
           <p>
             Share your story with us on Instagram! Nominate your friends, and
@@ -205,7 +205,7 @@ class Home extends Component {
         );
 
       default:
-        return "";
+        return '';
     }
   }
 
@@ -241,14 +241,14 @@ class Home extends Component {
     const template =
       '<a href="{{link}}" target="_blank" class="instafeed__item">' +
       '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
-      "</div>" +
+      '</div>' +
       '<div class="instafeed__item__overlay">' +
       '<div class="instafeed__item__overlay--inner">' +
       '<p class="instafeed__item__caption">{{model.short_caption}}</p>' +
       '<p class="instafeed__item__location">{{location}}</p>' +
-      "</div>" +
-      "</div>" +
-      "</a>";
+      '</div>' +
+      '</div>' +
+      '</a>';
 
     return (
       <Container>
@@ -293,7 +293,7 @@ class Home extends Component {
           {this.renderCategories()}
         </Carousel>
 
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === 'production' && (
           <IGContainer>
             <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
           </IGContainer>

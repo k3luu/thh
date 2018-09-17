@@ -1,15 +1,15 @@
-import React from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faWalking,
   faCar,
   faMapSigns,
   faBinoculars
-} from "@fortawesome/free-solid-svg-icons";
-import config from "../../../data/SiteConfig";
-import "./MainNav.css";
+} from '@fortawesome/free-solid-svg-icons';
+import config from '../../../data/SiteConfig';
+import './MainNav.css';
 
 const NavContainer = styled.nav``;
 
@@ -35,7 +35,7 @@ class MainNav extends React.Component {
 
   componentDidMount() {
     document.addEventListener(
-      "scroll",
+      'scroll',
       this.handleScrollDetection.bind(this),
       true
     );
@@ -43,7 +43,7 @@ class MainNav extends React.Component {
 
   componentWillUnmount() {
     document.removeEventListener(
-      "scroll",
+      'scroll',
       this.handleScrollDetection.bind(this),
       true
     );
@@ -54,10 +54,10 @@ class MainNav extends React.Component {
   }
 
   handleCurrTab(link) {
-    if (typeof window !== "undefined" && window.location)
-      return window.location.pathname.includes(link) ? "selected" : "";
+    if (typeof window !== 'undefined' && window.location)
+      return window.location.pathname.includes(link) ? 'selected' : '';
 
-    return "";
+    return '';
   }
 
   render() {
@@ -69,11 +69,11 @@ class MainNav extends React.Component {
         className="nav-container"
         style={
           atTheTop
-            ? { background: "transparent", padding: "0 20px" }
+            ? { background: 'transparent', padding: '0 20px' }
             : {
-                background: "#172121",
-                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
-                padding: "0 25px"
+                background: '#172121',
+                boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                padding: '0 25px'
               }
         }
       >
@@ -82,10 +82,10 @@ class MainNav extends React.Component {
         </Link>
 
         <Navigation className="navigation">
-          <li className={this.handleCurrTab("/no-matter-the-mountain")}>
+          <li className={this.handleCurrTab('/no-matter-the-mountain')}>
             <Link to="/no-matter-the-mountain">Campaign</Link>
           </li>
-          <li className={this.handleCurrTab("trail-")}>
+          <li className={this.handleCurrTab('trail-')}>
             <Link to="/trail-guides">Trail</Link>
             <NavDropdown className="nav-dropdown">
               <div>
@@ -102,7 +102,7 @@ class MainNav extends React.Component {
               </div>
             </NavDropdown>
           </li>
-          <li className={this.handleCurrTab("-in")}>
+          <li className={this.handleCurrTab('-in')}>
             <Link to="/hike-in">Camp</Link>
             <NavDropdown className="nav-dropdown">
               <div>
@@ -119,13 +119,13 @@ class MainNav extends React.Component {
               </div>
             </NavDropdown>
           </li>
-          <li className={this.handleCurrTab("/fundamentals")}>
+          <li className={this.handleCurrTab('/fundamentals')}>
             <Link to="/fundamentals">Fundamentals</Link>
           </li>
-          <li className={this.handleCurrTab("/events")}>
+          <li className={this.handleCurrTab('/events')}>
             <Link to="/events">Events</Link>
           </li>
-          <li className={this.handleCurrTab("/about")}>
+          <li className={this.handleCurrTab('/about')}>
             <Link to="/about">About</Link>
           </li>
         </Navigation>

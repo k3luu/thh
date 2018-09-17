@@ -15,12 +15,5 @@
     margin: 0;
 }
 
-.contact-button {
-    width: 100%;
-}
-
 @media only screen and (max-width: 960px) {
-    .contact-form {
-        margin: 0 20px;
-    }
 }

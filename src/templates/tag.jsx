@@ -1,16 +1,16 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { ThemeProvider } from "styled-components";
-import PostListing from "../components/PostListing/PostListing";
-import config from "../../data/SiteConfig";
-import Drawer from "../layouts/Drawer/Drawer";
-import Navigation from "../components/Navigation/Navigation";
-import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
-import MainHeader from "../layouts/MainHeader/MainHeader";
-import MainNav from "../layouts/MainNav/MainNav";
-import Footer from "../components/Footer/Footer";
-import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
-import BannerTitle from "../components/BannerTitle/BannerTitle";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { ThemeProvider } from 'styled-components';
+import PostListing from '../components/PostListing/PostListing';
+import config from '../../data/SiteConfig';
+import Drawer from '../layouts/Drawer/Drawer';
+import Navigation from '../components/Navigation/Navigation';
+import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
+import MainHeader from '../layouts/MainHeader/MainHeader';
+import MainNav from '../layouts/MainNav/MainNav';
+import Footer from '../components/Footer/Footer';
+import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
+import BannerTitle from '../components/BannerTitle/BannerTitle';
 
 class TagTemplate extends React.Component {
   state = {
@@ -69,7 +69,14 @@ class TagTemplate extends React.Component {
                 <MainNav onClick={this.handleOnClick} />
               </MainHeader>
 
-              <BannerTitle title={`Tag: ${tag}`} desc={parseInt(total) === 1 ? `Total of ${total} guide.`: `Total of ${total} guides.`} />
+              <BannerTitle
+                title={`Tag: ${tag}`}
+                desc={
+                  parseInt(total) === 1
+                    ? `Total of ${total} guide.`
+                    : `Total of ${total} guides.`
+                }
+              />
 
               <div className="main-content">
                 <PaginatedContent

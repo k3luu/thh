@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "gatsby-link";
-import { Box, Mask, Image } from "gestalt";
-import PostFormatting from "../../layouts/PostFormatting/PostFormatting";
-import "./PostListing.css";
+import React from 'react';
+import Link from 'gatsby-link';
+import { Box, Mask, Image } from 'gestalt';
+import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
+import './PostListing.css';
 
 const getPostList = postEdges =>
   postEdges.map(postEdge => ({
@@ -34,7 +34,11 @@ class PostListing extends React.Component {
   }
 
   handleTagLink(tag) {
-    return tag.toLowerCase().replace(/\s-\s/g, '-').replace(/\s/g, '-').replace(/,/g, '');
+    return tag
+      .toLowerCase()
+      .replace(/\s-\s/g, '-')
+      .replace(/\s/g, '-')
+      .replace(/,/g, '');
   }
 
   handleDescription(post) {
@@ -50,10 +54,10 @@ class PostListing extends React.Component {
     } = post;
 
     switch (description) {
-      case "none":
+      case 'none':
         return <span />;
 
-      case "details":
+      case 'details':
         return (
           <section className="post-excerpt">
             <Box display="flex" marginTop={2}>
@@ -63,7 +67,9 @@ class PostListing extends React.Component {
                     <tr>
                       <td className="trail-data__label">Location</td>
                       <td className="trail-data__data">
-                        <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
+                        <Link to={`/tags/${this.handleTagLink(location)}`}>
+                          {location}
+                        </Link>
                       </td>
                     </tr>
                   )}
@@ -77,7 +83,9 @@ class PostListing extends React.Component {
                     <tr>
                       <td className="trail-data__label">Difficulty</td>
                       <td className="trail-data__data">
-                        <Link to={`/tags/${this.handleTagLink(difficulty)}`}>{difficulty}</Link>
+                        <Link to={`/tags/${this.handleTagLink(difficulty)}`}>
+                          {difficulty}
+                        </Link>
                       </td>
                     </tr>
                   )}
@@ -104,7 +112,7 @@ class PostListing extends React.Component {
           <section className="post-excerpt">
             <Box display="flex" marginTop={2}>
               <p>
-                {excerpt.replace(/\s\s+/g, " ")}{" "}
+                {excerpt.replace(/\s\s+/g, ' ')}{' '}
                 <Link className="read-more" to={path}>
                   &raquo;
                 </Link>
@@ -118,14 +126,14 @@ class PostListing extends React.Component {
   handlePostContent(post, index, lastEntry) {
     const { title, path, cover, thumbnail } = post;
     const { columns } = this.props;
-    let className = post.post_class ? post.post_class : "post post-listing";
+    let className = post.post_class ? post.post_class : 'post post-listing';
     let maskHeight;
     let style = {};
 
-    if (index % columns !== columns - 1) className += " margin";
+    if (index % columns !== columns - 1) className += ' margin';
 
     // TODO: tentative... check width on different screens
-    if (lastEntry && index < columns - 1) style = { width: "32%" };
+    if (lastEntry && index < columns - 1) style = { width: '32%' };
 
     switch (columns) {
       case 2:
