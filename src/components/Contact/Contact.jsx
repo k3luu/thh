@@ -69,6 +69,7 @@ class Contact extends Component {
 
               <TextField
                 id="name"
+                name="name"
                 label="Name"
                 margin="normal"
                 required
@@ -77,6 +78,7 @@ class Contact extends Component {
 
               <TextField
                 id="email"
+                name="email"
                 label="Email"
                 margin="normal"
                 required
@@ -84,7 +86,8 @@ class Contact extends Component {
               />
 
               <TextField
-                id="Message"
+                id="message"
+                name="message"
                 label="Message"
                 multiline
                 rowsMax="4"
