@@ -11,17 +11,37 @@ import './Contact.css';
 const Container = styled.div`
   display: flex;
   width: 100%;
+  height: 500px;
+  padding: 0 10px;
+
+  ${breakpoint('md')`
+    padding: 0;
+  `};
 `;
 
 const SideBar = styled.div`
-  //height: 200px;
-  min-width: 400px;
   text-align: center;
+  min-width: 40%;
+  display: none;
 
   svg {
-    height: 500px;
+    height: 400px;
     width: 300px;
   }
+
+  ${breakpoint('md')`
+    display: block;
+  `};
+`;
+
+const FollowUs = styled.div`
+  padding: 10px;
+`;
+
+const FollowLineBreak = styled.div`
+  margin: 0 auto;
+  width: 20px;
+  border-bottom: 2px solid #172121;
 `;
 
 const FormContainer = styled.div`
@@ -47,60 +67,62 @@ const Button = styled.button`
 
 class Contact extends Component {
   render() {
+    const { title, description } = this.props;
     return (
-      <div className="main-content contact">
-        <Container>
-          <SideBar>
-            <DrawCamp />
-            <SocialMediaIcons
-              urls={config.siteSocialUrls}
-              color="currentColor"
+      <Container className="main-content contact">
+        <SideBar>
+          <DrawCamp />
+          <div>
+            <FollowUs>Follow Us</FollowUs>
+            <FollowLineBreak />
+          </div>
+          <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
+        </SideBar>
+        <FormContainer>
+          {title && <h1>{title}</h1>}
+          {description && <p>{description}</p>}
+          <Form
+            className="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+
+            <TextField
+              id="name"
+              name="name"
+              label="Name"
+              margin="normal"
+              required
+              fullWidth
             />
-          </SideBar>
-          <FormContainer>
-            <Form
-              className="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="form-name" value="contact" />
 
-              <TextField
-                id="name"
-                name="name"
-                label="Name"
-                margin="normal"
-                required
-                fullWidth
-              />
+            <TextField
+              id="email"
+              name="email"
+              label="Email"
+              margin="normal"
+              required
+              fullWidth
+            />
 
-              <TextField
-                id="email"
-                name="email"
-                label="Email"
-                margin="normal"
-                required
-                fullWidth
-              />
+            <TextField
+              id="message"
+              name="message"
+              label="Message"
+              multiline
+              rowsMax="4"
+              margin="normal"
+              required
+              fullWidth
+            />
 
-              <TextField
-                id="message"
-                name="message"
-                label="Message"
-                multiline
-                rowsMax="4"
-                margin="normal"
-                required
-                fullWidth
-              />
-
-              <Button type="submit">Send</Button>
-            </Form>
-          </FormContainer>
-        </Container>
-      </div>
+            <Button type="submit">Send</Button>
+          </Form>
+        </FormContainer>
+      </Container>
     );
   }
 }

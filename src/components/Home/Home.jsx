@@ -122,11 +122,11 @@ const BannerHeading = styled.div`
   margin: 0 0 0.4em;
 
   ${breakpoint('sm')`
-    font-size: 6rem;
+    font-size: 4rem;
   `};
 
   ${breakpoint('md')`
-    font-size: 8rem;
+    font-size: 5rem;
   `};
 `;
 
@@ -142,11 +142,11 @@ const BannerDescription = styled.div`
   }
 
   ${breakpoint('sm')`
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   `};
 
   ${breakpoint('md')`
-    font-size: 2rem;
+    font-size: 1.5rem;
   `};
 `;
 

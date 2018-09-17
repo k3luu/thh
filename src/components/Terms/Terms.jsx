@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import breakpoint from 'styled-components-breakpoint';
 
 const Title = styled.h4`
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   margin: 20px !important;
 
   ${breakpoint('md')`

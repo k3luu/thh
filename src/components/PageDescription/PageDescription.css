@@ -1,7 +1,7 @@
 
 .page-description {
     margin: 0;
-    font-size: 4rem;
+    font-size: 2.5rem !important;
     line-height: 1.5em;
     font-weight: 400;
     letter-spacing: 0.01rem;
@@ -28,7 +28,7 @@
 
 @media only screen and (max-width: 900px) {
     .page-description {
-        font-size: 3rem;
+        font-size: 2.2rem !important;
         line-height: 1.5em;
     }
 }
@@ -39,7 +39,7 @@
 
 @media only screen and (max-width: 500px) {
     .page-description {
-        font-size: 1.6rem;
+        font-size: 1.6rem !important;
     }
 
     .paged .main-header .page-description {

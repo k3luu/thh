@@ -54,16 +54,11 @@ class ContactPage extends React.Component {
           <Navigation config={config} onClose={this.handleOnClose} />
 
           <SiteWrapper>
-            <MainHeader className="post-head" cover={config.contactCover}>
+            <MainHeader className="tag-head" cover={config.contactCover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
-            <div className="main-content">
-              <h1>Contact Us</h1>
-              <p>Got a question? Hit us up!</p>
-            </div>
-
-            <Contact />
+            <Contact title="Contact Us" description="Got a question? Hit us up!" />
             <Footer
               copyright={config.copyright}
               promoteGatsby={config.promoteGatsby}

@@ -130,8 +130,8 @@
 
 .nav li a {
     text-decoration: none;
-    line-height: 1.4;
-    font-size: 1.4rem;
+    line-height: 0.5rem;
+    font-size: 0.8rem;
     display: block;
     padding: 0.6rem 4%;
     overflow: hidden;

@@ -38,18 +38,20 @@ const InfoContainer = styled.div`
   `};
 `;
 
-const Name = styled.h3`
+const Name = styled.div`
   margin: 10px 20px !important;
+  font-size: 2.2rem;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
 
   ${breakpoint('md')`
     margin: 10px 0 !important;
   `};
 `;
 
-const Title = styled.h5`
+const Title = styled.div`
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
   font-weight: unset;
   margin: 0 20px !important;

@@ -320,15 +320,15 @@ h3 {
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 }
 
 h5 {
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 a {
@@ -583,7 +583,7 @@ button {
 
 button:hover {
     /* opacity: 0.8; */
-    background: #fff;
+    background: transparent;
     color: #172121;
     border: 1px solid #172121;
 }
@@ -630,45 +630,7 @@ button:hover {
       Third Party Elements - Embeds from other services
    ========================================================================== */
 
-/* Github */
-.gist table {
-    margin: 0;
-    font-size: 1.4rem;
-    text-rendering: auto;
-}
 
-.gist td {
-    line-height: 1.4;
-}
-
-.gist .line-number {
-    min-width: 25px;
-}
-
-/* Pastebin */
-.content .embedPastebin {
-    margin-bottom: 1.75em;
-}
-
-/* Pinterest - Gestalt */
-._s8 {
-    font-family: 'Pontano Sans', sans-serif !important;
-}
-
-._s9 {
-    letter-spacing: 1px !important;
-}
-
-/* replaces the main red color */
-._5g {
-    background: #0186d4;
-}
-
-._sy:focus,
-._sy:hover {
-    background: #0762b6;
-    transition: 0.2s ease;
-}
 
 /* ==========================================================================
        Media Queries - Smaller than 960px
@@ -702,7 +664,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 4.5rem !important;
+        font-size: 3.8rem !important;
     }
 
     h2 {
@@ -765,31 +727,31 @@ button:hover {
     }
 
     h1 {
-        font-size: 2.8rem !important;
+        font-size: 2.2rem !important;
         letter-spacing: -1px !important;
         text-align: center;
     }
 
     h2 {
-        font-size: 2.4rem !important;
+        font-size: 1.6rem !important;
         letter-spacing: 0;
         text-align: center;
     }
 
     h3 {
-        font-size: 2.1rem !important;
+        font-size: 1.4rem !important;
     }
 
     h4 {
-        font-size: 1.9rem !important;
+        font-size: 1.2rem !important;
     }
 
     h5 {
-        font-size: 1.8rem !important;
+        font-size: 1.2rem !important;
     }
 
     h6 {
-        font-size: 1.8rem !important;
+        font-size: 1rem !important;
     }
 
     .inner {

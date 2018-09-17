@@ -57,12 +57,9 @@ class TrailFinder extends Component {
           height="700"
           className="trail-map"
         />
-        <p>
-          If you have a particular trail you recommend, let us know by filling
-          out the form below!
-        </p>
 
-        <Contact />
+        <Contact description="If you have a particular trail you recommend, let us know by filling
+          out the form below!" />
       </div>
     );
   }
