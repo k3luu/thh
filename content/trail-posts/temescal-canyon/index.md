@@ -13,6 +13,17 @@ category: "trails"
 tags:
     - san gabriel mountains
     - trails
+    - free parking
+    - paid parking
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - easy-moderate
+    - santa monica mountains
+    - santa monica mountains, pacific palisades
+    - pacific palisades
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Temescal+Canyon/_J8A5228.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Temescal+Canyon/_J8A5232.jpg

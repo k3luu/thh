@@ -15,6 +15,15 @@ tags:
     - big sur
     - northern california
     - trails
+    - Andrew Molera State Park
+    - Andrew Molera State Park, Big Sur
+    - easy
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - paid parking
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7772.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Sur/IMG_7805.jpg

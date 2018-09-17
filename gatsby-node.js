@@ -227,7 +227,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: acceptedTrails,
           component: guidesPage,
-          limit: 15,
+          limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/trail-guides')
         });
 
@@ -275,7 +275,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.hikeInPosts.edges,
           component: hikeInPage,
-          limit: 15,
+          limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/hike-in')
         });
 
@@ -284,7 +284,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage,
           edges: result.data.driveInPosts.edges,
           component: driveInPage,
-          limit: 15,
+          limit: siteConfig.sitePaginationLimit,
           pathFormatter: prefixPathFormatter('/drive-in')
         });
 

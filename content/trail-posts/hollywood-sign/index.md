@@ -14,6 +14,9 @@ tags:
     - los angeles
     - griffith park
     - trails
+    - Griffith Park, Los Angeles
+    - free parking
+    - moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hollywood+Sign/_J8A5391.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hollywood+Sign/_J8A5392.jpg

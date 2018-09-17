@@ -13,6 +13,11 @@ category: "trails"
 tags:
     - angeles national forest
     - trails
+    - moderate
+    - spring
+    - summer
+    - fall
+    - adventure pass required
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/blue+ridge/_J8A2074.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/blue+ridge/_J8A2078.jpg

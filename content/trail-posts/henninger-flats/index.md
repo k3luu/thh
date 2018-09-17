@@ -14,6 +14,13 @@ category: "hike in"
 tags:
     - san gabriel mountains
     - trails
+    - moderate
+    - free parking
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Henninger+Flats/5J8A7298.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Henninger+Flats/5J8A7302.jpg

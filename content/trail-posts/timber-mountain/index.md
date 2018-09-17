@@ -15,6 +15,10 @@ tags:
     - san gabriel mountains
     - trails
     - difficult
+    - adventure pass required
+    - spring
+    - summer
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7783.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Timber+Mountains/5J8A7784.jpg

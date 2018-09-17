@@ -16,6 +16,12 @@ tags:
     - arizona
     - camping
     - trails
+    - Havasupai Indian Reservation, Arizona
+    - Havasupai Indian Reservation
+    - difficult-strenuous
+    - spring
+    - summer
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0463.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/GOPR0465.jpg

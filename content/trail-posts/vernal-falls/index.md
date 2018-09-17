@@ -15,6 +15,10 @@ tags:
     - trails
     - moderate
     - waterfalls
+    - free parking
+    - spring
+    - summer
+    - fall
 dogs: "Not Allowed"
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Vernal+Falls/IMG_2198.jpg

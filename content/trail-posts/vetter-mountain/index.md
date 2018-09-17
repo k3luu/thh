@@ -13,6 +13,14 @@ category: "trails"
 tags:
     - mountain
     - trails
+    - adventure pass required
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - easy-moderate
+    - angeles national forest
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Vetter+Mountain/_J8A4029.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Vetter+Mountain/_J8A4032.jpg

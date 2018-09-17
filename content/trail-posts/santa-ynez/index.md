@@ -13,6 +13,14 @@ category: "trails"
 tags:
     - angeles national forest
     - trails
+    - free parking
+    - easy
+    - topanga state park
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Santa+Ynez/_J8A5321.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Santa+Ynez/_J8A5329.jpg

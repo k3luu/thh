@@ -13,6 +13,11 @@ category: "trails"
 tags:
     - mountain
     - trails
+    - adventure pass required
+    - spring
+    - summer
+    - fall
+    - easy-moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2449.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Winston+Peak/_J8A2451.jpg

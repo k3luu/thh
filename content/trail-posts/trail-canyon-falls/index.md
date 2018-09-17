@@ -13,6 +13,14 @@ category: "trails"
 tags:
     - waterfalls
     - trails
+    - adventure pass required
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - easy-moderate
+    - angeles national forest
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Trail+Canyon+Falls/Gallery/_J8A4954.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Trail+Canyon+Falls/Gallery/_J8A4958.jpg

@@ -14,6 +14,11 @@ category: "hike in"
 tags:
     - angeles national forest
     - trails
+    - easy-moderate
+    - adventure pass required
+    - spring
+    - summer
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9462.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Bear+Canyon/5J8A9471.jpg

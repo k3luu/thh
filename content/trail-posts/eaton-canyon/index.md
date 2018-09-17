@@ -14,6 +14,12 @@ tags:
     - waterfalls
     - angeles national forest
     - trails
+    - free parking
+    - easy
+    - all seasons
+    - spring
+    - summer
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Eaton+Canyon/_J8A1927.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Eaton+Canyon/_J8A1928.jpg

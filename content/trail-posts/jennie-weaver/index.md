@@ -15,6 +15,12 @@ tags:
     - sequoia national forest
     - lake
     - trails
+    - weaver lake
+    - spring
+    - summer
+    - fall
+    - free parking
+    - easy-moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0672.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Jennie+Weaver+Lake/IMG_0673.jpg

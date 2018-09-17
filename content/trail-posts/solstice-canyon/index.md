@@ -13,6 +13,13 @@ category: "trails"
 tags:
     - santa monica mountains
     - trails
+    - free parking
+    - easy-moderate
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8386.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Solstice+Canyon/5J8A8390.jpg

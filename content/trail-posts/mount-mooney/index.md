@@ -14,6 +14,14 @@ tags:
     - mountain
     - peak
     - trails
+    - angeles national forest
+    - easy
+    - adventure pass required
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Mooney/Gallery/_J8A3933.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Mooney/Gallery/_J8A3935.jpg

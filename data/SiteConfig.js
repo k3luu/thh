@@ -16,7 +16,7 @@ module.exports = {
   siteRss: '/rss.xml', // Path to the RSS file.
   siteRssAuthor: 'Casper User', // The author name used in the RSS file
   // siteFBAppID: "1825356251115265", // optional, sets the FB Application ID for using app insights
-  sitePaginationLimit: 10, // The max number of posts per page.
+  sitePaginationLimit: 15, // The max number of posts per page.
   googleAnalyticsID: 'UA-120716989-1', // GA tracking ID.
   disqusShortname: 'twohalfhitches', // enables Disqus comments, visually deviates from original Casper theme.
   siteSocialUrls: [

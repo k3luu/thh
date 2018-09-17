@@ -13,6 +13,11 @@ category: "trails"
 tags:
     - san gabriel mountains
     - trails
+    - adventure pass required
+    - moderate
+    - spring
+    - summer
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Disappointment/_J8A3230.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Disappointment/_J8A3231.jpg

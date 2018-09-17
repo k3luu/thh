@@ -15,6 +15,14 @@ tags:
     - trails
     - northern california
     - beach
+    - Point Reyes National Seashore
+    - easy-moderate
+    - free parking
+    - summer
+    - fall
+    - spring
+    - winter
+    - all seasons
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Alamere+Falls/IMG_2575.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Alamere+Falls/IMG_2586.jpg

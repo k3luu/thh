@@ -1,5 +1,5 @@
 ---
-title: "Big Horn mine via Vincent Gap"
+title: "Big Horn Mine via Vincent Gap"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4561.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4561-thumbnail.jpg"
 date: "2017-12-02"
@@ -11,9 +11,14 @@ season: "All"
 parking: "Adventure Pass Required"
 category: "trails"
 tags:
-    - mine
     - trails
     - san gabriel mountains
+    - easy
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - adventure pass required
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4453.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Big+Horn+Mine/_J8A4458.jpg

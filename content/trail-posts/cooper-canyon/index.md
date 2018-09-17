@@ -16,6 +16,11 @@ tags:
     - trails
     - camp
     - hike in
+    - spring
+    - summer
+    - fall
+    - adventure pass required
+    - easy
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6457.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon/5J8A6442.jpg

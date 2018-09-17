@@ -11,8 +11,15 @@ season: "All"
 parking: "Adventure Pass Required"
 category: "trails"
 tags:
-    - san gabriel
+    - san gabriel mountains
     - trails
+    - adventure pass required
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - easy-moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0885.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/throop+peak/_J8A0890.jpg

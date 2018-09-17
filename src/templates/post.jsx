@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { ThemeProvider } from "styled-components";
+import Link from "gatsby-link";
 
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -82,6 +83,10 @@ class PostTemplate extends React.Component {
     this.setState({ menuOpen: false });
   };
 
+  handleTagLink(tag) {
+    return tag.toLowerCase().replace(/\s-\s/g, '-').replace(/\s/g, '-').replace(/,/g, '');
+  }
+
   handleTrailData = data => {
     const {
       location,
@@ -106,7 +111,9 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-map-marker" />
                 </td>
                 <td className="trail-data__label">Location</td>
-                <td className="trail-data__data">{location}</td>
+                <td className="trail-data__data">
+                  <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
+                </td>
               </tr>
             )}
             {distance && (
@@ -124,7 +131,9 @@ class PostTemplate extends React.Component {
                   <i className="fa fa-tachometer" />
                 </td>
                 <td className="trail-data__label">Difficulty</td>
-                <td className="trail-data__data">{difficulty}</td>
+                <td className="trail-data__data">
+                  <Link to={`/tags/${this.handleTagLink(difficulty)}`}>{difficulty}</Link>
+                </td>
               </tr>
             )}
             {elevation && (

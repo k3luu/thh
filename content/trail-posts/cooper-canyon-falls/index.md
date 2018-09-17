@@ -19,6 +19,8 @@ tags:
     - summer
     - spring
     - fall
+    - adventure pass required
+    - dog friendly
 dogs: Welcomed (leashed)
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cooper+Canyon+Falls/Gallery/_J8A5831.jpg

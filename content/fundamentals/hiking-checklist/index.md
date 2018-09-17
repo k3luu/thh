@@ -7,6 +7,8 @@ category: "fundamentals"
 tags:
     - hiking
     - checklist
+    - fundamentals
+    - day hiking
 date: "2017-08-15"
 ---
 

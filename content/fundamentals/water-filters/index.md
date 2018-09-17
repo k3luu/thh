@@ -8,6 +8,8 @@ tags:
     - water
     - filter
     - purification
+    - drinking water
+    - fundamentals
 date: "2018-08-10"
 disclaimer:
     - The water filters shown in the video were provided entirely by HydroBlu. The opinions expressed herein are solely of Two Half-Hitches.

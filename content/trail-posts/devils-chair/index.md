@@ -15,6 +15,11 @@ tags:
     - devil's chair
     - devil's punchbowl
     - trails
+    - moderate
+    - spring
+    - summer
+    - fall
+    - free parking
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Devils+Chair/_J8A3154.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Devils+Chair/_J8A3153.jpg

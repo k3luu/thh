@@ -13,6 +13,15 @@ category: "trails"
 tags:
     - mount lowe park
     - trails
+    - Mount Lowe Park, Altadena
+    - altadena
+    - moderate
+    - free parking
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 references:
     - Mount Lowe Preservation Society, Inc. (http://www.mountlowe.org/mount-lowe-history/who-was-thaddeus-s-c-lowe/)
     - Civil War Trust (https://www.civilwar.org/learn/biographies/thaddeus-sobieski-constantine-lowe)

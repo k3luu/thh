@@ -14,6 +14,14 @@ tags:
     - shipwreck
     - beach
     - trails
+    - free parking
+    - easy
+    - palos verdes peninsula
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/SS+Dominator+Shipwreck+Hike/_MG_2662.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/SS+Dominator+Shipwreck+Hike/_MG_2664.jpg

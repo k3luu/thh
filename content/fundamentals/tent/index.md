@@ -10,6 +10,8 @@ tags:
     - overnight
     - hiking
     - gear
+    - fundamentals
+    - how to
 date: "2016-07-29"
 disclaimer:
     - Any reference in this website to any person, organization, activity, product, or service related to such person or organization, or any linkages from this web site to the web site of another party, do not constitute or imply the endorsement, recommendation, or favoring of Two Half-Hitches.

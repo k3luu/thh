@@ -14,6 +14,14 @@ tags:
     - crystal cove
     - beach
     - trails
+    - Newport Beach - Orange County
+    - newport beach
+    - orange county
+    - easy-moderate
+    - all seasons
+    - spring
+    - summer
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Gallery/_J8A3578.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Crystal+Cove/Gallery/_J8A3583.jpg

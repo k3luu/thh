@@ -175,6 +175,15 @@ div.page-template .post-title {
     width: 150px;
 }
 
+.trail-data a {
+    color: #172121;
+    opacity: 0.8;
+}
+
+.trail-data a:hover {
+    text-decoration: underline;
+}
+
 .trail-data__data {
     /*font-weight: bold;*/
 }

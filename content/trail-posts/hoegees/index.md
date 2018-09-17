@@ -14,8 +14,15 @@ dogs: "Welcomed (Confined or Leashed)"
 category: "hike in"
 tags:
     - angeles national forest
-    - dogs welcome
+    - dog friendly
     - trails
+    - all seasons
+    - adventure pass required
+    - easy-moderate
+    - spring
+    - summer
+    - winter
+    - fall
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5438.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5439.jpg

@@ -16,6 +16,11 @@ tags:
     - spring
     - water filtration
     - trails
+    - easy-moderate
+    - spring
+    - summer
+    - fall
+    - adventure pass required
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Gallery/_J8A4217.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Little+Jimmy+Springs/Gallery/_J8A4225.jpg

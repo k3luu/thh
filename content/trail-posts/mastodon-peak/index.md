@@ -14,6 +14,14 @@ category: "drive in"
 tags:
     - joshua tree
     - trails
+    - Joshua Tree National Park
+    - paid parking
+    - easy
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7551.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mastodon+Peak/5J8A7555.jpg

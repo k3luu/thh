@@ -14,6 +14,14 @@ tags:
     - waterfalls
     - angeles national forest
     - trails
+    - adventure pass required
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - easy
+    - Angeles National Forest Sierra Madre
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Sturtevant+Falls/Gallery/_J8A4951.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Sturtevant+Falls/Gallery/_J8A4809.jpg

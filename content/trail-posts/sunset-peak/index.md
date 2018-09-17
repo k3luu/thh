@@ -11,9 +11,15 @@ season: "All"
 parking: "Pass Required"
 category: "trails"
 tags:
-    - peak
-    - san gabriel
+    - san gabriel mountains
     - trails
+    - adventure pass required
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
+    - moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Sunset+Peak/_J8A1097.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Sunset+Peak/_J8A1086.jpg

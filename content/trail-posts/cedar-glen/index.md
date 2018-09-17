@@ -14,6 +14,11 @@ category: "hike in"
 tags:
     - san gabriel mountains
     - trails
+    - spring
+    - summer
+    - fall
+    - adventure pass required
+    - easy-moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cedar+Glen/IMG_7632.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Cedar+Glen/IMG_7633.jpg

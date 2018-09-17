@@ -11,8 +11,15 @@ season: "All"
 parking: "Free"
 category: "trails"
 tags:
-    - palos verdes peninsula
+    - palos verdes peninsula, ca
     - trails
+    - easy-moderate
+    - free parking
+    - all seasons
+    - spring
+    - summer
+    - fall
+    - winter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Portuguese+Bend/_J8A1845.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Portuguese+Bend/_J8A1848.jpg

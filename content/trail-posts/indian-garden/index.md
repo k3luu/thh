@@ -14,6 +14,13 @@ tags:
     - grand canyon
     - backpacking
     - trails
+    - spring
+    - summer
+    - fall
+    - paid parking
+    - moderate
+    - Grand Canyon National Park - South Rim
+    - Grand Canyon National Park
 ---
 
 A quick throwback to Winter 2014 and our trip to one of the wonders of the world!

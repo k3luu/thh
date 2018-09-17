@@ -14,6 +14,11 @@ tags:
     - san gabriel mountains
     - snow
     - trails
+    - spring
+    - summer
+    - fall
+    - adventure pass required
+    - moderate
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Islip/5J8A7946.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Islip/5J8A7955.jpg
