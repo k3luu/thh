@@ -54,14 +54,14 @@
 
 .read-next-story .post {
     padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
 }
 
 .read-next-story .post::before {
     content: "Read This Next";
     padding: 4px 10px 5px;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
     border: rgba(255, 255, 255, 0.5) 1px solid;
     border-radius: 4px;

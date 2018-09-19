@@ -1,24 +1,24 @@
-import React from 'react';
-import Cookies from 'universal-cookie';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import { Link } from 'react-scroll';
-import DialogContent from '@material-ui/core/DialogContent';
+import React from "react";
+import Cookies from "universal-cookie";
+import Helmet from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import { Link } from "react-scroll";
+import DialogContent from "@material-ui/core/DialogContent";
 
-import SEO from '../components/SEO/SEO';
-import config from '../../data/SiteConfig';
-import Drawer from '../layouts/Drawer/Drawer';
-import Navigation from '../components/Navigation/Navigation';
-import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
-import Footer from '../components/Footer/Footer';
-import MainHeader from '../layouts/MainHeader/MainHeader';
-import MainNav from '../layouts/MainNav/MainNav';
-import BannerTitle from '../components/BannerTitle/BannerTitle';
-import PageHeader from '../components/PageHeader/PageHeader';
-import PageDescription from '../components/PageDescription/PageDescription';
-import Home from '../components/Home/Home';
-import SubscribeForm from '../components/Subscribe/SubscribeForm';
-import Modal from '../components/Modal/Modal';
+import SEO from "../components/SEO/SEO";
+import config from "../../data/SiteConfig";
+import Drawer from "../layouts/Drawer/Drawer";
+import Navigation from "../components/Navigation/Navigation";
+import SiteWrapper from "../layouts/SiteWrapper/SiteWrapper";
+import Footer from "../components/Footer/Footer";
+import MainHeader from "../layouts/MainHeader/MainHeader";
+import MainNav from "../layouts/MainNav/MainNav";
+import BannerTitle from "../components/BannerTitle/BannerTitle";
+import PageHeader from "../components/PageHeader/PageHeader";
+import PageDescription from "../components/PageDescription/PageDescription";
+import Home from "../components/Home/Home";
+import SubscribeForm from "../components/Subscribe/SubscribeForm";
+import Modal from "../components/Modal/Modal";
 
 const cookies = new Cookies();
 
@@ -51,7 +51,7 @@ class IndexTemplate extends React.Component {
   };
 
   handleCloseSubscribe = () => {
-    cookies.set('previousVisitor', true, { path: '/' });
+    cookies.set("previousVisitor", true, { path: "/" });
     this.setState({ subscribeModal: false });
   };
 
@@ -103,7 +103,7 @@ class IndexTemplate extends React.Component {
               </div>
             </div>
 
-            {!cookies.get('previousVisitor') && (
+            {!cookies.get("previousVisitor") && (
               <Modal
                 open={this.state.subscribeModal}
                 onClose={this.handleCloseSubscribe}
