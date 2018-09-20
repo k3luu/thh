@@ -8,81 +8,38 @@ import config from "../../../data/SiteConfig";
 import SocialMediaIcons from "../SocialMediaIcons/SocialMediaIcons";
 import "./Contact.css";
 
-const Container = styled.div`
-  display: flex;
-  width: 100%;
-  height: 500px;
-  padding: 0 10px;
+const Container = styled.div``;
 
-  ${breakpoint("md")`
-    padding: 0;
-  `};
-`;
+const SideBar = styled.div``;
 
-const SideBar = styled.div`
-  text-align: center;
-  min-width: 40%;
-  display: none;
+const FollowUs = styled.div``;
 
-  svg {
-    height: 400px;
-    width: 300px;
-  }
+const FollowLineBreak = styled.div``;
 
-  ${breakpoint("md")`
-    display: block;
-  `};
-`;
+const FormContainer = styled.div``;
 
-const FollowUs = styled.div`
-  padding: 10px;
-`;
+const Form = styled.form``;
 
-const FollowLineBreak = styled.div`
-  margin: 0 auto;
-  width: 20px;
-  border-bottom: 2px solid #172121;
-`;
-
-const FormContainer = styled.div`
-  background: #f7f9fc;
-  padding: 20px;
-  width: 100%;
-  position: relative;
-`;
-
-const Form = styled.form`
-  margin: auto 0;
-`;
-
-const Button = styled.button`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 15px;
-  font-size: 16px;
-  width: 100%;
-`;
+const Button = styled.button``;
 
 class Contact extends Component {
   render() {
     const { title, description } = this.props;
     return (
       <Container className="main-content contact">
-        <SideBar>
+        <SideBar className="contact-sidebar">
           <DrawCamp />
           <div>
-            <FollowUs>Follow Us</FollowUs>
-            <FollowLineBreak />
+            <FollowUs className="contact-follow">Follow Us</FollowUs>
+            <FollowLineBreak className="contact-linebreak" />
           </div>
           <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
         </SideBar>
-        <FormContainer>
+
+        <FormContainer className="contact-form">
           {title && <h1>{title}</h1>}
           {description && <p>{description}</p>}
           <Form
-            className="contact-form"
             name="contact"
             method="POST"
             data-netlify="true"
@@ -119,7 +76,9 @@ class Contact extends Component {
               fullWidth
             />
 
-            <Button type="submit">Send</Button>
+            <Button className="contact-button" type="submit">
+              Send
+            </Button>
           </Form>
         </FormContainer>
       </Container>

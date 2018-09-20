@@ -1,6 +1,13 @@
-import React from 'react';
-import { SocialIcon } from 'react-social-icons';
-import './SocialMediaIcons.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutubeSquare,
+  faFacebookSquare,
+  faInstagram,
+  faTwitterSquare
+} from "@fortawesome/free-brands-svg-icons";
+import { SocialIcon } from "react-social-icons";
+import "./SocialMediaIcons.css";
 
 class SocialMediaIcons extends React.Component {
   render() {
@@ -8,17 +15,41 @@ class SocialMediaIcons extends React.Component {
     if (urls && urls.length > 0) {
       return (
         <div className="social-media-icons">
-          <a href={urls[0]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-youtube-play" id="social-youtube" />
+          <a
+            href={urls[0]}
+            id="social-youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faYoutubeSquare} />
+            {/* <i className="fa fa-youtube-play"  /> */}
           </a>
-          <a href={urls[1]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-facebook-square" id="social-facebook" />
+          <a
+            href={urls[1]}
+            id="social-facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faFacebookSquare} />
+            {/* <i className="fa fa-facebook-square"  /> */}
           </a>
-          <a href={urls[2]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-instagram" id="social-instagram" />
+          <a
+            href={urls[2]}
+            id="social-instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+            {/* <i className="fa fa-instagram"  /> */}
           </a>
-          <a href={urls[3]} target="_blank" rel="noopener noreferrer">
-            <i className="fa fa-twitter" id="social-twitter" />
+          <a
+            href={urls[3]}
+            id="social-twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faTwitterSquare} />
+            {/* <i className="fa fa-twitter" /> */}
           </a>
         </div>
       );

@@ -3,7 +3,7 @@ import React from 'react';
 export default function DrawCamp() {
   return (
     <svg
-      id="e425768e-e1b8-4bb0-a9ef-effd481e7a60"
+      id="undrawCamp"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"

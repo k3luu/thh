@@ -7,21 +7,13 @@
     right: 0;
 }
 
-.social-media-icons i {
-    color: #fff;
+.social-media-icons svg {
     cursor: pointer;
     font-size: 1.4em;
     padding: 12px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
     line-height: 30px;
     box-sizing: unset;
-}
-
-.social-media-icons i:hover {
-    background: #6b6b6b;
-    transition: background 0.3s;
 }
 
 .social-media-icons .social-svg {
@@ -40,31 +32,31 @@
     box-sizing: unset;
 }
 
-.main-content .social-media-icons i {
-    color: #bbc7cc;
+.main-content .social-media-icons a {
+    /* color: #bbc7cc; */
     text-align: center;
-    font-size: 28px;
+    /* font-size: 28px; */
     box-sizing: unset;
 }
 
-.main-content .social-media-icons i:hover {
-    background: none;
-    transition: 0.3s ease;
+.main-content .social-media-icons a:hover {
+    /* background: none; */
+    /* transition: 0.3s ease; */
 }
 
-.main-content .social-media-icons i#social-facebook:hover {
+.main-content .social-media-icons a#social-facebook:hover {
     color: #4267b2;
 }
 
-.main-content .social-media-icons i#social-youtube:hover {
+.main-content .social-media-icons a#social-youtube:hover {
     color: #ff0000;
 }
 
-.main-content .social-media-icons i#social-twitter:hover {
+.main-content .social-media-icons a#social-twitter:hover {
     color: #0084b4;
 }
 
-.main-content .social-media-icons i#social-instagram:hover {
+.main-content .social-media-icons a#social-instagram:hover {
     color: #cd486b;
 }
 
