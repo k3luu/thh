@@ -1,198 +1,198 @@
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
-    position: relative;
-    width: 90%;
-    max-width: 900px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
-    border-bottom: #d8d8d8 1px solid;
-    word-wrap: break-word;
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding-bottom: 4rem;
+  border-bottom: #d8d8d8 1px solid;
+  word-wrap: break-word;
 }
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 .post::after {
-    display: block;
-    content: '';
-    width: 7px;
-    height: 7px;
-    border: #d8d8d8 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #fff;
-    border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
+  display: block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: #d8d8d8 1px solid;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  background: #fff;
+  border-radius: 100%;
+  box-shadow: #fff 0 0 0 5px;
 }
 
 .post p::before {
 }
 
 .post-title {
-    text-align: center;
-    letter-spacing: 0.6px;
-    font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.6px;
+  font-size: 1.3rem;
 }
 
 .post-title a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Possibly not the right home for this, make sure to move sized versions as well */
 h1:not(.post-template) .post-title {
-    font-size: 3.6rem;
+  font-size: 3.6rem;
 }
 
 div.page-template .post-title {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .post-template .post-title,
 .page-template .post-title {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .post-excerpt p {
-    margin: 0;
-    font-size: 0.9em;
-    line-height: 1.7em;
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.7em;
 }
 
 .read-more {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .post-meta {
-    display: block;
-    margin: 1.75rem 0 0;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    color: #9eabb3;
+  display: block;
+  margin: 1.75rem 0 0;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #9eabb3;
 }
 
 .post-meta a {
-    color: #9eabb3;
-    text-decoration: none;
+  color: #9eabb3;
+  text-decoration: none;
 }
 
 .post-meta a:hover {
-    color: #9eabb3;
-    text-decoration: underline;
+  color: #9eabb3;
+  text-decoration: underline;
 }
 
 .post-template .post-meta,
 .page-template .post-meta {
-    margin: 0;
+  margin: 0;
 }
 
 .post-template .post-date,
 .page-template .post-date {
-    padding: 0;
-    margin: 0;
-    border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 /* Tweak the .post wrapper style */
 .post-template .post,
 .page-template .post {
-    margin-top: 0;
-    border-bottom: none;
-    padding-bottom: 0;
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 /* Kill that stylish little circle that was on the border, too */
 .post-template .post::after,
 .page-template .post::after {
-    display: none;
+  display: none;
 }
 
 .post-content img {
-    width: 100%;
-    margin: 15px 0;
+  width: 100%;
+  margin: 15px 0;
 }
 
 .post-content h3 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .post-content ul li {
-    list-style: disc;
+  list-style: disc;
 }
 
 .carousel-img {
-    width: 100%;
+  width: 100%;
 }
 
 .carousel-step {
-    font-size: 8px;
-    cursor: pointer;
+  font-size: 8px;
+  cursor: pointer;
 }
 
 .carousel-arrow {
-    position: absolute;
-    top: 45%;
-    padding: 4px;
-    margin: 10px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 100px;
+  position: absolute;
+  top: 45%;
+  padding: 4px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
 }
 
 .carousel-arrow.right {
-    right: 0;
+  right: 0;
 }
 
 .post-disclaimer {
-    border-top: #ebf2f6 1px solid;
-    font-style: italic;
-    margin-top: 6rem;
-    padding-top: 3rem;
+  border-top: #ebf2f6 1px solid;
+  font-style: italic;
+  margin-top: 6rem;
+  padding-top: 3rem;
 }
 
 .post-disclaimer p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .post-disclaimer p::before {
-    content: '\00a0\00a0\00a0\00a0\00a0';
+  content: "\00a0\00a0\00a0\00a0\00a0";
 }
 
 .trail-data {
-    margin-bottom: 1.75em;
+  margin-bottom: 1.75em;
 }
 
 .trail-data__icon {
-    width: 10px;
-    text-align: center;
-    color: #fff;
-    background: #F56700 !important;
+  width: 10px;
+  text-align: center;
+  color: #fff;
+  background: #f56700 !important;
 }
 
 .trail-data__label {
-    font-size: 12px;
-    font-weight: bold;
-    color: #727479;
-    text-transform: uppercase;
-    width: 150px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #727479;
+  text-transform: uppercase;
+  width: 150px;
 }
 
 .trail-data a {
-    color: #172121;
-    opacity: 0.8;
+  color: #172121;
+  opacity: 0.8;
 }
 
 .trail-data a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .trail-data__data {
-    /*font-weight: bold;*/
+  /*font-weight: bold;*/
 }
 
 .post__credit {
-    font-size: 12px;
-    text-align: right;
-    margin-top: -20px;
+  font-size: 12px;
+  text-align: right;
+  margin-top: -20px;
 }
 
 /* ==========================================================================
@@ -200,27 +200,32 @@ div.page-template .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
-    .post {
-        width: auto;
-        font-size: 0.95em;
-    }
+  .post {
+    width: auto;
+    font-size: 0.95em;
+  }
 
-    h1:not(.post-template) .post-title {
-        font-size: 3.2rem;
-    }
+  h1:not(.post-template) .post-title {
+    font-size: 3.2rem;
+  }
 
-    div.page-template .post-title {
-        font-size: 4.5rem;
-    }
+  div.page-template .post-title {
+    font-size: 4.5rem;
+  }
 
-    .post-excerpt p {
-        font-size: 0.85em;
-        margin: 0 20px;
-    }
+  .post-excerpt p {
+    font-size: 0.85em;
+    margin: 0 20px;
+  }
 
-    .post-title {
-        margin: 20px !important;
-    }
+  .post-title {
+    margin: 20px !important;
+  }
+
+  .post h3,
+  .post h4 {
+    margin: 20px !important;
+  }
 }
 
 /* ==========================================================================
@@ -228,35 +233,35 @@ div.page-template .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 600px) {
-    .post {
-        margin: 2rem 0;
-        padding-bottom: 2rem;
-        line-height: 1.65em;
-    }
+  .post {
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+    line-height: 1.65em;
+  }
 
-    h1:not(.post-template) .post-title {
-        font-size: 2.5rem;
-    }
+  h1:not(.post-template) .post-title {
+    font-size: 2.5rem;
+  }
 
-    div.page-template .post-title {
-        font-size: 2.8rem;
-    }
+  div.page-template .post-title {
+    font-size: 2.8rem;
+  }
 
-    .post-template .post-date,
-    .page-template .post-date {
-        display: inline-block;
-    }
+  .post-template .post-date,
+  .page-template .post-date {
+    display: inline-block;
+  }
 
-    .post-excerpt p {
-        font-size: 0.85em;
-    }
+  .post-excerpt p {
+    font-size: 0.85em;
+  }
 
-    .post-meta {
-        font-size: 1.3rem;
-        margin-top: 1rem;
-    }
+  .post-meta {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
 
-    .trail-data__label {
-        width: 100px;
-    }
+  .trail-data__label {
+    width: 100px;
+  }
 }

@@ -21,6 +21,7 @@ disclaimer:
 <iframe title="video" src="https://www.youtube.com/embed/C7a-QC3ypWE" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
 
 <br>
+
 Maintaining safe drinking water is vital to your expedition through the outdoors. Even the most
 pristine water can be unsafe to drink, and will need proper treatment. In this video, we will
 demonstrate how to treat backcountry water with water filters and the advantages over iodine tablets.

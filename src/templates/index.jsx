@@ -103,7 +103,7 @@ class IndexTemplate extends React.Component {
               </div>
             </div>
 
-            {!cookies.get("previousVisitor") && (
+            {/* {!cookies.get("previousVisitor") && (
               <Modal
                 open={this.state.subscribeModal}
                 onClose={this.handleCloseSubscribe}
@@ -112,7 +112,7 @@ class IndexTemplate extends React.Component {
                   <SubscribeForm />
                 </DialogContent>
               </Modal>
-            )}
+            )} */}
 
             {/* The tiny footer at the very bottom */}
             <Footer
