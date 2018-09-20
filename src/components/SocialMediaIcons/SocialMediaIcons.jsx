@@ -6,7 +6,6 @@ import {
   faInstagram,
   faTwitterSquare
 } from "@fortawesome/free-brands-svg-icons";
-import { SocialIcon } from "react-social-icons";
 import "./SocialMediaIcons.css";
 
 class SocialMediaIcons extends React.Component {
@@ -22,7 +21,6 @@ class SocialMediaIcons extends React.Component {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faYoutubeSquare} />
-            {/* <i className="fa fa-youtube-play"  /> */}
           </a>
           <a
             href={urls[1]}
@@ -31,7 +29,6 @@ class SocialMediaIcons extends React.Component {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFacebookSquare} />
-            {/* <i className="fa fa-facebook-square"  /> */}
           </a>
           <a
             href={urls[2]}
@@ -40,7 +37,6 @@ class SocialMediaIcons extends React.Component {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
-            {/* <i className="fa fa-instagram"  /> */}
           </a>
           <a
             href={urls[3]}
@@ -49,7 +45,6 @@ class SocialMediaIcons extends React.Component {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faTwitterSquare} />
-            {/* <i className="fa fa-twitter" /> */}
           </a>
         </div>
       );
