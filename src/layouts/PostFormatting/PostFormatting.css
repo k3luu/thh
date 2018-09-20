@@ -218,12 +218,10 @@ div.page-template .post-title {
     margin: 0 20px;
   }
 
-  .post-title {
-    margin: 20px !important;
-  }
-
   .post h3,
-  .post h4 {
+  .post h4,
+  .trail-data,
+  .post-title {
     margin: 20px !important;
   }
 }
