@@ -91,7 +91,7 @@ class Home extends Component {
         <Link to={p.to} className="banner-link">
           <BannerImage
             className="banner-image"
-            style={{ backgroundImage: `url(${config[p.photo_src]})` }}
+            style={{ backgroundImage: `url("${config[p.photo_src]}")` }}
           >
             <BannerInfoContainer className="banner-info__container">
               <BannerTextBox className="banner-textbox">

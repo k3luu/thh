@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import _ from 'lodash';
 import styled from 'styled-components';
 import team from './team';
 import './About.css';
@@ -26,7 +25,7 @@ class About extends Component {
   handleTitles(list) {
     let titles = '';
 
-    _.map(list, t => {
+    list.map(t => {
       if (titles.length > 0) titles += '/';
 
       titles += t;
@@ -40,7 +39,7 @@ class About extends Component {
       <MemberContainer key={p.id} className="member-container">
         <PhotoContainer
           className="member-photo__container"
-          style={{ backgroundImage: `url(${p.photo})` }}
+          style={{ backgroundImage: `url("${p.photo}")` }}
         />
         <InfoContainer className="member-info__container">
           <Name className="member-name">{p.name}</Name>

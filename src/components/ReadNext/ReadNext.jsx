@@ -8,7 +8,7 @@ const ReadNextStory = props => {
   if (post) {
     /** Limit words to 19 in GraphQL * */
     const { path, cover, title, excerpt } = post;
-    const styles = cover ? { backgroundImage: `url(${cover})` } : null;
+    const styles = cover ? { backgroundImage: `url("${cover}")` } : null;
     const classes = classNames('read-next-story', props.className, {
       'no-cover': !cover
     });

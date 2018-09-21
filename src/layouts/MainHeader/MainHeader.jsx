@@ -18,7 +18,7 @@ class MainHeader extends React.Component {
       <header className={classes}>
         <div
           className="main-header__photo"
-          style={{ backgroundImage: `url(${cover})` }}
+          style={{ backgroundImage: `url("${cover}")` }}
         >
           {children}
         </div>

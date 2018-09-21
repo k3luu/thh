@@ -8,7 +8,7 @@ class PageHeader extends React.Component {
       return (
         <div
           className="page-header"
-          style={{ backgroundImage: `url(${logo})` }}
+          style={{ backgroundImage: `url("${logo}")` }}
         />
       );
     }

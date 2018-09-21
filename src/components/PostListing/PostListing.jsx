@@ -146,7 +146,7 @@ class PostListing extends React.Component {
             <div
               className="post-listing__photo"
               style={{
-                backgroundImage: `url(${thumbnail})`,
+                backgroundImage: `url("${thumbnail}")`,
                 height: maskHeight
               }}
             />

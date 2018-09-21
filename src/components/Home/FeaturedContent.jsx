@@ -26,7 +26,8 @@ class FeaturedContent extends Component {
           <FeaturedPhoto
             className="featured-photo__container"
             style={{
-              backgroundImage: `url(https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg)`
+              backgroundImage:
+                'url("https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg")'
             }}
           />
         </Link>
