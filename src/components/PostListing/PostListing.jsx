@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { Box, Mask, Image } from 'gestalt';
 import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
 import './PostListing.css';
 
@@ -60,64 +59,60 @@ class PostListing extends React.Component {
       case 'details':
         return (
           <section className="post-excerpt">
-            <Box display="flex" marginTop={2}>
-              <table className="trail-data">
-                <tbody>
-                  {location && (
-                    <tr>
-                      <td className="trail-data__label">Location</td>
-                      <td className="trail-data__data">
-                        <Link to={`/tags/${this.handleTagLink(location)}`}>
-                          {location}
-                        </Link>
-                      </td>
-                    </tr>
-                  )}
-                  {distance && (
-                    <tr>
-                      <td className="trail-data__label">Distance</td>
-                      <td className="trail-data__data">{distance}</td>
-                    </tr>
-                  )}
-                  {difficulty && (
-                    <tr>
-                      <td className="trail-data__label">Difficulty</td>
-                      <td className="trail-data__data">
-                        <Link to={`/tags/${this.handleTagLink(difficulty)}`}>
-                          {difficulty}
-                        </Link>
-                      </td>
-                    </tr>
-                  )}
-                  {elevation && (
-                    <tr>
-                      <td className="trail-data__label">Elevation Gain</td>
-                      <td className="trail-data__data">{elevation}</td>
-                    </tr>
-                  )}
-                  {usage && (
-                    <tr>
-                      <td className="trail-data__label">Usage</td>
-                      <td className="trail-data__data">{usage}</td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </Box>
+            <table className="trail-data">
+              <tbody>
+                {location && (
+                  <tr>
+                    <td className="trail-data__label">Location</td>
+                    <td className="trail-data__data">
+                      <Link to={`/tags/${this.handleTagLink(location)}`}>
+                        {location}
+                      </Link>
+                    </td>
+                  </tr>
+                )}
+                {distance && (
+                  <tr>
+                    <td className="trail-data__label">Distance</td>
+                    <td className="trail-data__data">{distance}</td>
+                  </tr>
+                )}
+                {difficulty && (
+                  <tr>
+                    <td className="trail-data__label">Difficulty</td>
+                    <td className="trail-data__data">
+                      <Link to={`/tags/${this.handleTagLink(difficulty)}`}>
+                        {difficulty}
+                      </Link>
+                    </td>
+                  </tr>
+                )}
+                {elevation && (
+                  <tr>
+                    <td className="trail-data__label">Elevation Gain</td>
+                    <td className="trail-data__data">{elevation}</td>
+                  </tr>
+                )}
+                {usage && (
+                  <tr>
+                    <td className="trail-data__label">Usage</td>
+                    <td className="trail-data__data">{usage}</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
           </section>
         );
 
       default:
         return (
           <section className="post-excerpt">
-            <Box display="flex" marginTop={2}>
-              <p>
-                {excerpt.replace(/\s\s+/g, ' ')}{' '}
-                <Link className="read-more" to={path}>
-                  &raquo;
-                </Link>
-              </p>
-            </Box>
+            <p>
+              {excerpt.replace(/\s\s+/g, ' ')}{' '}
+              <Link className="read-more" to={path}>
+                &raquo;
+              </Link>
+            </p>
           </section>
         );
     }
@@ -148,23 +143,19 @@ class PostListing extends React.Component {
       <PostFormatting className={className} style={style} key={title}>
         {cover && (
           <Link to={path} className="post-image">
-            <Mask color="darkGray" height={maskHeight}>
-              <Image
-                alt={title}
-                naturalHeight={1}
-                naturalWidth={1}
-                fit="cover"
-                src={thumbnail}
-              />
-            </Mask>
+            <div
+              className="post-listing__photo"
+              style={{
+                backgroundImage: `url(${thumbnail})`,
+                height: maskHeight
+              }}
+            />
           </Link>
         )}
-        <Box alignItems="center">
-          <h4 className="post-title">
-            <Link to={path}>{this.handleTitle(post)}</Link>
-          </h4>
-          {this.handleDescription(post)}
-        </Box>
+        <h4 className="post-title">
+          <Link to={path}>{this.handleTitle(post)}</Link>
+        </h4>
+        {this.handleDescription(post)}
       </PostFormatting>
     );
   }

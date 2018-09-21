@@ -1,0 +1,55 @@
+.subscribe-container {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #eee;
+}
+
+.subscribe-title {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin: 0 auto;
+}
+
+.subscribe-subcontainer {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.subscribe-subcontainer form {
+    flex-grow: 1
+}
+
+.subscribe-icon__holder {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.subscribe-icon__holder svg {
+    height: 170px;
+    width: 100px;
+}
+
+.subscribe-button {
+    margin-top: 30px;
+    display: inherit;
+}
+
+/* ==========================================================================
+      Media Queries - Smaller than 960px
+   ========================================================================== */
+
+@media only screen and (max-width: 960px) {
+    .subscribe-title {
+    }
+}
+
+/* ==========================================================================
+   Media Queries - Smaller than 600px
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+
+}

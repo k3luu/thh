@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box, Image } from 'gestalt';
 import classNames from 'classnames';
 import './MainHeader.css';
 
@@ -17,18 +16,12 @@ class MainHeader extends React.Component {
 
     return (
       <header className={classes}>
-        <Box height="100%" width="100%">
-          <Image
-            alt="Header"
-            naturalHeight={1}
-            naturalWidth={1}
-            fit="cover"
-            src={cover}
-            color="#172121"
-          >
-            {children}
-          </Image>
-        </Box>
+        <div
+          className="main-header__photo"
+          style={{ backgroundImage: `url(${cover})` }}
+        >
+          {children}
+        </div>
       </header>
     );
   }

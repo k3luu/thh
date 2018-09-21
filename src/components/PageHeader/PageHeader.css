@@ -6,6 +6,15 @@
     color: #fff;
     height: 60vw;
     max-height: 60vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-header div {
+    background-size: cover;
+    background-position: center;
+
 }
 
 .no-cover .page-header {

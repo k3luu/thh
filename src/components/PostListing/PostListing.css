@@ -12,6 +12,12 @@
     margin: 4rem 0;
 }
 
+.post-listing__photo {
+    background-size: cover;
+    background-position: center;
+    background-color: #172121;
+}
+
 .post-listing.margin {
     margin-right: 20px;
 }

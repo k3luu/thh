@@ -1,12 +1,12 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faYoutubeSquare,
   faFacebookSquare,
   faInstagram,
   faTwitterSquare
-} from "@fortawesome/free-brands-svg-icons";
-import "./SocialMediaIcons.css";
+} from '@fortawesome/free-brands-svg-icons';
+import './SocialMediaIcons.css';
 
 class SocialMediaIcons extends React.Component {
   render() {

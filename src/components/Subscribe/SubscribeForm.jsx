@@ -1,60 +1,28 @@
-import React from "react";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import TextField from "@material-ui/core/TextField";
+import React from 'react';
+import styled from 'styled-components';
+import TextField from '@material-ui/core/TextField';
+import './Subscribe.css';
 
-const Container = styled.div`
-  max-width: 600px;
-  padding: 20px;
-  margin: 0 auto;
-  background: #eee;
-`;
+const Container = styled.div``;
 
-const Title = styled.div`
-  font-size: 20px;
-  letter-spacing: 0.6px;
+const Title = styled.div``;
 
-  ${breakpoint("md")`
-    margin: 0 auto;
-  `};
-`;
+const SubContainer = styled.div``;
 
-const SubContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 0 10px;
+const IconHolder = styled.div``;
 
-  form {
-    flex-grow: 1;
-  }
-`;
-
-const IconHolder = styled.div`
-  flex-grow: 1;
-  text-align: center;
-  padding: 0 20px;
-
-  svg {
-    height: 170px;
-    width: 100px;
-  }
-`;
-
-const SubscribeButton = styled.button`
-  margin-top: 30px;
-  display: inherit;
-`;
+const SubscribeButton = styled.button``;
 
 class SubscribeForm extends React.Component {
   render() {
     return (
-      <Container>
-        <Title>
+      <Container className="subscribe-container">
+        <Title className="subscribe-title">
           Sign up with your email address to receive news and updates!
         </Title>
 
-        <SubContainer>
-          <IconHolder>
+        <SubContainer className="subscribe-subcontainer">
+          <IconHolder className="subscribe-icon__holder">
             <svg
               id="b9950e65-c983-427f-969f-411e60d4718f"
               data-name="Layer 1"
@@ -417,7 +385,10 @@ class SubscribeForm extends React.Component {
               required
               fullWidth
             />
-            <SubscribeButton type="submit">Subscribe</SubscribeButton>
+
+            <SubscribeButton className="subscribe-button" type="submit">
+              Subscribe
+            </SubscribeButton>
           </form>
         </SubContainer>
       </Container>

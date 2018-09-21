@@ -30,7 +30,6 @@ import {
   LivejournalIcon,
   ViberIcon
 } from 'react-share';
-import { Box } from 'gestalt';
 import './PostShare.css';
 
 const formatSiteUrl = (siteUrl, pathPrefix, path) =>
@@ -45,13 +44,7 @@ class PostShare extends React.Component {
     return (
       <section className="share">
         <h4>Share this post</h4>
-        <Box
-          display="flex"
-          justifyContent="between"
-          wrap
-          maxWidth={500}
-          marginTop={4}
-        >
+        <div className="share-icons">
           <FacebookShareButton url={url} quote={post.title}>
             <FacebookIcon size={32} round />
           </FacebookShareButton>
@@ -76,7 +69,7 @@ class PostShare extends React.Component {
           <EmailShareButton url={url} title={post.title}>
             <EmailIcon size={32} round />
           </EmailShareButton>
-        </Box>
+        </div>
       </section>
     );
   }

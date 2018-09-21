@@ -1,160 +1,36 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import Instafeed from "react-instafeed";
-import { Image } from "gestalt";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/main.min.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import Instafeed from 'react-instafeed';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/main.min.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import FeaturedContent from "./FeaturedContent";
-import PostListing from "../PostListing/PostListing";
-import SubscribeForm from "../Subscribe/SubscribeForm";
-import sections from "./sections";
-import "./Home.css";
+import FeaturedContent from './FeaturedContent';
+import PostListing from '../PostListing/PostListing';
+import SubscribeForm from '../Subscribe/SubscribeForm';
+import sections from './sections';
+import './Home.css';
 
-const Container = styled.div`
-  h4 {
-    letter-spacing: 2px;
-  }
-`;
+const Container = styled.div``;
 
-const ContentContainer = styled.div`
-  margin: 2rem auto;
-  padding: 0;
-  max-width: 1500px;
-  height: 100%;
+const ContentContainer = styled.div``;
 
-  ${breakpoint("md")`
-    margin: 4rem auto;
-    padding: 0 10px;
-  `};
-`;
+const RecentSection = styled.div``;
 
-const RecentSection = styled.div`
-  border-bottom: #d8d8d8 1px solid;
+const RecentHeader = styled.div``;
 
-  ${breakpoint("md")`
-    border-bottom: 0;
-  `};
+const BannerImage = styled.div``;
 
-  .post-title,
-  .post-excerpt {
-    ${breakpoint("md")`
-      padding: 0;
-    `};
-  }
+const BannerInfoContainer = styled.div``;
 
-  .post {
-    border-bottom: 0;
-    margin-bottom: 0;
+const BannerTextBox = styled.div``;
 
-    ${breakpoint("md")`
-        // border-bottom: #d8d8d8 1px solid;
-    `};
+const BannerHeading = styled.div``;
 
-    &:after {
-      content: unset;
+const BannerDescription = styled.div``;
 
-      ${breakpoint("md")`
-        // content: "";
-      `};
-    }
-  }
-`;
-
-const RecentHeader = styled.div`
-  padding: 0 20px;
-  margin: 0;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0.6px;
-  line-height: 1.15em;
-  text-rendering: geometricPrecision;
-  text-transform: uppercase;
-
-  ${breakpoint("md")`
-    padding: 0;
-  `};
-`;
-
-const BannerImage = styled.div`
-  height: 100vh;
-`;
-
-const BannerInfoContainer = styled.div`
-  display: flex;
-  height: 100%;
-  justify-content: start;
-  align-items: center;
-
-  ${breakpoint("md")`
-  `};
-`;
-
-const BannerTextBox = styled.div`
-  color: #fff;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  margin: 0;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  text-align: left;
-
-  ${breakpoint("sm")`
-    padding: 60px;
-    max-width: 75%;
-  `};
-
-  ${breakpoint("md")`
-    padding: 80px;
-  `};
-`;
-
-const BannerHeading = styled.div`
-  font-size: 2.3rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1.15em;
-  margin: 0 0 0.4em;
-
-  ${breakpoint("sm")`
-    font-size: 4rem;
-  `};
-
-  ${breakpoint("md")`
-    font-size: 5rem;
-  `};
-`;
-
-const BannerDescription = styled.div`
-  font-size: 1.2rem;
-  font-weight: bold;
-
-  p {
-    letter-spacing: 1px;
-    line-height: 1.5em;
-    text-align: left;
-    margin: 0;
-  }
-
-  ${breakpoint("sm")`
-  `};
-
-  ${breakpoint("md")`
-    font-size: 1.5rem;
-  `};
-`;
-
-const IGContainer = styled.div`
-  margin: 4rem auto;
-
-  ${breakpoint("md")`
-  `};
-`;
+const IGContainer = styled.div``;
 
 class Home extends Component {
   constructor(p) {
@@ -169,11 +45,11 @@ class Home extends Component {
 
   getPhotos() {
     return fetch(
-      "https://api.instagram.com/v1/users/self/media/recent/?access_token="
+      'https://api.instagram.com/v1/users/self/media/recent/?access_token='
     )
       .then(response => response.json())
       .then(json => {
-        console.log("IG:", json.data);
+        console.log('IG:', json.data);
       });
   }
 
@@ -181,7 +57,7 @@ class Home extends Component {
     if (item.description) return <p>{item.description}</p>;
 
     switch (item.name) {
-      case "Campaign":
+      case 'Campaign':
         return (
           <p>
             Share your story with us on Instagram! Nominate your friends, and
@@ -204,7 +80,7 @@ class Home extends Component {
         );
 
       default:
-        return "";
+        return '';
     }
   }
 
@@ -213,23 +89,20 @@ class Home extends Component {
     return sections.map(p => (
       <div key={p.id}>
         <Link to={p.to} className="banner-link">
-          <BannerImage>
-            <Image
-              alt={p.name}
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src={config[p.photo_src]}
-            >
-              <BannerInfoContainer>
-                <BannerTextBox>
-                  <BannerHeading>{p.name}</BannerHeading>
-                  <BannerDescription>
-                    {this.handleDescription(p)}
-                  </BannerDescription>
-                </BannerTextBox>
-              </BannerInfoContainer>
-            </Image>
+          <BannerImage
+            className="banner-image"
+            style={{ backgroundImage: `url(${config[p.photo_src]})` }}
+          >
+            <BannerInfoContainer className="banner-info__container">
+              <BannerTextBox className="banner-textbox">
+                <BannerHeading className="banner-heading">
+                  {p.name}
+                </BannerHeading>
+                <BannerDescription className="banner-description">
+                  {this.handleDescription(p)}
+                </BannerDescription>
+              </BannerTextBox>
+            </BannerInfoContainer>
           </BannerImage>
         </Link>
       </div>
@@ -240,18 +113,18 @@ class Home extends Component {
     const template =
       '<a href="{{link}}" target="_blank" class="instafeed__item">' +
       '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
-      "</div>" +
+      '</div>' +
       '<div class="instafeed__item__overlay">' +
       '<div class="instafeed__item__overlay--inner">' +
       '<p class="instafeed__item__caption">{{model.short_caption}}</p>' +
       '<p class="instafeed__item__location">{{location}}</p>' +
-      "</div>" +
-      "</div>" +
-      "</a>";
+      '</div>' +
+      '</div>' +
+      '</a>';
 
     return (
-      <Container>
-        <ContentContainer>
+      <Container className="home-container">
+        <ContentContainer className="home-content__container">
           {/*{process.env.NODE_ENV === 'development' && (*/}
           {/*<div className="instafeed" id="instafeed">*/}
           {/*<Instafeed*/}
@@ -270,8 +143,8 @@ class Home extends Component {
 
           <FeaturedContent />
 
-          <RecentSection>
-            <RecentHeader className="home-subtitle">
+          <RecentSection className="recent-section">
+            <RecentHeader className="home-subtitle recent-header">
               Recent Content
             </RecentHeader>
             <PostListing postEdges={this.props.nodes} columns={3} />
@@ -292,8 +165,8 @@ class Home extends Component {
           {this.renderCategories()}
         </Carousel>
 
-        {process.env.NODE_ENV === "production" && (
-          <IGContainer>
+        {process.env.NODE_ENV === 'production' && (
+          <IGContainer className="ig-container">
             <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
           </IGContainer>
         )}

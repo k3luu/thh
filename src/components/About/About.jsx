@@ -1,79 +1,20 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import { Image } from 'gestalt';
 import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint';
 import team from './team';
+import './About.css';
 
-const MemberContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0;
+const MemberContainer = styled.div``;
 
-  ${breakpoint('md')`
-    flex-direction: row;
-  `};
-`;
+const PhotoContainer = styled.div``;
 
-const PhotoContainer = styled.div`
-  min-width: unset;
-  height: 45vh;
+const InfoContainer = styled.div``;
 
-  ${breakpoint('md')`
-    min-width: 500px;
-    width: 100%;
-    height: 500px;
-  `};
-`;
+const Name = styled.div``;
 
-const InfoContainer = styled.div`
-  margin: 5px 0;
+const Title = styled.div``;
 
-  ${breakpoint('sm')`
-    margin: 5px 10px;
-  `};
-
-  ${breakpoint('md')`
-    margin: 5px 20px;
-  `};
-`;
-
-const Name = styled.div`
-  margin: 10px 20px !important;
-  font-size: 2.2rem;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-
-  ${breakpoint('md')`
-    margin: 10px 0 !important;
-  `};
-`;
-
-const Title = styled.div`
-  font-style: italic;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  font-weight: unset;
-  margin: 0 20px !important;
-
-  ${breakpoint('md')`
-    margin: 10px 0 !important;
-  `};
-`;
-
-const Bio = styled.div`
-  margin-bottom: 70px;
-
-  p {
-    margin: 20px;
-  }
-
-  ${breakpoint('md')`
-    p {
-      margin: 10px 0;
-    }
-  `};
-`;
+const Bio = styled.div``;
 
 class About extends Component {
   constructor(p) {
@@ -96,21 +37,17 @@ class About extends Component {
 
   renderTeamMembers() {
     return _.map(team, p => (
-      <MemberContainer key={p.id}>
-        <PhotoContainer>
-          <Image
-            alt={p.name}
-            color="darkGray"
-            naturalHeight={1}
-            naturalWidth={1}
-            fit="cover"
-            src={p.photo}
-          />
-        </PhotoContainer>
-        <InfoContainer>
-          <Name>{p.name}</Name>
-          <Title>{this.handleTitles(p.titles)}</Title>
-          <Bio>{_.map(p.bio, line => <p key={line}>{line}</p>)}</Bio>
+      <MemberContainer key={p.id} className="member-container">
+        <PhotoContainer
+          className="member-photo__container"
+          style={{ backgroundImage: `url(${p.photo})` }}
+        />
+        <InfoContainer className="member-info__container">
+          <Name className="member-name">{p.name}</Name>
+          <Title className="member-title">{this.handleTitles(p.titles)}</Title>
+          <Bio className="member-bio">
+            {_.map(p.bio, line => <p key={line}>{line}</p>)}
+          </Bio>
         </InfoContainer>
       </MemberContainer>
     ));

@@ -8,6 +8,7 @@ import MainNav from '../layouts/MainNav/MainNav';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import Footer from '../components/Footer/Footer';
+import BannerTitle from '../components/BannerTitle/BannerTitle';
 import Terms from '../components/Terms/Terms';
 
 class TermsPage extends React.Component {
@@ -57,6 +58,7 @@ class TermsPage extends React.Component {
             <MainHeader className="post-head" cover={config.siteCover}>
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
+            <BannerTitle title="Terms and Conditions" />
 
             <Terms />
             <Footer

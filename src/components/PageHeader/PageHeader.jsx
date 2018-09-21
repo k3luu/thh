@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box, Image } from 'gestalt';
 import './PageHeader.css';
 
 class PageHeader extends React.Component {
@@ -7,15 +6,10 @@ class PageHeader extends React.Component {
     const { logo, title } = this.props;
     if (logo) {
       return (
-        <div className="page-header">
-          <Image
-            alt={title}
-            naturalHeight={512}
-            naturalWidth={546}
-            fit="contain"
-            src={logo}
-          />
-        </div>
+        <div
+          className="page-header"
+          style={{ backgroundImage: `url(${logo})` }}
+        />
       );
     }
     return null;

@@ -11,6 +11,16 @@
     overflow: hidden;
 }
 
+.main-header__photo {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #172121;
+    top: 0;
+    position: absolute;
+}
+
 .main-header .inner {
     width: 80%;
 }

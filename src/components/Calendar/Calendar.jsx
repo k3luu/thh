@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-import { Box } from 'gestalt';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint';
 import { Link } from 'react-scroll';
 
 import Modal from '../Modal/Modal';
@@ -131,10 +129,10 @@ class Calendar extends Component {
       <ModalContent>
         <div className="event-date__linebreak" />
 
-        <Box display="flex" alignItems="center">
-          <Box paddingX={4}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ padding: '0 20px' }}>
             <i className="fa fa-calendar" />
-          </Box>
+          </div>
           <div className="event-date__start">
             <div>{moment(event.start).format('ddd, MMM DD')}</div>
             <div>{moment(event.start).format('h:mm a')}</div>
@@ -144,7 +142,7 @@ class Calendar extends Component {
             <div>{moment(event.end).format('ddd, MMM DD')}</div>
             <div>{moment(event.end).format('h:mm a')}</div>
           </div>
-        </Box>
+        </div>
 
         <div className="event-date__linebreak" />
 

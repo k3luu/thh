@@ -1,118 +1,45 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint';
-import { Image } from 'gestalt';
 import './Home.css';
 
-const FeaturedSection = styled.div`
-  display: block;
-  justify-content: space-around;
-  position: relative;
-  margin: 70px 0;
-  border-top: #d8d8d8 1px solid;
-  border-bottom: #d8d8d8 1px solid;
+const FeaturedSection = styled.div``;
 
-  ${breakpoint('sm')`
-    display: flex;
-    margin-top: 0;
-  `};
+const FeaturedPhoto = styled.div``;
 
-  ${breakpoint('md')`
-  `};
-`;
+const FeaturedInfo = styled.div``;
 
-const FeaturedPhoto = styled.div`
-  margin-right: 0;
-  height: 300px;
+const FeaturedHeader = styled.div``;
 
-  ${breakpoint('sm')`
-    height: 600px;
-  `};
-`;
+const Title = styled.h5``;
 
-const FeaturedInfo = styled.div`
-  width: 100%;
-  padding: 20px;
-
-  ${breakpoint('sm')`
-      padding: 10px 20px;
-      width: 50%;
-  `};
-`;
-
-const FeaturedHeader = styled.div`
-  position: absolute;
-  top: -25px;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 0;
-  letter-spacing: 0.6px;
-  line-height: 1.15em;
-  text-rendering: geometricPrecision;
-  text-transform: uppercase;
-
-  ${breakpoint('sm')`
-    position: unset;
-  `};
-`;
-
-const Title = styled.h5`
-  margin-top: 10px;
-  letter-spacing: 0.6px;
-
-  ${breakpoint('sm')`
-    margin-top: 50px;
-  `};
-`;
-
-const Excerpt = styled.div`
-  margin: 20px 0;
-
-  p {
-    margin: 0 !important;
-  }
-
-  ${breakpoint('sm')`
-    margin: 50px 0 ;
-  `};
-`;
-
-const LearnMore = styled.div`
-  display: flex;
-  justify-content: center;
-
-  ${breakpoint('sm')`
-    justify-content: flex-start;
-  `};
-`;
+const Excerpt = styled.div``;
 
 class FeaturedContent extends Component {
   render() {
     return (
-      <FeaturedSection>
+      <FeaturedSection className="featured-section">
         <Link
           to="/havasupai-falls-mooney-falls-and-beaver-falls"
           className="featured-photo"
         >
-          <FeaturedPhoto>
-            <Image
-              alt="Featured Image"
-              naturalHeight={1}
-              naturalWidth={1}
-              fit="cover"
-              src="https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg"
-            />
-          </FeaturedPhoto>
+          <FeaturedPhoto
+            className="featured-photo__container"
+            style={{
+              backgroundImage: `url(https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Havasupai/thumbnail.jpeg)`
+            }}
+          />
         </Link>
-        <FeaturedInfo>
-          <FeaturedHeader className="home-subtitle">
+        <FeaturedInfo className="featured-info">
+          <FeaturedHeader className="home-subtitle featured-header">
             Featured Content
           </FeaturedHeader>
 
-          <Title>Havasupai Falls: A Backpacker&#39;s Guide</Title>
+          <Title className="featured-title">
+            Havasupai Falls: A Backpacker&#39;s Guide
+          </Title>
 
-          <Excerpt className="post-excerpt">
+          <Excerpt className="post-excerpt featured-excerpt">
             <p>
               Stand at the foot of the giant itself. Havasupai Falls is one of
               the most beautiful waterfalls on this planet, and is one of the
@@ -123,11 +50,12 @@ class FeaturedContent extends Component {
             </p>
           </Excerpt>
 
-          <LearnMore>
-            <Link to="/havasupai-falls-mooney-falls-and-beaver-falls">
-              <button type="submit">Learn More</button>
-            </Link>
-          </LearnMore>
+          <Link
+            className="featured-button"
+            to="/havasupai-falls-mooney-falls-and-beaver-falls"
+          >
+            <button type="submit">Learn More</button>
+          </Link>
         </FeaturedInfo>
       </FeaturedSection>
     );

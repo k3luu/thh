@@ -1,12 +1,11 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import TextField from "@material-ui/core/TextField";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import TextField from '@material-ui/core/TextField';
 
-import DrawCamp from "./DrawCamp";
-import config from "../../../data/SiteConfig";
-import SocialMediaIcons from "../SocialMediaIcons/SocialMediaIcons";
-import "./Contact.css";
+import DrawCamp from './DrawCamp';
+import config from '../../../data/SiteConfig';
+import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
+import './Contact.css';
 
 const Container = styled.div``;
 

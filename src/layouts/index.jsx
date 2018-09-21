@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import 'gestalt/dist/gestalt.css';
 import 'font-awesome/css/font-awesome.min.css';
 import config from '../../data/SiteConfig';
 import './index.css';
@@ -12,7 +11,9 @@ export default class MainLayout extends React.Component {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
     const pathPrefix = config.pathPrefix ? config.pathPrefix : '/';
-    const currentPath = this.props.location.pathname.replace(pathPrefix, '').replace('/', '');
+    const currentPath = this.props.location.pathname
+      .replace(pathPrefix, '')
+      .replace('/', '');
     let title = '';
     if (currentPath === '') {
       title = 'Home';

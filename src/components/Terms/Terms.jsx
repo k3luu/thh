@@ -1,30 +1,16 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import breakpoint from 'styled-components-breakpoint';
+import './Terms.css';
 
-const Title = styled.h4`
-  font-size: 1.6rem;
-  margin: 20px !important;
+const Title = styled.h4``;
 
-  ${breakpoint('md')`
-    margin: 20px 0 !important;
-  `};
-`;
-
-const LastUpdated = styled.h6`
-  margin: 20px !important;
-
-  ${breakpoint('md')`
-    margin: 20px 0 !important;
-  `};
-`;
+const LastUpdated = styled.h6``;
 
 class Terms extends Component {
   render() {
     return (
       <div className="main-content">
-        <h1>Terms and Conditions</h1>
-        <Title>Terms of Use</Title>
+        <Title className="terms-title">Terms of Use</Title>
         <p>
           By using this website, you agree to all applicable laws and
           regulations, and to the Terms and Conditions provided herein. Two
@@ -33,7 +19,7 @@ class Terms extends Component {
           or outside sources linked to this site.
         </p>
 
-        <Title>Disclaimer</Title>
+        <Title className="terms-title">Disclaimer</Title>
         <p>
           The contents of the Two Half-Hitches website regarding medical advice,
           such as text, graphics, images, and other material contained on this
@@ -47,7 +33,7 @@ class Terms extends Component {
           medical emergency, please call your doctor or 9-11, immediately.
         </p>
 
-        <Title>Assumption of Risk</Title>
+        <Title className="terms-title">Assumption of Risk</Title>
         <p>
           In no event shall Two Half-Hitches be liable for any damages from the
           use of information provided on Two Half-Hitches' website. Two
@@ -63,7 +49,7 @@ class Terms extends Component {
           all weather and climate related issues.
         </p>
 
-        <Title>Endorsement</Title>
+        <Title className="terms-title">Endorsement</Title>
         <p>
           Any reference in this website to any person, organization, activity,
           product, or service related to such person or organization, or any
@@ -72,7 +58,7 @@ class Terms extends Component {
           Two Half-Hitches.
         </p>
 
-        <Title>Copyright</Title>
+        <Title className="terms-title">Copyright</Title>
         <p>
           Two Half-Hitches provides information available to the public. You are
           free to copy, distribute, and transmit information and material for
@@ -84,7 +70,9 @@ class Terms extends Component {
           Half-Hitches.
         </p>
 
-        <LastUpdated>Last Updated: October 18, 2017</LastUpdated>
+        <LastUpdated className="terms-updated">
+          Last Updated: October 18, 2017
+        </LastUpdated>
       </div>
     );
   }
