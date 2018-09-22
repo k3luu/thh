@@ -45,7 +45,7 @@ class About extends Component {
           <Name className="member-name">{p.name}</Name>
           <Title className="member-title">{this.handleTitles(p.titles)}</Title>
           <Bio className="member-bio">
-            {_.map(p.bio, line => <p key={line}>{line}</p>)}
+            {p.bio.map(line => <p key={line}>{line}</p>)}
           </Bio>
         </InfoContainer>
       </MemberContainer>
