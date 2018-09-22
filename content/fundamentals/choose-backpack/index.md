@@ -1,5 +1,5 @@
 ---
-title: "How to Choose a Backpack Pack"
+title: "How to Choose a Backpacking Pack"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/choose-backpack/5J8A6442.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/fundamentals/choose-backpack/thumbnail.jpeg"
 author: ""
