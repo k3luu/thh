@@ -14,6 +14,8 @@ disclaimer:
     - The contents provided herein regarding medical advice, such as text, graphics, images, and other material contained on this website are for informational purposes only. The content provided in this website is not intended to substitute professional medical advice, diagnosis, or treatment. 
 ---
 
+<br />
+
 ##A Guide to Identifying and Treating Common Poisonous Plants
 
 As you trek through the backcountry, it is important to have the skill to identify common poisonous plants. Not only is exposure uncomfortable, but can be dangerous if not treated properly. The best way to harness this skill is by looking at photos, being familiar with the variety of species that commonly grow in your area, and knowing the most effective remedies.

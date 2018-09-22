@@ -120,6 +120,27 @@ div.page-template .post-title {
   list-style: disc;
 }
 
+.post-content .table-wrapper {
+    overflow-x: scroll;
+}
+
+.post-content table {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.post-content table th {
+    background: #f56700;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.post-content a {
+    color: #f56700;
+}
+
 .carousel-img {
   width: 100%;
 }
@@ -195,6 +216,11 @@ div.page-template .post-title {
   margin-top: -20px;
 }
 
+.post-step {
+    margin-bottom: 20px;
+    font-size: 1em !important;
+}
+
 /* ==========================================================================
        Media Queries - Smaller than 960px
    ========================================================================== */
@@ -220,7 +246,8 @@ div.page-template .post-title {
 
   .post h3,
   .post h4,
-  .post-title {
+  .post-title,
+  .post-step{
     margin: 20px !important;
   }
 }
