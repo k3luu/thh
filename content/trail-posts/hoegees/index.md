@@ -23,6 +23,7 @@ tags:
     - summer
     - winter
     - fall
+    - animal encounter
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5438.jpg
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5439.jpg
@@ -131,7 +132,7 @@ There are no trash receptacles, so pack in and pack out!
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5524.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5538.jpg)
 
-The sign at the entrance offers your standard information about the rules of the campgrounds. Take notice of the Bear Country sign. Be prepared for a bear encounter and have a bear bag ready. At approximately 6:30PM, a brown bear strolled onto our campsite and stayed the entire night. Unfortunately, we were caught off guard as the bear arrived minutes after we had eaten dinner. We ended up using an old sleeping bag case as a makeshift bear bag, but the bear ultimately outwitted us. Nevertheless, we were able to retrieve our scented belongings the next morning, and packed it out. It was a beautiful and frightening experience.
+The sign at the entrance offers your standard information about the rules of the campgrounds. Take notice of the Bear Country sign. Be prepared for a bear encounter and have a bear bag ready. At approximately 6:30PM, a black bear strolled onto our campsite and stayed the entire night. Unfortunately, we were caught off guard as the bear arrived minutes after we had eaten dinner. We ended up using an old sleeping bag case as a makeshift bear bag, but the bear ultimately outwitted us. Nevertheless, we were able to retrieve our scented belongings the next morning, and packed it out. It was a beautiful and frightening experience.
 
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Hoegees/_J8A5513.jpg)
 <iframe title="video" src="https://www.youtube.com/embed/mwJNDv7UyOs" width="600" height="400" frameBorder="0" allowFullScreen></iframe>
