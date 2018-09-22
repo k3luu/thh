@@ -35,7 +35,7 @@ class About extends Component {
   }
 
   renderTeamMembers() {
-    return _.map(team, p => (
+    return team.map(p => (
       <MemberContainer key={p.id} className="member-container">
         <PhotoContainer
           className="member-photo__container"
