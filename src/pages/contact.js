@@ -58,7 +58,10 @@ class ContactPage extends React.Component {
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
-            <Contact title="Contact Us" description="Got a question? Hit us up!" />
+            <Contact
+              title="Contact Us"
+              description="Got a question? Hit us up!"
+            />
             <Footer
               copyright={config.copyright}
               promoteGatsby={config.promoteGatsby}
