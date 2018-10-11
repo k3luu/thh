@@ -48,15 +48,9 @@ class DriveInPage extends React.Component {
   }
 
   render() {
-    const {
-      nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
-    } = this.props.pathContext;
+    const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
+
+    console.log('drive in page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
@@ -71,20 +65,10 @@ class DriveInPage extends React.Component {
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
-            <BannerTitle
-              title="Camp Drive-In"
-              desc="Need help finding a perfect campsite? We’ve got your back!"
-            />
+            <BannerTitle title="Camp Drive-In" desc="Need help finding a perfect campsite? We’ve got your back!" />
 
             <div className="main-content">
-              <PaginatedContent
-                page={page}
-                pages={pages}
-                total={total}
-                limit={limit}
-                prev={prev}
-                next={next}
-              >
+              <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
                 {/* PostListing component renders all the posts */}
                 <PostListing
                   postEdges={nodes}
@@ -96,10 +80,7 @@ class DriveInPage extends React.Component {
               </PaginatedContent>
             </div>
 
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
+            <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
           </SiteWrapper>
         </Drawer>
       </ThemeProvider>

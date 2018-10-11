@@ -47,17 +47,9 @@ class GuidesPage extends React.Component {
   }
 
   render() {
-    const {
-      nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
-    } = this.props.pathContext;
+    const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
 
-    // console.log('trail guide page', this.props);
+    console.log('trail guide page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
@@ -72,20 +64,10 @@ class GuidesPage extends React.Component {
               <MainNav onClick={this.handleOnClick} />
             </MainHeader>
 
-            <BannerTitle
-              title="Trail Guides"
-              desc="Find some inspiration and direction for your next hike!"
-            />
+            <BannerTitle title="Trail Guides" desc="Find some inspiration and direction for your next hike!" />
 
             <div className="main-content">
-              <PaginatedContent
-                page={page}
-                pages={pages}
-                total={total}
-                limit={limit}
-                prev={prev}
-                next={next}
-              >
+              <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
                 {/* PostListing component renders all the posts */}
                 <PostListing
                   postEdges={nodes}
@@ -96,10 +78,7 @@ class GuidesPage extends React.Component {
               </PaginatedContent>
             </div>
 
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
+            <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
           </SiteWrapper>
         </Drawer>
       </ThemeProvider>
