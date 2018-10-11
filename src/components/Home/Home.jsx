@@ -44,9 +44,7 @@ class Home extends Component {
   }
 
   getPhotos() {
-    return fetch(
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token='
-    )
+    return fetch('https://api.instagram.com/v1/users/self/media/recent/?access_token=')
       .then(response => response.json())
       .then(json => {
         console.log('IG:', json.data);
@@ -60,12 +58,11 @@ class Home extends Component {
       case 'Campaign':
         return (
           <p>
-            Share your story with us on Instagram! Nominate your friends, and
-            tag {/*<a*/}
+            Share your story with us on Instagram! Nominate your friends, and tag {/*<a*/}
             {/*href="https://www.instagram.com/twohalfhitches"*/}
             {/*target="_blank"*/}
             {/*rel="noopener noreferrer"*/}
-            {/*className="banner-link desc"*/}
+            {/*className="home-banner__link desc"*/}
             {/*>*/}
             @twohalfhitches and #NoMattertheMountain
             {/*</a>{' '}*/}
@@ -73,7 +70,7 @@ class Home extends Component {
             {/*href="https://www.instagram.com/explore/tags/nomatterthemountain/"*/}
             {/*target="_blank"*/}
             {/*rel="noopener noreferrer"*/}
-            {/*className="banner-link desc"*/}
+            {/*className="home-banner__link desc"*/}
             {/*>*/}
             {/*</a>*/}
           </p>
@@ -88,19 +85,12 @@ class Home extends Component {
     const { config } = this.props;
     return sections.map(p => (
       <div key={p.id}>
-        <Link to={p.to} className="banner-link">
-          <BannerImage
-            className="banner-image"
-            style={{ backgroundImage: `url("${config[p.photo_src]}")` }}
-          >
-            <BannerInfoContainer className="banner-info__container">
-              <BannerTextBox className="banner-textbox">
-                <BannerHeading className="banner-heading">
-                  {p.name}
-                </BannerHeading>
-                <BannerDescription className="banner-description">
-                  {this.handleDescription(p)}
-                </BannerDescription>
+        <Link to={p.to} className="home-banner__link">
+          <BannerImage className="home-banner__image" style={{ backgroundImage: `url("${config[p.photo_src]}")` }}>
+            <BannerInfoContainer className="home-banner__info-container">
+              <BannerTextBox className="home-banner__textbox">
+                <BannerHeading className="home-banner__heading">{p.name}</BannerHeading>
+                <BannerDescription className="home-banner__description">{this.handleDescription(p)}</BannerDescription>
               </BannerTextBox>
             </BannerInfoContainer>
           </BannerImage>
@@ -144,9 +134,7 @@ class Home extends Component {
           <FeaturedContent />
 
           <RecentSection className="recent-section">
-            <RecentHeader className="home-subtitle recent-header">
-              Recent Content
-            </RecentHeader>
+            <RecentHeader className="home-subtitle recent-header">Recent Content</RecentHeader>
             <PostListing postEdges={this.props.nodes} columns={3} />
           </RecentSection>
         </ContentContainer>

@@ -1,67 +1,54 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/main.min.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import IconButton from '@material-ui/core/IconButton';
+import { withStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 
 import ambassadors from './ambassadors/ambassadors';
 import './NoMatterTheMountain.css';
 
-const BioContainer = styled.div`
-  &::before {
-    // display: block;
-    // content: ' ';
-    // width: 100%;
-    // height: 100%;
-    // position: absolute;
-    // left: 0;
-    // margin-top: 75%;
-    // background: linear-gradient(
-    //   rgba(255, 0, 0, 0),
-    //   ${props => props.background}
-    );
+const styles = theme => ({
+  buttonRoot: {
+    color: '#fff',
+    '&:hover': {
+      border: 0,
+      color: '#fff',
+      backgroundColor: 'rgba(255, 255, 255, 0.08)'
+    }
   }
-`;
+});
+
+const IGLink = props => <a href={`https://www.instagram.com/${props.to}`} target="_blank" rel="noopenner noreferrer" />;
 
 class NoMatterTheMountain extends Component {
   handleAmbassadorTitle(list) {
-    let titles = '';
-
-    list.map(item => {
-      if (titles.length > 1) titles += ' | ';
-      titles += item;
-    });
-
-    return titles;
+    return list.join(' , ');
   }
 
   renderAmbassadors() {
-    return ambassadors.map(p => (
-      <div key={p.id} className="ambassador-container">
-        <div className="ambassador-image">
-          <img src={p.photo_src} alt={p.name} />
-        </div>
+    const { classes } = this.props;
+
+    return ambassadors.map((p, i) => (
+      <div key={p.id} className="ambassador-container" style={i % 2 === 0 ? { flexDirection: 'row-reverse' } : {}}>
+        <div className="ambassador-image" style={{ backgroundImage: `url(${p.photo_src})` }} />
 
         <div className="ambassador-testimonial" style={{ background: p.color }}>
-          <BioContainer className="ambassador-bio" background={p.color}>
+          <div className="ambassador-info">
+            <h6 className="ambassador-name">{p.name}</h6>
+            <div className="ambassador-title">{this.handleAmbassadorTitle(p.title)}</div>
+          </div>
+
+          <div className="ambassador-bio" background={p.color}>
             &quot;{p.bio}&quot;
-          </BioContainer>
+          </div>
 
           {/* Ambassador info: [name, title, IG] & [image]*/}
-          <div className="ambassador-info">
-            <div>
-              <h6 className="ambassador-name">{p.name}</h6>
-              <p className="ambassador-title">
-                {this.handleAmbassadorTitle(p.title)}
-              </p>
-              <a
-                className="ambassador-social"
-                href={`https://www.instagram.com/${p.instagram}`}
-                target="_blank"
-              >
-                <i className="fa fa-instagram" /> {p.instagram}
-              </a>
-            </div>
+
+          <div className="ambassador-social">
+            <a href={`https://www.instagram.com/${p.instagram}`} target="_blank" rel="noopenner noreferrer">
+              <IconButton classes={{ root: classes.buttonRoot }} aria-label={p.instagram}>
+                <i className="fa fa-instagram" />
+              </IconButton>
+            </a>
           </div>
         </div>
       </div>
@@ -70,67 +57,40 @@ class NoMatterTheMountain extends Component {
 
   render() {
     return (
-      <div className="campaign">
-        <div className="main-content">
-          <h2>How Do You Conquer Your Mountain?</h2>
-          <iframe
-            title="thh-campaign"
-            src="https://www.youtube.com/embed/05ifiSTb6Fc"
-            frameBorder="0"
-            allowFullScreen
-            style={{ marginTop: 30 }}
-          />
-          <br />
-          <p>
-            Share your story with us on Instagram! Nominate your friends, and
-            tag{' '}
-            <a
-              href="https://www.instagram.com/twohalfhitches"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @twohalfhitches
-            </a>{' '}
-            and{' '}
-            <a
-              href="https://www.instagram.com/explore/tags/nomatterthemountain/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              #NoMattertheMountain
-            </a>.
-          </p>
-
-          <h2>Meet Our Campaign Ambassadors</h2>
-          <p>
-            Read up on our campaign ambassadors and how they conquer their own
-            mountains!
-          </p>
+      <div className="main-content campaign">
+        <h2>How Do You Conquer Your Mountain?</h2>
+        <iframe
+          title="thh-campaign"
+          src="https://www.youtube.com/embed/05ifiSTb6Fc"
+          frameBorder="0"
+          allowFullScreen
+          style={{ marginTop: 30 }}
+        />
+        <br />
+        <div className="campaign__subtitle" style={{ marginBottom: 50 }}>
+          Share your story with us on Instagram! Nominate your friends, and tag{' '}
+          <a href="https://www.instagram.com/twohalfhitches" target="_blank" rel="noopener noreferrer">
+            @twohalfhitches
+          </a>{' '}
+          and{' '}
+          <a
+            href="https://www.instagram.com/explore/tags/nomatterthemountain/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            #NoMattertheMountain
+          </a>.
         </div>
 
-        <Carousel
-          key="blog-post"
-          emulateTouch
-          useKeyboardArrows
-          showArrows
-          centerMode
-          centerSlidePercentage={
-            typeof window !== 'undefined' &&
-            window.navigator &&
-            /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
-              ? 100
-              : 80
-          }
-          showIndicators={false}
-          showThumbs={false}
-          showStatus={false}
-          className="presentation-mode"
-        >
-          {this.renderAmbassadors()}
-        </Carousel>
+        <h2>Meet Our Campaign Ambassadors</h2>
+        <div className="campaign__subtitle" style={{ marginBottom: 25 }}>
+          Read up on our campaign ambassadors and how they conquer their own mountains!
+        </div>
+
+        {this.renderAmbassadors()}
       </div>
     );
   }
 }
 
-export default NoMatterTheMountain;
+export default withStyles(styles)(NoMatterTheMountain);

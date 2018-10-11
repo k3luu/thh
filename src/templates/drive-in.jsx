@@ -8,7 +8,6 @@ import MainNav from '../layouts/MainNav/MainNav';
 import Drawer from '../layouts/Drawer/Drawer';
 import Navigation from '../components/Navigation/Navigation';
 import BannerTitle from '../components/BannerTitle/BannerTitle';
-import PageDescription from '../components/PageDescription/PageDescription';
 import PaginatedContent from '../layouts/PaginatedContent/PaginatedContent';
 import PostListing from '../components/PostListing/PostListing';
 import Footer from '../components/Footer/Footer';
@@ -50,7 +49,7 @@ class DriveInPage extends React.Component {
   render() {
     const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
 
-    console.log('drive in page', this.props);
+    // console.log('drive in page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>

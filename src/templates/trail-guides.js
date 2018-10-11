@@ -49,7 +49,7 @@ class GuidesPage extends React.Component {
   render() {
     const { nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
 
-    console.log('trail guide page', this.props);
+    // console.log('trail guide page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
