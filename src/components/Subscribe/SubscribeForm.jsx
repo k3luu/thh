@@ -17,9 +17,7 @@ class SubscribeForm extends React.Component {
   render() {
     return (
       <Container className="subscribe-container">
-        <Title className="subscribe-title">
-          Sign up with your email address to receive news and updates!
-        </Title>
+        <Title className="subscribe-title">Sign up with your email address to receive news and updates!</Title>
 
         <SubContainer className="subscribe-subcontainer">
           <IconHolder className="subscribe-icon__holder">
@@ -123,13 +121,7 @@ class SubscribeForm extends React.Component {
                 height="328.05"
                 fill="url(#1e50e1f7-79f5-452b-a40c-a2d98084d9bb)"
               />
-              <rect
-                x="353.11"
-                y="400.92"
-                width="62.67"
-                height="322.18"
-                fill="#eceff1"
-              />
+              <rect x="353.11" y="400.92" width="62.67" height="322.18" fill="#eceff1" />
               <path
                 d="M779.59,228.64H444.43A88.94,88.94,0,0,0,411,236.09c-34.07,15.1-53.9,38.8-59.5,91.36V448.88l-88.81-.94c-17.86,0-24.39,28.08-24.39,47.06H838.21V290.93C838.21,256.53,812,228.64,779.59,228.64Z"
                 transform="translate(-185.78 -83.31)"
@@ -172,27 +164,9 @@ class SubscribeForm extends React.Component {
                 fill="#faf8e4"
               />
               <g opacity="0.6" fill="#f56700">
-                <rect
-                  x="364.5"
-                  y="296.74"
-                  width="15.34"
-                  height="11.35"
-                  transform="rotate(-173.06 276.743 266.401)"
-                />
-                <rect
-                  x="373.69"
-                  y="330.46"
-                  width="58.89"
-                  height="3.68"
-                  transform="rotate(-173.06 307.712 296.28)"
-                />
-                <rect
-                  x="388.54"
-                  y="340.56"
-                  width="42.94"
-                  height="2.45"
-                  transform="rotate(-173.06 314.59 305.77)"
-                />
+                <rect x="364.5" y="296.74" width="15.34" height="11.35" transform="rotate(-173.06 276.743 266.401)" />
+                <rect x="373.69" y="330.46" width="58.89" height="3.68" transform="rotate(-173.06 307.712 296.28)" />
+                <rect x="388.54" y="340.56" width="42.94" height="2.45" transform="rotate(-173.06 314.59 305.77)" />
               </g>
               <rect
                 x="428.85"
@@ -211,27 +185,9 @@ class SubscribeForm extends React.Component {
                 fill="#faf8e4"
               />
               <g opacity="0.6" fill="#f56700">
-                <rect
-                  x="414.96"
-                  y="313.49"
-                  width="15.34"
-                  height="11.35"
-                  transform="rotate(-173.06 327.21 283.154)"
-                />
-                <rect
-                  x="424.15"
-                  y="347.21"
-                  width="58.89"
-                  height="3.68"
-                  transform="rotate(-173.06 358.179 313.032)"
-                />
-                <rect
-                  x="439.01"
-                  y="357.31"
-                  width="42.94"
-                  height="2.45"
-                  transform="rotate(-173.06 365.052 322.522)"
-                />
+                <rect x="414.96" y="313.49" width="15.34" height="11.35" transform="rotate(-173.06 327.21 283.154)" />
+                <rect x="424.15" y="347.21" width="58.89" height="3.68" transform="rotate(-173.06 358.179 313.032)" />
+                <rect x="439.01" y="357.31" width="42.94" height="2.45" transform="rotate(-173.06 365.052 322.522)" />
               </g>
               <rect
                 x="328.36"
@@ -250,27 +206,9 @@ class SubscribeForm extends React.Component {
                 fill="#fff"
               />
               <g opacity="0.6" fill="#f56700">
-                <rect
-                  x="309.54"
-                  y="323.84"
-                  width="20.79"
-                  height="15.38"
-                  transform="rotate(-173.06 224.511 295.519)"
-                />
-                <rect
-                  x="322"
-                  y="369.54"
-                  width="79.83"
-                  height="4.99"
-                  transform="rotate(-173.06 266.487 336.021)"
-                />
-                <rect
-                  x="342.13"
-                  y="383.24"
-                  width="58.21"
-                  height="3.33"
-                  transform="rotate(-173.06 275.813 348.885)"
-                />
+                <rect x="309.54" y="323.84" width="20.79" height="15.38" transform="rotate(-173.06 224.511 295.519)" />
+                <rect x="322" y="369.54" width="79.83" height="4.99" transform="rotate(-173.06 266.487 336.021)" />
+                <rect x="342.13" y="383.24" width="58.21" height="3.33" transform="rotate(-173.06 275.813 348.885)" />
               </g>
               <rect
                 x="396.77"
@@ -289,27 +227,9 @@ class SubscribeForm extends React.Component {
                 fill="#fff"
               />
               <g opacity="0.6" fill="#f56700">
-                <rect
-                  x="377.95"
-                  y="346.55"
-                  width="20.79"
-                  height="15.38"
-                  transform="rotate(-173.06 292.919 318.23)"
-                />
-                <rect
-                  x="390.41"
-                  y="392.25"
-                  width="79.83"
-                  height="4.99"
-                  transform="rotate(-173.06 334.895 358.732)"
-                />
-                <rect
-                  x="410.54"
-                  y="405.94"
-                  width="58.21"
-                  height="3.33"
-                  transform="rotate(-173.06 344.22 371.59)"
-                />
+                <rect x="377.95" y="346.55" width="20.79" height="15.38" transform="rotate(-173.06 292.919 318.23)" />
+                <rect x="390.41" y="392.25" width="79.83" height="4.99" transform="rotate(-173.06 334.895 358.732)" />
+                <rect x="410.54" y="405.94" width="58.21" height="3.33" transform="rotate(-173.06 344.22 371.59)" />
               </g>
               <path
                 d="M447.82,242.35h0a89.8,89.8,0,0,0-34.35,6.8,90.77,90.77,0,0,1,12.81-.92h0a90.09,90.09,0,0,1,90.09,90.09v143h21.54V332.44A90.09,90.09,0,0,0,447.82,242.35Z"
@@ -329,42 +249,18 @@ class SubscribeForm extends React.Component {
                 points="657.37 70.58 654.4 72.03 654.74 71.42 654.48 71.5 654.85 71.23 694.87 0 715.33 17.45 732.89 33.7 727.85 36.16 733.51 46.15 657.37 70.58"
                 fill="url(#1b1d52ac-2d33-4d8b-a499-27df2fc326e7)"
               />
-              <polygon
-                points="713.31 19.31 729.35 34.19 656.63 70.34 695.33 20.74 713.31 19.31"
-                fill="#f56700"
-              />
-              <polygon
-                points="713.31 19.31 729.35 34.19 656.63 70.34 695.33 20.74 713.31 19.31"
-                opacity="0.2"
-              />
-              <polygon
-                points="694.59 3.35 656.63 70.34 713.31 19.31 694.59 3.35"
-                fill="#f56700"
-              />
-              <polygon
-                points="729.82 45.7 656.71 69.85 717.82 24.23 729.82 45.7"
-                fill="#f56700"
-              />
+              <polygon points="713.31 19.31 729.35 34.19 656.63 70.34 695.33 20.74 713.31 19.31" fill="#f56700" />
+              <polygon points="713.31 19.31 729.35 34.19 656.63 70.34 695.33 20.74 713.31 19.31" opacity="0.2" />
+              <polygon points="694.59 3.35 656.63 70.34 713.31 19.31 694.59 3.35" fill="#f56700" />
+              <polygon points="729.82 45.7 656.71 69.85 717.82 24.23 729.82 45.7" fill="#f56700" />
               <polygon
                 points="121.67 86.97 126.45 87.71 125.71 87.01 126.12 87.01 125.48 86.79 38.62 4.42 17.54 37.69 0 68.04 8.12 69.3 4.52 85.74 121.67 86.97"
                 fill="url(#72adf1b2-6031-4d64-80db-157af34e8b1b)"
               />
-              <polygon
-                points="21.18 39.42 5.16 67.19 122.6 86.31 46.96 33.64 21.18 39.42"
-                fill="#f56700"
-              />
-              <polygon
-                points="21.18 39.42 5.16 67.19 122.6 86.31 46.96 33.64 21.18 39.42"
-                opacity="0.2"
-              />
-              <polygon
-                points="40.47 8.99 122.6 86.31 21.18 39.42 40.47 8.99"
-                fill="#f56700"
-              />
-              <polygon
-                points="9.49 83.51 122.28 85.67 16.99 48.27 9.49 83.51"
-                fill="#f56700"
-              />
+              <polygon points="21.18 39.42 5.16 67.19 122.6 86.31 46.96 33.64 21.18 39.42" fill="#f56700" />
+              <polygon points="21.18 39.42 5.16 67.19 122.6 86.31 46.96 33.64 21.18 39.42" opacity="0.2" />
+              <polygon points="40.47 8.99 122.6 86.31 21.18 39.42 40.47 8.99" fill="#f56700" />
+              <polygon points="9.49 83.51 122.28 85.67 16.99 48.27 9.49 83.51" fill="#f56700" />
             </svg>
           </IconHolder>
 
@@ -377,14 +273,7 @@ class SubscribeForm extends React.Component {
           >
             <input type="hidden" name="form-name" value="subscribe" />
 
-            <TextField
-              id="email"
-              name="email"
-              label="Email"
-              margin="normal"
-              required
-              fullWidth
-            />
+            <TextField id="email" name="email" label="Email" margin="normal" variant="outlined" required fullWidth />
 
             <SubscribeButton className="subscribe-button" type="submit">
               Subscribe

@@ -21,7 +21,7 @@ const IGLink = props => <a href={`https://www.instagram.com/${props.to}`} target
 
 class NoMatterTheMountain extends Component {
   handleAmbassadorTitle(list) {
-    return list.join(' , ');
+    return list.join(', ');
   }
 
   renderAmbassadors() {

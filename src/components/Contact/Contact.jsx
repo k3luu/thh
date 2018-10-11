@@ -38,39 +38,40 @@ class Contact extends Component {
         <FormContainer className="contact-form">
           {title && <h1>{title}</h1>}
           {description && <p>{description}</p>}
-          <Form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
+          <Form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
 
-            <TextField
-              id="name"
-              name="name"
-              label="Name"
-              margin="normal"
-              required
-              fullWidth
-            />
-
-            <TextField
-              id="email"
-              name="email"
-              label="Email"
-              margin="normal"
-              required
-              fullWidth
-            />
+            <div style={{ display: 'flex', margin: '0 -5px' }}>
+              <TextField
+                style={{ margin: '0 5px' }}
+                id="name"
+                name="name"
+                label="Name"
+                margin="normal"
+                variant="outlined"
+                required
+                fullWidth
+              />
+              <TextField
+                style={{ margin: 'auto 10px' }}
+                id="email"
+                name="email"
+                label="Email"
+                margin="normal"
+                variant="outlined"
+                required
+                fullWidth
+              />
+            </div>
 
             <TextField
               id="message"
               name="message"
               label="Message"
               multiline
-              rowsMax="4"
+              rows="4"
               margin="normal"
+              variant="outlined"
               required
               fullWidth
             />
