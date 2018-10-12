@@ -13,7 +13,7 @@
    just for the lolz and stylepoints. */
 .post::after {
   display: block;
-  content: "";
+  content: '';
   width: 7px;
   height: 7px;
   border: #d8d8d8 1px solid;
@@ -121,24 +121,24 @@ div.page-template .post-title {
 }
 
 .post-content .table-wrapper {
-    overflow-x: scroll;
+  overflow-x: scroll;
 }
 
 .post-content table {
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .post-content table th {
-    background: #f56700;
-    color: #fff;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  background: #f56700;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .post-content a {
-    color: #f56700;
+  color: #f56700;
 }
 
 .carousel-img {
@@ -175,7 +175,7 @@ div.page-template .post-title {
 }
 
 .post-disclaimer p::before {
-  content: "\00a0\00a0\00a0\00a0\00a0";
+  content: '\00a0\00a0\00a0\00a0\00a0';
 }
 
 .trail-data {
@@ -184,14 +184,18 @@ div.page-template .post-title {
 
 .trail-data__icon {
   width: 10px;
-  text-align: center;
-  color: #fff;
-  background: #f56700 !important;
+  vertical-align: inherit;
+}
+
+.trail-data__label,
+.trail-data__data {
+  padding: 12px;
 }
 
 .trail-data__label {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 900;
+  letter-spacing: 0.6px;
   color: #727479;
   text-transform: uppercase;
   width: 150px;
@@ -217,8 +221,8 @@ div.page-template .post-title {
 }
 
 .post-step {
-    margin-bottom: 20px;
-    font-size: 1em !important;
+  margin-bottom: 20px;
+  font-size: 1em !important;
 }
 
 /* ==========================================================================
@@ -247,7 +251,7 @@ div.page-template .post-title {
   .post h3,
   .post h4,
   .post-title,
-  .post-step{
+  .post-step {
     margin: 20px !important;
   }
 }

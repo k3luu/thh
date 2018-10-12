@@ -1,42 +1,45 @@
 .member-container {
-    display: flex;
-    flex-direction: row;
-    margin: 30px 0;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
 }
 
 .member-photo__container {
-    min-width: 500px;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-color: #172121;
+  min-width: 500px;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-color: #172121;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
 .member-info__container {
-    margin: 5px 20px;
+  margin: 5px 20px;
 }
 
 .member-name {
-    margin: 10px 0 !important;
-    font-size: 2.2rem;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
+  margin: 10px 0 !important;
+  font-size: 2.2rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
 }
 
 .member-title {
-    font-style: italic;
-    font-size: 1.8rem;
-    text-transform: capitalize;
-    font-weight: unset;
-    margin: 10px 0 !important;
+  font-style: italic;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: unset;
+  margin: 10px 0 !important;
 }
 
-.member-bio {  margin-bottom: 70px;
+.member-bio {
+  margin-bottom: 70px;
 }
 
 .member-bio p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* ==========================================================================
@@ -44,34 +47,34 @@
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
-    .member-container {
-        flex-direction: column;
-    }
+  .member-container {
+    flex-direction: column;
+  }
 
-    .member-photo__container {
-        min-width: unset;
-        height: 45vh;
-    }
+  .member-photo__container {
+    min-width: unset;
+    height: 45vh;
+  }
 
-    .member-info__container {
-        margin: 5px 10px;
-    }
+  .member-info__container {
+    margin: 5px 10px;
+  }
 
-    .member-name {
-        margin: 10px 20px !important;
-    }
+  .member-name {
+    margin: 10px 20px !important;
+  }
 
-    .member-title {
-        font-style: italic;
-        font-size: 1.8rem;
-        text-transform: capitalize;
-        font-weight: unset;
-        margin: 0 20px !important;
-    }
+  .member-title {
+    font-style: italic;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: unset;
+    margin: 0 20px !important;
+  }
 
-    .member-bio p {
-        margin: 20px;
-    }
+  .member-bio p {
+    margin: 20px;
+  }
 }
 
 /* ==========================================================================
@@ -79,8 +82,7 @@
    ========================================================================== */
 
 @media only screen and (max-width: 600px) {
-    .member-info__container {
-        margin: 5px 0;
-
-    }
+  .member-info__container {
+    margin: 5px 0;
+  }
 }

@@ -506,11 +506,11 @@ table {
 
 table th,
 table td {
-  padding: 8px;
+  padding: 0;
   line-height: 20px;
   text-align: left;
   vertical-align: top;
-  border-top: #efefef 1px solid;
+  /* border-top: #efefef 1px solid; */
 }
 
 table th {
@@ -573,6 +573,7 @@ button {
   text-transform: uppercase;
   text-shadow: none;
   border-radius: 0.1rem;
+  border: 0;
   background: #172121;
   transition: all ease 0.3s;
 }
@@ -686,7 +687,7 @@ button:hover {
 
   table th,
   table td {
-    padding: 8px 20px;
+    padding: 0 20px;
   }
 }
 

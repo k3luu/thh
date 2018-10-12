@@ -2,6 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import Link from 'gatsby-link';
+import Avatar from '@material-ui/core/Avatar';
+import { withStyles } from '@material-ui/core/styles';
 
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -43,6 +45,13 @@ const formatReadNext = value => ({
     (value && value.excerpt) ||
     'So you want to go camping with your buddies for the weekend, but were unable to nag a spot at Buckhorn Campground? Check out Chilao Campground!'
 });
+
+const styles = {
+  avatar: {
+    color: '#fff',
+    backgroundColor: '#f56700'
+  }
+};
 
 class PostTemplate extends React.Component {
   constructor(p) {
@@ -92,41 +101,35 @@ class PostTemplate extends React.Component {
   }
 
   handleTrailData = data => {
-    const {
-      location,
-      category,
-      distance,
-      difficulty,
-      elevation,
-      season,
-      parking,
-      usage,
-      dogs
-    } = data;
+    const { classes } = this.props;
     const { detailTypes } = this.state;
+    const { location, category, distance, difficulty, elevation, season, parking, usage, dogs } = data;
 
-    if (detailTypes.includes(category))
+    if (detailTypes.includes(category)) {
       return (
         <table className="trail-data">
           <tbody>
             {location && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-map-marker" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-map-marker" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Location</td>
                 <td className="trail-data__data">
-                  <Link to={`/tags/${this.handleTagLink(location)}`}>
-                    {location}
-                  </Link>
+                  <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
                 </td>
               </tr>
             )}
             {distance && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-arrows-h" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-arrows-h" />
+                  </Avatar>
                 </td>
+
                 <td className="trail-data__label">Distance</td>
                 <td className="trail-data__data">{distance}</td>
               </tr>
@@ -134,20 +137,22 @@ class PostTemplate extends React.Component {
             {difficulty && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-tachometer" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-tachometer" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Difficulty</td>
                 <td className="trail-data__data">
-                  <Link to={`/tags/${this.handleTagLink(difficulty)}`}>
-                    {difficulty}
-                  </Link>
+                  <Link to={`/tags/${this.handleTagLink(difficulty)}`}>{difficulty}</Link>
                 </td>
               </tr>
             )}
             {elevation && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-arrows-v" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-arrows-v" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Elevation Gain</td>
                 <td className="trail-data__data">{elevation}</td>
@@ -156,7 +161,9 @@ class PostTemplate extends React.Component {
             {season && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-snowflake-o" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-snowflake-o" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Seasons</td>
                 <td className="trail-data__data">{season}</td>
@@ -165,7 +172,9 @@ class PostTemplate extends React.Component {
             {parking && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-car" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-car" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Parking</td>
                 <td className="trail-data__data">{parking}</td>
@@ -174,7 +183,9 @@ class PostTemplate extends React.Component {
             {usage && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-group" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-group" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Usage</td>
                 <td className="trail-data__data">{usage}</td>
@@ -183,7 +194,9 @@ class PostTemplate extends React.Component {
             {dogs && (
               <tr>
                 <td className="trail-data__icon">
-                  <i className="fa fa-paw" />
+                  <Avatar className={classes.avatar}>
+                    <i className="fa fa-paw" />
+                  </Avatar>
                 </td>
                 <td className="trail-data__label">Dogs</td>
                 <td className="trail-data__data">{dogs}</td>
@@ -192,6 +205,7 @@ class PostTemplate extends React.Component {
           </tbody>
         </table>
       );
+    }
 
     return '';
   };
@@ -240,10 +254,7 @@ class PostTemplate extends React.Component {
               <PostFormatting className={className}>
                 {this.handleTrailData(post)}
 
-                <section
-                  className="post-content"
-                  dangerouslySetInnerHTML={{ __html: postNode.html }}
-                />
+                <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
                 {carouselTitle && <h3>{carouselTitle}</h3>}
                 {carousel && <MyCarousel data={carousel} />}
@@ -266,11 +277,7 @@ class PostTemplate extends React.Component {
                 )}
 
                 <PostFooter>
-                  <PostShare
-                    postNode={postNode}
-                    postPath={location.pathname}
-                    config={config}
-                  />
+                  <PostShare postNode={postNode} postPath={location.pathname} config={config} />
                   <GhostSubscribe />
                   <Disqus postNode={postNode} />
                 </PostFooter>
@@ -279,11 +286,7 @@ class PostTemplate extends React.Component {
             <ReadNext next={getNextData()} prev={getPrevData()} />
 
             {/* The tiny footer at the very bottom */}
-            <Footer
-              darkBackground
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
+            <Footer darkBackground copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
           </SiteWrapper>
         </Drawer>
       </ThemeProvider>
@@ -323,10 +326,7 @@ export const pageQuery = graphql`
       }
     }
     # prev post data
-    prev: markdownRemark(
-      frontmatter: { tags: { in: $tags } }
-      fields: { slug: { ne: $slug } }
-    ) {
+    prev: markdownRemark(frontmatter: { tags: { in: $tags } }, fields: { slug: { ne: $slug } }) {
       excerpt(pruneLength: 112)
       frontmatter {
         title
@@ -364,4 +364,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default PostTemplate;
+export default withStyles(styles)(PostTemplate);

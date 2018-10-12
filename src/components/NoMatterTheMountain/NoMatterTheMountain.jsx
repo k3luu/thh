@@ -9,6 +9,9 @@ import './NoMatterTheMountain.css';
 const styles = theme => ({
   buttonRoot: {
     color: '#fff',
+    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    height: 48,
+    width: 48,
     '&:hover': {
       border: 0,
       color: '#fff',
