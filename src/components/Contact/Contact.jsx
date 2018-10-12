@@ -43,7 +43,7 @@ class Contact extends Component {
 
             <div style={{ display: 'flex', margin: '0 -5px' }}>
               <TextField
-                style={{ margin: '0 5px' }}
+                style={{ margin: '0 5px', background: '#fff' }}
                 id="name"
                 name="name"
                 label="Name"
@@ -53,7 +53,7 @@ class Contact extends Component {
                 fullWidth
               />
               <TextField
-                style={{ margin: 'auto 10px' }}
+                style={{ margin: '0 5px', background: '#fff' }}
                 id="email"
                 name="email"
                 label="Email"
@@ -65,6 +65,7 @@ class Contact extends Component {
             </div>
 
             <TextField
+              style={{ background: '#fff' }}
               id="message"
               name="message"
               label="Message"
