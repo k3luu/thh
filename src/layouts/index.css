@@ -501,6 +501,7 @@ table {
   width: 100%;
   max-width: 100%;
   background-color: transparent;
+  margin: 1em 0;
 }
 
 table th,

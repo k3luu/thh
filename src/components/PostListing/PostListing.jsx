@@ -96,7 +96,7 @@ class PostListing extends React.Component {
           <section className="post-excerpt">
             <table className="trail-data">
               <tbody>
-                {/* {location && (
+                {location && (
                   <tr>
                     <td className="trail-data__icon">
                       <Avatar className={classes.avatar}>
@@ -107,7 +107,7 @@ class PostListing extends React.Component {
                       <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
                     </td>
                   </tr>
-                )} */}
+                )}
                 {distance && (
                   <tr>
                     <td className="trail-data__icon">
@@ -272,7 +272,7 @@ class PostListing extends React.Component {
       groupedCode.push(
         <div className="post-listing__group" key={i}>
           {groupedPosts[i].map((p, j) => {
-            return this.handleOtherPostContent(p, j, mod);
+            return this.handlePostContent(p, j, mod);
           })}
         </div>
       );
