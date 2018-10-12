@@ -1,7 +1,48 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { withStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardMedia from '@material-ui/core/CardMedia';
+import CardContent from '@material-ui/core/CardContent';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+
 import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
 import './PostListing.css';
+
+const styles = theme => ({
+  card: {
+    maxWidth: 400
+  },
+  cardHeaderRoot: {
+    height: 75
+  },
+  cardHeaderTitle: {
+    fontFamily: `'Pontano Sans', sans-serif`,
+    fontSize: '1rem',
+    fontWeight: 700
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%' // 16:9
+  },
+  actions: {
+    display: 'flex'
+  },
+  content: {
+    padding: '0 !important'
+  },
+  avatar: {
+    color: '#fff',
+    backgroundColor: '#f56700',
+    height: 30,
+    width: 30,
+    opacity: 0.9,
+    margin: 10
+  }
+});
 
 const getPostList = postEdges =>
   postEdges.map(postEdge => ({
@@ -27,7 +68,9 @@ class PostListing extends React.Component {
     const { campListing } = this.props;
     const { title, campTitle } = post;
 
-    if (campListing) return campTitle;
+    if (campListing) {
+      return campTitle;
+    }
 
     return title;
   }
@@ -41,16 +84,8 @@ class PostListing extends React.Component {
   }
 
   handleDescription(post) {
-    const { description } = this.props;
-    const {
-      path,
-      excerpt,
-      location,
-      elevation,
-      difficulty,
-      distance,
-      usage
-    } = post;
+    const { description, classes } = this.props;
+    const { path, excerpt, location, elevation, difficulty, distance, usage } = post;
 
     switch (description) {
       case 'none':
@@ -61,41 +96,57 @@ class PostListing extends React.Component {
           <section className="post-excerpt">
             <table className="trail-data">
               <tbody>
-                {location && (
+                {/* {location && (
                   <tr>
-                    <td className="trail-data__label">Location</td>
+                    <td className="trail-data__icon">
+                      <Avatar className={classes.avatar}>
+                        <i className="fa fa-map-marker" />
+                      </Avatar>
+                    </td>
                     <td className="trail-data__data">
-                      <Link to={`/tags/${this.handleTagLink(location)}`}>
-                        {location}
-                      </Link>
+                      <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
                     </td>
                   </tr>
-                )}
+                )} */}
                 {distance && (
                   <tr>
-                    <td className="trail-data__label">Distance</td>
+                    <td className="trail-data__icon">
+                      <Avatar className={classes.avatar}>
+                        <i className="fa fa-arrows-h" />
+                      </Avatar>
+                    </td>
                     <td className="trail-data__data">{distance}</td>
                   </tr>
                 )}
                 {difficulty && (
                   <tr>
-                    <td className="trail-data__label">Difficulty</td>
+                    <td className="trail-data__icon">
+                      <Avatar className={classes.avatar}>
+                        <i className="fa fa-tachometer" />
+                      </Avatar>
+                    </td>
                     <td className="trail-data__data">
-                      <Link to={`/tags/${this.handleTagLink(difficulty)}`}>
-                        {difficulty}
-                      </Link>
+                      <Link to={`/tags/${this.handleTagLink(difficulty)}`}>{difficulty}</Link>
                     </td>
                   </tr>
                 )}
                 {elevation && (
                   <tr>
-                    <td className="trail-data__label">Elevation Gain</td>
+                    <td className="trail-data__icon">
+                      <Avatar className={classes.avatar}>
+                        <i className="fa fa-arrows-v" />
+                      </Avatar>
+                    </td>
                     <td className="trail-data__data">{elevation}</td>
                   </tr>
                 )}
                 {usage && (
                   <tr>
-                    <td className="trail-data__label">Usage</td>
+                    <td className="trail-data__icon">
+                      <Avatar className={classes.avatar}>
+                        <i className="fa fa-group" />
+                      </Avatar>
+                    </td>
                     <td className="trail-data__data">{usage}</td>
                   </tr>
                 )}
@@ -160,6 +211,49 @@ class PostListing extends React.Component {
     );
   }
 
+  handleOtherPostContent(post, index, lastEntry) {
+    const { title, path, thumbnail } = post;
+    const { columns, classes } = this.props;
+    let className = post.post_class ? post.post_class : 'post post-listing';
+    let style = {};
+
+    if (index % columns !== columns - 1) className += ' margin';
+
+    // TODO: tentative... check width on different screens
+    if (lastEntry && index < columns - 1) {
+      style = { width: '32%' };
+    }
+
+    return (
+      <PostFormatting className={className} style={style} key={title}>
+        <Card>
+          <CardHeader
+            classes={{ root: classes.cardHeaderRoot, title: classes.cardHeaderTitle }}
+            title={this.handleTitle(post)}
+            subheader={
+              post.location ? (
+                <Link to={`/tags/${this.handleTagLink(post.location)}`} style={{ color: 'rgba(0, 0, 0, 0.54)' }}>
+                  {post.location}
+                </Link>
+              ) : (
+                false
+              )
+            }
+            action={
+              <IconButton>
+                <MoreVertIcon />
+              </IconButton>
+            }
+          />
+          <Link to={path}>
+            <CardMedia className={classes.media} image={thumbnail} title={this.handleTitle(post)} />
+          </Link>
+          <CardContent className={classes.content}>{this.handleDescription(post)}</CardContent>
+        </Card>
+      </PostFormatting>
+    );
+  }
+
   handlePostGroups() {
     const { columns } = this.props;
     const postList = getPostList(this.props.postEdges);
@@ -178,7 +272,7 @@ class PostListing extends React.Component {
       groupedCode.push(
         <div className="post-listing__group" key={i}>
           {groupedPosts[i].map((p, j) => {
-            return this.handlePostContent(p, j, mod);
+            return this.handleOtherPostContent(p, j, mod);
           })}
         </div>
       );
@@ -191,14 +285,12 @@ class PostListing extends React.Component {
     const { columns } = this.props;
     const postList = getPostList(this.props.postEdges);
 
-    if (columns) return this.handlePostGroups();
+    if (columns) {
+      return this.handlePostGroups();
+    }
 
-    return (
-      <div className="post-listing__container">
-        {postList.map((post, i) => this.handlePostContent(post, i))}
-      </div>
-    );
+    return <div className="post-listing__container">{postList.map((post, i) => this.handlePostContent(post, i))}</div>;
   }
 }
 
-export default PostListing;
+export default withStyles(styles)(PostListing);
