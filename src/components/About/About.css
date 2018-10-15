@@ -1,7 +1,12 @@
 .member-container {
   display: flex;
   flex-direction: row;
-  margin: 30px 0;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.member-container.reverse {
+  flex-direction: row-reverse;
 }
 
 .member-photo__container {
@@ -13,6 +18,7 @@
   background-color: #172121;
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
     0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  border-radius: 100%;
 }
 
 .member-info__container {
@@ -40,6 +46,7 @@
 
 .member-bio p {
   margin: 10px 0;
+  text-align: inherit;
 }
 
 /* ==========================================================================
@@ -47,13 +54,15 @@
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
-  .member-container {
+  .member-container,
+  .member-container.reverse {
     flex-direction: column;
   }
 
   .member-photo__container {
     min-width: unset;
     height: 45vh;
+    border-radius: 0;
   }
 
   .member-info__container {

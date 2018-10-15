@@ -4,21 +4,19 @@ campTitle: "Blue Ridge Campground"
 cover: "https://s3-us-west-1.amazonaws.com/twohalfhitches/camp/Blue+Ridge+Campground/_J8A6039.jpg"
 thumbnail: "https://s3-us-west-1.amazonaws.com/twohalfhitches/camp/Blue+Ridge+Campground/thumbnail.jpg"
 category: "drive in"
-date: "2018-10-214"
+date: "2018-10-14"
 dogs: "Welcomed (Confined or Leashed)"
 elevation: "8000 ft"
 location: "Angeles National Forest"
 season: "Spring, Summer, Fall"
 tags:
     - angeles national forest
-    - trails
     - drive-in
     - camping
     - spring
     - summer
     - fall
     - heavy usage
-    - easy-moderate
 usage: "Heavy"
 carousel:
     - https://s3-us-west-1.amazonaws.com/twohalfhitches/camp/Blue+Ridge+Campground/Gallery/_J8A6042.jpg

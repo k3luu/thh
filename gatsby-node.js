@@ -213,7 +213,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
          * IMPORTANT: For camping guides/posts separate from "Trail Guides", must
          * note them here via the relative path.
          */
-        const excludedTrails = ['/chilao-campground', '/blue-ridge-campground'];
+        const excludedTrails = ['/chilao-campground', '/blue-ridge-campground', '/buckhorn-campground'];
         const acceptedTrails = result.data.trailPosts.edges.filter(p => {
           return !excludedTrails.includes(p.node.fields.slug);
         });
