@@ -40,16 +40,7 @@ class TagTemplate extends React.Component {
   };
 
   render() {
-    const {
-      tag,
-      nodes,
-      page,
-      pages,
-      total,
-      limit,
-      prev,
-      next
-    } = this.props.pathContext;
+    const { tag, nodes, page, pages, total, limit, prev, next } = this.props.pathContext;
     const authorsEdges = this.props.data.authors.edges;
 
     // console.log("tags", this.props);
@@ -71,38 +62,19 @@ class TagTemplate extends React.Component {
 
               <BannerTitle
                 title={`Tag: ${tag}`}
-                desc={
-                  parseInt(total) === 1
-                    ? `Total of ${total} guide.`
-                    : `Total of ${total} guides.`
-                }
+                desc={parseInt(total) === 1 ? `Total of ${total} guide.` : `Total of ${total} guides.`}
               />
 
               <div className="main-content">
-                <PaginatedContent
-                  page={page}
-                  pages={pages}
-                  total={total}
-                  limit={limit}
-                  prev={prev}
-                  next={next}
-                >
+                <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
                   {/* PostListing component renders all the posts */}
-                  <PostListing
-                    postEdges={nodes}
-                    postAuthors={authorsEdges}
-                    columns={3}
-                    description="details"
-                  />
+                  <PostListing postEdges={nodes} postAuthors={authorsEdges} columns={3} description="none" />
                 </PaginatedContent>
               </div>
             </div>
 
             {/* The tiny footer at the very bottom */}
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
+            <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
           </SiteWrapper>
         </Drawer>
       </ThemeProvider>

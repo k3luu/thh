@@ -339,6 +339,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           createPage({
             path: `/categories/${_.kebabCase(category)}/`,
             component: categoryPage,
+            limit: siteConfig.sitePaginationLimit,
             context: {
               category
             }
