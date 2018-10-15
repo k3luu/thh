@@ -9,6 +9,8 @@ html {
 body {
   font-family: 'Pontano Sans', sans-serif !important;
   margin: 0;
+  padding-right: 0 !important;
+  overflow: visible !important;
 }
 
 article,

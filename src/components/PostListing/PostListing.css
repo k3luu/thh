@@ -24,6 +24,11 @@
   margin-right: 20px;
 }
 
+.post-listing__difficulty-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .post-listing__difficulty {
   border-radius: 4px;
   font-size: 12px;
@@ -31,7 +36,6 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   padding: 2px 5px;
-  float: right;
 }
 
 .post-listing__difficulty.easy {
@@ -52,6 +56,20 @@
 .post-listing__difficulty.difficult {
   background: #e7d9da;
   color: #ba0d19;
+}
+
+.post-listing__distance {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.post-listing__elevation {
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+}
+
+.post-listing__usage {
 }
 
 /* ==========================================================================

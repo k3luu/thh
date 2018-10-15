@@ -32,8 +32,7 @@ import {
 } from 'react-share';
 import './PostShare.css';
 
-const formatSiteUrl = (siteUrl, pathPrefix, path) =>
-  siteUrl + (pathPrefix === '/' ? '' : pathPrefix) + path;
+const formatSiteUrl = (siteUrl, pathPrefix, path) => siteUrl + (pathPrefix === '/' ? '' : pathPrefix) + path;
 
 class PostShare extends React.Component {
   render() {
