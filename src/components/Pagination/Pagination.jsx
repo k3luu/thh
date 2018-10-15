@@ -37,8 +37,6 @@ class Pagination extends React.Component {
   render() {
     const { prev, next } = this.props;
 
-    console.log(this.props, window.location);
-
     return (
       <MuiThemeProvider theme={theme}>
         <nav className="pagination">
