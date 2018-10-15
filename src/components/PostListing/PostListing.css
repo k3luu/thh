@@ -24,6 +24,54 @@
   margin-right: 20px;
 }
 
+.post-listing__difficulty-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-listing__difficulty {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 2px 5px;
+}
+
+.post-listing__difficulty.easy {
+  background: #d2e3cf;
+  color: #1a5d0e;
+}
+
+.post-listing__difficulty.easy-moderate {
+  background: #fcf7c0;
+  color: #b98c09;
+}
+
+.post-listing__difficulty.moderate {
+  background: #fcdbc0;
+  color: #b95a09;
+}
+
+.post-listing__difficulty.difficult {
+  background: #e7d9da;
+  color: #ba0d19;
+}
+
+.post-listing__distance {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.post-listing__elevation {
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+}
+
+.post-listing__usage {
+}
+
 /* ==========================================================================
        Media Queries
    ========================================================================== */
