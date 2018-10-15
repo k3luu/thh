@@ -26,14 +26,12 @@ const styles = theme => ({
   },
   media: {
     height: 0,
-    paddingTop: '56.25%' // 16:9
+    paddingTop: '67.25%' // 16:9
   },
   actions: {
     display: 'flex'
   },
-  content: {
-    padding: '0 !important'
-  },
+  content: {},
   avatar: {
     color: '#fff',
     backgroundColor: '#f56700',
@@ -83,9 +81,26 @@ class PostListing extends React.Component {
       .replace(/,/g, '');
   }
 
+  handleDifficultyClass(level) {
+    let classStyling = 'post-listing__difficulty ';
+    level = level.toLowerCase();
+
+    if (level.includes('difficult')) {
+      classStyling += 'difficult';
+    } else if (level.includes('easy-')) {
+      classStyling += 'easy-moderate';
+    } else if (level.includes('moderate')) {
+      classStyling += 'moderate';
+    } else if (level.includes('easy')) {
+      classStyling += 'easy';
+    }
+
+    return classStyling;
+  }
+
   handleDescription(post) {
     const { description, classes } = this.props;
-    const { path, excerpt, location, elevation, difficulty, distance, usage } = post;
+    const { path, excerpt, elevation, difficulty, distance, usage } = post;
 
     switch (description) {
       case 'none':
@@ -94,64 +109,38 @@ class PostListing extends React.Component {
       case 'details':
         return (
           <section className="post-excerpt">
-            <table className="trail-data">
-              <tbody>
-                {/* {location && (
-                  <tr>
-                    <td className="trail-data__icon">
-                      <Avatar className={classes.avatar}>
-                        <i className="fa fa-map-marker" />
-                      </Avatar>
-                    </td>
-                    <td className="trail-data__data">
-                      <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
-                    </td>
-                  </tr>
-                )} */}
-                {distance && (
-                  <tr>
-                    <td className="trail-data__icon">
-                      <Avatar className={classes.avatar}>
-                        <i className="fa fa-arrows-h" />
-                      </Avatar>
-                    </td>
-                    <td className="trail-data__data">{distance}</td>
-                  </tr>
-                )}
-                {difficulty && (
-                  <tr>
-                    <td className="trail-data__icon">
-                      <Avatar className={classes.avatar}>
-                        <i className="fa fa-tachometer" />
-                      </Avatar>
-                    </td>
-                    <td className="trail-data__data">
-                      <Link to={`/tags/${this.handleTagLink(difficulty)}`}>{difficulty}</Link>
-                    </td>
-                  </tr>
-                )}
-                {elevation && (
-                  <tr>
-                    <td className="trail-data__icon">
-                      <Avatar className={classes.avatar}>
-                        <i className="fa fa-arrows-v" />
-                      </Avatar>
-                    </td>
-                    <td className="trail-data__data">{elevation}</td>
-                  </tr>
-                )}
-                {usage && (
-                  <tr>
-                    <td className="trail-data__icon">
-                      <Avatar className={classes.avatar}>
-                        <i className="fa fa-group" />
-                      </Avatar>
-                    </td>
-                    <td className="trail-data__data">{usage}</td>
-                  </tr>
-                )}
-              </tbody>
-            </table>
+            {difficulty && (
+              <Link to={`/tags/${this.handleTagLink(difficulty)}`} className={this.handleDifficultyClass(difficulty)}>
+                {difficulty}
+              </Link>
+            )}
+
+            {distance && (
+              <div>
+                {/* <Avatar className={classes.avatar}>
+                <i className="fa fa-arrows-h" />
+              </Avatar> */}
+                <span>{distance}</span>
+              </div>
+            )}
+
+            {elevation && (
+              <div>
+                {/* <Avatar className={classes.avatar}>
+                  <i className="fa fa-arrows-v" />
+                </Avatar> */}
+                {elevation}
+              </div>
+            )}
+
+            {usage && (
+              <div>
+                {/* <Avatar className={classes.avatar}>
+                  <i className="fa fa-group" />
+                </Avatar> */}
+                {usage} Usage
+              </div>
+            )}
           </section>
         );
 
@@ -217,7 +206,9 @@ class PostListing extends React.Component {
     let className = post.post_class ? post.post_class : 'post post-listing';
     let style = {};
 
-    if (index % columns !== columns - 1) className += ' margin';
+    if (index % columns !== columns - 1) {
+      className += ' margin';
+    }
 
     // TODO: tentative... check width on different screens
     if (lastEntry && index < columns - 1) {
