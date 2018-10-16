@@ -147,7 +147,7 @@ class Home extends Component {
           showThumbs={false}
           showStatus={false}
           autoPlay={this.state.autoplay}
-          interval={4000}
+          interval={5000}
           infiniteLoop
         >
           {this.renderCategories()}
