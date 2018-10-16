@@ -2,12 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faWalking,
-  faCar,
-  faMapSigns,
-  faBinoculars
-} from '@fortawesome/free-solid-svg-icons';
+import { faWalking, faCar, faMapSigns, faBinoculars } from '@fortawesome/free-solid-svg-icons';
 import config from '../../../data/SiteConfig';
 import './MainNav.css';
 
@@ -34,19 +29,11 @@ class MainNav extends React.Component {
   }
 
   componentDidMount() {
-    document.addEventListener(
-      'scroll',
-      this.handleScrollDetection.bind(this),
-      true
-    );
+    document.addEventListener('scroll', this.handleScrollDetection, true);
   }
 
   componentWillUnmount() {
-    document.removeEventListener(
-      'scroll',
-      this.handleScrollDetection.bind(this),
-      true
-    );
+    document.removeEventListener('scroll', this.handleScrollDetection, true);
   }
 
   handleScrollDetection() {
@@ -130,9 +117,7 @@ class MainNav extends React.Component {
           </li>
         </Navigation>
 
-        {config.siteNavigation && (
-          <MenuButton className="menu-button icon-menu" onClick={onClick} />
-        )}
+        {config.siteNavigation && <MenuButton className="menu-button icon-menu" onClick={onClick} />}
       </NavContainer>
     );
   }

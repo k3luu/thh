@@ -10,6 +10,7 @@ const theme = createMuiTheme({
     }
   },
   typography: {
+    useNextVariants: true,
     fontFamily: `'Pontano Sans', sans-serif`
   }
 });

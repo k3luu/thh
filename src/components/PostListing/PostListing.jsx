@@ -11,6 +11,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Tooltip from '@material-ui/core/Tooltip';
 import { FacebookShareButton, TwitterShareButton, EmailShareButton } from 'react-share';
 
 import config from '../../../data/SiteConfig';
@@ -149,10 +150,15 @@ class PostListing extends React.Component {
               </div>
             )}
 
-            {distance && <div className="post-listing__distance">{distance}</div>}
+            {distance && distance.length > 20 ? (
+              <Tooltip title={distance}>
+                <div className="post-listing__distance">{`${distance.substring(0, 20)}...`}</div>
+              </Tooltip>
+            ) : (
+              <div className="post-listing__distance">{distance || ''}</div>
+            )}
 
             {elevation && <div className="post-listing__elevation">{elevation} Elevation Gain</div>}
-
             {usage && <div className="post-listing__usage">{usage} Usage</div>}
           </section>
         );
@@ -283,7 +289,9 @@ class PostListing extends React.Component {
             <ListItemIcon>
               <i className="fa fa-facebook" />
             </ListItemIcon>
-            <ListItemText classes={{ primary: classes.menu }}>Share on Facebook</ListItemText>
+            <ListItemText classes={{ primary: classes.menu }} style={{ paddingLeft: 22 }}>
+              Share on Facebook
+            </ListItemText>
           </MenuItem>
         </FacebookShareButton>
         <TwitterShareButton url={url} title={postMenuNode.title}>
