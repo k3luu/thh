@@ -50,19 +50,19 @@
 
 .rbc-current > a {
     border-radius: 100px;
-    background: #172121;
+    background-color: #172121;
     color: #fff;
 }
 
 .rbc-event {
-    background: #172121;
+    background-color: #172121;
     border-radius: 10px;
     margin: 0 10px;
     padding: 2px 10px;
 }
 
 .rbc-event.rbc-selected {
-    background: #172121;
+    background-color: #172121;
 }
 
 .rbc-event-continues-prior {
@@ -85,7 +85,7 @@
 /* WEEK & DAY VIEW */
 .rbc-current-time-indicator {
     height: 2px;
-    background: #fb616b;
+    background-color: #fb616b;
     margin: 0 -10px;
 }
 
@@ -96,7 +96,7 @@
     height: 8px;
     width: 8px;
     margin-top: -3px;
-    background: #fb616b;
+    background-color: #fb616b;
 }
 
 .rbc-time-view .rbc-header {
@@ -120,7 +120,7 @@
 }
 
 .rbc-today {
-    background: #172121;
+    background-color: #172121;
 }
 
 .rbc-day-slot .rbc-event {
@@ -175,7 +175,7 @@
 .event-date__linebreak {
     height: 2px;
     width: 100%;
-    background: #eaeff3;
+    background-color: #eaeff3;
 }
 
 .event-description {

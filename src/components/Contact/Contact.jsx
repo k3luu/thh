@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { withStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import {
+  withStyles,
+  MuiThemeProvider,
+  createMuiTheme
+} from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
 import DrawCamp from './DrawCamp';
@@ -51,13 +55,21 @@ class Contact extends Component {
               <FollowUs className="contact-follow">Follow Us</FollowUs>
               <FollowLineBreak className="contact-linebreak" />
             </div>
-            <SocialMediaIcons urls={config.siteSocialUrls} color="currentColor" />
+            <SocialMediaIcons
+              urls={config.siteSocialUrls}
+              color="currentColor"
+            />
           </SideBar>
 
           <FormContainer className="contact-form">
             {title && <h1>{title}</h1>}
             {description && <p>{description}</p>}
-            <Form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <Form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
               <input type="hidden" name="form-name" value="contact" />
 
               <div style={{ display: 'flex', margin: '0 -5px' }}>

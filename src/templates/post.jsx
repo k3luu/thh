@@ -103,7 +103,17 @@ class PostTemplate extends React.Component {
   handleTrailData = data => {
     const { classes } = this.props;
     const { detailTypes } = this.state;
-    const { location, category, distance, difficulty, elevation, season, parking, usage, dogs } = data;
+    const {
+      location,
+      category,
+      distance,
+      difficulty,
+      elevation,
+      season,
+      parking,
+      usage,
+      dogs
+    } = data;
 
     if (detailTypes.includes(category)) {
       return (
@@ -118,7 +128,9 @@ class PostTemplate extends React.Component {
                 </td>
                 <td className="trail-data__label">Location</td>
                 <td className="trail-data__data">
-                  <Link to={`/tags/${this.handleTagLink(location)}`}>{location}</Link>
+                  <Link to={`/tags/${this.handleTagLink(location)}`}>
+                    {location}
+                  </Link>
                 </td>
               </tr>
             )}
@@ -143,7 +155,9 @@ class PostTemplate extends React.Component {
                 </td>
                 <td className="trail-data__label">Difficulty</td>
                 <td className="trail-data__data">
-                  <Link to={`/tags/${this.handleTagLink(difficulty)}`}>{difficulty}</Link>
+                  <Link to={`/tags/${this.handleTagLink(difficulty)}`}>
+                    {difficulty}
+                  </Link>
                 </td>
               </tr>
             )}
@@ -254,7 +268,10 @@ class PostTemplate extends React.Component {
               <PostFormatting className={className}>
                 {this.handleTrailData(post)}
 
-                <section className="post-content" dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                <section
+                  className="post-content"
+                  dangerouslySetInnerHTML={{ __html: postNode.html }}
+                />
 
                 {carouselTitle && <h3>{carouselTitle}</h3>}
                 {carousel && <MyCarousel data={carousel} />}
@@ -277,7 +294,11 @@ class PostTemplate extends React.Component {
                 )}
 
                 <PostFooter>
-                  <PostShare postNode={postNode} postPath={location.pathname} config={config} />
+                  <PostShare
+                    postNode={postNode}
+                    postPath={location.pathname}
+                    config={config}
+                  />
                   <GhostSubscribe />
                   <Disqus postNode={postNode} />
                 </PostFooter>
@@ -286,7 +307,11 @@ class PostTemplate extends React.Component {
             <ReadNext next={getNextData()} prev={getPrevData()} />
 
             {/* The tiny footer at the very bottom */}
-            <Footer darkBackground copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+            <Footer
+              darkBackground
+              copyright={config.copyright}
+              promoteGatsby={config.promoteGatsby}
+            />
           </SiteWrapper>
         </Drawer>
       </ThemeProvider>
@@ -326,7 +351,10 @@ export const pageQuery = graphql`
       }
     }
     # prev post data
-    prev: markdownRemark(frontmatter: { tags: { in: $tags } }, fields: { slug: { ne: $slug } }) {
+    prev: markdownRemark(
+      frontmatter: { tags: { in: $tags } }
+      fields: { slug: { ne: $slug } }
+    ) {
       excerpt(pruneLength: 112)
       frontmatter {
         title

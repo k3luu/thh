@@ -20,7 +20,13 @@ const styles = theme => ({
   }
 });
 
-const IGLink = props => <a href={`https://www.instagram.com/${props.to}`} target="_blank" rel="noopenner noreferrer" />;
+const IGLink = props => (
+  <a
+    href={`https://www.instagram.com/${props.to}`}
+    target="_blank"
+    rel="noopenner noreferrer"
+  />
+);
 
 class NoMatterTheMountain extends Component {
   handleAmbassadorTitle(list) {
@@ -31,13 +37,22 @@ class NoMatterTheMountain extends Component {
     const { classes } = this.props;
 
     return ambassadors.map((p, i) => (
-      <div key={p.id} className="ambassador-container" style={i % 2 === 0 ? { flexDirection: 'row-reverse' } : {}}>
-        <div className="ambassador-image" style={{ backgroundImage: `url(${p.photo_src})` }} />
+      <div
+        key={p.id}
+        className="ambassador-container"
+        style={i % 2 === 0 ? { flexDirection: 'row-reverse' } : {}}
+      >
+        <div
+          className="ambassador-image"
+          style={{ backgroundImage: `url(${p.photo_src})` }}
+        />
 
         <div className="ambassador-testimonial" style={{ background: p.color }}>
           <div className="ambassador-info">
             <h6 className="ambassador-name">{p.name}</h6>
-            <div className="ambassador-title">{this.handleAmbassadorTitle(p.title)}</div>
+            <div className="ambassador-title">
+              {this.handleAmbassadorTitle(p.title)}
+            </div>
           </div>
 
           <div className="ambassador-bio" background={p.color}>
@@ -47,8 +62,15 @@ class NoMatterTheMountain extends Component {
           {/* Ambassador info: [name, title, IG] & [image]*/}
 
           <div className="ambassador-social">
-            <a href={`https://www.instagram.com/${p.instagram}`} target="_blank" rel="noopenner noreferrer">
-              <IconButton classes={{ root: classes.buttonRoot }} aria-label={p.instagram}>
+            <a
+              href={`https://www.instagram.com/${p.instagram}`}
+              target="_blank"
+              rel="noopenner noreferrer"
+            >
+              <IconButton
+                classes={{ root: classes.buttonRoot }}
+                aria-label={p.instagram}
+              >
                 <i className="fa fa-instagram" />
               </IconButton>
             </a>
@@ -72,7 +94,11 @@ class NoMatterTheMountain extends Component {
         <br />
         <div className="campaign__subtitle" style={{ marginBottom: 50 }}>
           Share your story with us on Instagram! Nominate your friends, and tag{' '}
-          <a href="https://www.instagram.com/twohalfhitches" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.instagram.com/twohalfhitches"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @twohalfhitches
           </a>{' '}
           and{' '}
@@ -87,7 +113,8 @@ class NoMatterTheMountain extends Component {
 
         <h2>Meet Our Campaign Ambassadors</h2>
         <div className="campaign__subtitle" style={{ marginBottom: 25 }}>
-          Read up on our campaign ambassadors and how they conquer their own mountains!
+          Read up on our campaign ambassadors and how they conquer their own
+          mountains!
         </div>
 
         {this.renderAmbassadors()}

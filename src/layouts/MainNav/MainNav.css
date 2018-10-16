@@ -66,7 +66,8 @@
 }
 
 .nav-dropdown {
-    box-shadow: 3px 3px 125px rgba(54,67,67,.15), 0 5px 20px rgba(0,0,0,.1);
+    box-shadow: 3px 3px 125px rgba(54, 67, 67, 0.15),
+        0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     position: absolute;
     right: 0;
@@ -74,9 +75,9 @@
     top: 76%;
     min-width: 160px;
     padding: 0;
-    transform: translate(0,10px) rotateX(20deg);
+    transform: translate(0, 10px) rotateX(20deg);
     transform-origin: center top;
-    transition: .1s ease;
+    transition: 0.1s ease;
     z-index: 4;
 }
 
@@ -109,11 +110,11 @@
 }
 
 .nav-dropdown > div > a:hover {
-    background: #eee;
+    background-color: #eee;
 }
 
 .nav-dropdown svg {
-    color: #F56700;
+    color: #f56700;
     min-width: 25px;
     font-size: 18px;
     margin-right: 10px;

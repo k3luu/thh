@@ -1,6 +1,6 @@
 .carousel:not(.carousel-slider) .control-next.control-arrow,
 .carousel:not(.carousel-slider) .control-prev.control-arrow {
-    background: #000;
+    background-color: #000;
     padding: 0;
     border-radius: 0;
     top: 0;
@@ -21,7 +21,7 @@
     right: 0;
     color: #fff;
     padding: 7px;
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
     z-index: 2;
 }
@@ -50,7 +50,7 @@
 }
 
 .mycarousel__overlay {
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     left: 0;
@@ -74,7 +74,7 @@
     right: 0;
     color: #fff;
     padding: 7px;
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
     z-index: 2;
 }
@@ -94,7 +94,7 @@
 }
 
 .mycarousel__modal .carousel .slide {
-    background: transparent;
+    background-color: transparent;
 }
 
 .mycarousel__modal .carousel .slide img {

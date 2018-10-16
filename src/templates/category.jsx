@@ -53,7 +53,9 @@ class CategoryTemplate extends React.Component {
       <ThemeProvider theme={config.breakpoints}>
         {/* <div className="category-container"> */}
         <Drawer isOpen={this.state.menuOpen}>
-          <Helmet title={`Posts in category "${category}" | ${config.siteTitle}`} />
+          <Helmet
+            title={`Posts in category "${category}" | ${config.siteTitle}`}
+          />
           <Navigation config={config} onClose={this.handleOnClose} />
           <SiteWrapper>
             <div className="tag-template">
@@ -63,17 +65,36 @@ class CategoryTemplate extends React.Component {
 
               <BannerTitle
                 title={`Category: ${category}`}
-                desc={parseInt(totalCount) === 1 ? `Total of ${totalCount} guide.` : `Total of ${totalCount} guides.`}
+                desc={
+                  parseInt(totalCount) === 1
+                    ? `Total of ${totalCount} guide.`
+                    : `Total of ${totalCount} guides.`
+                }
               />
 
               <div className="main-content">
-                <PaginatedContent page={page} pages={pages} total={total} limit={limit} prev={prev} next={next}>
-                  <PostListing postEdges={postEdges} postAuthors={authorsEdges} columns={3} description="none" />
+                <PaginatedContent
+                  page={page}
+                  pages={pages}
+                  total={total}
+                  limit={limit}
+                  prev={prev}
+                  next={next}
+                >
+                  <PostListing
+                    postEdges={postEdges}
+                    postAuthors={authorsEdges}
+                    columns={3}
+                    description="none"
+                  />
                 </PaginatedContent>
               </div>
             </div>
 
-            <Footer copyright={config.copyright} promoteGatsby={config.promoteGatsby} />
+            <Footer
+              copyright={config.copyright}
+              promoteGatsby={config.promoteGatsby}
+            />
           </SiteWrapper>
           {/* </div> */}
         </Drawer>

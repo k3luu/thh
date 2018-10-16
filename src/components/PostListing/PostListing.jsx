@@ -205,7 +205,10 @@ class PostListing extends React.Component {
       <PostFormatting className={className} style={style} key={title}>
         <Card>
           <CardHeader
-            classes={{ root: classes.cardHeaderRoot, title: classes.cardHeaderTitle }}
+            classes={{
+              root: classes.cardHeaderRoot,
+              title: classes.cardHeaderTitle
+            }}
             title={this.handleTitle(post)}
             subheader={
               post.location ? (

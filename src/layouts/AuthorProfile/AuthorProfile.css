@@ -7,7 +7,7 @@
 /* Add a little circle in the middle of the border-bottom */
 .author-profile::after {
     display: block;
-    content: "";
+    content: '';
     width: 7px;
     height: 7px;
     border: #e7eef2 1px solid;
@@ -15,7 +15,7 @@
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #fff;
+    background-color: #fff;
     border-radius: 100%;
     box-shadow: #fff 0 0 0 5px;
 }
@@ -39,4 +39,3 @@
         padding-bottom: 2rem;
     }
 }
-

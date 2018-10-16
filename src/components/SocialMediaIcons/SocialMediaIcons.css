@@ -40,7 +40,7 @@
 }
 
 .main-content .social-media-icons a:hover {
-    /* background: none; */
+    /* background-color: none; */
     /* transition: 0.3s ease; */
 }
 
@@ -74,7 +74,7 @@
 
 .main-header .social-media-icon .social-svg:hover {
     color: #bbc7cc;
-    background: white;
+    background-color: white;
 }
 
 /* ==========================================================================

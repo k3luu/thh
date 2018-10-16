@@ -30,25 +30,25 @@
 }
 
 .read-next-story:hover::before {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.2s ease;
 }
 
 .read-next-story:hover .post::before {
     color: #222;
-    background: #fff;
+    background-color: #fff;
     transition: all 0.2s ease;
 }
 
 .read-next-story::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.5s ease;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .read-next-story .post::before {
-    content: "Read This Next";
+    content: 'Read This Next';
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1rem;
@@ -69,7 +69,7 @@
 }
 
 .read-next-story.prev .post::before {
-    content: "You Might Enjoy";
+    content: 'You Might Enjoy';
 }
 
 .read-next-story h2 {
@@ -84,7 +84,7 @@
 
 /* Special styles for posts with no cover images */
 .read-next-story.no-cover {
-    background: #f5f8fa;
+    background-color: #f5f8fa;
 }
 
 .read-next-story.no-cover::before {
