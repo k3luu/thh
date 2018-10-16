@@ -1,10 +1,12 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import Cookies from 'universal-cookie';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import { Link } from 'react-scroll';
 import DialogContent from '@material-ui/core/DialogContent';
 
+import Layout from '../components/layout';
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 import Drawer from '../layouts/Drawer/Drawer';
@@ -56,54 +58,56 @@ class IndexTemplate extends React.Component {
   };
 
   render() {
-    const { nodes } = this.props.pathContext;
+    const { location, pageContext } = this.props;
+    const { nodes } = pageContext;
 
     // console.log('INDEX', nodes);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer className="home-template" isOpen={this.state.menuOpen}>
-          <Helmet title={config.siteTitle} />
-          <SEO postEdges={nodes} />
+        <Layout location={location}>
+          <Drawer className="home-template" isOpen={this.state.menuOpen}>
+            <Helmet title={config.siteTitle} />
+            <SEO postEdges={nodes} />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            {/* All the main content gets inserted here */}
-            <div className="home-template">
-              {/* The big featured header */}
-              <MainHeader cover={config.siteCover}>
-                <MainNav onClick={this.handleOnClick} />
+            <SiteWrapper>
+              {/* All the main content gets inserted here */}
+              <div className="home-template">
+                {/* The big featured header */}
+                <MainHeader cover={config.siteCover}>
+                  <MainNav onClick={this.handleOnClick} />
 
-                <div className="main-header-content inner">
-                  <PageHeader
-                    logo={config.siteLogoName}
-                    title={config.siteTitle}
-                  />
-                  <PageDescription text={config.siteDescription} />
+                  <div className="main-header-content inner">
+                    <PageHeader
+                      logo={config.siteLogoName}
+                      title={config.siteTitle}
+                    />
+                    <PageDescription text={config.siteDescription} />
+                  </div>
+
+                  <Link
+                    className="scroll-down icon-arrow-left"
+                    to="home"
+                    offset={-30}
+                    spy
+                    smooth
+                    duration={500}
+                  >
+                    <span className="hidden">Scroll Down</span>
+                  </Link>
+                </MainHeader>
+
+                <div id="home">
+                  <BannerTitle title="Your Guide Through the Great Outdoors" />
+
+                  <Home config={config} nodes={nodes} />
                 </div>
-
-                <Link
-                  className="scroll-down icon-arrow-left"
-                  to="home"
-                  offset={-30}
-                  spy
-                  smooth
-                  duration={500}
-                >
-                  <span className="hidden">Scroll Down</span>
-                </Link>
-              </MainHeader>
-
-              <div id="home">
-                <BannerTitle title="Your Guide Through the Great Outdoors" />
-
-                <Home config={config} nodes={nodes} />
               </div>
-            </div>
 
-            {/* {!cookies.get("previousVisitor") && (
+              {/* {!cookies.get("previousVisitor") && (
               <Modal
                 open={this.state.subscribeModal}
                 onClose={this.handleCloseSubscribe}
@@ -114,13 +118,14 @@ class IndexTemplate extends React.Component {
               </Modal>
             )} */}
 
-            {/* The tiny footer at the very bottom */}
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+              {/* The tiny footer at the very bottom */}
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }

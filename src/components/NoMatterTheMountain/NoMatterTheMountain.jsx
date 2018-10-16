@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import IconButton from '@material-ui/core/IconButton';
 import { withStyles } from '@material-ui/core/styles';
-import { Link } from 'react-router-dom';
 
 import ambassadors from './ambassadors/ambassadors';
 import './NoMatterTheMountain.css';
 
-const styles = theme => ({
+const styles = () => ({
   buttonRoot: {
     color: '#fff',
     backgroundColor: 'rgba(255, 255, 255, 0.05)',
@@ -20,19 +19,7 @@ const styles = theme => ({
   }
 });
 
-const IGLink = props => (
-  <a
-    href={`https://www.instagram.com/${props.to}`}
-    target="_blank"
-    rel="noopenner noreferrer"
-  />
-);
-
 class NoMatterTheMountain extends Component {
-  handleAmbassadorTitle(list) {
-    return list.join(', ');
-  }
-
   renderAmbassadors() {
     const { classes } = this.props;
 
@@ -50,9 +37,7 @@ class NoMatterTheMountain extends Component {
         <div className="ambassador-testimonial" style={{ background: p.color }}>
           <div className="ambassador-info">
             <h6 className="ambassador-name">{p.name}</h6>
-            <div className="ambassador-title">
-              {this.handleAmbassadorTitle(p.title)}
-            </div>
+            <div className="ambassador-title">{p.title.join(', ')}</div>
           </div>
 
           <div className="ambassador-bio" background={p.color}>

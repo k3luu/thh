@@ -5,7 +5,7 @@ import config from '../../data/SiteConfig';
 import './index.css';
 import './main.css';
 
-export default class MainLayout extends React.Component {
+export default class Layout extends React.Component {
   getLocalTitle() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
@@ -42,13 +42,14 @@ export default class MainLayout extends React.Component {
   }
   render() {
     const { children } = this.props;
+
     return (
       <div>
         <Helmet>
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        {children()}
+        {children}
       </div>
     );
   }

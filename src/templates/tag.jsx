@@ -1,6 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+import { graphql } from 'gatsby';
+
+import Layout from '../components/layout';
 import PostListing from '../components/PostListing/PostListing';
 import config from '../../data/SiteConfig';
 import Drawer from '../layouts/Drawer/Drawer';
@@ -40,6 +43,7 @@ class TagTemplate extends React.Component {
   };
 
   render() {
+    const { location } = this.props;
     const {
       tag,
       nodes,
@@ -49,62 +53,64 @@ class TagTemplate extends React.Component {
       limit,
       prev,
       next
-    } = this.props.pathContext;
+    } = this.props.pageContext;
     const authorsEdges = this.props.data.authors.edges;
 
     // console.log("tags", this.props);
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer isOpen={this.state.menuOpen}>
-          <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
+        <Layout location={location}>
+          <Drawer isOpen={this.state.menuOpen}>
+            <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            {/* All the main content gets inserted here */}
-            <div className="tag-template">
-              {/* The big featured header */}
-              <MainHeader className="tag-head" cover={config.guideCover}>
-                <MainNav onClick={this.handleOnClick} />
-              </MainHeader>
+            <SiteWrapper>
+              {/* All the main content gets inserted here */}
+              <div className="tag-template">
+                {/* The big featured header */}
+                <MainHeader className="tag-head" cover={config.guideCover}>
+                  <MainNav onClick={this.handleOnClick} />
+                </MainHeader>
 
-              <BannerTitle
-                title={`Tag: ${tag}`}
-                desc={
-                  parseInt(total) === 1
-                    ? `Total of ${total} guide.`
-                    : `Total of ${total} guides.`
-                }
-              />
+                <BannerTitle
+                  title={`Tag: ${tag}`}
+                  desc={
+                    parseInt(total) === 1
+                      ? `Total of ${total} guide.`
+                      : `Total of ${total} guides.`
+                  }
+                />
 
-              <div className="main-content">
-                <PaginatedContent
-                  page={page}
-                  pages={pages}
-                  total={total}
-                  limit={limit}
-                  prev={prev}
-                  next={next}
-                >
-                  {/* PostListing component renders all the posts */}
-                  <PostListing
-                    postEdges={nodes}
-                    postAuthors={authorsEdges}
-                    columns={3}
-                    description="none"
-                  />
-                </PaginatedContent>
+                <div className="main-content">
+                  <PaginatedContent
+                    page={page}
+                    pages={pages}
+                    total={total}
+                    limit={limit}
+                    prev={prev}
+                    next={next}
+                  >
+                    {/* PostListing component renders all the posts */}
+                    <PostListing
+                      postEdges={nodes}
+                      postAuthors={authorsEdges}
+                      columns={3}
+                      description="none"
+                    />
+                  </PaginatedContent>
+                </div>
               </div>
-            </div>
 
-            {/* The tiny footer at the very bottom */}
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+              {/* The tiny footer at the very bottom */}
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }

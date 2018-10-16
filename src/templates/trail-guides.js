@@ -1,6 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+import { graphql } from 'gatsby';
+
+import Layout from '../components/layout';
 import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -47,6 +50,7 @@ class GuidesPage extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
     const {
       nodes,
       page,
@@ -55,53 +59,55 @@ class GuidesPage extends React.Component {
       limit,
       prev,
       next
-    } = this.props.pathContext;
+    } = this.props.pageContext;
 
     // console.log('trail guide page', this.props);
 
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Trail Guides | ${config.siteTitle}`} />
+        <Layout location={location}>
+          <Drawer className="author-template" isOpen={this.state.menuOpen}>
+            <Helmet title={`Trail Guides | ${config.siteTitle}`} />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            <MainHeader className="post-head" cover={config.guideCover}>
-              <MainNav onClick={this.handleOnClick} />
-            </MainHeader>
+            <SiteWrapper>
+              <MainHeader className="post-head" cover={config.guideCover}>
+                <MainNav onClick={this.handleOnClick} />
+              </MainHeader>
 
-            <BannerTitle
-              title="Trail Guides"
-              desc="Find some inspiration and direction for your next hike!"
-            />
+              <BannerTitle
+                title="Trail Guides"
+                desc="Find some inspiration and direction for your next hike!"
+              />
 
-            <div className="main-content">
-              <PaginatedContent
-                page={page}
-                pages={pages}
-                total={total}
-                limit={limit}
-                prev={prev}
-                next={next}
-              >
-                {/* PostListing component renders all the posts */}
-                <PostListing
-                  postEdges={nodes}
-                  postAuthors={this.props.data.authors.edges}
-                  columns={3}
-                  description="details"
-                />
-              </PaginatedContent>
-            </div>
+              <div className="main-content">
+                <PaginatedContent
+                  page={page}
+                  pages={pages}
+                  total={total}
+                  limit={limit}
+                  prev={prev}
+                  next={next}
+                >
+                  {/* PostListing component renders all the posts */}
+                  <PostListing
+                    postEdges={nodes}
+                    postAuthors={this.props.data.authors.edges}
+                    columns={3}
+                    description="details"
+                  />
+                </PaginatedContent>
+              </div>
 
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }

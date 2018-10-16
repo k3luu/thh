@@ -1,13 +1,14 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
-import Link from 'gatsby-link';
+import { Link, graphql } from 'gatsby';
 import Avatar from '@material-ui/core/Avatar';
 import { withStyles } from '@material-ui/core/styles';
 
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
 
+import Layout from '../components/layout';
 import MainHeader from '../layouts/MainHeader/MainHeader';
 import MainNav from '../layouts/MainNav/MainNav';
 import Drawer from '../layouts/Drawer/Drawer';
@@ -57,7 +58,7 @@ class PostTemplate extends React.Component {
   constructor(p) {
     super(p);
 
-    const { slug } = this.props.pathContext;
+    const { slug } = this.props.pageContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
 
@@ -226,7 +227,7 @@ class PostTemplate extends React.Component {
 
   render() {
     const { location, data } = this.props;
-    const { slug, next, prev } = this.props.pathContext;
+    const { slug, next, prev } = this.props.pageContext;
     const postNode = this.props.data.markdownRemark;
     const post = parsePost(postNode.frontmatter, slug);
     const {
@@ -247,73 +248,75 @@ class PostTemplate extends React.Component {
 
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer className="post-template" isOpen={this.state.menuOpen}>
-          <Helmet>
-            <title>{`${post.title} | ${config.siteTitle}`}</title>
-          </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
+        <Layout location={location}>
+          <Drawer className="post-template" isOpen={this.state.menuOpen}>
+            <Helmet>
+              <title>{`${post.title} | ${config.siteTitle}`}</title>
+            </Helmet>
+            <SEO postPath={slug} postNode={postNode} postSEO />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            <MainHeader className="post-head" cover={cover}>
-              <MainNav onClick={this.handleOnClick} />
+            <SiteWrapper>
+              <MainHeader className="post-head" cover={cover}>
+                <MainNav onClick={this.handleOnClick} />
 
-              <PostHeader>
-                <h1 className="post-title">{title}</h1>
-              </PostHeader>
-            </MainHeader>
-            <MainContent>
-              <PostFormatting className={className}>
-                {this.handleTrailData(post)}
+                <PostHeader>
+                  <h1 className="post-title">{title}</h1>
+                </PostHeader>
+              </MainHeader>
+              <MainContent>
+                <PostFormatting className={className}>
+                  {this.handleTrailData(post)}
 
-                <section
-                  className="post-content"
-                  dangerouslySetInnerHTML={{ __html: postNode.html }}
-                />
-
-                {carouselTitle && <h3>{carouselTitle}</h3>}
-                {carousel && <MyCarousel data={carousel} />}
-
-                {secondaryCarouselTitle && <h3>{secondaryCarouselTitle}</h3>}
-                {secondaryCarousel && <MyCarousel data={secondaryCarousel} />}
-
-                {disclaimer && (
-                  <div className="post-disclaimer">
-                    <h4>Disclaimer</h4>
-                    {disclaimer.map(text => <p key={text}>{text}</p>)}
-                  </div>
-                )}
-
-                {references && (
-                  <div className="post-disclaimer">
-                    <h4>References</h4>
-                    {references.map(text => <p key={text}>{text}</p>)}
-                  </div>
-                )}
-
-                <PostFooter>
-                  <PostShare
-                    postNode={postNode}
-                    postPath={location.pathname}
-                    config={config}
+                  <section
+                    className="post-content"
+                    dangerouslySetInnerHTML={{ __html: postNode.html }}
                   />
-                  <GhostSubscribe />
-                  <Disqus postNode={postNode} />
-                </PostFooter>
-              </PostFormatting>
-            </MainContent>
-            <ReadNext next={getNextData()} prev={getPrevData()} />
 
-            {/* The tiny footer at the very bottom */}
-            <Footer
-              darkBackground
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+                  {carouselTitle && <h3>{carouselTitle}</h3>}
+                  {carousel && <MyCarousel data={carousel} />}
+
+                  {secondaryCarouselTitle && <h3>{secondaryCarouselTitle}</h3>}
+                  {secondaryCarousel && <MyCarousel data={secondaryCarousel} />}
+
+                  {disclaimer && (
+                    <div className="post-disclaimer">
+                      <h4>Disclaimer</h4>
+                      {disclaimer.map(text => <p key={text}>{text}</p>)}
+                    </div>
+                  )}
+
+                  {references && (
+                    <div className="post-disclaimer">
+                      <h4>References</h4>
+                      {references.map(text => <p key={text}>{text}</p>)}
+                    </div>
+                  )}
+
+                  <PostFooter>
+                    <PostShare
+                      postNode={postNode}
+                      postPath={location.pathname}
+                      config={config}
+                    />
+                    <GhostSubscribe />
+                    <Disqus postNode={postNode} />
+                  </PostFooter>
+                </PostFormatting>
+              </MainContent>
+              <ReadNext next={getNextData()} prev={getPrevData()} />
+
+              {/* The tiny footer at the very bottom */}
+              <Footer
+                darkBackground
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }

@@ -13,11 +13,11 @@ module.exports = {
       description: config.siteDescription,
       image_url: `${config.siteUrl + pathPrefix}/logos/logo-512.png`,
       author: config.siteRssAuthor,
-      copyright: `${config.copyright.label} © ${config.copyright.year || new Date().getFullYear()}`
+      copyright: `${config.copyright.label} © ${config.copyright.year ||
+        new Date().getFullYear()}`
     }
   },
   plugins: [
-    'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -55,8 +55,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              plugins: [`gatsby-remark-responsive-iframe`],
-            },
+              plugins: [`gatsby-remark-responsive-iframe`]
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',

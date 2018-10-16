@@ -1,6 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+import { graphql } from 'gatsby';
+
+import Layout from '../components/layout';
 import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -47,6 +50,7 @@ class HikingPage extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
     const {
       nodes,
       page,
@@ -55,52 +59,57 @@ class HikingPage extends React.Component {
       limit,
       prev,
       next
-    } = this.props.pathContext;
+    } = this.props.pageContext;
 
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Fundamentals | ${config.siteTitle}`} />
+        <Layout location={location}>
+          <Drawer className="author-template" isOpen={this.state.menuOpen}>
+            <Helmet title={`Fundamentals | ${config.siteTitle}`} />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            <MainHeader className="post-head" cover={config.fundamentalsCover}>
-              <MainNav onClick={this.handleOnClick} />
-            </MainHeader>
-
-            <BannerTitle
-              title="Fundamentals"
-              desc="Not sure how to prepare? Take a look at our Fundamentals
-                section!"
-            />
-
-            <div className="main-content">
-              <PaginatedContent
-                page={page}
-                pages={pages}
-                total={total}
-                limit={limit}
-                prev={prev}
-                next={next}
+            <SiteWrapper>
+              <MainHeader
+                className="post-head"
+                cover={config.fundamentalsCover}
               >
-                {/* PostListing component renders all the posts */}
-                <PostListing
-                  postEdges={nodes}
-                  postAuthors={this.props.data.authors.edges}
-                  description="none"
-                  columns={3}
-                />
-              </PaginatedContent>
-            </div>
+                <MainNav onClick={this.handleOnClick} />
+              </MainHeader>
 
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+              <BannerTitle
+                title="Fundamentals"
+                desc="Not sure how to prepare? Take a look at our Fundamentals
+                section!"
+              />
+
+              <div className="main-content">
+                <PaginatedContent
+                  page={page}
+                  pages={pages}
+                  total={total}
+                  limit={limit}
+                  prev={prev}
+                  next={next}
+                >
+                  {/* PostListing component renders all the posts */}
+                  <PostListing
+                    postEdges={nodes}
+                    postAuthors={this.props.data.authors.edges}
+                    description="none"
+                    columns={3}
+                  />
+                </PaginatedContent>
+              </div>
+
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }

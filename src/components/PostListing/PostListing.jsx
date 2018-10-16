@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -12,13 +12,17 @@ import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Tooltip from '@material-ui/core/Tooltip';
-import { FacebookShareButton, TwitterShareButton, EmailShareButton } from 'react-share';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  EmailShareButton
+} from 'react-share';
 
 import config from '../../../data/SiteConfig';
 import PostFormatting from '../../layouts/PostFormatting/PostFormatting';
 import './PostListing.css';
 
-const styles = theme => ({
+const styles = () => ({
   card: {
     maxWidth: 400
   },
@@ -44,7 +48,8 @@ const styles = theme => ({
   }
 });
 
-const formatSiteUrl = (siteUrl, pathPrefix, path) => siteUrl + (pathPrefix === '/' ? '' : pathPrefix) + path;
+const formatSiteUrl = (siteUrl, pathPrefix, path) =>
+  siteUrl + (pathPrefix === '/' ? '' : pathPrefix) + path;
 
 /**
  * Maps the post data into a simpler data object
@@ -146,7 +151,10 @@ class PostListing extends React.Component {
           <section className="post-excerpt">
             {difficulty && (
               <div className="post-listing__difficulty-container">
-                <Link to={`/tags/${this.handleTagLink(difficulty)}`} className={this.handleDifficultyClass(difficulty)}>
+                <Link
+                  to={`/tags/${this.handleTagLink(difficulty)}`}
+                  className={this.handleDifficultyClass(difficulty)}
+                >
                   {difficulty}
                 </Link>
               </div>
@@ -154,13 +162,20 @@ class PostListing extends React.Component {
 
             {distance && distance.length > 20 ? (
               <Tooltip title={distance}>
-                <div className="post-listing__distance">{`${distance.substring(0, 20)}...`}</div>
+                <div className="post-listing__distance">{`${distance.substring(
+                  0,
+                  20
+                )}...`}</div>
               </Tooltip>
             ) : (
               <div className="post-listing__distance">{distance || ''}</div>
             )}
 
-            {elevation && <div className="post-listing__elevation">{elevation} Elevation Gain</div>}
+            {elevation && (
+              <div className="post-listing__elevation">
+                {elevation} Elevation Gain
+              </div>
+            )}
             {usage && <div className="post-listing__usage">{usage} Usage</div>}
           </section>
         );
@@ -212,7 +227,10 @@ class PostListing extends React.Component {
             title={this.handleTitle(post)}
             subheader={
               post.location ? (
-                <Link to={`/tags/${this.handleTagLink(post.location)}`} style={{ color: 'rgba(0, 0, 0, 0.54)' }}>
+                <Link
+                  to={`/tags/${this.handleTagLink(post.location)}`}
+                  style={{ color: 'rgba(0, 0, 0, 0.54)' }}
+                >
                   {post.location}
                 </Link>
               ) : (
@@ -226,10 +244,16 @@ class PostListing extends React.Component {
             }
           />
           <Link to={path}>
-            <CardMedia className={classes.media} image={thumbnail} title={this.handleTitle(post)} />
+            <CardMedia
+              className={classes.media}
+              image={thumbnail}
+              title={this.handleTitle(post)}
+            />
           </Link>
           {description !== 'none' && (
-            <CardContent className={classes.content}>{this.handleDescription(post)}</CardContent>
+            <CardContent className={classes.content}>
+              {this.handleDescription(post)}
+            </CardContent>
           )}
         </Card>
       </PostFormatting>
@@ -281,20 +305,30 @@ class PostListing extends React.Component {
   handlePostMenu() {
     const { classes } = this.props;
     const { anchorEl, postMenuNode } = this.state;
-    const url = postMenuNode ? formatSiteUrl(config.siteUrl, config.pathPrefix, postMenuNode.path) : '';
+    const url = postMenuNode
+      ? formatSiteUrl(config.siteUrl, config.pathPrefix, postMenuNode.path)
+      : '';
 
     if (!postMenuNode) {
       return '';
     }
 
     return (
-      <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleCardMenuClose}>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        open={Boolean(anchorEl)}
+        onClose={this.handleCardMenuClose}
+      >
         <FacebookShareButton url={url} quote={postMenuNode.title}>
           <MenuItem onClick={this.handleCardMenuClose}>
             <ListItemIcon>
               <i className="fa fa-facebook" />
             </ListItemIcon>
-            <ListItemText classes={{ primary: classes.menu }} style={{ paddingLeft: 22 }}>
+            <ListItemText
+              classes={{ primary: classes.menu }}
+              style={{ paddingLeft: 22 }}
+            >
               Share on Facebook
             </ListItemText>
           </MenuItem>
@@ -304,7 +338,9 @@ class PostListing extends React.Component {
             <ListItemIcon>
               <i className="fa fa-twitter" />
             </ListItemIcon>
-            <ListItemText classes={{ primary: classes.menu }}>Share on Twitter</ListItemText>
+            <ListItemText classes={{ primary: classes.menu }}>
+              Share on Twitter
+            </ListItemText>
           </MenuItem>
         </TwitterShareButton>
         <EmailShareButton url={url} title={postMenuNode.title}>
@@ -312,7 +348,9 @@ class PostListing extends React.Component {
             <ListItemIcon>
               <i className="fa fa-share-alt" />
             </ListItemIcon>
-            <ListItemText classes={{ primary: classes.menu }}>Email</ListItemText>
+            <ListItemText classes={{ primary: classes.menu }}>
+              Email
+            </ListItemText>
           </MenuItem>
         </EmailShareButton>
       </Menu>

@@ -1,7 +1,9 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+import { graphql } from 'gatsby';
 
+import Layout from '../components/layout';
 import Drawer from '../layouts/Drawer/Drawer';
 import PostListing from '../components/PostListing/PostListing';
 import Navigation from '../components/Navigation/Navigation';
@@ -42,62 +44,63 @@ class CategoryTemplate extends React.Component {
   };
 
   render() {
+    const { location } = this.props;
     const { totalCount } = this.props.data.allMarkdownRemark;
-    const { page, pages, total, limit, prev, next } = this.props.pathContext;
-    const category = this.props.pathContext.category;
+    const { page, pages, total, limit, prev, next } = this.props.pageContext;
+    const category = this.props.pageContext.category;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     const authorsEdges = this.props.data.authors.edges;
 
     console.log(this.props);
     return (
       <ThemeProvider theme={config.breakpoints}>
-        {/* <div className="category-container"> */}
-        <Drawer isOpen={this.state.menuOpen}>
-          <Helmet
-            title={`Posts in category "${category}" | ${config.siteTitle}`}
-          />
-          <Navigation config={config} onClose={this.handleOnClose} />
-          <SiteWrapper>
-            <div className="tag-template">
-              <MainHeader className="tag-head" cover={config.guideCover}>
-                <MainNav onClick={this.handleOnClick} />
-              </MainHeader>
-
-              <BannerTitle
-                title={`Category: ${category}`}
-                desc={
-                  parseInt(totalCount) === 1
-                    ? `Total of ${totalCount} guide.`
-                    : `Total of ${totalCount} guides.`
-                }
-              />
-
-              <div className="main-content">
-                <PaginatedContent
-                  page={page}
-                  pages={pages}
-                  total={total}
-                  limit={limit}
-                  prev={prev}
-                  next={next}
-                >
-                  <PostListing
-                    postEdges={postEdges}
-                    postAuthors={authorsEdges}
-                    columns={3}
-                    description="none"
-                  />
-                </PaginatedContent>
-              </div>
-            </div>
-
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
+        <Layout location={location}>
+          <Drawer isOpen={this.state.menuOpen}>
+            <Helmet
+              title={`Posts in category "${category}" | ${config.siteTitle}`}
             />
-          </SiteWrapper>
-          {/* </div> */}
-        </Drawer>
+            <Navigation config={config} onClose={this.handleOnClose} />
+            <SiteWrapper>
+              <div className="tag-template">
+                <MainHeader className="tag-head" cover={config.guideCover}>
+                  <MainNav onClick={this.handleOnClick} />
+                </MainHeader>
+
+                <BannerTitle
+                  title={`Category: ${category}`}
+                  desc={
+                    parseInt(totalCount) === 1
+                      ? `Total of ${totalCount} guide.`
+                      : `Total of ${totalCount} guides.`
+                  }
+                />
+
+                <div className="main-content">
+                  <PaginatedContent
+                    page={page}
+                    pages={pages}
+                    total={total}
+                    limit={limit}
+                    prev={prev}
+                    next={next}
+                  >
+                    <PostListing
+                      postEdges={postEdges}
+                      postAuthors={authorsEdges}
+                      columns={3}
+                      description="none"
+                    />
+                  </PaginatedContent>
+                </div>
+              </div>
+
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }
