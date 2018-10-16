@@ -113,7 +113,9 @@ class PostListing extends React.Component {
     let classStyling = 'post-listing__difficulty ';
     level = level.toLowerCase();
 
-    if (level.includes('difficult') || level.includes('strenuous')) {
+    if (level.includes('strenuous')) {
+      classStyling += 'strenuous';
+    } else if (level.includes('difficult')) {
       classStyling += 'difficult';
     } else if (level.includes('easy-')) {
       classStyling += 'easy-moderate';
