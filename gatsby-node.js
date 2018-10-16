@@ -1,7 +1,7 @@
 const path = require('path');
 const _ = require('lodash');
 const fs = require('fs');
-const webpackLodashPlugin = require('lodash-webpack-plugin');
+// const webpackLodashPlugin = require('lodash-webpack-plugin');
 const siteConfig = require('./data/SiteConfig');
 const { createPaginationPages, createLinkedPages, prefixPathFormatter } = require('gatsby-pagination');
 
@@ -367,11 +367,16 @@ exports.createPages = ({ graphql, actions }) => {
 //   }
 // };
 
-exports.onCreateWebpackConfig = ({ stage, actions }) => {
-  switch (stage) {
-    case 'build-javascript':
-      actions.setWebpackConfig({
-        plugins: [webpackLodashPlugin],
-      });
-  }
-};
+// exports.onCreateWebpackConfig = ({ stage, actions }) => {
+//   switch (stage) {
+//     case 'build-javascript':
+//       actions.setWebpackConfig({
+//         plugins: [webpackLodashPlugin],
+//       });
+//   }
+//   if (stage === 'build-javascript') {
+//     actions.setWebpackConfig({
+//       plugins: [webpackLodashPlugin],
+//     });
+//   }
+// };
