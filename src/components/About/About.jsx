@@ -72,7 +72,8 @@ class About extends Component {
           that nature brings us, and ultimately become re-enchanted with the
           Great Outdoors. Happy trails!
         </p>
-        <h1>Our Team</h1>
+
+        <h1 className="about__heading">Our Team</h1>
         <p>
           Get to know the team behind Two Half-Hitches. After all, we're just
           outdoor enthusiasts who share the same passion as you!

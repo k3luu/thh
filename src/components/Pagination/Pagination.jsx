@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
-import PaginationLink from '../PaginationLink/PaginationLink';
 import './Pagination.css';
 
 const theme = createMuiTheme({
@@ -24,11 +24,31 @@ class Pagination extends React.Component {
     const { page, pages } = this.props;
     const dots = [];
 
+    let pathname = '/';
+
+    // if (window && window.location) {
+    //   pathname = window.location.pathname;
+    // }
+
     for (let i = 0; i < pages; i++) {
       if (page - 1 === i) {
-        dots.push(<i key={i} className="fa fa-circle" style={{ color: 'rgb(23, 33, 33)', padding: '0 5px' }} />);
+        dots.push(
+          <Link key={i} to={`${pathname}${i + 1}`}>
+            <i
+              className="fa fa-circle"
+              style={{ color: 'rgb(23, 33, 33)', padding: '0 5px' }}
+            />
+          </Link>
+        );
       } else {
-        dots.push(<i key={i} className="fa fa-circle" style={{ color: '#CFCFCF', padding: '0 5px' }} />);
+        dots.push(
+          <Link key={i} to={`${pathname}${i + 1}`}>
+            <i
+              className="fa fa-circle"
+              style={{ color: '#CFCFCF', padding: '0 5px' }}
+            />
+          </Link>
+        );
       }
     }
 
@@ -42,12 +62,12 @@ class Pagination extends React.Component {
       <MuiThemeProvider theme={theme}>
         <nav className="pagination">
           {prev ? (
-            <PaginationLink className="newer-posts" url={prev}>
+            <Link className="newer-posts" to={prev}>
               <Button size="small" disabled={!prev}>
                 <KeyboardArrowLeft />
                 Back
               </Button>
-            </PaginationLink>
+            </Link>
           ) : (
             <Button size="small" disabled>
               <KeyboardArrowLeft />
@@ -58,12 +78,12 @@ class Pagination extends React.Component {
           <span className="page-number">{this.handleDots()}</span>
 
           {next ? (
-            <PaginationLink className="older-posts" url={next}>
+            <Link className="older-posts" to={next}>
               <Button size="small" disabled={!next}>
                 Next
                 <KeyboardArrowRight />
               </Button>
-            </PaginationLink>
+            </Link>
           ) : (
             <Button size="small" disabled>
               Next

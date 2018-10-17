@@ -5,25 +5,7 @@
   max-width: 900px;
   margin: 4rem auto;
   padding-bottom: 4rem;
-  /* border-bottom: #d8d8d8 1px solid; */
   word-wrap: break-word;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post::after {
-  display: block;
-  /* content: ''; */
-  width: 7px;
-  height: 7px;
-  border: #d8d8d8 1px solid;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  margin-left: -5px;
-  background: #fff;
-  border-radius: 100%;
-  box-shadow: #fff 0 0 0 5px;
 }
 
 .post-title {
