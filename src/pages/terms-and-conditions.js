@@ -1,6 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+
+import Layout from '../components/layout';
 import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -46,27 +48,31 @@ class TermsPage extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
+
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Events | ${config.siteTitle}`} />
+        <Layout location={location}>
+          <Drawer className="author-template" isOpen={this.state.menuOpen}>
+            <Helmet title={`Events | ${config.siteTitle}`} />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            <MainHeader className="post-head" cover={config.siteCover}>
-              <MainNav onClick={this.handleOnClick} />
-            </MainHeader>
-            <BannerTitle title="Terms and Conditions" />
+            <SiteWrapper>
+              <MainHeader className="post-head" cover={config.siteCover}>
+                <MainNav onClick={this.handleOnClick} />
+              </MainHeader>
+              <BannerTitle title="Terms and Conditions" />
 
-            <Terms />
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+              <Terms />
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }

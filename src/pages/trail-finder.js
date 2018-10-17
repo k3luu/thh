@@ -1,6 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
+
+import Layout from '../components/layout';
 import config from '../../data/SiteConfig';
 import SiteWrapper from '../layouts/SiteWrapper/SiteWrapper';
 import MainHeader from '../layouts/MainHeader/MainHeader';
@@ -46,33 +48,37 @@ class TrailsPage extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
+
     return (
       <ThemeProvider theme={config.breakpoints}>
-        <Drawer className="author-template" isOpen={this.state.menuOpen}>
-          <Helmet title={`Trail Finder | ${config.siteTitle}`} />
+        <Layout location={location}>
+          <Drawer className="author-template" isOpen={this.state.menuOpen}>
+            <Helmet title={`Trail Finder | ${config.siteTitle}`} />
 
-          {/* The blog navigation links */}
-          <Navigation config={config} onClose={this.handleOnClose} />
+            {/* The blog navigation links */}
+            <Navigation config={config} onClose={this.handleOnClose} />
 
-          <SiteWrapper>
-            <MainHeader className="post-head" cover={config.finderCover}>
-              <MainNav onClick={this.handleOnClick} />
-            </MainHeader>
+            <SiteWrapper>
+              <MainHeader className="post-head" cover={config.finderCover}>
+                <MainNav onClick={this.handleOnClick} />
+              </MainHeader>
 
-            <BannerTitle
-              title="Trail Finder"
-              desc="Find a trail that best suits you based on your personal interest and
+              <BannerTitle
+                title="Trail Finder"
+                desc="Find a trail that best suits you based on your personal interest and
             level of experience!"
-            />
+              />
 
-            <TrailFinder />
+              <TrailFinder />
 
-            <Footer
-              copyright={config.copyright}
-              promoteGatsby={config.promoteGatsby}
-            />
-          </SiteWrapper>
-        </Drawer>
+              <Footer
+                copyright={config.copyright}
+                promoteGatsby={config.promoteGatsby}
+              />
+            </SiteWrapper>
+          </Drawer>
+        </Layout>
       </ThemeProvider>
     );
   }
