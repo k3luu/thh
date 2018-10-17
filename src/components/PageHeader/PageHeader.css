@@ -1,32 +1,31 @@
 .page-header {
-    margin: 10px 0;
-    font-size: 5rem;
-    letter-spacing: -1px;
-    font-weight: 700;
-    color: #fff;
-    height: 60vw;
-    max-height: 60vh;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  margin: 10px 0;
+  font-size: 5rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+  color: #fff;
+  height: 60vw;
+  max-height: 60vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-header div {
-    background-size: cover;
-    background-position: center;
-
+  background-size: cover;
+  background-position: center;
 }
 
 .no-cover .page-header {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-header {
-    -webkit-animation: fade-in-down 0.6s;
-    animation: fade-in-down 0.6s both;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+  -webkit-animation: fade-in-down 0.6s;
+  animation: fade-in-down 0.6s both;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 /* ==========================================================================
@@ -34,11 +33,11 @@
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
-    .page-header {
-        font-size: 4rem;
-        letter-spacing: -1px;
-        height: 80vh;
-    }
+  .page-header {
+    font-size: 4rem;
+    letter-spacing: -1px;
+    height: 80vh;
+  }
 }
 
 /* ==========================================================================
@@ -46,9 +45,9 @@
    ========================================================================== */
 
 @media only screen and (max-width: 600px) {
-    .page-header {
-        font-size: 3rem;
-    }
+  .page-header {
+    font-size: 2rem;
+  }
 }
 
 /* ==========================================================================
@@ -57,29 +56,29 @@
 
 /* Used to fade in title/desc on the home page */
 @-webkit-keyframes fade-in-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 @keyframes fade-in-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }

@@ -1,28 +1,37 @@
 .post-template .post-header,
 .page-template .post-header {
-    margin-bottom: 3.4rem;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  margin-bottom: 3.4rem;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .post-template .post-header .post-title,
 .page-template .post-header .post-title {
+  text-shadow: 0px 2px 15px #000;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 3.2rem;
+}
+
+/* ==========================================================================
+       Media Queries - Smaller than 600px
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+  .post-template .post-header,
+  .page-template .post-header {
+    margin-bottom: 0;
+  }
+
+  .post-template .post-header .post-title,
+  .page-template .post-header .post-title {
     text-shadow: 0px 2px 15px #000;
     text-align: left;
     margin: 0 auto;
     max-width: 900px;
-    font-size: 3rem;
-}
-
-/* ==========================================================================
-       Media Queries - Smaller than 500px
-   ========================================================================== */
-
-@media only screen and (max-width: 600px) {
-    .post-template .post-header,
-    .page-template .post-header {
-        margin-bottom: 0;
-    }
+    font-size: 2rem;
+  }
 }

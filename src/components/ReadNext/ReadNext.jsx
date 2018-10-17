@@ -15,7 +15,7 @@ const ReadNextStory = props => {
     return (
       <Link className={classes} style={styles} to={path}>
         <section className="post">
-          <h2>{title}</h2>
+          <h4>{title}</h4>
           <p>{excerpt}&hellip;</p>
         </section>
       </Link>

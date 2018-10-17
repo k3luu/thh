@@ -42,7 +42,7 @@ h1:not(.post-template) .post-title {
 }
 
 div.page-template .post-title {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .post-template .post-title,
@@ -211,11 +211,11 @@ div.page-template .post-title {
   }
 
   h1:not(.post-template) .post-title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 
   div.page-template .post-title {
-    font-size: 4.5rem;
+    font-size: 2.8rem;
   }
 
   .post-excerpt p {
@@ -243,11 +243,11 @@ div.page-template .post-title {
   }
 
   h1:not(.post-template) .post-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   div.page-template .post-title {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 
   .post-template .post-date,
