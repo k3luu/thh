@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Instafeed from 'react-instafeed';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/main.min.css';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import SwipeableViews from 'react-swipeable-views';
+import { autoPlay, bindKeyboard } from 'react-swipeable-views-utils';
 
+import CarouselStepper from '../Carousel/CarouselStepper';
 import FeaturedContent from './FeaturedContent';
 import PostListing from '../PostListing/PostListing';
 import SubscribeForm from '../Subscribe/SubscribeForm';
 import sections from './sections';
 import './Home.css';
+
+const AutoPlaySwipeableViews = bindKeyboard(autoPlay(SwipeableViews));
 
 const Container = styled.div``;
 
@@ -39,8 +41,10 @@ class Home extends Component {
     this.state = {
       instaFeed: [],
       instaLoading: true,
-      autoplay: true
+      currIndex: 0
     };
+
+    this.handleChangeIndex = this.handleChangeIndex.bind(this);
   }
 
   getPhotos() {
@@ -84,6 +88,10 @@ class Home extends Component {
     }
   }
 
+  handleChangeIndex(currIndex) {
+    this.setState({ currIndex });
+  }
+
   renderCategories() {
     const { config } = this.props;
     return sections.map(p => (
@@ -110,6 +118,8 @@ class Home extends Component {
   }
 
   render() {
+    const { currIndex } = this.state;
+
     const template =
       '<a href="{{link}}" target="_blank" class="instafeed__item">' +
       '<div class="instafeed__item__background" style="background-image: url({{image}})">' +
@@ -151,19 +161,19 @@ class Home extends Component {
           </RecentSection>
         </ContentContainer>
 
-        <Carousel
-          key="homepage"
-          emulateTouch
-          useKeyboardArrows
-          showArrows
-          showThumbs={false}
-          showStatus={false}
-          autoPlay={this.state.autoplay}
-          interval={5000}
-          infiniteLoop
-        >
-          {this.renderCategories()}
-        </Carousel>
+        <div style={{ position: 'relative' }}>
+          <AutoPlaySwipeableViews
+            index={currIndex}
+            onChangeIndex={this.handleChangeIndex}
+          >
+            {this.renderCategories()}
+          </AutoPlaySwipeableViews>
+          <CarouselStepper
+            dots={sections.length}
+            index={currIndex}
+            onChangeIndex={this.handleChangeIndex}
+          />
+        </div>
 
         {process.env.NODE_ENV === 'production' && (
           <IGContainer className="ig-container">
