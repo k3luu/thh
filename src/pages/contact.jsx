@@ -50,8 +50,8 @@ class ContactPage extends React.Component {
     const { location } = this.props;
 
     return (
-      <ThemeProvider theme={config.breakpoints}>
-        <Layout location={location}>
+      <Layout location={location}>
+        <ThemeProvider theme={config.breakpoints}>
           <Drawer className="author-template" isOpen={this.state.menuOpen}>
             <Helmet title={`Contact | ${config.siteTitle}`} />
 
@@ -73,8 +73,8 @@ class ContactPage extends React.Component {
               />
             </SiteWrapper>
           </Drawer>
-        </Layout>
-      </ThemeProvider>
+        </ThemeProvider>
+      </Layout>
     );
   }
 }
