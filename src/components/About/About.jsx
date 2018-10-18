@@ -61,7 +61,7 @@ class About extends Component {
     return (
       <div className="main-content">
         <h1>Our Objective</h1>
-        <p>
+        <p className="objective-container">
           Two Half-Hitches was founded on the principle of tying everyday people
           back to nature. We hold a strong focus on self-generated content,
           which means we create all of our content by experiencing it first
