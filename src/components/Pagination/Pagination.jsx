@@ -20,13 +20,15 @@ const theme = createMuiTheme({
 });
 
 class Pagination extends React.Component {
-  handleDots() {
-    const { page, pages } = this.props;
-    const dots = [];
+  state = {
+    pathname: '/'
+  };
 
-    let pathname = '/';
-
+  componentDidMount() {
     if (window && window.location) {
+      const { page } = this.props;
+      let pathname = '/';
+
       if (page === 1) {
         pathname = window.location.pathname.replace(/\//g, '');
       } else {
@@ -35,7 +37,15 @@ class Pagination extends React.Component {
           window.location.pathname.indexOf('/', 2)
         );
       }
+
+      this.setState({ pathname });
     }
+  }
+
+  handleDots() {
+    const { page, pages } = this.props;
+    const { pathname } = this.state;
+    const dots = [];
 
     for (let i = 0; i < pages; i++) {
       if (page - 1 === i) {
