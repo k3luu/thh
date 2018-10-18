@@ -15,9 +15,9 @@ class PaginatedContent extends React.Component {
     return (
       <MainContent className={className}>
         {/* Previous/next page links - only displayed on page 2+ */}
-        <div className="extra-pagination inner">
+        {/* <div className="extra-pagination inner">
           <Pagination page={page} pages={pages} prev={prev} next={next} />
-        </div>
+        </div> */}
 
         {children}
 

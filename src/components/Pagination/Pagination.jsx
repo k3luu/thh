@@ -26,14 +26,21 @@ class Pagination extends React.Component {
 
     let pathname = '/';
 
-    // if (window && window.location) {
-    //   pathname = window.location.pathname;
-    // }
+    if (window && window.location) {
+      if (page === 1) {
+        pathname = window.location.pathname.replace(/\//g, '');
+      } else {
+        pathname = window.location.pathname.substring(
+          1,
+          window.location.pathname.indexOf('/', 2)
+        );
+      }
+    }
 
     for (let i = 0; i < pages; i++) {
       if (page - 1 === i) {
         dots.push(
-          <Link key={i} to={`${pathname}${i + 1}`}>
+          <Link key={i} to={`${pathname}/${i === 0 ? '' : i + 1}`}>
             <i
               className="fa fa-circle"
               style={{ color: 'rgb(23, 33, 33)', padding: '0 5px' }}
@@ -42,7 +49,7 @@ class Pagination extends React.Component {
         );
       } else {
         dots.push(
-          <Link key={i} to={`${pathname}${i + 1}`}>
+          <Link key={i} to={`${pathname}/${i === 0 ? '' : i + 1}`}>
             <i
               className="fa fa-circle"
               style={{ color: '#CFCFCF', padding: '0 5px' }}
