@@ -175,11 +175,11 @@ class Home extends Component {
           />
         </div>
 
-        {process.env.NODE_ENV === 'production' && (
+        {/* {process.env.NODE_ENV === 'production' && (
           <IGContainer className="ig-container">
             <div className="elfsight-app-b078d77e-2973-42a5-980d-a24ace8fee65" />
           </IGContainer>
-        )}
+        )} */}
 
         <div className="home-subscription">
           <SubscribeForm />
