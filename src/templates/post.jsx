@@ -276,10 +276,24 @@ class PostTemplate extends React.Component {
                   />
 
                   {carouselTitle && <h3>{carouselTitle}</h3>}
-                  {carousel && <MyCarousel data={carousel} />}
+                  {carousel && (
+                    <MyCarousel
+                      data={carousel}
+                      showStatus
+                      showArrows
+                      showThumbnails
+                    />
+                  )}
 
                   {secondaryCarouselTitle && <h3>{secondaryCarouselTitle}</h3>}
-                  {secondaryCarousel && <MyCarousel data={secondaryCarousel} />}
+                  {secondaryCarousel && (
+                    <MyCarousel
+                      data={secondaryCarousel}
+                      showStatus
+                      showArrows
+                      showThumbnails
+                    />
+                  )}
 
                   {disclaimer && (
                     <div className="post-disclaimer">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { PanoramaFishEye } from '@material-ui/icons';
+import { Lens } from '@material-ui/icons';
 import './MyCarousel.css';
 
 const styles = () => ({
@@ -19,13 +19,13 @@ const renderIcons = props => {
 
   for (let i = 0; i < props.dots; i++) {
     dots.push(
-      <PanoramaFishEye
+      <Lens
         key={i}
         className={props.classes.icon}
         style={
           props.index === i
             ? { backgroundColor: '#f56700' }
-            : { backgroundColor: 'rgba(0, 0, 0, 0.5)' }
+            : { backgroundColor: 'rgba(0, 0, 0, 0.8)' }
         }
         onClick={() => props.onChangeIndex(i)}
       />
