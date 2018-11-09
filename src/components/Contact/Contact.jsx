@@ -72,6 +72,10 @@ class Contact extends Component {
             >
               <input type="hidden" name="form-name" value="contact" />
 
+              <label style={{ visibility: 'hidden' }}>
+                Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+
               <div style={{ display: 'flex', margin: '0 -5px' }}>
                 <TextField
                   id="name"
