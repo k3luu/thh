@@ -21,13 +21,21 @@ const styles = {
   }
 };
 
+const getTouches = evt => {
+  return (
+    evt.touches || evt.originalEvent.touches // browser API
+  );
+};
+
 class MyCarousel extends Component {
   constructor(p) {
     super(p);
 
     this.state = {
       carouselFullscreen: false,
-      currIndex: 0
+      currIndex: 0,
+      xDown: null,
+      yDown: null
     };
 
     this.toggleFullscreen = this.toggleFullscreen.bind(this);
@@ -35,6 +43,8 @@ class MyCarousel extends Component {
     this.decrementCarouselIndex = this.decrementCarouselIndex.bind(this);
     this.incrementCarouselIndex = this.incrementCarouselIndex.bind(this);
     this.centerThumbnail = this.centerThumbnail.bind(this);
+    this.handleSwipe = this.handleSwipe.bind(this);
+    this.handleTouchStart = this.handleTouchStart.bind(this);
   }
 
   componentWillUpdate(nextProps, nextState) {
@@ -47,10 +57,56 @@ class MyCarousel extends Component {
     }
   }
 
-  centerThumbnail() {
-    const { currIndex } = this.state;
-    const { data } = this.props;
+  componentDidMount() {
+    document.addEventListener('touchstart', this.handleTouchStart, false);
+    document.addEventListener('touchmove', this.handleSwipe, true);
+  }
 
+  componentWillUnmount() {
+    document.removeEventListener('touchstart', this.handleTouchStart, false);
+    document.removeEventListener('touchmove', this.handleSwipe, true);
+  }
+
+  handleTouchStart(evt) {
+    const xDown = getTouches(evt)[0].clientX;
+    const yDown = getTouches(evt)[0].clientY;
+
+    this.setState({ xDown, yDown });
+  }
+
+  handleSwipe(evt) {
+    const { xDown, yDown } = this.state;
+
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    const xUp = evt.touches[0].clientX;
+    const yUp = evt.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      /*most significant*/
+      this.centerThumbnail();
+      if (xDiff > 0) {
+        /* left swipe */
+      } else {
+        /* right swipe */
+      }
+    } else {
+      if (yDiff > 0) {
+        /* up swipe */
+      } else {
+        /* down swipe */
+      }
+    }
+
+    this.setState({ xDown: null, yDown: null });
+  }
+
+  centerThumbnail() {
     const stepperThumbContainer = document.getElementById(
       'stepperThumbContainer'
     );

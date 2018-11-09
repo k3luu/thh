@@ -150,4 +150,8 @@
   .carousel-img {
     min-height: 276px;
   }
+
+  .stepper__thumb {
+    min-width: 25%;
+  }
 }
