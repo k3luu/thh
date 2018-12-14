@@ -320,6 +320,20 @@ class PostListing extends React.Component {
         open={Boolean(anchorEl)}
         onClose={this.handleCardMenuClose}
       >
+        <a href={postMenuNode.path} target="_blank">
+          <MenuItem onClick={this.handleCardMenuClose}>
+            <ListItemIcon>
+              <i className="fa fa-external-link" />
+            </ListItemIcon>
+            <ListItemText
+              classes={{ primary: classes.menu }}
+              style={{ paddingLeft: 15 }}
+            >
+              Open in New Tab
+            </ListItemText>
+          </MenuItem>
+        </a>
+
         <FacebookShareButton url={url} quote={postMenuNode.title}>
           <MenuItem onClick={this.handleCardMenuClose}>
             <ListItemIcon>
@@ -333,6 +347,7 @@ class PostListing extends React.Component {
             </ListItemText>
           </MenuItem>
         </FacebookShareButton>
+
         <TwitterShareButton url={url} title={postMenuNode.title}>
           <MenuItem onClick={this.handleCardMenuClose}>
             <ListItemIcon>
@@ -343,10 +358,11 @@ class PostListing extends React.Component {
             </ListItemText>
           </MenuItem>
         </TwitterShareButton>
+
         <EmailShareButton url={url} title={postMenuNode.title}>
           <MenuItem onClick={this.handleCardMenuClose}>
             <ListItemIcon>
-              <i className="fa fa-share-alt" />
+              <i className="fa fa-envelope" />
             </ListItemIcon>
             <ListItemText classes={{ primary: classes.menu }}>
               Email

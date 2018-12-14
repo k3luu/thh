@@ -38,6 +38,7 @@ class NoMatterTheMountain extends Component {
           <div className="ambassador-info">
             <h6 className="ambassador-name">{p.name}</h6>
             <div className="ambassador-title">{p.title.join(', ')}</div>
+            <div className="ambassador-separator" />
           </div>
 
           <div className="ambassador-bio" background={p.color}>

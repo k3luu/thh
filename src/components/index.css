@@ -275,37 +275,38 @@ h6 {
 }
 
 h1 {
-  font-size: 3.1rem;
+  font-size: 2.7rem;
   letter-spacing: 2px;
 }
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   letter-spacing: 2px;
   padding: 0;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   letter-spacing: 0.6px;
 }
 
 h4 {
-  font-size: 2.2rem;
-}
-
-h5 {
   font-size: 2rem;
 }
 
-h6 {
+h5 {
   font-size: 1.7rem;
+}
+
+h6 {
+  font-size: 1.4rem;
 }
 
 a {
   color: #032b2f;
   transition: 0.3s ease;
   text-decoration: none;
+  outline: 0;
 }
 
 a:hover {
@@ -322,7 +323,7 @@ dl {
   margin: 0 0 0.75em;
   text-rendering: geometricPrecision;
   letter-spacing: 0.1px;
-  line-height: 1.3em;
+  line-height: 1.5em;
   text-align: justify;
 }
 
@@ -625,30 +626,6 @@ button:hover {
   h1,
   h2 {
     margin: 0 20px 0.3em;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  h2 {
-    font-size: 2.3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.8rem;
-  }
-
-  h5 {
-    font-size: 1.7rem;
-  }
-
-  h6 {
-    font-size: 1.5rem;
   }
 
   table th,

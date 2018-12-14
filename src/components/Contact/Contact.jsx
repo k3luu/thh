@@ -24,7 +24,7 @@ const Form = styled.form``;
 
 const Button = styled.button``;
 
-const styles = theme => ({
+const styles = () => ({
   input: {
     margin: '0 5px',
     background: '#fff'

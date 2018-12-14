@@ -49,6 +49,7 @@ class About extends Component {
         <InfoContainer className="member-info__container">
           <Name className="member-name">{p.name}</Name>
           <Title className="member-title">{this.handleTitles(p.titles)}</Title>
+          <div className="member-separator" />
           <Bio className="member-bio">
             {p.bio.map(line => <p key={line}>{line}</p>)}
           </Bio>
