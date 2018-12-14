@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { Link, graphql } from 'gatsby';
 import Avatar from '@material-ui/core/Avatar';
 import { withStyles } from '@material-ui/core/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons';
 
 import SEO from '../components/SEO/SEO';
 import config from '../../data/SiteConfig';
@@ -166,7 +168,7 @@ class PostTemplate extends React.Component {
               <tr>
                 <td className="trail-data__icon">
                   <Avatar className={classes.avatar}>
-                    <i className="fa fa-arrows-v" />
+                    <FontAwesomeIcon icon={faLongArrowAltUp} />
                   </Avatar>
                 </td>
                 <td className="trail-data__label">Elevation Gain</td>
