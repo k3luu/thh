@@ -58,6 +58,8 @@ carousel:
 
 Mt. Baden-Powell was named after the founder of the Boy Scouts, Lord Robert Baden-Powell, in 1907. It was registered by the USGS in 1931, and now serves as a monument commemorating the scouting movement. On the monument you will see a few words from the founder himself, and the Scout Law. For Two Half-Hitches founder, Franz, this hike was very reminiscent, and a right-of-passage during his days in scouting.
 
+![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Baden-Powell/Content/_J8A6677.jpg)
+
 Standing at roughly 9,400 ft in elevation, Mt. Baden-Powell is the 4th (or 5th depending on the source) highest peak in the San Gabriel Mountains and provides a stunning panoramic view of all the different kinds of terrain that Southern California has to offer. From mountains and high deserts to the city grid and beyond, this peak has it all. The 8.9 mile hike takes on you a never-ending and challenging set of switchbacks, and gains nearly 3,000 ft in elevation over a 4 mile distance. After looking at Mt. Baden-Powell from the peak of Mt. Baldy a few weeks before, we decided to hit this nostalgic peak. This can either be a beautiful stand-alone hike, or serve as training to help build strength and stamina for bigger mountains and thru-hiking.
 
 Route yourself to the Vincent Gap parking lot. You can either take the long, scenic drive on Angeles Crest Highway (CA-2 northbound), or take the 15-freeway through the Wrightwood community. There is a decent sized parking lot that gets relatively packed during the weekends. There you will also find a small picnic table, an outhouse, and the same trailhead to <a href="/big-horn-mine-via-vincent-gap">Big Horn Mine</a>.
@@ -96,7 +98,6 @@ Once you reach the 4 mile mark, you will catch a glimpse of the peak. This is th
 
 As you make the last turn around the mountain, you will see a small monument. Congratulations! You made it! Enjoy the beautiful scenery that this summit has to offer, and be sure to leave your mark in the notepad. The atmosphere at the peak of Baden-Powell is something unique. At the top, you’ll find even the most winded of hikers in good spirits, and a real sense of community with your fellow hikers. The can-do spirit of the BSA is ever present at the top of Baden-Powell, and it truly makes you thankful that organizations like BSA exist in order to create generation after generation of scouts and outdoor enthusiasts. We hope you find this peak to be as rewarding as we found it, and bring others to this place of community and spirit.
 
-![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Baden-Powell/Content/_J8A6677.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Baden-Powell/Content/_J8A6679.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Baden-Powell/Content/_J8A6681.jpg)
 ![](https://s3-us-west-1.amazonaws.com/twohalfhitches/trail+guides/Mount+Baden-Powell/Content/_J8A6683.jpg)
