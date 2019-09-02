@@ -10,7 +10,7 @@
 
 .post-title {
   text-align: center;
-  letter-spacing: 0.6px;
+  letter-spacing: 2px;
   font-size: 1.3rem;
 }
 
@@ -89,6 +89,8 @@ div.page-template .post-title {
 .post-content img {
   width: 100%;
   margin: 15px 0;
+  box-shadow: 0 0 10px 0 rgba(10, 31, 68, 0.2);
+  border-radius: 10px;
 }
 
 .post-content h3 {
