@@ -165,6 +165,7 @@ class Home extends Component {
           <AutoPlaySwipeableViews
             index={currIndex}
             onChangeIndex={this.handleChangeIndex}
+            interval={4200}
           >
             {this.renderCategories()}
           </AutoPlaySwipeableViews>
