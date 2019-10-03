@@ -16,7 +16,14 @@ const Title = styled.div``;
 const Bio = styled.div``;
 
 class About extends Component {
-  static handleTitles(list) {
+  constructor(p) {
+    super(p);
+
+    this.renderTeamMembers = this.renderTeamMembers.bind(this);
+    this.handleTitles = this.handleTitles.bind(this);
+  }
+
+  handleTitles(list) {
     let titles = '';
 
     list.forEach(t => {
@@ -28,12 +35,6 @@ class About extends Component {
     });
 
     return titles;
-  }
-
-  constructor(p) {
-    super(p);
-
-    this.renderTeamMembers = this.renderTeamMembers.bind(this);
   }
 
   renderTeamMembers() {
