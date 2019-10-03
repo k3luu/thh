@@ -16,22 +16,24 @@ const Title = styled.div``;
 const Bio = styled.div``;
 
 class About extends Component {
-  constructor(p) {
-    super(p);
-
-    this.renderTeamMembers = this.renderTeamMembers.bind(this);
-  }
-
-  handleTitles(list) {
+  static handleTitles(list) {
     let titles = '';
 
-    list.map(t => {
-      if (titles.length > 0) titles += '/';
+    list.forEach(t => {
+      if (titles.length > 0) {
+        titles += '/';
+      }
 
       titles += t;
     });
 
     return titles;
+  }
+
+  constructor(p) {
+    super(p);
+
+    this.renderTeamMembers = this.renderTeamMembers.bind(this);
   }
 
   renderTeamMembers() {
