@@ -38,25 +38,23 @@ class About extends Component {
   }
 
   renderTeamMembers() {
-    return team.map((p, i) => (
-      <MemberContainer
-        key={p.id}
-        className={
-          i % 2 === 1 ? 'member-container reverse' : 'member-container'
-        }
-      >
-        <PhotoContainer
-          className="member-photo__container"
-          style={{ backgroundImage: `url("${p.photo}")` }}
-        />
+    return team.map(p => (
+      <MemberContainer key={p.id} className="member-container">
         <InfoContainer className="member-info__container">
-          <Name className="member-name">{p.name}</Name>
-          <Title className="member-title">{this.handleTitles(p.titles)}</Title>
-          <div className="member-separator" />
-          <Bio className="member-bio">
-            {p.bio.map(line => <p key={line}>{line}</p>)}
-          </Bio>
+          <PhotoContainer
+            className="member-photo__container"
+            style={{ backgroundImage: `url("${p.photo}")` }}
+          />
+          <div>
+            <Name className="member-name">{p.name}</Name>
+            <Title className="member-title">
+              {this.handleTitles(p.titles)}
+            </Title>
+          </div>
         </InfoContainer>
+        <Bio className="member-bio">
+          {p.bio.map(line => <p key={line}>{line}</p>)}
+        </Bio>
       </MemberContainer>
     ));
   }

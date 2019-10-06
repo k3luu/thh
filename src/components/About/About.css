@@ -3,9 +3,8 @@
 }
 
 .objective-container {
-  background-color: rgba(0, 0, 0, 0.07);
+  border: 6px solid rgba(0, 0, 0, 0.07);
   border-radius: 30px;
-  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,25 +15,17 @@
 }
 
 .member-container {
-  background-color: rgba(0, 0, 0, 0.07);
+  border: 6px solid rgba(0, 0, 0, 0.07);
   border-radius: 30px;
-  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
+  padding: 50px;
   margin-top: 30px;
   margin-bottom: 100px;
 }
 
-.member-container.reverse {
-  flex-direction: row-reverse;
-}
-
 .member-photo__container {
-  min-width: 500px;
-  width: 100%;
-  height: 500px;
+  margin-right: 20px;
+  min-width: 100px;
+  height: 100px;
   background-size: cover;
   background-position: center;
   background-color: #172121;
@@ -43,14 +34,10 @@
   border-radius: 100%;
 }
 
-.member-separator {
-  border-bottom: 2px solid;
-  margin-top: 1em;
-  width: 40px;
-}
-
 .member-info__container {
-  margin: 5px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .member-name {
@@ -83,19 +70,22 @@
    ========================================================================== */
 
 @media only screen and (max-width: 960px) {
-  .member-container,
-  .member-container.reverse {
+  .member-container {
     flex-direction: column;
+    padding: 20px;
+    margin: 30px 20px 100px 20px;
   }
 
   .member-photo__container {
-    min-width: unset;
-    height: 45vh;
-    border-radius: 0;
+    min-width: 100px;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
   }
 
   .member-info__container {
     margin: 5px 10px;
+    display: block;
   }
 
   .member-name {
